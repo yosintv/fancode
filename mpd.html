@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> <!--Updates-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+    <title> YoSinTV Matches Live </title>
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        overflow: hidden;
+        font-family: Tahoma, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      #player {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      #text {
+        position: fixed;
+        bottom: 50px;
+        width: 100%;
+        font-size: 20px;
+        color: #fff;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe id="player" loading="lazy" allowfullscreen></iframe>
+    <script>
+      const channels = {
+
+
+        //Football Live Streamm
+
+       //EPL Live Stream
+        manunited: " https://ytvlive.pages.dev/zhi?m=05e0c44a5a4bbc7a52d1c18d54f6e746  ", 
+        arsenal: " https://ytvlive.pages.dev/zhi?m=fad6a92da1eb2160b3ec755c04e4eb29 ", 
+        liverpool: " https://ytvlive.pages.dev/zhi?m=a535ec65ee0456ced4f8dac639b55347  ", 
+
+
+        realmadrid: " https://ytvlive.pages.dev/zhi?m=4a664eb0e43b9df79627c76c0a28fbe8  ", 
+        barcelona: " https://ytvlive.pages.dev/zhi?m=8e5f74a7a0eee68aa4c7e50187bdb29e  ", 
+
+
+
+        alnassr: "https://ytvlive.pages.dev/ak?m=135966 ", 
+
+
+        //Country Live Stream
+        england: " https://ytvlive.pages.dev/zhi?m=0ba4a343328465e61718c18fe581aa98  ", 
+        france: " https://ytvlive.pages.dev/zhi?m=82b87a50d0451fe6ddc81c0cf144c13e ", 
+        italy: " https://ytvlive.pages.dev/zhi?m=b2e93c4de121d8a12bdb2523269aaac0 ", 
+        portugal: " https://ytvlive.pages.dev/ak?m=118206 ", 
+        brazil: " https://ytvlive.pages.dev/ak?m=113906 ", 
+
+        okru1: " https://ok.ru/videoembed/10158572445253?nochat=1&autoplay=1 ", 
+        okru2: " https://hlsplayers.pages.dev/player3?url=https://rumble.com/live-hls/70b2n8/playlist.m3u8?level=1 ", //apleball
+        okru3: " https://hlsplayers.pages.dev/player3?url=https://rumble.com/live-hls/70atjo/playlist.m3u8?level=1 ", //ganeshshah
+
+
+
+        npl: " https://ytvlive.pages.dev/stream?id=okru2 ", //main
+        npl1: " https://ytvlive.pages.dev/stream?id=okru3 ", //sub-main
+
+
+        lol1: " https://linnk.pages.dev/soon   ",
+        lol2: " https://linnk.pages.dev/soon   ", 
+
+
+
+
+/////////////////////
+        rumble: " https://yosintv.github.io/player/dmca.html?url=https://npl-live.pages.dev/fancod.m3u8 ", 
+        nepal2: " https://ytvlive.pages.dev/stream?id=nepal ", 
+
+        
+        gtv: " https://www.glivestreaming.com/livetv/3/slivehub/slivehub/19468333/1758897539247-57a330-a413-13ad9-b88annie8-1352cbb/6bbb808c922efcda7786e72fc256ae8c/106.154.154.211/1763547419?=&lang=en&017efd8d37e0ae3315be8052b76d9e20 ", 
+
+//Cricket Live Stream
+        sports5: " https://hlsplayers.pages.dev/player3?url=https://rgelive.akamaized.net/hls/live/2043151/radiolive/playlist.m3u8 ", 
+        nepal1: " https://hlsplayers.pages.dev/iframe?url=https://kasin-tv.com/hi/play.php?id=137251 ", 
+        kantipur: " https://hlsplayers.pages.dev/dmca?url=https://webott.viatv.com.np/v0t1/KntCineplexTv.stream/playlist.m3u8 ", 
+
+        india: " https://yosintv.github.io/player/dmca.html?url=https://live-en.aisports.cc/moviebox/device01/playlist.m3u8 ", 
+
+        
+
+        
+        willow: " https://hlsplayers.pages.dev/dmca?url=https://live-en.aisports.cc/moviebox/football001/playlist.m3u8 ", 
+        tnt1: " https://yosintv.github.io/player/1m.html?url=https://nw.wikisport.cc/wiki/bbtsp1.m3u8  ", 
+        tnt2: " https://yosintv.github.io/player/1m.html?url=https://nw.wikisport.cc/wiki/bbtsp2.m3u8  ", 
+        tnt3: " https://yosintv.github.io/player/1m.html?url=https://nw.wikisport.cc/wiki/bbtsp3.m3u8  ", 
+        tnt4: " https://yosintv.github.io/player/1m.html?url=https://nw.wikisport.cc/wiki/bbtsp4.m3u8  ", 
+
+
+///////////////////// EPL Matches //// https://ytvlive.pages.dev/ak?m=______
+        mancity: " https://ytvlive.pages.dev/zhi?m=f5c6846eda2babd0ebe586cfa587445b ", 
+        mancityy: " https://yosintv.github.io/player/dmca.html?url=https://live-en.aisports.cc/moviebox/device01/playlist.m3u8  ", 
+
+        tottenham: " https://hlsplayers.pages.dev/dmca?url=https://live-en.aisports.cc/moviebox/football001/playlist.m3u8 ", 
+        tottenhamm: " https://hlsplayers.pages.dev/dmca?url=https://live-en.aisports.cc/moviebox/football001/playlist.m3u8 ", 
+
+
+
+
+///////////////////// Laliga Matches ///// https://ytvlive.pages.dev/ak?m=______
+///////////////////// https://yosintv.github.io/player/dmca.html?url=https://play7ba.peodlc.com/sport/202_4313436_2.m3u8
+
+        realmadrid: " https://ytvlive.pages.dev/ak?m=168740 ", 
+        realmadridd: " https://ytvlive.pages.dev/ak?m=168740 ", 
+
+
+        barcelona: " https://yosintv.github.io/player/dmca.html?url=https://play7ba.peodlc.com/sport/202_4313436_2.m3u8 ", 
+        barcelonaa: " https://ytvlive.pages.dev/zhi?m=bc26d7b15d6a03e05f84d674866a0ef1 ", 
+
+
+        atletico: " https://hlsplayers.pages.dev/dmca?url=https://live-en.aisports.cc/moviebox/football001/playlist.m3u8 ", 
+        atleticoo: " https://hlsplayers.pages.dev/dmca?url=https://live-en.aisports.cc/moviebox/football001/playlist.m3u8 ", 
+
+
+///////////////////// Bundesliga Matches //// https://ytvlive.pages.dev/ak?m=______
+        munich: " https://ytvlive.pages.dev/zhi?m=ac4a1264853b490fe37d4d5ee6f0ddb1  ", 
+        munich: " https://ytvlive.pages.dev/zhi?m=ac4a1264853b490fe37d4d5ee6f0ddb1  ", 
+
+        dortmund1: " https://ytvlive.pages.dev/zhi?m=ac4a1264853b490fe37d4d5ee6f0ddb1  ", 
+        dortmund2: " https://ytvlive.pages.dev/zhi?m=ac4a1264853b490fe37d4d5ee6f0ddb1  ", 
+
+        leverkusen1: " https://ytvlive.pages.dev/zhi?m=ac4a1264853b490fe37d4d5ee6f0ddb1  ", 
+        leverkusen2: " https://ytvlive.pages.dev/zhi?m=ac4a1264853b490fe37d4d5ee6f0ddb1  ", 
+
+      };
+      const urlParams = new URLSearchParams(window.location.search);
+      const channel = urlParams.get('id');
+
+      function setChannel(channel) {
+        const iframe = document.getElementById('player');
+        iframe.src = channels[channel] || channels.tnt1;
+      }
+      setChannel(channel);
+    </script>
+  </body>
+</html>
