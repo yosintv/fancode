@@ -6,7 +6,7 @@ const playlist = {
     
     "hls1": { url: " https://pull.niues.live/live/stream-400722_lhd.m3u8?auth_key=1770908855-0-0-e4f9e66cd41579f62ade48713084e796 "},
     "hls2": { url: " https://pull.niur.live/live/stream-570313_lhd.m3u8?txSecret=c97e1b5c5946db86c7a6f7c91b58aef8&txTime=698e42f7 "},
-    "bt1": { url: "https://daffodil.833577.xyz/tnt.m3u8"},
+    "arsenal": { url: "https://live.vivo200.com/live/hd-en-1-4343201.m3u8?txSecret=576bb095933a947354c43e3fb982ea1b&txTime=698E77A9"},
 
     
     
