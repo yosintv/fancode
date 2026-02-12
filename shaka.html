@@ -10,60 +10,18 @@
   
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { 
-      background: #000; 
-      height: 100vh; 
-      width: 100vw; 
-      overflow: hidden; 
-      font-family: sans-serif; 
-    }
-    
-    /* Full screen containers */
-    #shaka-wrapper, #iframe-wrapper {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    /* Video styling */
-    video {
-      width: 100%;
-      height: 100%;
-      background: #000;
-      object-fit: contain;
-    }
-
-    /* Iframe styling */
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-
-    /* Utility to hide elements */
-    .hidden {
-      display: none !important;
-    }
-
-    /* Hide default Shaka spinner if desired */
-    .shaka-spinner-container {
-      display: none !important;
-    }
+    html, body { background: #000; height: 100vh; width: 100vw; overflow: hidden; font-family: sans-serif; }
+    .shaka-video-container { position: absolute; inset: 0; width: 100%; height: 100%; }
+    video { width: 100%; height: 100%; background: #000; object-fit: contain; }
+    .shaka-spinner-container { display: none !important; }
   </style>
 </head>
-
 <body>
 
   <div id="shaka-wrapper" class="shaka-video-container">
     <video id="video-element" autoplay playsinline preload="metadata" poster="https://web.cricfoot.net/logo.png"></video>
   </div>
 
-  <div id="iframe-wrapper" class="hidden">
-    <iframe id="external-frame" allowfullscreen allow="autoplay; encrypted-media"></iframe>
-  </div>
-
   <script src="shaka.js"></script>
-
 </body>
 </html>
