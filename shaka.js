@@ -17,8 +17,7 @@ const playlist = {
     },
 
 
-    "hls1": { url:" https://pull.niues.live/live/stream-400722_lhd.m3u8?auth_key=1770908855-0-0-e4f9e66cd41579f62ade48713084e796 "},
-    "hls2": { url:" https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=502577ca7bafb34fc1c7d832cccd03b2&txTime=698e427f "}
+    "hls2": { url: "https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=502577ca7bafb34fc1c7d832cccd03b2&txTime=698e427f"}
 };
 
 async function initPlayer() {
