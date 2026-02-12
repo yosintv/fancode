@@ -15,9 +15,9 @@ const playlist = {
         clearKeys: { "b07e9785466b831915621dc51ed50d3c": "af30a9d18114259f21a3cc9e34ff649d" }
     },
 
-    "primecricket": {
-        url: "https://a47live-pv-ta-amazon.akamaized.net/syd-nitro/live/clients/dash-sd/enc/q5sh0joslk/out/v1/a3efd10a95644817a2b8dff0c33b1b61/cenc-sd.mpd",
-        clearKeys: { "aaf668d9b6766cd98665bfe90f843751": "aaf668d9b6766cd98665bfe90f843751" }
+    "icctv": {
+        url: "https://livem-d-01-icc-we.akamaized.net/variant/v1/dai-event-prd-pal-west/vcg-01-d-nodvr/DASH_DASH/Live/channel(vcg-01-ch-hd-02)/manifest.mpd?vcfilter=39d36e9e-3128-45f1-9868-1a5d1d43e6c4",
+        clearKeys: { "ae7076b647133606b704d33e4cef5134": "ae7076b647133606b704d33e4cef5134" }
     },
 
     "laligatv": {
