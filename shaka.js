@@ -6,7 +6,8 @@ const playlist = {
     
     "hls1": { url: " https://pull.niues.live/live/stream-400722_lhd.m3u8?auth_key=1770908855-0-0-e4f9e66cd41579f62ade48713084e796 "},
     "hls2": { url: " https://pull.niur.live/live/stream-570313_lhd.m3u8?txSecret=c97e1b5c5946db86c7a6f7c91b58aef8&txTime=698e42f7 "},
-        
+    "bt1": { url: "https://storage.googleapis.com/unvertyungover1/mux_video_ts/index-1.m3u8"},
+
     
     
     "primehindi": {
