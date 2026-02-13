@@ -10,6 +10,12 @@ const playlist = {
 
     
     
+"spotvhd": {
+    url: "https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_spotvhd/default/index.mpd",
+    clearKeys: { "ec7ee27d83764e4b845c48cca31c8eef": "9c0e4191203fccb0fde34ee29999129e" }
+},
+    
+
 "nova2sk": {
     url: "https://dash2.antik.sk/stream/nvidia_nova_sport2/playlist_cenc.mpd",
     clearKeys: { "11223344556677889900112233445566": "4b80724d0ef86bcb2c21f7999d67739d" }
