@@ -10,6 +10,12 @@ const playlist = {
 
     
     
+"nova2sk": {
+    url: "https://dash2.antik.sk/stream/nvidia_nova_sport2/playlist_cenc.mpd",
+    clearKeys: { "11223344556677889900112233445566": "4b80724d0ef86bcb2c21f7999d67739d" }
+},
+    
+    
     "primehindi": {
         url: "https://a166aivottlinear-a.akamaihd.net/OTTB/bom-nitro/live/dash/enc/igjuwt107o/out/v1/489e489428ce4992b9bd784d6b948ab3/cenc.mpd",
         clearKeys: { "b07e9785466b831915621dc51ed50d3c": "af30a9d18114259f21a3cc9e34ff649d" }
