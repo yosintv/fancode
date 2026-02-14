@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shaka Player - JSON Loaded</title>
+    <title>Shaka Player</title>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/shaka-player.ui.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/controls.min.css" crossorigin="anonymous">
@@ -15,7 +15,7 @@
             height: 100vh; 
             width: 100vw; 
             overflow: hidden; 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            font-family: sans-serif; 
         }
         
         #shaka-wrapper { 
@@ -32,10 +32,9 @@
             object-fit: contain; 
         }
 
-        /* Hide default loading spinner if you prefer a clean look */
         .shaka-spinner-container { display: none !important; }
 
-        /* Error Overlay Style */
+        /* Fixed Error Overlay: pointer-events:none allows clicking the player even if box is stuck */
         #error-display {
             display: none;
             position: absolute;
@@ -43,96 +42,92 @@
             left: 50%;
             transform: translate(-50%, -50%);
             color: white;
-            background: rgba(255, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 8px;
-            z-index: 100;
+            background: rgba(220, 53, 69, 0.9);
+            padding: 15px 25px;
+            border-radius: 5px;
+            z-index: 1000;
             text-align: center;
+            font-weight: bold;
+            pointer-events: none; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
         }
     </style>
 </head>
 <body>
 
-    <div id="shaka-wrapper" class="shaka-video-container">
+    <div id="shaka-wrapper">
         <video id="video-element" autoplay playsinline preload="metadata" poster="https://web.cricfoot.net/logo.png"></video>
         <div id="error-display">Stream Error: Failed to load content.</div>
     </div>
 
     <script>
         async function initApp() {
-            // Install polyfills to patch browser incompatibilities
             shaka.polyfill.installAll();
 
             if (!shaka.Player.isBrowserSupported()) {
-                alert('Browser not supported!');
+                console.error('Browser not supported!');
                 return;
             }
 
             const video = document.getElementById('video-element');
             const container = document.getElementById('shaka-wrapper');
+            const errorOverlay = document.getElementById('error-display');
+            
             const player = new shaka.Player(video);
             const ui = new shaka.ui.Overlay(player, container, video);
-            
-            // UI Configuration
-            const uiConfig = {
-                'controlPanelElements': ['play_pause', 'time_and_duration', 'spacer', 'mute', 'volume', 'fullscreen', 'overflow_menu'],
-                'addSeekBar': true
-            };
-            ui.configure(uiConfig);
+
+            // Configure Error Handling Logic
+            player.addEventListener('error', (event) => {
+                // Severity 2 is 'CRITICAL'. We only show the error for critical failures.
+                if (event.detail.severity >= 2) {
+                    console.error('Critical Shaka Error:', event.detail);
+                    errorOverlay.style.display = 'block';
+                }
+            });
+
+            // If the video actually starts playing, hide the error (fixes the false positive)
+            video.addEventListener('playing', () => {
+                errorOverlay.style.display = 'none';
+            });
 
             try {
-                // 1. Fetch the external JSON playlist
-                // Note: File must be in the same directory or have CORS enabled
+                // 1. Fetch Playlist
                 const response = await fetch('playlist.json');
-                if (!response.ok) throw new Error("Could not load playlist.json");
-                
                 const playlist = await response.json();
 
-                // 2. Identify channel from URL (e.g., index.html?id=bein1)
+                // 2. Load Selected ID
                 const urlParams = new URLSearchParams(window.location.search);
                 const channelId = urlParams.get('id') || "primehindi";
                 const selected = playlist[channelId];
 
-                if (!selected) {
-                    console.error("Channel ID not found in JSON data.");
-                    return;
+                if (selected) {
+                    player.configure({
+                        streaming: {
+                            lowLatencyMode: false,
+                            bufferingGoal: 30,
+                            rebufferingGoal: 10,
+                            jumpLargeGaps: true,
+                            useNativeHlsOnSafari: true
+                        },
+                        drm: {
+                            clearKeys: selected.clearKeys || {}
+                        }
+                    });
+
+                    await player.load(selected.url.trim());
+                    errorOverlay.style.display = 'none'; // Ensure hidden on successful load
+                } else {
+                    errorOverlay.innerText = "Channel Not Found in Playlist";
+                    errorOverlay.style.display = 'block';
                 }
-
-                // 3. Player Configuration (Stability Focus)
-                player.configure({
-                    streaming: {
-                        lowLatencyMode: false,
-                        bufferingGoal: 30,
-                        rebufferingGoal: 10,
-                        jumpLargeGaps: true,
-                        useNativeHlsOnSafari: true
-                    },
-                    manifest: {
-                        retryParameters: { maxAttempts: 5, baseDelay: 1000 }
-                    },
-                    drm: {
-                        clearKeys: selected.clearKeys || {}
-                    }
-                });
-
-                // Listen for errors
-                player.addEventListener('error', (event) => {
-                    console.error('Shaka Error:', event.detail);
-                    document.getElementById('error-display').style.display = 'block';
-                });
-
-                // 4. Load the URL from JSON
-                await player.load(selected.url.trim());
-                console.log("Stream loaded successfully:", channelId);
 
             } catch (e) {
                 console.error("Initialization Error:", e);
+                errorOverlay.style.display = 'block';
             }
         }
 
-        // Initialize when UI is ready
         document.addEventListener('shaka-ui-loaded', initApp);
-        // Fallback for direct loads
         if (document.readyState === 'complete') { initApp(); }
     </script>
 </body>
