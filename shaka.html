@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shaka Player</title>
+    <title>Shaka Player - Percentage Loader</title>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/shaka-player.ui.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/controls.min.css" crossorigin="anonymous">
@@ -32,10 +32,9 @@
             object-fit: contain; 
         }
 
-        /* Hide default UI spinner */
         .shaka-spinner-container { display: none !important; }
 
-        /* Smooth Pulse Loader */
+        /* Percentage Loader Container */
         #loader-container {
             position: absolute;
             top: 50%;
@@ -48,17 +47,28 @@
             pointer-events: none;
         }
 
-        .pulse-loader {
-            width: 50px;
-            height: 50px;
+        /* Circular Progress Track */
+        .progress-ring {
+            width: 80px;
+            height: 80px;
+            border: 5px solid rgba(255, 255, 255, 0.1);
+            border-top: 5px solid #ffffff;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.9);
-            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-            animation: pulse 1.2s infinite cubic-bezier(0.66, 0, 0, 1);
+            animation: spin 1s linear infinite;
+            margin-bottom: 15px;
         }
 
-        @keyframes pulse {
-            to { box-shadow: 0 0 0 40px rgba(255, 255, 255, 0); }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        #percentage-text {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            font-variant-numeric: tabular-nums;
         }
     </style>
 </head>
@@ -68,35 +78,50 @@
         <video id="video-element" autoplay playsinline preload="metadata" poster="https://web.cricfoot.net/logo.png"></video>
         
         <div id="loader-container">
-            <div class="pulse-loader"></div>
+            <div class="progress-ring"></div>
+            <div id="percentage-text">0%</div>
         </div>
     </div>
 
     <script>
         async function initApp() {
             shaka.polyfill.installAll();
-
             if (!shaka.Player.isBrowserSupported()) return;
 
             const video = document.getElementById('video-element');
             const container = document.getElementById('shaka-wrapper');
             const loader = document.getElementById('loader-container');
+            const percentEl = document.getElementById('percentage-text');
             
             const player = new shaka.Player(video);
             const ui = new shaka.ui.Overlay(player, container, video);
 
-            // Logic: Loader visibility
-            // 1. Hide when video starts playing
+            // Function to update percentage based on buffer
+            const updateProgress = () => {
+                const stats = player.getStats();
+                const bufferInfo = player.getBufferFullness(); 
+                // getBufferFullness returns 0 to 1 based on bufferingGoal
+                let percent = Math.round(bufferInfo * 100);
+                
+                if (percent > 100) percent = 100;
+                if (percent < 0 || isNaN(percent)) percent = 0;
+                
+                percentEl.innerText = percent + "%";
+            };
+
+            // Listeners for Loader visibility
+            const timer = setInterval(() => {
+                if (loader.style.display !== 'none') updateProgress();
+            }, 100);
+
             video.addEventListener('playing', () => {
                 loader.style.display = 'none';
             });
 
-            // 2. Show when video is buffering/waiting for data
             video.addEventListener('waiting', () => {
                 loader.style.display = 'flex';
             });
 
-            // 3. Keep loader visible during initial load
             try {
                 const response = await fetch('playlist.json');
                 const playlist = await response.json();
@@ -108,11 +133,9 @@
                 if (selected) {
                     player.configure({
                         streaming: {
-                            lowLatencyMode: false,
-                            bufferingGoal: 30,
-                            rebufferingGoal: 10,
-                            jumpLargeGaps: true,
-                            useNativeHlsOnSafari: true
+                            bufferingGoal: 15, // Shorter goal makes the 1-100% move faster
+                            rebufferingGoal: 5,
+                            jumpLargeGaps: true
                         },
                         drm: { clearKeys: selected.clearKeys || {} }
                     });
@@ -120,7 +143,7 @@
                     await player.load(selected.url.trim());
                 }
             } catch (e) {
-                console.error("Load failed, loader remains or handle silently.");
+                console.error("Load failed");
             }
         }
 
