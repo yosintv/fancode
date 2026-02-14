@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shaka Player</title>
+    <title>Shaka Player - Engagement Loader</title>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/shaka-player.ui.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/controls.min.css" crossorigin="anonymous">
@@ -34,22 +34,55 @@
 
         .shaka-spinner-container { display: none !important; }
 
-        /* Fixed Error Overlay: pointer-events:none allows clicking the player even if box is stuck */
+        /* Modern Engagement Loader */
+        #loader-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 1000;
+            pointer-events: none;
+        }
+
+        .pulse-loader {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #fff;
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+            animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+            margin-bottom: 15px;
+        }
+
+        @keyframes pulse {
+            to { box-shadow: 0 0 0 45px rgba(255, 255, 255, 0); }
+        }
+
+        #status-text {
+            color: white;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+        }
+
+        /* Error Overlay Style */
         #error-display {
             display: none;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: white;
-            background: rgba(220, 53, 69, 0.9);
+            color: #ff4d4d;
+            background: rgba(0, 0, 0, 0.8);
             padding: 15px 25px;
-            border-radius: 5px;
-            z-index: 1000;
+            border-radius: 8px;
+            z-index: 1001;
             text-align: center;
-            font-weight: bold;
-            pointer-events: none; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            border: 1px solid #ff4d4d;
         }
     </style>
 </head>
@@ -57,7 +90,13 @@
 
     <div id="shaka-wrapper">
         <video id="video-element" autoplay playsinline preload="metadata" poster="https://web.cricfoot.net/logo.png"></video>
-        <div id="error-display">Stream Error: Failed to load content.</div>
+        
+        <div id="loader-container">
+            <div class="pulse-loader"></div>
+            <div id="status-text">Connecting to Stream...</div>
+        </div>
+
+        <div id="error-display">Stream Offline. Please check back later.</div>
     </div>
 
     <script>
@@ -71,31 +110,34 @@
 
             const video = document.getElementById('video-element');
             const container = document.getElementById('shaka-wrapper');
+            const loader = document.getElementById('loader-container');
             const errorOverlay = document.getElementById('error-display');
             
             const player = new shaka.Player(video);
             const ui = new shaka.ui.Overlay(player, container, video);
 
-            // Configure Error Handling Logic
+            // Hide loader and error when video actually starts
+            video.addEventListener('playing', () => {
+                loader.style.display = 'none';
+                errorOverlay.style.display = 'none';
+            });
+
+            // If buffering starts again, show loader
+            video.addEventListener('waiting', () => {
+                loader.style.display = 'flex';
+            });
+
             player.addEventListener('error', (event) => {
-                // Severity 2 is 'CRITICAL'. We only show the error for critical failures.
                 if (event.detail.severity >= 2) {
-                    console.error('Critical Shaka Error:', event.detail);
+                    loader.style.display = 'none';
                     errorOverlay.style.display = 'block';
                 }
             });
 
-            // If the video actually starts playing, hide the error (fixes the false positive)
-            video.addEventListener('playing', () => {
-                errorOverlay.style.display = 'none';
-            });
-
             try {
-                // 1. Fetch Playlist
                 const response = await fetch('playlist.json');
                 const playlist = await response.json();
 
-                // 2. Load Selected ID
                 const urlParams = new URLSearchParams(window.location.search);
                 const channelId = urlParams.get('id') || "primehindi";
                 const selected = playlist[channelId];
@@ -109,20 +151,18 @@
                             jumpLargeGaps: true,
                             useNativeHlsOnSafari: true
                         },
-                        drm: {
-                            clearKeys: selected.clearKeys || {}
-                        }
+                        drm: { clearKeys: selected.clearKeys || {} }
                     });
 
                     await player.load(selected.url.trim());
-                    errorOverlay.style.display = 'none'; // Ensure hidden on successful load
                 } else {
-                    errorOverlay.innerText = "Channel Not Found in Playlist";
+                    loader.style.display = 'none';
+                    errorOverlay.innerText = "Channel Not Found";
                     errorOverlay.style.display = 'block';
                 }
 
             } catch (e) {
-                console.error("Initialization Error:", e);
+                loader.style.display = 'none';
                 errorOverlay.style.display = 'block';
             }
         }
