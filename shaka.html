@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shaka Player</title>
+    <title>Hybrid Shaka Player</title>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/shaka-player.ui.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/controls.min.css" crossorigin="anonymous">
@@ -18,24 +18,24 @@
             font-family: sans-serif; 
         }
         
-        #shaka-wrapper { 
+        #shaka-wrapper, #iframe-container { 
             position: absolute; 
             inset: 0; 
             width: 100%; 
             height: 100%; 
         }
         
-        video { 
+        video, iframe { 
             width: 100%; 
             height: 100%; 
+            border: none; 
             background: #000; 
             object-fit: contain; 
         }
 
-        /* Hide default UI spinner */
         .shaka-spinner-container { display: none !important; }
 
-        /* Smooth Pulse Loader */
+        /* Smooth Pulse Loader with Percentage */
         #loader-container {
             position: absolute;
             top: 50%;
@@ -49,26 +49,42 @@
         }
 
         .pulse-loader {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             background: rgba(255, 255, 255, 0.9);
             box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
             animation: pulse 1.2s infinite cubic-bezier(0.66, 0, 0, 1);
+            margin-bottom: 15px;
         }
 
         @keyframes pulse {
-            to { box-shadow: 0 0 0 40px rgba(255, 255, 255, 0); }
+            to { box-shadow: 0 0 0 45px rgba(255, 255, 255, 0); }
+        }
+
+        #percentage-text {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+            font-variant-numeric: tabular-nums;
         }
     </style>
 </head>
 <body>
 
-    <div id="shaka-wrapper">
-        <video id="video-element" autoplay playsinline preload="metadata" poster="https://web.cricfoot.net/logo.png"></video>
-        
+    <div id="main-player-container">
+        <div id="shaka-wrapper" style="display:none;">
+            <video id="video-element" autoplay playsinline preload="metadata" poster="https://web.cricfoot.net/logo.png"></video>
+        </div>
+
+        <div id="iframe-container" style="display:none;">
+            <iframe id="external-iframe" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+        </div>
+
         <div id="loader-container">
             <div class="pulse-loader"></div>
+            <div id="percentage-text">0%</div>
         </div>
     </div>
 
@@ -79,24 +95,37 @@
             if (!shaka.Player.isBrowserSupported()) return;
 
             const video = document.getElementById('video-element');
-            const container = document.getElementById('shaka-wrapper');
+            const shakaDiv = document.getElementById('shaka-wrapper');
+            const iframeDiv = document.getElementById('iframe-container');
+            const iframe = document.getElementById('external-iframe');
             const loader = document.getElementById('loader-container');
+            const percentEl = document.getElementById('percentage-text');
             
             const player = new shaka.Player(video);
-            const ui = new shaka.ui.Overlay(player, container, video);
+            const ui = new shaka.ui.Overlay(player, shakaDiv, video);
 
-            // Logic: Loader visibility
-            // 1. Hide when video starts playing
-            video.addEventListener('playing', () => {
-                loader.style.display = 'none';
+            // Update 1-100% Progress based on Buffer
+            const updateProgress = () => {
+                if (shakaDiv.style.display !== "none") {
+                    let fullness = player.getBufferFullness();
+                    let percent = Math.round(fullness * 100);
+                    if (percent > 100) percent = 100;
+                    if (percent < 0 || isNaN(percent)) percent = 0;
+                    percentEl.innerText = percent + "%";
+                }
+            };
+
+            const progressTimer = setInterval(() => {
+                if (loader.style.display !== 'none') updateProgress();
+            }, 100);
+
+            // Visibility Logic
+            video.addEventListener('playing', () => { loader.style.display = 'none'; });
+            video.addEventListener('waiting', () => { 
+                percentEl.innerText = "0%";
+                loader.style.display = 'flex'; 
             });
 
-            // 2. Show when video is buffering/waiting for data
-            video.addEventListener('waiting', () => {
-                loader.style.display = 'flex';
-            });
-
-            // 3. Keep loader visible during initial load
             try {
                 const response = await fetch('playlist.json');
                 const playlist = await response.json();
@@ -106,21 +135,31 @@
                 const selected = playlist[channelId];
 
                 if (selected) {
-                    player.configure({
-                        streaming: {
-                            lowLatencyMode: false,
-                            bufferingGoal: 30,
-                            rebufferingGoal: 10,
-                            jumpLargeGaps: true,
-                            useNativeHlsOnSafari: true
-                        },
-                        drm: { clearKeys: selected.clearKeys || {} }
-                    });
+                    // Check if content is Iframe or Shaka
+                    if (selected.type === "iframe") {
+                        shakaDiv.style.display = "none";
+                        iframeDiv.style.display = "block";
+                        iframe.src = selected.url;
+                        loader.style.display = "none"; // Hide loader for iframes immediately
+                    } else {
+                        iframeDiv.style.display = "none";
+                        shakaDiv.style.display = "block";
+                        
+                        player.configure({
+                            streaming: {
+                                bufferingGoal: 15,
+                                rebufferingGoal: 5,
+                                jumpLargeGaps: true,
+                                useNativeHlsOnSafari: true
+                            },
+                            drm: { clearKeys: selected.clearKeys || {} }
+                        });
 
-                    await player.load(selected.url.trim());
+                        await player.load(selected.url.trim());
+                    }
                 }
             } catch (e) {
-                console.error("Load failed, loader remains or handle silently.");
+                console.error("Initialization failed");
             }
         }
 
