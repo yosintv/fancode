@@ -26,6 +26,19 @@
             width: 100%;
             height: 100%;
         }
+
+      #text {
+      position: fixed;
+      border: 0;
+      left: 0;
+      width: 100%;
+      color: #fff;
+      bottom: 50px;
+      text-align: center;
+      font-family: tahoma;
+      font-size: 20px;
+      z-index: 9999;
+      }
         
         
         .media-control .bar-container .bar {
@@ -47,6 +60,8 @@
         .media-control .media-control-icon {
             fill: #ff8800 !important;
         }
+
+        
     </style>
 
     <!-- Clappr and Plugins -->
@@ -57,7 +72,9 @@
 <body>
     <div id="player-container">
         <div id="player"></div>
-<script>
+       <div id="text">www.yosin-tv.net</div>
+        
+    <script>
     var streamUrl = atob("aHR0cHM6Ly90dnNlbjcuYXluYXNjb3BlLm5ldC90c3BvcnRzLWhkL2luZGV4Lm0zdTg/ZT0xNzcxMTQxMzAwJnU9ZWU1NDM3YTctYzE2Yi00NzAwLWIzMTctYTQxYjc3ZDVjYmE5JnRva2VuPTU2NzM3MjA4MzJmYWY5NTZlZDdiYmNiN2Y4Mzg4ZmUz");
     var player = new Clappr.Player({ 
         source: streamUrl,
