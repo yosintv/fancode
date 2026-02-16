@@ -1,79 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Streamed.pk Extractor Pro</title>
-  <style>
-    :root { --primary: #4f46e5; --bg-body: #f3f4f6; --bg-card: #ffffff; --text-main: #1f2937; --border: #e5e7eb; --success: #10b981; }
-    body { font-family: 'Inter', sans-serif; background: var(--bg-body); margin: 0; padding: 40px 20px; color: var(--text-main); display: flex; justify-content: center; }
-    main { max-width: 850px; width: 100%; }
-    .header-section { text-align: center; margin-bottom: 30px; }
-    .card { background: var(--bg-card); padding: 20px; border-radius: 16px; border: 1px solid var(--border); margin-bottom: 20px; }
-    #searchBar { width: 100%; padding: 12px; border: 2px solid var(--border); border-radius: 10px; outline: none; }
-    .match-card { background: white; margin-top: 20px; border-radius: 14px; border: 1px solid var(--border); overflow: hidden; }
-    .match-header { background: #f8fafc; padding: 15px 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; }
-    .match-title { font-weight: 700; font-size: 1.1rem; }
-    .match-body { padding: 20px; }
-    .json-container { position: relative; }
-    pre { background: #1e293b; color: #e2e8f0; padding: 18px; border-radius: 10px; font-size: 13px; overflow-x: auto; white-space: pre-wrap; }
-    .btn-copy-data { position: absolute; top: 10px; right: 10px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: white; padding: 6px 12px; border-radius: 6px; cursor: pointer; }
-    .success-text { color: var(--success); font-weight: bold; }
-  </style>
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://www.yosin-tv.net/favicon.ico' rel='icon' type='image/x-icon'/>
+    <title>YoSinTV Player</title>
+    <style>
+        body, html { height: 100vh; margin: 0; padding: 0; background: #000; overflow: hidden; }
+        #player-container { position: relative; width: 100%; height: 100vh; }
+        #player-iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+    </style>
 </head>
 <body>
-<main>
-  <div class="header-section"><h1>Live Match Extractor</h1></div>
-  <div class="card"><input type="text" id="searchBar" placeholder="Search matches..." oninput="filterResults()" /></div>
-  <div id="results"></div>
-</main>
+
+<div id="player-container">
+    <iframe id="player-iframe" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+</div>
 
 <script>
-  const API_URL = "https://streamed.pk/api/matches/all-today";
-  const AD_PREFIX = "https://yosintv2.github.io/ads/foot.html?url=";
-  const PLAYER_URL = "https://yosintv100.pages.dev/pks";
+    // 1. Get the combined 'source' parameter from the URL
+    // Expected format: ?source=admin-match-id-goes-here
+    const params = new URLSearchParams(window.location.search);
+    const combined = params.get('source'); 
+    const iframe = document.getElementById('player-iframe');
 
-  async function fetchAndDisplay() {
-    try {
-      const response = await fetch(API_URL);
-      const matches = await response.json();
-      const container = document.getElementById('results');
-      container.innerHTML = '';
+    if (combined && combined.includes('-')) {
+        // 2. Find the first hyphen to separate the source from the ID
+        const firstHyphenIndex = combined.indexOf('-');
+        
+        // Everything before the hyphen (e.g., "admin", "delta", "echo")
+        const provider = combined.substring(0, firstHyphenIndex);
+        
+        // Everything after the hyphen (the actual match ID)
+        const matchId = combined.substring(firstHyphenIndex + 1);
 
-      matches.forEach((match, index) => {
-        // Logic: source=admin-id
-        const streamLinks = match.sources.map(src => 
-          `${AD_PREFIX}${PLAYER_URL}?source=${src.source}-${src.id}`
-        );
+        // 3. Construct the target embed URL
+        const targetURL = `https://embedsports.top/embed/${provider}/${matchId}/1`;
 
-        const config = { "name": match.title, "links": streamLinks };
-        const section = document.createElement('div');
-        section.className = 'match-card';
-        section.innerHTML = `
-          <div class="match-header"><span class="match-title">${match.title}</span></div>
-          <div class="match-body">
-            <div class="json-container">
-              <button class="btn-copy-data" onclick="copyText('pre-${index}', this)">Copy Data</button>
-              <pre id="pre-${index}">${JSON.stringify(config, null, 2)}</pre>
-            </div>
-          </div>`;
-        container.appendChild(section);
-      });
-    } catch (e) { console.error(e); }
-  }
-
-  async function copyText(id, btn) {
-    await navigator.clipboard.writeText(document.getElementById(id).innerText);
-    const old = btn.innerText; btn.innerHTML = '<span class="success-text">Copied!</span>';
-    setTimeout(() => btn.innerText = old, 1500);
-  }
-
-  function filterResults() {
-    const q = document.getElementById('searchBar').value.toLowerCase();
-    document.querySelectorAll('.match-card').forEach(c => c.style.display = c.innerText.toLowerCase().includes(q) ? 'block' : 'none');
-  }
-
-  window.onload = fetchAndDisplay;
+        // 4. Set the iframe source
+        iframe.src = targetURL;
+    } else {
+        // Clear container if parameters are missing or invalid
+        document.getElementById('player-container').innerHTML = ``;
+    }
 </script>
 </body>
 </html>
