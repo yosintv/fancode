@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://www.yosin-tv.net/favicon.ico' rel='icon' type='image/x-icon'/>
+    <title>YoSinTV Player</title>
+    <style>
+        body, html { height: 100vh; margin: 0; padding: 0; background: #000; overflow: hidden; }
+        #player-container { position: relative; width: 100%; height: 100vh; }
+        #player-iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        .error { color: white; text-align: center; padding-top: 20%; font-family: sans-serif; }
+    </style>
+</head>
+<body>
+
+<div id="player-container">
+    <iframe id="player-iframe" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+    <div id="text">www.yosin-tv.net</div>
+</div>
+
+<script>
+    // Extract parameters from your URL (?source=xxx&id=yyy)
+    const params = new URLSearchParams(window.location.search);
+    const source = params.get('source'); 
+    const matchId = params.get('id');
+    const iframe = document.getElementById('player-iframe');
+
+    if (source && matchId) {
+        // Construct the embed URL exactly as you requested
+        // Format: https://embedsports.top/embed/{source}/{id}/1
+        const targetURL = `https://embedsports.top/embed/${source}/${matchId}/1`;
+
+        // Set the iframe source
+        iframe.src = targetURL;
+    } else {
+        document.getElementById('player-container').innerHTML = ``;
+    }
+</script>
+</body>
+</html>
