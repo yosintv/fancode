@@ -8,119 +8,84 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/shaka-player.ui.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/controls.min.css" crossorigin="anonymous">
 
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html, body { 
-            background: #000; 
-            height: 100vh; 
-            width: 100vw; 
-            overflow: hidden; 
-            font-family: sans-serif; 
-        }
-        
-        #shaka-wrapper, #iframe-container { 
-            position: absolute; 
-            inset: 0; 
-            width: 100%; 
-            height: 100%; 
-        }
-        
-        video, iframe { 
-            width: 100%; 
-            height: 100%; 
-            border: none; 
-            background: #000; 
-            object-fit: contain; 
-        }
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { 
+        background: #000; 
+        height: 100vh; 
+        width: 100vw; 
+        overflow: hidden; 
+        font-family: sans-serif; 
+    }
+    
+    #shaka-wrapper, #iframe-container { 
+        position: absolute; 
+        inset: 0; 
+        width: 100%; 
+        height: 100%; 
+    }
+    
+    video, iframe { 
+        width: 100%; 
+        height: 100%; 
+        border: none; 
+        background: #000; 
+        object-fit: contain; 
+    }
 
-        .shaka-spinner-container { display: none !important; }
+    .shaka-spinner-container { display: none !important; }
 
-        /* Smooth Pulse Loader with Percentage */
-        #loader-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            z-index: 1000;
-            pointer-events: none;
-        }
+    /* Container to stack buttons and handle auto re-positioning */
+    #yosin-social-container {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 2147483647;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+    }
 
-        .pulse-loader {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.9);
-            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-            animation: pulse 1.2s infinite cubic-bezier(0.66, 0, 0, 1);
-            margin-bottom: 15px;
-        }
+    /* Shared Button Style - EXACT SAME SIZE & SINGLE LINE */
+    .yosin-bar-shared {
+        width: 230px; 
+        height: 42px; 
+        padding: 0 12px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        white-space: nowrap; 
+        overflow: hidden;
+    }
 
-        @keyframes pulse {
-            to { box-shadow: 0 0 0 45px rgba(255, 255, 255, 0); }
-        }
+    /* Telegram Specific Styling */
+    #yosin-tg-bar { background: #0088cc; color: white; }
+    #yosin-tg-bar a { color: white; text-decoration: none; font-weight: bold; }
+    
+    /* WhatsApp Specific Styling */
+    #yosin-wa-bar { background: #25d366; color: white; }
+    #yosin-wa-bar a { color: white; text-decoration: none; font-weight: bold; }
 
-        #percentage-text {
-            color: white;
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.8);
-            font-variant-numeric: tabular-nums;
-        }
-
-        /* Container to stack buttons and handle auto re-positioning */
-        #yosin-social-container {
-            position: fixed;
-            top: 15px;
-            right: 15px;
-            z-index: 2147483647;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            align-items: flex-end;
-        }
-
-        /* Shared Button Style - EXACT SAME SIZE & SINGLE LINE */
-        .yosin-bar-shared {
-            width: 230px; /* Fixed width for both */
-            height: 42px; /* Fixed height for both */
-            padding: 0 12px;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-            font-family: Arial, sans-serif;
-            font-size: 13px;
-            white-space: nowrap; /* Forces text to stay on one line */
-            overflow: hidden;
-        }
-
-        /* Telegram Specific Styling */
-        #yosin-tg-bar { background: #0088cc; color: white; }
-        #yosin-tg-bar a { color: white; text-decoration: none; font-weight: bold; }
-        
-        /* WhatsApp Specific Styling */
-        #yosin-wa-bar { background: #25d366; color: white; }
-        #yosin-wa-bar a { color: white; text-decoration: none; font-weight: bold; }
-
-        /* Close Button Style */
-        .yosin-close-btn {
-            cursor: pointer;
-            background: rgba(0,0,0,0.2);
-            width: 20px;
-            height: 20px;
-            line-height: 18px;
-            text-align: center;
-            border-radius: 50%;
-            font-size: 12px;
-            font-weight: bold;
-            margin-left: 10px;
-            flex-shrink: 0; /
-        }
-    </style>
+    /* Close Button Style */
+    .yosin-close-btn {
+        cursor: pointer;
+        background: rgba(0,0,0,0.2);
+        width: 20px;
+        height: 20px;
+        line-height: 18px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 12px;
+        font-weight: bold;
+        margin-left: 10px;
+        flex-shrink: 0;
+    }
+</style>
 </head>
 <body>
 
