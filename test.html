@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> YoSinTV</title>
-    
     <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <style>
+<!-- Monetag -->
+<script>
+(function () {
+    setTimeout(function () {
+        (function(s, u, z, p) {
+            s.src = u;
+            s.setAttribute('data-zone', z);
+            p.appendChild(s);
+        })(document.createElement('script'), 'https://bvtpk.com/tag.min.js', 7463304, document.body || document.documentElement);
+    }, 10000);
+})();
+</script>
+    
+    
+<style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
         body { background-color: #ffffff; color: #222; text-align: center; padding: 10px; }
 
@@ -143,5 +156,145 @@
 
         window.addEventListener('load', loadIframe);
     </script>
+
+<!-- Auto Ads Redirect after 80 Secs-->
+<script>
+(function() {
+  const REDIRECT_KEY = "lastRedirectTime"; // localStorage key
+  const REDIRECT_URL = "https://yosintv-api.pages.dev/api/ads"; 
+  const DELAY = 70 * 1000; // 80 seconds
+  const COOLDOWN = 5 * 60 * 60 * 1000; // 5 hours in ms
+
+  const lastRedirectTime = localStorage.getItem(REDIRECT_KEY);
+  const now = Date.now();
+
+  // If never redirected OR 5+ hours have passed
+  if (!lastRedirectTime || (now - parseInt(lastRedirectTime, 10)) >= COOLDOWN) {
+    setTimeout(() => {
+      // Save current time
+      localStorage.setItem(REDIRECT_KEY, Date.now().toString());
+
+      // Redirect
+      window.location.href = REDIRECT_URL;
+    }, DELAY);
+  }
+})();
+</script>
+    
+
+<div id="adb-wrapper" class="adb-hidden">
+  <div class="adb-card">
+    <div class="adb-icon">🚫</div>
+    <h2>Ad-blocker Detected</h2>
+    <p>Our website is made possible by displaying online ads to our visitors. Please consider supporting us by whitelisting our website.</p>
+    <button onclick="window.location.reload()" class="adb-btn">I've disabled it, refresh</button>
+    <p class="adb-small">Using Brave? Disable "Shields" for this site.</p>
+  </div>
+</div>
+
+<style>
+  #adb-wrapper {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.9); /* Modern dark slate */
+    backdrop-filter: blur(8px); /* Blur effect */
+    display: none; 
+    align-items: center;
+    justify-content: center;
+    z-index: 2147483647; /* Max z-index */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  .adb-card {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 420px;
+    width: 90%;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.4s ease-out;
+  }
+
+  .adb-icon { font-size: 3rem; margin-bottom: 1rem; }
+
+  h2 { color: #1e293b; margin: 0 0 1rem 0; font-size: 1.5rem; }
+
+  p { color: #64748b; line-height: 1.6; font-size: 0.95rem; margin-bottom: 1.5rem; }
+
+  .adb-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 100%;
+  }
+
+  .adb-btn:hover { background: #1d4ed8; }
+
+  .adb-small { font-size: 0.75rem; color: #94a3b8; margin-top: 1rem; }
+
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+</style>
+
+<script>
+async function checkAdBlocker() {
+  const wrapper = document.getElementById('adb-wrapper');
+  
+  // 1. Check for blocked script loading
+  const adUrl = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+  let isBlocked = false;
+
+  try {
+    const response = await fetch(new Request(adUrl), { method: 'HEAD', mode: 'no-cors' });
+    // In some cases, adblockers return a successful response but with 0 length or redirected
+    isBlocked = false;
+  } catch (error) {
+    isBlocked = true;
+  }
+
+  // 2. Bait Element Check (Fallback)
+  if (!isBlocked) {
+    const bait = document.createElement('div');
+    bait.className = 'adsbox ad-unit sponsored-content';
+    bait.style.cssText = 'width:1px;height:1px;position:absolute;top:-1000px';
+    document.body.appendChild(bait);
+    
+    if (window.getComputedStyle(bait).display === 'none' || bait.offsetParent === null) {
+      isBlocked = true;
+    }
+    document.body.removeChild(bait);
+  }
+
+  // Action
+  if (isBlocked) {
+    wrapper.style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // Prevent scrolling
+  }
+}
+
+// Run check 1 second after load to ensure adblockers have finished their work
+window.addEventListener('load', () => {
+  setTimeout(checkAdBlocker, 1000);
+});
+</script>
+    
+
+       <!-- BEGIN: Powered by Supercounters.com -->
+        <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+            <script id="_wauela">var _wau = _wau || []; _wau.push(["dynamic", "1b5tzjpjtw", "ela", "c4302bffffff", "small"]);
+            </script><script async src="//waust.at/d.js"></script>
+            <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+            <script type="text/javascript">sc_online_i(1687371,"ffffff","e61c1c");</script>
+            <br><noscript><a href="https://www.supercounters.com/">free online counter</a></noscript>
+        </div>
+
 </body>
 </html>
