@@ -6,22 +6,8 @@
     <title> YoSinTV</title>
     <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-<!-- Monetag -->
-<script>
-(function () {
-    setTimeout(function () {
-        (function(s, u, z, p) {
-            s.src = u;
-            s.setAttribute('data-zone', z);
-            p.appendChild(s);
-        })(document.createElement('script'), 'https://bvtpk.com/tag.min.js', 7463304, document.body || document.documentElement);
-    }, 10000);
-})();
-</script>
     
-    
-<style>
+    <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
         body { background-color: #ffffff; color: #222; text-align: center; padding: 10px; }
 
@@ -96,103 +82,7 @@
             .promo-buttons { flex-direction: column; width: 100%; }
             .promo-buttons a { justify-content: center; }
         }
-    </style>
-</head>
 
-<body>
-    <div class="header-banner">YoSinTV</div>
-
-    <div class="player-wrapper">
-        <iframe id="iframePlayer" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
-        
-        <div class="error-overlay" id="errorOverlay">
-            <p id="errorMsg">No Stream Source Provided</p>
-            <button style="margin-top:10px; padding:8px 15px; cursor:pointer;" onclick="location.reload()">Retry</button>
-        </div>
-    </div>
-
-    <div id="toast" class="toast"></div>
-
-    <div class="promo-card">
-        📢 Join our community for live updates!
-        <div class="promo-buttons">
-            <a href="https://t.me/yosintvlive" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a>
-            <a href="https://www.whatsapp.com/channel/0029Vb7ikzn9hXF5ec0uUI0H" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-        </div>
-    </div>
-
-    <div class="info-card">
-        <div>Copy & Share with Your Friends </div>
-        <button onclick="shareLink()"><i class="fas fa-share-alt"></i> Share This Live Stream ❤️</button>
-    </div>
-
-    <script>
-        function loadIframe() {
-            // Parses the ?src= parameter
-            const urlParams = new URLSearchParams(window.location.search);
-            const sourceUrl = urlParams.get('src'); 
-            const iframe = document.getElementById('iframePlayer');
-            const errorOverlay = document.getElementById('errorOverlay');
-
-            if (sourceUrl) {
-                // Injects the full URL into the iframe
-                iframe.src = sourceUrl;
-                errorOverlay.classList.remove('show');
-            } else {
-                iframe.classList.add('hidden');
-                errorOverlay.classList.add('show');
-            }
-        }
-
-        function shareLink() {
-            const url = window.location.href;
-            navigator.clipboard.writeText(url).then(() => {
-                const toast = document.getElementById('toast');
-                toast.innerText = "Link Copied!";
-                toast.classList.add('show');
-                setTimeout(() => toast.classList.remove('show'), 3000);
-            });
-        }
-
-        window.addEventListener('load', loadIframe);
-    </script>
-
-<!-- Auto Ads Redirect after 80 Secs-->
-<script>
-(function() {
-  const REDIRECT_KEY = "lastRedirectTime"; // localStorage key
-  const REDIRECT_URL = "https://yosintv-api.pages.dev/api/ads"; 
-  const DELAY = 70 * 1000; // 80 seconds
-  const COOLDOWN = 5 * 60 * 60 * 1000; // 5 hours in ms
-
-  const lastRedirectTime = localStorage.getItem(REDIRECT_KEY);
-  const now = Date.now();
-
-  // If never redirected OR 5+ hours have passed
-  if (!lastRedirectTime || (now - parseInt(lastRedirectTime, 10)) >= COOLDOWN) {
-    setTimeout(() => {
-      // Save current time
-      localStorage.setItem(REDIRECT_KEY, Date.now().toString());
-
-      // Redirect
-      window.location.href = REDIRECT_URL;
-    }, DELAY);
-  }
-})();
-</script>
-    
-
-<div id="adb-wrapper" class="adb-hidden">
-  <div class="adb-card">
-    <div class="adb-icon">🚫</div>
-    <h2>Ad-blocker Detected</h2>
-    <p>Our website is made possible by displaying online ads to our visitors. Please consider supporting us by whitelisting our website.</p>
-    <button onclick="window.location.reload()" class="adb-btn">I've disabled it, refresh</button>
-    <p class="adb-small">Using Brave? Disable "Shields" for this site.</p>
-  </div>
-</div>
-
-<style>
   #adb-wrapper {
     position: fixed;
     inset: 0;
@@ -242,8 +132,105 @@
     from { transform: translateY(20px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
   }
-</style>
+ </style>
+    
+</head>
 
+<body>
+    <div class="header-banner">YoSinTV</div>
+
+    <div class="player-wrapper">
+        <iframe id="iframePlayer" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
+        
+        <div class="error-overlay" id="errorOverlay">
+            <p id="errorMsg">No Stream Source Provided</p>
+            <button style="margin-top:10px; padding:8px 15px; cursor:pointer;" onclick="location.reload()">Retry</button>
+        </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <div class="promo-card">
+        📢 Join our community for live updates!
+        <div class="promo-buttons">
+            <a href="https://t.me/yosintvlive" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a>
+            <a href="https://www.whatsapp.com/channel/0029Vb7ikzn9hXF5ec0uUI0H" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </div>
+
+    <div class="info-card">
+        <div>Copy & Share with Your Friends </div>
+        <button onclick="shareLink()"><i class="fas fa-share-alt"></i> Share This Live Stream ❤️</button>
+    </div>
+
+ <div id="adb-wrapper" class="adb-hidden">
+  <div class="adb-card">
+    <div class="adb-icon">🚫</div>
+    <h2>Ad-blocker Detected</h2>
+    <p>Our website is made possible by displaying online ads to our visitors. Please consider supporting us by whitelisting our website.</p>
+    <button onclick="window.location.reload()" class="adb-btn">I've disabled it, refresh</button>
+    <p class="adb-small">Using Brave? Disable "Shields" for this site.</p>
+  </div>
+ </div>
+
+    
+    <script>
+        function loadIframe() {
+            // Parses the ?src= parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const sourceUrl = urlParams.get('src'); 
+            const iframe = document.getElementById('iframePlayer');
+            const errorOverlay = document.getElementById('errorOverlay');
+
+            if (sourceUrl) {
+                // Injects the full URL into the iframe
+                iframe.src = sourceUrl;
+                errorOverlay.classList.remove('show');
+            } else {
+                iframe.classList.add('hidden');
+                errorOverlay.classList.add('show');
+            }
+        }
+
+        function shareLink() {
+            const url = window.location.href;
+            navigator.clipboard.writeText(url).then(() => {
+                const toast = document.getElementById('toast');
+                toast.innerText = "Link Copied!";
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), 3000);
+            });
+        }
+
+        window.addEventListener('load', loadIframe);
+    </script>
+
+
+<!-- Auto Ads Redirect after 80 Secs-->
+<script>
+(function() {
+  const REDIRECT_KEY = "lastRedirectTime"; // localStorage key
+  const REDIRECT_URL = "https://yosintv-api.pages.dev/api/ads"; 
+  const DELAY = 70 * 1000; // 80 seconds
+  const COOLDOWN = 5 * 60 * 60 * 1000; // 5 hours in ms
+
+  const lastRedirectTime = localStorage.getItem(REDIRECT_KEY);
+  const now = Date.now();
+
+  // If never redirected OR 5+ hours have passed
+  if (!lastRedirectTime || (now - parseInt(lastRedirectTime, 10)) >= COOLDOWN) {
+    setTimeout(() => {
+      // Save current time
+      localStorage.setItem(REDIRECT_KEY, Date.now().toString());
+
+      // Redirect
+      window.location.href = REDIRECT_URL;
+    }, DELAY);
+  }
+})();
+</script>
+    
+<!-- Ad Blocker-->
 <script>
 async function checkAdBlocker() {
   const wrapper = document.getElementById('adb-wrapper');
@@ -287,7 +274,21 @@ window.addEventListener('load', () => {
 </script>
     
 
-       <!-- BEGIN: Powered by Supercounters.com -->
+<!-- Monetag -->
+<script>
+(function () {
+    setTimeout(function () {
+        (function(s, u, z, p) {
+            s.src = u;
+            s.setAttribute('data-zone', z);
+            p.appendChild(s);
+        })(document.createElement('script'), 'https://bvtpk.com/tag.min.js', 7463304, document.body || document.documentElement);
+    }, 10000);
+})();
+</script>
+    
+    
+<!-- BEGIN: Powered by Supercounters.com -->
         <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
             <script id="_wauela">var _wau = _wau || []; _wau.push(["dynamic", "1b5tzjpjtw", "ela", "c4302bffffff", "small"]);
             </script><script async src="//waust.at/d.js"></script>
