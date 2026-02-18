@@ -3,106 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YoSinTV</title>
+    <title>YoSinTV | Live Stream</title>
     <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-        body { background-color: #ffffff; color: #222; text-align: center; padding: 10px; }
+        body { background-color: #f8fafc; color: #222; text-align: center; padding: 10px; }
 
         .header-banner {
             background: linear-gradient(45deg, #007bff, #0046a3);
             color: white;
-            padding: 14px;
-            border-radius: 8px;
-            font-size: 24px;
-            font-weight: bold;
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 1px;
             max-width: 1100px;
-            margin: 0 auto 12px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            margin: 0 auto 15px;
+            box-shadow: 0px 10px 20px rgba(0, 123, 255, 0.3);
         }
 
         .player-wrapper { 
             width: 100%; 
             max-width: 1100px; 
-            margin: 0 auto 15px; 
+            margin: 0 auto 20px; 
             background: #000; 
-            border-radius: 12px; 
-            border: 3px solid #007bff; 
+            border-radius: 16px; 
+            border: 4px solid #007bff; 
             overflow: hidden; 
             position: relative;
             aspect-ratio: 16/9;
-            box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.2);
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
         }
         
-        #iframePlayer { width: 100%; height: 100%; border: none; display: block; }
+        #iframePlayer { width: 100%; height: 100%; border: none; display: block; z-index: 2; position: relative; }
+        
+        /* Loading Spinner */
+        .loader {
+            position: absolute; top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px; height: 50px;
+            border: 5px solid #333;
+            border-top: 5px solid #007bff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            z-index: 1;
+        }
+        @keyframes spin { 0% { transform: translate(-50%, -50%) rotate(0deg); } 100% { transform: translate(-50%, -50%) rotate(360deg); } }
+
         .hidden { display: none !important; }
 
-        /* Fullscreen Button Overlay */
-        #fs-btn {
-            position: absolute;
-            bottom: 15px;
-            left: 15px;
-            background: rgba(0, 123, 255, 0.7);
-            color: white;
-            border: none;
-            padding: 10px 14px;
-            border-radius: 50%;
-            cursor: pointer;
-            z-index: 10;
-            transition: 0.3s;
-            font-size: 18px;
-        }
-        #fs-btn:hover { background: #007bff; transform: scale(1.1); }
-
         .toast {
-            position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
-            background: rgba(0, 0, 0, 0.85); color: #fff; padding: 12px 25px;
-            border-radius: 30px; font-size: 14px; z-index: 1000;
-            opacity: 0; transition: opacity 0.3s; pointer-events: none;
+            position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%);
+            background: #1e293b; color: #fff; padding: 14px 28px;
+            border-radius: 50px; font-size: 14px; z-index: 1000;
+            opacity: 0; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
-        .toast.show { opacity: 1; }
+        .toast.show { opacity: 1; bottom: 40px; }
 
         .error-overlay {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.9); display: none; flex-direction: column;
+            background: rgba(0,0,0,0.95); display: none; flex-direction: column;
             justify-content: center; align-items: center; z-index: 50; color: white;
         }
         .error-overlay.show { display: flex; }
 
         .promo-card, .info-card { 
             width: 100%; max-width: 1100px;
-            background: linear-gradient(45deg, #007bff, #0046a3);
-            padding: 15px; border-radius: 8px; color: white;
-            margin: 12px auto; display: flex; flex-direction: column;
-            align-items: center; gap: 12px; font-weight: bold; font-size: 18px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            padding: 20px; border-radius: 12px; color: white;
+            margin: 15px auto; display: flex; flex-direction: column;
+            align-items: center; gap: 15px; font-weight: bold; font-size: 18px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
         }
 
-        .promo-buttons { display: flex; gap: 15px; justify-content: center; }
+        .promo-buttons { display: flex; gap: 15px; justify-content: center; width: 100%; }
+        
         .promo-buttons a, .info-card button { 
-            color: white; text-decoration: none; border: 2px solid white; 
-            padding: 8px 18px; border-radius: 6px; font-size: 16px;
-            background: transparent; cursor: pointer; transition: 0.3s; 
-            display: flex; align-items: center; gap: 8px;
+            color: white; text-decoration: none; border: 2px solid rgba(255,255,255,0.4); 
+            padding: 10px 22px; border-radius: 8px; font-size: 16px;
+            background: rgba(255,255,255,0.1); cursor: pointer; transition: 0.3s ease; 
+            display: flex; align-items: center; gap: 10px;
         }
-        .promo-buttons a:hover, .info-card button:hover { background: white; color: #007bff; }
 
+        .promo-buttons a:hover, .info-card button:hover {
+            background: white; color: #007bff; border-color: white; transform: translateY(-2px);
+        }
+
+        @media (max-width: 600px) {
+            .promo-buttons { flex-direction: column; }
+            .promo-buttons a { width: 100%; justify-content: center; }
+        }
+
+        /* Ad Block Overlay */
         #adb-wrapper {
-            position: fixed; inset: 0; background: rgba(15, 23, 42, 0.9);
-            backdrop-filter: blur(8px); display: none; 
+            position: fixed; inset: 0; background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px); display: none; 
             align-items: center; justify-content: center; z-index: 2147483647;
         }
         .adb-card {
-            background: #fff; padding: 2.5rem; border-radius: 16px; text-align: center;
-            max-width: 420px; width: 90%;
+            background: #fff; padding: 40px; border-radius: 24px; text-align: center;
+            max-width: 450px; width: 90%; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
         }
-        .adb-btn { background: #2563eb; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; width: 100%; font-weight: 600; }
-
-        @media (max-width: 600px) {
-            .promo-buttons { flex-direction: column; width: 100% !important; }
-            .promo-buttons a { justify-content: center; }
+        .adb-btn {
+            background: #2563eb; color: white; border: none; padding: 15px;
+            border-radius: 12px; font-weight: 700; cursor: pointer; width: 100%;
         }
     </style>
 </head>
@@ -110,20 +116,18 @@
 <body>
     <div class="header-banner">YoSinTV</div>
 
-    <div class="player-wrapper" id="fullscreen-area">
+    <div class="player-wrapper">
+        <div class="loader"></div>
         <iframe id="iframePlayer" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
         
-        <button id="fs-btn" onclick="toggleFullScreen()" title="Fullscreen">
-            <i class="fas fa-expand"></i>
-        </button>
-
         <div class="error-overlay" id="errorOverlay">
-            <p id="errorMsg">No Stream Source Provided</p>
-            <button style="margin-top:10px; padding:8px 15px; cursor:pointer;" onclick="location.reload()">Retry</button>
+            <p id="errorMsg" style="font-size: 20px; margin-bottom: 10px;">No Stream Source Provided</p>
+            <button style="padding:10px 20px; border-radius:8px; border:none; background:#007bff; color:white; cursor:pointer;" onclick="location.reload()">Retry Connection</button>
         </div>
     </div>
 
     <script>
+        // INSTANT PLAYER LOAD
         (function() {
             const urlParams = new URLSearchParams(window.location.search);
             const sourceUrl = urlParams.get('src'); 
@@ -132,29 +136,20 @@
 
             if (sourceUrl) {
                 iframe.src = sourceUrl;
+                // Hide loader once iframe starts responding
+                iframe.onload = () => { document.querySelector('.loader').style.display = 'none'; };
             } else {
                 iframe.classList.add('hidden');
-                document.getElementById('fs-btn').classList.add('hidden');
+                document.querySelector('.loader').style.display = 'none';
                 errorOverlay.classList.add('show');
             }
         })();
-
-        function toggleFullScreen() {
-            const elem = document.getElementById("fullscreen-area");
-            if (!document.fullscreenElement) {
-                if (elem.requestFullscreen) { elem.requestFullscreen(); }
-                else if (elem.webkitRequestFullscreen) { elem.webkitRequestFullscreen(); }
-                else if (elem.msRequestFullscreen) { elem.msRequestFullscreen(); }
-            } else {
-                if (document.exitFullscreen) { document.exitFullscreen(); }
-            }
-        }
     </script>
 
     <div id="toast" class="toast"></div>
 
     <div class="promo-card">
-        📢 Join our community for live updates!
+        <span>📢 Join our community for live updates!</span>
         <div class="promo-buttons">
             <a href="https://t.me/yosintvlive" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a>
             <a href="https://www.whatsapp.com/channel/0029Vb7ikzn9hXF5ec0uUI0H" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
@@ -162,38 +157,37 @@
     </div>
 
     <div class="info-card">
-        <div>Copy & Share with Your Friends </div>
-        <button onclick="shareLink()"><i class="fas fa-share-alt"></i> Share This Live Stream ❤️</button>
+        <span>Share with Friends & Family</span>
+        <button onclick="shareLink()"><i class="fas fa-share-alt"></i> Copy Stream Link ❤️</button>
     </div>
 
     <div id="adb-wrapper">
         <div class="adb-card">
-            <h2>Ad-blocker Detected</h2>
-            <p>Please whitelist us to continue watching.</p>
-            <button onclick="window.location.reload()" class="adb-btn">Refresh Page</button>
+            <div style="font-size: 50px; margin-bottom: 15px;">🚫</div>
+            <h2 style="color: #1e293b; margin-bottom: 10px;">Ad-blocker Detected</h2>
+            <p style="color: #64748b; margin-bottom: 20px;">Please disable your Ad-blocker to support our free live streaming service.</p>
+            <button onclick="window.location.reload()" class="adb-btn">I've disabled it, refresh</button>
         </div>
     </div>
 
     <script>
         function shareLink() {
-            const url = window.location.href;
-            navigator.clipboard.writeText(url).then(() => {
+            navigator.clipboard.writeText(window.location.href).then(() => {
                 const toast = document.getElementById('toast');
-                toast.innerText = "Link Copied!";
+                toast.innerText = "Link Copied Successfully!";
                 toast.classList.add('show');
                 setTimeout(() => toast.classList.remove('show'), 3000);
             });
         }
 
-        // Ad Logic & Other Scripts
+        // Redirect Logic
         (function() {
             const REDIRECT_KEY = "lastRedirectTime";
             const REDIRECT_URL = "https://yosintv-api.pages.dev/api/ads"; 
             const DELAY = 70 * 1000;
             const COOLDOWN = 5 * 60 * 60 * 1000;
-            const lastRedirectTime = localStorage.getItem(REDIRECT_KEY);
-            const now = Date.now();
-            if (!lastRedirectTime || (now - parseInt(lastRedirectTime, 10)) >= COOLDOWN) {
+            const lastTime = localStorage.getItem(REDIRECT_KEY);
+            if (!lastTime || (Date.now() - parseInt(lastTime, 10)) >= COOLDOWN) {
                 setTimeout(() => {
                     localStorage.setItem(REDIRECT_KEY, Date.now().toString());
                     window.location.href = REDIRECT_URL;
@@ -201,28 +195,29 @@
             }
         })();
 
+        // Adblock Logic
         async function checkAdBlocker() {
-            const wrapper = document.getElementById('adb-wrapper');
+            let isBlocked = false;
             try {
                 await fetch(new Request('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'), { method: 'HEAD', mode: 'no-cors' });
-            } catch (e) {
-                wrapper.style.display = 'flex';
+            } catch (e) { isBlocked = true; }
+            if (isBlocked) {
+                document.getElementById('adb-wrapper').style.display = 'flex';
                 document.body.style.overflow = 'hidden';
             }
         }
         window.addEventListener('load', () => setTimeout(checkAdBlocker, 1500));
 
-        (function () {
-            setTimeout(function () {
-                (function(s, u, z, p) {
-                    s.src = u; s.setAttribute('data-zone', z);
-                    p.appendChild(s);
-                })(document.createElement('script'), 'https://bvtpk.com/tag.min.js', 7463304, document.body || document.documentElement);
-            }, 10000);
-        })();
+        // Monetag
+        setTimeout(() => {
+            (function(s, u, z, p) {
+                s.src = u; s.setAttribute('data-zone', z);
+                p.appendChild(s);
+            })(document.createElement('script'), 'https://bvtpk.com/tag.min.js', 7463304, document.body || document.documentElement);
+        }, 10000);
     </script>
 
-    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+    <div style="position:fixed;top:0;left:0;width:1px;height:1px;overflow:hidden;visibility:hidden;">
         <script id="_wauela">var _wau = _wau || []; _wau.push(["dynamic", "1b5tzjpjtw", "ela", "c4302bffffff", "small"]);</script>
         <script async src="//waust.at/d.js"></script>
         <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
