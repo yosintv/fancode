@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoSinTV</title>
+    
+    <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: #ffffff; color: #222; text-align: center; padding: 10px; }
+
+        .header-banner {
+            background: linear-gradient(45deg, #007bff, #0046a3);
+            color: white;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            max-width: 1100px;
+            margin: 0 auto 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .player-wrapper { 
+            width: 100%; 
+            max-width: 1100px; 
+            margin: 0 auto 15px; 
+            background: #000; 
+            border-radius: 12px; 
+            border: 3px solid #007bff; 
+            overflow: hidden; 
+            position: relative;
+            aspect-ratio: 16/9;
+            box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.2);
+        }
+        
+        #iframePlayer { width: 100%; height: 100%; border: none; display: block; }
+        .hidden { display: none !important; }
+
+        .toast {
+            position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.85); color: #fff; padding: 12px 25px;
+            border-radius: 30px; font-size: 14px; z-index: 1000;
+            opacity: 0; transition: opacity 0.3s; pointer-events: none;
+        }
+        .toast.show { opacity: 1; }
+
+        .error-overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.9); display: none; flex-direction: column;
+            justify-content: center; align-items: center; z-index: 50; color: white;
+        }
+        .error-overlay.show { display: flex; }
+
+        .promo-card, .info-card { 
+            width: 100%; max-width: 1100px;
+            background: linear-gradient(45deg, #007bff, #0046a3);
+            padding: 15px; border-radius: 8px; color: white;
+            margin: 12px auto; display: flex; flex-direction: column;
+            align-items: center; gap: 12px; font-weight: bold; font-size: 18px;
+        }
+
+        .promo-buttons { display: flex; gap: 15px; justify-content: center; }
+        .promo-buttons a, .info-card button { 
+            color: white; text-decoration: none; border: 2px solid white; 
+            padding: 8px 18px; border-radius: 6px; background: transparent;
+            cursor: pointer; transition: 0.3s; display: flex; align-items: center; gap: 8px;
+        }
+        .promo-buttons a:hover, .info-card button:hover { background: white; color: #007bff; }
+    </style>
+</head>
+
+<body>
+    <div class="header-banner">YoSinTV</div>
+
+    <div class="player-wrapper">
+        <iframe id="iframePlayer" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
+        
+        <div class="error-overlay" id="errorOverlay">
+            <p id="errorMsg">No Stream Source Provided</p>
+            <button style="margin-top:10px; padding:8px 15px; cursor:pointer;" onclick="location.reload()">Retry</button>
+        </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <div class="promo-card">
+        📢 Join our community for live updates!
+        <div class="promo-buttons">
+            <a href="https://telegram.me/yosintvlive" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a>
+        </div>
+    </div>
+
+    <div class="info-card">
+        <div>Copy Link & Open In Chrome Browser Only</div>
+        <button onclick="shareLink()"><i class="fas fa-share-alt"></i> Share This Page Link ❤️</button>
+    </div>
+
+    <script>
+        function loadIframe() {
+            // This gets the everything after "?src="
+            const urlParams = new URLSearchParams(window.location.search);
+            const sourceUrl = urlParams.get('src'); 
+            const iframe = document.getElementById('iframePlayer');
+            const errorOverlay = document.getElementById('errorOverlay');
+
+            if (sourceUrl) {
+                // If you pass ?src=https://yosintv100.pages.dev/shaka?id=tsports
+                // It will load that exact string into the iframe
+                iframe.src = sourceUrl;
+                errorOverlay.classList.remove('show');
+            } else {
+                iframe.classList.add('hidden');
+                errorOverlay.classList.add('show');
+            }
+        }
+
+        function shareLink() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                const toast = document.getElementById('toast');
+                toast.innerText = "Link Copied!";
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), 3000);
+            });
+        }
+
+        window.addEventListener('load', loadIframe);
+    </script>
+</body>
+</html>
