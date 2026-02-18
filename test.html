@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YoSinTV</title>
+    <title>Cric Hype | YoSinTV</title>
     
     <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -56,21 +56,34 @@
         }
         .error-overlay.show { display: flex; }
 
+        /* Community Cards */
         .promo-card, .info-card { 
             width: 100%; max-width: 1100px;
             background: linear-gradient(45deg, #007bff, #0046a3);
             padding: 15px; border-radius: 8px; color: white;
             margin: 12px auto; display: flex; flex-direction: column;
             align-items: center; gap: 12px; font-weight: bold; font-size: 18px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .promo-buttons { display: flex; gap: 15px; justify-content: center; }
+        
         .promo-buttons a, .info-card button { 
             color: white; text-decoration: none; border: 2px solid white; 
-            padding: 8px 18px; border-radius: 6px; background: transparent;
-            cursor: pointer; transition: 0.3s; display: flex; align-items: center; gap: 8px;
+            padding: 8px 18px; border-radius: 6px; font-size: 16px;
+            background: transparent; cursor: pointer; transition: 0.3s; 
+            display: flex; align-items: center; gap: 8px;
         }
-        .promo-buttons a:hover, .info-card button:hover { background: white; color: #007bff; }
+
+        .promo-buttons a:hover, .info-card button:hover {
+            background: white;
+            color: #007bff;
+        }
+
+        @media (max-width: 600px) {
+            .promo-buttons { flex-direction: column; width: 100%; }
+            .promo-buttons a { justify-content: center; }
+        }
     </style>
 </head>
 
@@ -91,7 +104,8 @@
     <div class="promo-card">
         📢 Join our community for live updates!
         <div class="promo-buttons">
-            <a href="https://telegram.me/yosintvlive" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a>
+            <a href="https://t.me/yosintvlive" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a>
+            <a href="https://whatsapp.com/channel/YOUR_CHANNEL_ID" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
         </div>
     </div>
 
@@ -102,15 +116,14 @@
 
     <script>
         function loadIframe() {
-            // This gets the everything after "?src="
+            // Parses the ?src= parameter
             const urlParams = new URLSearchParams(window.location.search);
             const sourceUrl = urlParams.get('src'); 
             const iframe = document.getElementById('iframePlayer');
             const errorOverlay = document.getElementById('errorOverlay');
 
             if (sourceUrl) {
-                // If you pass ?src=https://yosintv100.pages.dev/shaka?id=tsports
-                // It will load that exact string into the iframe
+                // Injects the full URL into the iframe
                 iframe.src = sourceUrl;
                 errorOverlay.classList.remove('show');
             } else {
@@ -120,7 +133,8 @@
         }
 
         function shareLink() {
-            navigator.clipboard.writeText(window.location.href).then(() => {
+            const url = window.location.href;
+            navigator.clipboard.writeText(url).then(() => {
                 const toast = document.getElementById('toast');
                 toast.innerText = "Link Copied!";
                 toast.classList.add('show');
