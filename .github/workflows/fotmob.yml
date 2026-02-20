@@ -1,27 +1,35 @@
-name: Update Match Data
+name: Update FotMob Data
 
 on:
   schedule:
-    # Runs at 00:00 and 12:00 UTC every day
-    - cron: '0 */12 * * *'
-  workflow_dispatch: # Allows you to run it manually for testing
+    - cron: '0 */12 * * *' # Every 12 hours
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
-  build:
+  scrape:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Run fetch script
-        run: |
-          chmod +x fetch_data.sh
-          ./fetch_data.sh
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
 
-      - name: Commit and Push changes
+      - name: Install dependencies
+        run: pip install curl_cffi
+
+      - name: Run Python script
+        run: python fetch_fotmob.py
+
+      - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data/*.json
-          git commit -m "Update match data: $(date +'%Y-%m-%d %H:%M')" || echo "No changes to commit"
+          git commit -m "Auto-update: $(date +'%Y-%m-%d %H:%M')" || exit 0
           git push
