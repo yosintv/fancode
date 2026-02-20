@@ -1237,7 +1237,7 @@
                         "longName": "Austria Wien II"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "18",
                     "status": {
                         "utcTime": "2026-02-20T17:00:00.000Z",
@@ -1245,9 +1245,15 @@
                             "firstHalfStarted": "20.02.2026 18:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1771606800000
                 },
@@ -1299,7 +1305,7 @@
                         "longName": "SW Bregenz"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "18",
                     "status": {
                         "utcTime": "2026-02-20T17:00:00.000Z",
@@ -1307,9 +1313,15 @@
                             "firstHalfStarted": "20.02.2026 18:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1771606800000
                 },
@@ -1330,7 +1342,7 @@
                         "longName": "Austria Salzburg"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "18",
                     "status": {
                         "utcTime": "2026-02-20T17:00:00.000Z",
@@ -1338,9 +1350,15 @@
                             "firstHalfStarted": "20.02.2026 18:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1771606800000
                 },
@@ -2389,6 +2407,37 @@
                         "finished": false
                     },
                     "timeTS": 1771599600000
+                },
+                {
+                    "id": 5192718,
+                    "leagueId": 915708,
+                    "time": "20.02.2026 16:30",
+                    "home": {
+                        "id": 8468,
+                        "score": 0,
+                        "name": "Brann",
+                        "longName": "Brann"
+                    },
+                    "away": {
+                        "id": 189420,
+                        "score": 0,
+                        "name": "Sotra SK",
+                        "longName": "Sotra Sportsklubb"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-02-20T15:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "20.02.2026 16:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1771601400000
                 },
                 {
                     "id": 5190834,
@@ -4972,49 +5021,6 @@
             ],
             "parentLeagueId": 109,
             "internalRank": 27,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "ISR",
-            "id": 901379,
-            "primaryId": 128,
-            "name": "Leumit League",
-            "matches": [
-                {
-                    "id": 4928034,
-                    "leagueId": 901379,
-                    "time": "20.02.2026 18:00",
-                    "home": {
-                        "id": 426452,
-                        "score": 0,
-                        "name": "Hapoel Afula",
-                        "longName": "Hapoel Afula"
-                    },
-                    "away": {
-                        "id": 196257,
-                        "score": 0,
-                        "name": "Maccabi Kabilio Jaffa",
-                        "longName": "Maccabi Kabilio Jaffa"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "24",
-                    "status": {
-                        "utcTime": "2026-02-20T17:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "20.02.2026 18:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1771606800000
-                }
-            ],
-            "parentLeagueId": 128,
-            "internalRank": 9,
             "liveRank": 0,
             "simpleLeague": false
         },
