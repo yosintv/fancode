@@ -3,22 +3,36 @@ import json
 from datetime import datetime, timedelta
 from curl_cffi import requests
 
-def get_dates():
-    # Returns yesterday, today, and tomorrow in YYYYMMDD format
+def get_date_range():
+    # Returns a list of dates from Yesterday to 5 days in the future (7 days total)
     now = datetime.now()
-    dates = [
-        (now - timedelta(days=1)).strftime("%Y%m%d"),
-        now.strftime("%Y%m%d"),
-        (now + timedelta(days=1)).strftime("%Y%m%d")
-    ]
+    dates = []
+    # Start from -1 (Yesterday) to +5 (5 days from now)
+    for i in range(-1, 6):
+        date_obj = now + timedelta(days=i)
+        dates.append(date_obj.strftime("%Y%m%d"))
     return dates
 
+def cleanup_old_files(folder, active_dates):
+    # Deletes files that are not in our current 1-week window
+    # Specifically targets files older than "Yesterday"
+    if not os.path.exists(folder):
+        return
+
+    for filename in os.listdir(folder):
+        if filename.endswith(".json"):
+            date_part = filename.split(".")[0]
+            # If the file's date is not in our 7-day window, delete it
+            if date_part not in active_dates:
+                try:
+                    os.remove(os.path.join(folder, filename))
+                    print(f"🧹 Deleted old data: {filename}")
+                except Exception as e:
+                    print(f"[-] Error deleting {filename}: {e}")
+
 def fetch_fotmob(date_str):
-    # Using the exact URL and params you provided
     url = f"https://www.fotmob.com/api/data/matches?date={date_str}&timezone=Asia%2FTokyo&ccode3=JPN"
-    
     try:
-        # impersonate="chrome120" handles the TLS fingerprinting
         r = requests.get(url, impersonate="chrome120", timeout=30)
         if r.status_code == 200:
             return r.json()
@@ -33,9 +47,13 @@ def run():
     if not os.path.exists(folder):
         os.makedirs(folder)
 
-    dates = get_dates()
+    active_dates = get_date_range()
     
-    for d in dates:
+    # 1. Clean up old files (day before yesterday and older)
+    cleanup_old_files(folder, active_dates)
+
+    # 2. Fetch new data for the week
+    for d in active_dates:
         print(f"🚀 Fetching FotMob data for: {d}")
         data = fetch_fotmob(d)
         
@@ -44,8 +62,6 @@ def run():
             with open(file_path, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=4)
             print(f"✅ Saved: {file_path}")
-        else:
-            print(f"❌ Failed to get data for {d}")
 
 if __name__ == "__main__":
     run()
