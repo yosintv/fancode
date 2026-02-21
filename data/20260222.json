@@ -6065,52 +6065,6 @@
             "simpleLeague": false
         },
         {
-            "isGroup": true,
-            "groupName": "3",
-            "ccode": "ISL",
-            "id": 915414,
-            "primaryId": 10076,
-            "name": "League Cup Grp. 3",
-            "matches": [
-                {
-                    "id": 5093650,
-                    "leagueId": 915414,
-                    "time": "21.02.2026 16:00",
-                    "home": {
-                        "id": 4495,
-                        "score": 0,
-                        "name": "Njardvik",
-                        "longName": "Njardvik"
-                    },
-                    "away": {
-                        "id": 2165,
-                        "score": 0,
-                        "name": "KA Akureyri",
-                        "longName": "KA Akureyri"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "4",
-                    "status": {
-                        "utcTime": "2026-02-21T15:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "21.02.2026 16:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1771686000000
-                }
-            ],
-            "parentLeagueId": 10076,
-            "parentLeagueName": "League Cup",
-            "internalRank": 0,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
             "ccode": "FIN",
             "id": 916379,
             "primaryId": 342,
@@ -8892,7 +8846,7 @@
                         "longName": "Chateauroux"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "22",
                     "status": {
                         "utcTime": "2026-02-21T15:00:00.000Z",
@@ -8900,9 +8854,15 @@
                             "firstHalfStarted": "21.02.2026 16:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1771686000000
                 }
@@ -10552,6 +10512,37 @@
                         "score": 0,
                         "name": "Barau",
                         "longName": "Barau"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "27",
+                    "status": {
+                        "utcTime": "2026-02-21T15:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "21.02.2026 16:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1771686000000
+                },
+                {
+                    "id": 4933276,
+                    "leagueId": 902172,
+                    "time": "21.02.2026 16:00",
+                    "home": {
+                        "id": 102068,
+                        "score": 0,
+                        "name": "Wikki Tourist",
+                        "longName": "Wikki Tourist"
+                    },
+                    "away": {
+                        "id": 818875,
+                        "score": 0,
+                        "name": "Remo Stars",
+                        "longName": "Remo Stars"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
