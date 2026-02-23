@@ -502,7 +502,7 @@
                     "time": "23.02.2026 03:15",
                     "home": {
                         "id": 130394,
-                        "score": 0,
+                        "score": 2,
                         "name": "Seattle Sounders",
                         "longName": "Seattle Sounders FC"
                     },
@@ -513,17 +513,26 @@
                         "longName": "Colorado Rapids"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-02-23T02:15:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "23.02.2026 03:15:00"
+                            "firstHalfStarted": "23.02.2026 03:25:09",
+                            "secondHalfStarted": "23.02.2026 04:42:52"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1771812900000
                 }
@@ -678,7 +687,7 @@
                     "time": "23.02.2026 11:30",
                     "home": {
                         "id": 2090,
-                        "score": 0,
+                        "score": 5,
                         "name": "Sariyer",
                         "longName": "Sariyer"
                     },
@@ -686,20 +695,31 @@
                         "id": 1926,
                         "score": 0,
                         "name": "Demirspor",
+                        "redCards": 1,
                         "longName": "Adana Demirspor"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-02-23T10:30:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "23.02.2026 11:30:00"
+                            "firstHalfStarted": "23.02.2026 11:30:52",
+                            "secondHalfStarted": "23.02.2026 12:39:03"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "5 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1771842600000
                 },
@@ -709,28 +729,39 @@
                     "time": "23.02.2026 11:30",
                     "home": {
                         "id": 6265,
-                        "score": 0,
+                        "score": 4,
                         "name": "Sivasspor",
                         "longName": "Sivasspor"
                     },
                     "away": {
                         "id": 4124,
-                        "score": 0,
+                        "score": 1,
                         "name": "Sakaryaspor",
+                        "redCards": 1,
                         "longName": "Sakaryaspor"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-02-23T10:30:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "23.02.2026 11:30:00"
+                            "firstHalfStarted": "23.02.2026 11:30:52",
+                            "secondHalfStarted": "23.02.2026 12:36:45"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "4 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1771842600000
                 },
@@ -751,17 +782,28 @@
                         "longName": "Ke\u00e7i\u00f6reng\u00fcc\u00fc"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 2,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-02-23T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "23.02.2026 14:00:00"
+                            "firstHalfStarted": "23.02.2026 14:02:51"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": false,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "ongoing": true,
+                        "scoreStr": "0 - 0",
+                        "liveTime": {
+                            "short": "6\u200e\u2019\u200e",
+                            "shortKey": "",
+                            "long": "5:11",
+                            "longKey": "",
+                            "maxTime": 45,
+                            "basePeriod": 45,
+                            "addedTime": 0
+                        }
                     },
                     "timeTS": 1771851600000
                 }
@@ -1893,17 +1935,28 @@
                         "longName": "FC Yelimay"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 2,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-02-23T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "23.02.2026 14:00:00"
+                            "firstHalfStarted": "23.02.2026 14:03:28"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": false,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "ongoing": true,
+                        "scoreStr": "0 - 0",
+                        "liveTime": {
+                            "short": "5\u200e\u2019\u200e",
+                            "shortKey": "",
+                            "long": "4:34",
+                            "longKey": "",
+                            "maxTime": 45,
+                            "basePeriod": 45,
+                            "addedTime": 0
+                        }
                     },
                     "timeTS": 1771851600000
                 }
@@ -4101,7 +4154,7 @@
                     "time": "23.02.2026 02:06",
                     "home": {
                         "id": 980692,
-                        "score": 1,
+                        "score": 3,
                         "name": "Pachuca (W)",
                         "longName": "Pachuca (W)"
                     },
@@ -4112,7 +4165,7 @@
                         "longName": "FC Juarez (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "10",
                     "status": {
                         "utcTime": "2026-02-23T01:06:00.000Z",
@@ -4121,19 +4174,16 @@
                             "secondHalfStarted": "23.02.2026 03:13:58"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "1 - 0",
-                        "liveTime": {
-                            "short": "55\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "54:09",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "3 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1771808760000
@@ -4334,32 +4384,30 @@
                     },
                     "away": {
                         "id": 188299,
-                        "score": 0,
+                        "score": 1,
                         "name": "Deportivo Mixco",
                         "longName": "Deportivo Mixco"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 2,
+                    "statusId": 6,
                     "tournamentStage": "8",
                     "status": {
                         "utcTime": "2026-02-23T02:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "23.02.2026 03:07:23"
+                            "firstHalfStarted": "23.02.2026 03:07:23",
+                            "secondHalfStarted": "23.02.2026 04:11:57"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "2 - 0",
-                        "liveTime": {
-                            "short": "16\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "15:44",
-                            "longKey": "",
-                            "maxTime": 45,
-                            "basePeriod": 45,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "2 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1771812000000
@@ -4696,7 +4744,7 @@
                         "longName": "Aldosivi"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "6",
                     "status": {
                         "utcTime": "2026-02-23T00:30:00.000Z",
@@ -4705,19 +4753,16 @@
                             "secondHalfStarted": "23.02.2026 02:38:06"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
+                        "awarded": false,
                         "scoreStr": "1 - 0",
-                        "liveTime": {
-                            "short": "90",
-                            "shortKey": "",
-                            "long": "90:00",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1771806600000
@@ -5625,7 +5670,7 @@
                         "longName": "Obolon Kyiv"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "17",
                     "status": {
                         "utcTime": "2026-02-23T11:00:00.000Z",
@@ -5633,9 +5678,15 @@
                             "firstHalfStarted": "23.02.2026 12:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1771844400000
                 },
@@ -5780,7 +5831,7 @@
                     "time": "23.02.2026 13:30",
                     "home": {
                         "id": 67383,
-                        "score": 0,
+                        "score": 2,
                         "name": "Hougang United FC",
                         "longName": "Hougang United FC"
                     },
@@ -5791,17 +5842,28 @@
                         "longName": "Tanjong Pagar United FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 2,
                     "tournamentStage": "12",
                     "status": {
                         "utcTime": "2026-02-23T12:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "23.02.2026 13:30:00"
+                            "firstHalfStarted": "23.02.2026 13:31:30"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": false,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "ongoing": true,
+                        "scoreStr": "2 - 0",
+                        "liveTime": {
+                            "short": "37\u200e\u2019\u200e",
+                            "shortKey": "",
+                            "long": "36:32",
+                            "longKey": "",
+                            "maxTime": 45,
+                            "basePeriod": 45,
+                            "addedTime": 0
+                        }
                     },
                     "timeTS": 1771849800000
                 }
@@ -6422,7 +6484,7 @@
                     "time": "23.02.2026 02:30",
                     "home": {
                         "id": 10280,
-                        "score": 1,
+                        "score": 3,
                         "name": "America de Cali",
                         "longName": "America de Cali"
                     },
@@ -6430,30 +6492,30 @@
                         "id": 424270,
                         "score": 0,
                         "name": "CD Jaguares",
+                        "redCards": 1,
                         "longName": "CD Jaguares"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 10,
+                    "statusId": 6,
                     "tournamentStage": "8",
                     "status": {
                         "utcTime": "2026-02-23T01:30:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "23.02.2026 02:30:41"
+                            "firstHalfStarted": "23.02.2026 02:30:41",
+                            "secondHalfStarted": "23.02.2026 03:38:11"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "1 - 0",
-                        "liveTime": {
-                            "short": "HT",
-                            "shortKey": "halftime_short",
-                            "long": "Half-Time",
-                            "longKey": "pause_match",
-                            "maxTime": 45,
-                            "basePeriod": 45,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "3 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1771810200000
@@ -7905,7 +7967,7 @@
                 {
                     "id": 5113194,
                     "leagueId": 916553,
-                    "time": "23.02.2026 01:55",
+                    "time": "23.02.2026 14:45",
                     "home": {
                         "id": 568714,
                         "score": 0,
@@ -7919,31 +7981,20 @@
                         "longName": "Club Atl\u00e9tico Estudiantes"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 12,
+                    "statusId": 93,
                     "tournamentStage": "2",
                     "status": {
-                        "utcTime": "2026-02-23T00:55:00.000Z",
+                        "utcTime": "2026-02-23T13:45:00.000Z",
                         "halfs": {
                             "firstHalfStarted": "23.02.2026 01:54:19",
                             "secondHalfStarted": "23.02.2026 03:00:15"
                         },
                         "periodLength": 45,
-                        "finished": false,
-                        "started": true,
+                        "started": false,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "0 - 0",
-                        "liveTime": {
-                            "short": "IR",
-                            "shortKey": "interrupted_short",
-                            "long": "Interrupted",
-                            "longKey": "interrupted",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
-                        }
+                        "finished": false
                     },
-                    "timeTS": 1771808100000
+                    "timeTS": 1771854300000
                 }
             ],
             "parentLeagueId": 8965,
@@ -8067,17 +8118,28 @@
                         "longName": "GFK Tikves Kavadarci"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 2,
                     "tournamentStage": "19",
                     "status": {
                         "utcTime": "2026-02-23T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "23.02.2026 14:00:00"
+                            "firstHalfStarted": "23.02.2026 14:00:17"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": false,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "ongoing": true,
+                        "scoreStr": "0 - 0",
+                        "liveTime": {
+                            "short": "8\u200e\u2019\u200e",
+                            "shortKey": "",
+                            "long": "7:45",
+                            "longKey": "",
+                            "maxTime": 45,
+                            "basePeriod": 45,
+                            "addedTime": 0
+                        }
                     },
                     "timeTS": 1771851600000
                 }
@@ -10025,28 +10087,39 @@
                     "time": "23.02.2026 12:00",
                     "home": {
                         "id": 49687,
-                        "score": 0,
+                        "score": 3,
                         "name": "Luqueno",
                         "longName": "Luqueno"
                     },
                     "away": {
                         "id": 1893,
-                        "score": 0,
+                        "score": 2,
                         "name": "Guarani",
+                        "redCards": 1,
                         "longName": "Guarani"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "6",
                     "status": {
                         "utcTime": "2026-02-23T11:00:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "23.02.2026 12:00:00"
+                            "firstHalfStarted": "23.02.2026 12:00:14",
+                            "secondHalfStarted": "23.02.2026 13:01:36"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1771844400000
                 }
