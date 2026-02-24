@@ -1,36 +1,37 @@
-name: Update FotMob Data
+name: FotMob Scraper
 
 on:
   schedule:
-    - cron: '0 */12 * * *'
-  workflow_dispatch:
-
-permissions:
-  contents: write
+    - cron: '0 0 * * *' # Runs daily at midnight
+  workflow_dispatch:      # Allows you to run it manually
 
 jobs:
-  scrape:
+  build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write    # Crucial: Allows the bot to delete files
+
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python_version: '3.10'
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: pip install curl_cffi
 
-      - name: Run Python script
+      - name: Run Scraper
         run: python fetch_fotmob.py
 
-      - name: Commit and Push
+      - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/*.json
-          # Git commit will include both new files and deletions
-          git commit -m "Auto-update & Cleanup: $(date +'%Y-%m-%d %H:%M')" || exit 0
+          git add data/
+          # The -A flag ensures git notices the DELETED files too
+          git add -A 
+          git commit -m "Auto-update: Scraped data and cleaned old files" || echo "No changes to commit"
           git push
