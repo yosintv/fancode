@@ -818,17 +818,26 @@
                         "longName": "Inter Kashi"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-02-24T14:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "24.02.2026 15:00:00"
+                            "firstHalfStarted": "24.02.2026 15:02:20",
+                            "secondHalfStarted": "24.02.2026 16:07:24"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1771941600000
                 }
@@ -1776,28 +1785,37 @@
                     "time": "24.02.2026 15:00",
                     "home": {
                         "id": 1113547,
-                        "score": 0,
+                        "score": 1,
                         "name": "Everton U18",
                         "longName": "Everton U18"
                     },
                     "away": {
                         "id": 1183383,
-                        "score": 0,
+                        "score": 1,
                         "name": "Leeds United U18",
                         "longName": "Leeds United U18"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "15",
                     "status": {
                         "utcTime": "2026-02-24T14:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "24.02.2026 15:00:00"
+                            "firstHalfStarted": "24.02.2026 15:03:00",
+                            "secondHalfStarted": "24.02.2026 16:06:46"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1771941600000
                 }
@@ -2403,39 +2421,38 @@
                     "time": "24.02.2026 13:00",
                     "home": {
                         "id": 1665351,
-                        "score": 0,
+                        "score": 2,
                         "name": "Malut United",
                         "longName": "Malut United"
                     },
                     "away": {
                         "id": 165191,
-                        "score": 2,
+                        "score": 3,
                         "name": "Persija Jakarta",
+                        "redCards": 1,
                         "longName": "Persija Jakarta"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "23",
                     "status": {
                         "utcTime": "2026-02-24T12:00:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
                             "firstHalfStarted": "24.02.2026 13:00:35",
                             "secondHalfStarted": "24.02.2026 14:05:59"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "0 - 2",
-                        "liveTime": {
-                            "short": "49\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "48:17",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "2 - 3",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1771934400000
@@ -2446,7 +2463,7 @@
                     "time": "24.02.2026 14:30",
                     "home": {
                         "id": 185749,
-                        "score": 0,
+                        "score": 4,
                         "name": "Bhayangkara Presisi Indonesia FC",
                         "longName": "Bhayangkara Presisi Indonesia FC"
                     },
@@ -2454,20 +2471,31 @@
                         "id": 215564,
                         "score": 0,
                         "name": "Semen Padang",
+                        "redCards": 1,
                         "longName": "Semen Padang"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "23",
                     "status": {
                         "utcTime": "2026-02-24T13:30:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "24.02.2026 14:30:00"
+                            "firstHalfStarted": "24.02.2026 14:30:41",
+                            "secondHalfStarted": "24.02.2026 15:36:14"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "4 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1771939800000
                 }
@@ -2729,7 +2757,7 @@
                     "time": "24.02.2026 13:15",
                     "home": {
                         "id": 743070,
-                        "score": 0,
+                        "score": 1,
                         "name": "Viettel",
                         "longName": "Viettel"
                     },
@@ -2740,27 +2768,25 @@
                         "longName": "Nam Dinh"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 10,
+                    "statusId": 6,
                     "tournamentStage": "10",
                     "status": {
                         "utcTime": "2026-02-24T12:15:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "24.02.2026 13:15:22"
+                            "firstHalfStarted": "24.02.2026 13:15:22",
+                            "secondHalfStarted": "24.02.2026 14:24:35"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "0 - 0",
-                        "liveTime": {
-                            "short": "HT",
-                            "shortKey": "halftime_short",
-                            "long": "Half-Time",
-                            "longKey": "pause_match",
-                            "maxTime": 45,
-                            "basePeriod": 45,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1771935300000
@@ -3123,8 +3149,8 @@
                     "status": {
                         "utcTime": "2026-02-23T19:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "23.02.2026 20:00:51",
-                            "secondHalfStarted": "23.02.2026 21:03:36"
+                            "firstHalfStarted": "24.02.2026 10:58:24",
+                            "secondHalfStarted": "24.02.2026 13:05:19"
                         },
                         "periodLength": 45,
                         "finished": true,
@@ -3431,38 +3457,38 @@
                     "time": "24.02.2026 14:00",
                     "home": {
                         "id": 394129,
-                        "score": 2,
+                        "score": 5,
                         "name": "Inter U19",
                         "longName": "Inter U19"
                     },
                     "away": {
                         "id": 608943,
-                        "score": 0,
+                        "score": 3,
                         "name": "Real Betis U19",
+                        "redCards": 1,
                         "longName": "Real Betis U19"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 2,
+                    "statusId": 6,
                     "tournamentStage": "8th Finals",
                     "status": {
                         "utcTime": "2026-02-24T13:00:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "24.02.2026 13:59:08"
+                            "firstHalfStarted": "24.02.2026 13:59:08",
+                            "secondHalfStarted": "24.02.2026 15:03:47"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "2 - 0",
-                        "liveTime": {
-                            "short": "11\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "10:08",
-                            "longKey": "",
-                            "maxTime": 45,
-                            "basePeriod": 45,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "5 - 3",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1771938000000
