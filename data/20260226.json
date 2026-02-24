@@ -627,7 +627,7 @@
                 {
                     "id": 5126387,
                     "leagueId": 915708,
-                    "time": "26.02.2026 12:00",
+                    "time": "26.02.2026 15:00",
                     "home": {
                         "id": 8609,
                         "score": 0,
@@ -644,16 +644,16 @@
                     "statusId": 1,
                     "tournamentStage": "1",
                     "status": {
-                        "utcTime": "2026-02-26T11:00:00.000Z",
+                        "utcTime": "2026-02-26T14:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "26.02.2026 12:00:00"
+                            "firstHalfStarted": "26.02.2026 15:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1772103600000
+                    "timeTS": 1772114400000
                 }
             ],
             "parentLeagueId": 489,
@@ -1329,7 +1329,7 @@
                         "longName": "Argentinos Juniors"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "7",
                     "status": {
                         "utcTime": "2026-02-25T21:00:00.000Z",
@@ -1337,9 +1337,15 @@
                             "firstHalfStarted": "25.02.2026 22:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1772053200000
                 },
@@ -2481,7 +2487,7 @@
                         "longName": "Vitoria"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "4",
                     "status": {
                         "utcTime": "2026-02-25T15:00:00.000Z",
@@ -2489,9 +2495,15 @@
                             "firstHalfStarted": "25.02.2026 16:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1772031600000
                 },
