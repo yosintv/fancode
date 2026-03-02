@@ -182,7 +182,7 @@
                         "longName": "Tractor"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "1/8",
                     "status": {
                         "utcTime": "2026-03-02T16:00:00.000Z",
@@ -190,9 +190,15 @@
                             "firstHalfStarted": "02.03.2026 17:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1772467200000
                 },
@@ -213,7 +219,7 @@
                         "longName": "Al Ahli"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "1/8",
                     "status": {
                         "utcTime": "2026-03-02T18:15:00.000Z",
@@ -221,9 +227,15 @@
                             "firstHalfStarted": "02.03.2026 19:15:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1772475300000
                 },
@@ -295,6 +307,49 @@
             "liveRank": 0,
             "simpleLeague": false,
             "localRank": 43
+        },
+        {
+            "ccode": "BRA",
+            "id": 920619,
+            "primaryId": 10272,
+            "name": "Carioca Relegation Group",
+            "matches": [
+                {
+                    "id": 5178243,
+                    "leagueId": 920619,
+                    "time": "03.03.2026 00:00",
+                    "home": {
+                        "id": 581912,
+                        "score": 0,
+                        "name": "Portuguesa RJ",
+                        "longName": "Portuguesa RJ"
+                    },
+                    "away": {
+                        "id": 581903,
+                        "score": 0,
+                        "name": "Sampaio Correa RJ",
+                        "longName": "Sampaio Correa RJ"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "5",
+                    "status": {
+                        "utcTime": "2026-03-02T23:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "03.03.2026 00:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1772492400000
+                }
+            ],
+            "parentLeagueId": 10272,
+            "internalRank": 0,
+            "liveRank": 0,
+            "simpleLeague": false
         },
         {
             "ccode": "BRA",
@@ -1054,7 +1109,7 @@
                         "longName": "Kiryat Yam"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "25",
                     "status": {
                         "utcTime": "2026-03-02T17:00:00.000Z",
@@ -1062,9 +1117,15 @@
                             "firstHalfStarted": "02.03.2026 18:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1772470800000
                 },
@@ -1085,7 +1146,7 @@
                         "longName": "Hapoel Kfar Shalem"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "25",
                     "status": {
                         "utcTime": "2026-03-02T17:00:00.000Z",
@@ -1093,9 +1154,15 @@
                             "firstHalfStarted": "02.03.2026 18:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1772470800000
                 },
@@ -1116,7 +1183,7 @@
                         "longName": "Maccabi Herzliya"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "25",
                     "status": {
                         "utcTime": "2026-03-02T18:00:00.000Z",
@@ -1124,9 +1191,15 @@
                             "firstHalfStarted": "02.03.2026 19:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1772474400000
                 }

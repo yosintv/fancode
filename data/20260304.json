@@ -412,7 +412,7 @@
                         "longName": "Al Ittihad"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "1/8",
                     "status": {
                         "utcTime": "2026-03-03T16:00:00.000Z",
@@ -420,9 +420,15 @@
                             "firstHalfStarted": "03.03.2026 17:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1772553600000
                 },
@@ -443,7 +449,7 @@
                         "longName": "Al Hilal"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "1/8",
                     "status": {
                         "utcTime": "2026-03-03T18:15:00.000Z",
@@ -451,9 +457,15 @@
                             "firstHalfStarted": "03.03.2026 19:15:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1772561700000
                 },
@@ -549,7 +561,7 @@
                         "longName": "Al-Hussein SC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "1/4",
                     "status": {
                         "utcTime": "2026-03-03T18:15:00.000Z",
@@ -557,9 +569,15 @@
                             "firstHalfStarted": "03.03.2026 19:15:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1772561700000
                 },
@@ -4783,6 +4801,37 @@
                         "utcTime": "2026-03-03T19:45:00.000Z",
                         "halfs": {
                             "firstHalfStarted": "03.03.2026 20:45:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1772567100000
+                },
+                {
+                    "id": 4882426,
+                    "leagueId": 901530,
+                    "time": "03.03.2026 20:45",
+                    "home": {
+                        "id": 4046,
+                        "score": 0,
+                        "name": "Bishop's Stortford",
+                        "longName": "Bishop's Stortford"
+                    },
+                    "away": {
+                        "id": 6292,
+                        "score": 0,
+                        "name": "Worcester",
+                        "longName": "Worcester"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "30",
+                    "status": {
+                        "utcTime": "2026-03-03T19:45:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.02.2026 16:02:35"
                         },
                         "periodLength": 45,
                         "started": false,
