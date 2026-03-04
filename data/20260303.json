@@ -285,28 +285,37 @@
                     "time": "03.03.2026 08:45",
                     "home": {
                         "id": 203576,
-                        "score": 0,
+                        "score": 1,
                         "name": "Melbourne City FC",
                         "longName": "Melbourne City FC"
                     },
                     "away": {
                         "id": 165243,
-                        "score": 0,
+                        "score": 1,
                         "name": "Buriram United",
                         "longName": "Buriram United"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1/8",
                     "status": {
                         "utcTime": "2026-03-03T07:45:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 08:45:00"
+                            "firstHalfStarted": "03.03.2026 08:45:10",
+                            "secondHalfStarted": "03.03.2026 09:47:35"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772523900000
                 },
@@ -327,17 +336,26 @@
                         "longName": "Machida Zelvia"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1/8",
                     "status": {
                         "utcTime": "2026-03-03T10:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 11:00:00"
+                            "firstHalfStarted": "03.03.2026 11:00:53",
+                            "secondHalfStarted": "03.03.2026 12:03:17"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772532000000
                 }
@@ -419,12 +437,12 @@
                     },
                     "away": {
                         "id": 9770,
-                        "score": 6,
+                        "score": 8,
                         "name": "Flamengo",
                         "longName": "Flamengo"
                     },
-                    "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "eliminatedTeamId": 111117,
+                    "statusId": 6,
                     "tournamentStage": "1/2",
                     "status": {
                         "utcTime": "2026-03-03T00:00:00.000Z",
@@ -434,21 +452,18 @@
                             "secondHalfStarted": "03.03.2026 02:08:58"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "0 - 6",
-                        "liveTime": {
-                            "short": "59\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "58:03",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "0 - 8",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         },
-                        "aggregatedStr": "0 - 9"
+                        "aggregatedStr": "0 - 11"
                     },
                     "timeTS": 1772496000000
                 }
@@ -507,48 +522,6 @@
             ],
             "parentLeagueId": 48,
             "internalRank": 29,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "SVN",
-            "id": 174,
-            "primaryId": 174,
-            "name": "Cup",
-            "matches": [
-                {
-                    "id": 5085078,
-                    "leagueId": 174,
-                    "time": "03.03.2026 15:00",
-                    "home": {
-                        "id": 856682,
-                        "score": 0,
-                        "name": "Fuzinar",
-                        "longName": "Fuzinar"
-                    },
-                    "away": {
-                        "id": 1862,
-                        "score": 0,
-                        "name": "Aluminij",
-                        "longName": "Aluminij"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1/4",
-                    "status": {
-                        "utcTime": "2026-03-03T14:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "03.03.2026 15:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1772546400000
-                }
-            ],
-            "internalRank": 0,
             "liveRank": 0,
             "simpleLeague": false
         },
@@ -674,22 +647,31 @@
                     },
                     "away": {
                         "id": 2088,
-                        "score": 0,
+                        "score": 2,
                         "name": "Karag\u00fcmr\u00fck",
                         "longName": "Fatih Karag\u00fcmr\u00fck"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "4",
                     "status": {
                         "utcTime": "2026-03-03T10:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 11:00:00"
+                            "firstHalfStarted": "03.03.2026 11:00:53",
+                            "secondHalfStarted": "03.03.2026 12:06:59"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772532000000
                 },
@@ -710,17 +692,26 @@
                         "longName": "Boluspor"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "4",
                     "status": {
                         "utcTime": "2026-03-03T12:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 13:30:00"
+                            "firstHalfStarted": "03.03.2026 13:30:22",
+                            "secondHalfStarted": "03.03.2026 14:35:55"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772541000000
                 }
@@ -1040,8 +1031,9 @@
                     "time": "03.03.2026 12:30",
                     "home": {
                         "id": 10145,
-                        "score": 0,
+                        "score": 1,
                         "name": "Spartak Varna",
+                        "redCards": 1,
                         "longName": "Spartak Varna"
                     },
                     "away": {
@@ -1051,17 +1043,27 @@
                         "longName": "Montana"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "24",
                     "status": {
                         "utcTime": "2026-03-03T11:30:00.000Z",
+                        "numberOfHomeRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 12:30:00"
+                            "firstHalfStarted": "03.03.2026 12:31:52",
+                            "secondHalfStarted": "03.03.2026 13:32:23"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772537400000
                 },
@@ -1073,26 +1075,37 @@
                         "id": 10126,
                         "score": 0,
                         "name": "Beroe",
+                        "redCards": 1,
                         "longName": "Beroe"
                     },
                     "away": {
                         "id": 10134,
-                        "score": 0,
+                        "score": 3,
                         "name": "Slavia Sofia",
                         "longName": "Slavia Sofia"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "24",
                     "status": {
                         "utcTime": "2026-03-03T14:00:00.000Z",
+                        "numberOfHomeRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 15:00:00"
+                            "firstHalfStarted": "03.03.2026 15:01:27",
+                            "secondHalfStarted": "03.03.2026 16:05:06"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 3",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772546400000
                 }
@@ -1720,7 +1733,7 @@
                     "time": "03.03.2026 01:30",
                     "home": {
                         "id": 10087,
-                        "score": 1,
+                        "score": 2,
                         "name": "Banfield",
                         "longName": "Banfield"
                     },
@@ -1731,27 +1744,25 @@
                         "longName": "Aldosivi"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 10,
+                    "statusId": 6,
                     "tournamentStage": "8",
                     "status": {
                         "utcTime": "2026-03-03T00:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 01:30:55"
+                            "firstHalfStarted": "03.03.2026 01:30:55",
+                            "secondHalfStarted": "03.03.2026 02:37:08"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "1 - 0",
-                        "liveTime": {
-                            "short": "HT",
-                            "shortKey": "halftime_short",
-                            "long": "Half-Time",
-                            "longKey": "pause_match",
-                            "maxTime": 45,
-                            "basePeriod": 45,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "2 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1772497800000
@@ -1773,27 +1784,25 @@
                         "longName": "River Plate"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 10,
+                    "statusId": 6,
                     "tournamentStage": "8",
                     "status": {
                         "utcTime": "2026-03-03T00:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 01:29:35"
+                            "firstHalfStarted": "03.03.2026 01:29:35",
+                            "secondHalfStarted": "03.03.2026 02:35:21"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
+                        "awarded": false,
                         "scoreStr": "1 - 1",
-                        "liveTime": {
-                            "short": "HT",
-                            "shortKey": "halftime_short",
-                            "long": "Half-Time",
-                            "longKey": "pause_match",
-                            "maxTime": 45,
-                            "basePeriod": 45,
-                            "addedTime": 0
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1772497800000
@@ -1867,28 +1876,37 @@
                     "time": "03.03.2026 02:30",
                     "home": {
                         "id": 165473,
-                        "score": 0,
+                        "score": 3,
                         "name": "Alianza FC",
                         "longName": "Alianza FC"
                     },
                     "away": {
                         "id": 98585,
-                        "score": 0,
+                        "score": 3,
                         "name": "San Francisco FC",
                         "longName": "San Francisco FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "7",
                     "status": {
                         "utcTime": "2026-03-03T01:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 02:30:00"
+                            "firstHalfStarted": "03.03.2026 02:30:40",
+                            "secondHalfStarted": "03.03.2026 03:36:01"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 3",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772501400000
                 }
@@ -2165,22 +2183,31 @@
                     },
                     "away": {
                         "id": 1396530,
-                        "score": 0,
+                        "score": 1,
                         "name": "Fountain Gate FC",
                         "longName": "Fountain Gate FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "16",
                     "status": {
                         "utcTime": "2026-03-03T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 14:00:00"
+                            "firstHalfStarted": "03.03.2026 14:00:25",
+                            "secondHalfStarted": "03.03.2026 15:05:50"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772542800000
                 }
@@ -2201,28 +2228,37 @@
                     "time": "03.03.2026 13:00",
                     "home": {
                         "id": 1183383,
-                        "score": 0,
+                        "score": 1,
                         "name": "Leeds United U18",
                         "longName": "Leeds United U18"
                     },
                     "away": {
                         "id": 1113543,
-                        "score": 0,
+                        "score": 1,
                         "name": "Manchester City U18",
                         "longName": "Manchester City U18"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "14",
                     "status": {
                         "utcTime": "2026-03-03T12:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 13:00:00"
+                            "firstHalfStarted": "03.03.2026 13:06:03",
+                            "secondHalfStarted": "03.03.2026 14:10:07"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772539200000
                 },
@@ -2232,28 +2268,37 @@
                     "time": "03.03.2026 14:30",
                     "home": {
                         "id": 1113552,
-                        "score": 0,
+                        "score": 2,
                         "name": "Chelsea U18",
                         "longName": "Chelsea U18"
                     },
                     "away": {
                         "id": 1113550,
-                        "score": 0,
+                        "score": 3,
                         "name": "Fulham U18",
                         "longName": "Fulham U18"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "12",
                     "status": {
                         "utcTime": "2026-03-03T13:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 14:30:00"
+                            "firstHalfStarted": "03.03.2026 14:33:03",
+                            "secondHalfStarted": "03.03.2026 15:38:28"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 3",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772544600000
                 }
@@ -2285,7 +2330,7 @@
                         "longName": "Real Cartagena"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "7",
                     "status": {
                         "utcTime": "2026-03-03T00:00:00.000Z",
@@ -2294,19 +2339,16 @@
                             "secondHalfStarted": "03.03.2026 02:05:07"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
+                        "awarded": false,
                         "scoreStr": "0 - 0",
-                        "liveTime": {
-                            "short": "62\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "61:54",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1772496000000
@@ -2340,7 +2382,7 @@
                         "longName": "Patronato de Parana"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "3",
                     "status": {
                         "utcTime": "2026-03-03T00:00:00.000Z",
@@ -2349,19 +2391,16 @@
                             "secondHalfStarted": "03.03.2026 02:08:58"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
+                        "awarded": false,
                         "scoreStr": "0 - 0",
-                        "liveTime": {
-                            "short": "59\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "58:03",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1772496000000
@@ -2395,17 +2434,26 @@
                         "longName": "FK Struga"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "21",
                     "status": {
                         "utcTime": "2026-03-03T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 14:00:00"
+                            "firstHalfStarted": "03.03.2026 14:01:30",
+                            "secondHalfStarted": "03.03.2026 15:04:06"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772542800000
                 },
@@ -2421,22 +2469,31 @@
                     },
                     "away": {
                         "id": 1523811,
-                        "score": 0,
+                        "score": 2,
                         "name": "Bashkimi",
                         "longName": "Bashkimi"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "21",
                     "status": {
                         "utcTime": "2026-03-03T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 14:00:00"
+                            "firstHalfStarted": "03.03.2026 13:59:17",
+                            "secondHalfStarted": "03.03.2026 15:01:08"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772542800000
                 }
@@ -2589,28 +2646,37 @@
                     "time": "03.03.2026 14:30",
                     "home": {
                         "id": 165199,
-                        "score": 0,
+                        "score": 1,
                         "name": "Madura United",
                         "longName": "Madura United"
                     },
                     "away": {
                         "id": 1665351,
-                        "score": 0,
+                        "score": 2,
                         "name": "Malut United",
                         "longName": "Malut United"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "24",
                     "status": {
                         "utcTime": "2026-03-03T13:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 14:30:00"
+                            "firstHalfStarted": "03.03.2026 14:30:16",
+                            "secondHalfStarted": "03.03.2026 15:34:41"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772544600000
                 },
@@ -2620,28 +2686,37 @@
                     "time": "03.03.2026 14:30",
                     "home": {
                         "id": 165191,
-                        "score": 0,
+                        "score": 2,
                         "name": "Persija Jakarta",
                         "longName": "Persija Jakarta"
                     },
                     "away": {
                         "id": 585858,
-                        "score": 0,
+                        "score": 2,
                         "name": "Borneo Samarinda",
                         "longName": "Borneo Samarinda"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "24",
                     "status": {
                         "utcTime": "2026-03-03T13:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 14:30:00"
+                            "firstHalfStarted": "03.03.2026 14:30:42",
+                            "secondHalfStarted": "03.03.2026 15:32:24"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772544600000
                 }
@@ -2716,7 +2791,7 @@
                     "time": "03.03.2026 03:00",
                     "home": {
                         "id": 74872,
-                        "score": 0,
+                        "score": 3,
                         "name": "North Korea (W)",
                         "longName": "North Korea (W)"
                     },
@@ -2727,17 +2802,26 @@
                         "longName": "Uzbekistan (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-03-03T02:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 03:00:00"
+                            "firstHalfStarted": "03.03.2026 03:01:20",
+                            "secondHalfStarted": "03.03.2026 04:11:46"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772503200000
                 },
@@ -2747,7 +2831,7 @@
                     "time": "03.03.2026 09:00",
                     "home": {
                         "id": 5904,
-                        "score": 0,
+                        "score": 2,
                         "name": "China (W)",
                         "longName": "China (W)"
                     },
@@ -2758,17 +2842,26 @@
                         "longName": "Bangladesh (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-03-03T08:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 09:00:00"
+                            "firstHalfStarted": "03.03.2026 09:00:43",
+                            "secondHalfStarted": "03.03.2026 10:09:49"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772524800000
                 }
@@ -2793,28 +2886,37 @@
                     "time": "03.03.2026 14:00",
                     "home": {
                         "id": 417004,
-                        "score": 0,
+                        "score": 1,
                         "name": "Montenegro (W)",
                         "longName": "Montenegro (W)"
                     },
                     "away": {
                         "id": 417003,
-                        "score": 0,
+                        "score": 2,
                         "name": "Albania (W)",
                         "longName": "Albania (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-03-03T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 14:00:00"
+                            "firstHalfStarted": "03.03.2026 14:02:55",
+                            "secondHalfStarted": "03.03.2026 15:06:40"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772542800000
                 }
@@ -2839,7 +2941,7 @@
                     "time": "03.03.2026 15:00",
                     "home": {
                         "id": 394252,
-                        "score": 0,
+                        "score": 3,
                         "name": "Turkiye (W)",
                         "longName": "Turkiye (W)"
                     },
@@ -2850,17 +2952,26 @@
                         "longName": "Malta (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-03-03T14:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 15:00:00"
+                            "firstHalfStarted": "03.03.2026 15:00:49",
+                            "secondHalfStarted": "03.03.2026 16:03:36"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772546400000
                 }
@@ -2885,28 +2996,37 @@
                     "time": "03.03.2026 13:00",
                     "home": {
                         "id": 391933,
-                        "score": 0,
+                        "score": 3,
                         "name": "Bosnia and Herzegovina (W)",
                         "longName": "Bosnia and Herzegovina (W)"
                     },
                     "away": {
                         "id": 394237,
-                        "score": 0,
+                        "score": 1,
                         "name": "Estonia (W)",
                         "longName": "Estonia (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-03-03T12:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 13:00:00"
+                            "firstHalfStarted": "03.03.2026 13:01:49",
+                            "secondHalfStarted": "03.03.2026 14:05:27"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772539200000
                 }
@@ -2937,22 +3057,31 @@
                     },
                     "away": {
                         "id": 394235,
-                        "score": 0,
+                        "score": 1,
                         "name": "Croatia (W)",
                         "longName": "Croatia (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-03-03T10:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 11:00:00"
+                            "firstHalfStarted": "03.03.2026 11:01:49",
+                            "secondHalfStarted": "03.03.2026 12:03:44"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772532000000
                 }
@@ -2977,7 +3106,7 @@
                     "time": "03.03.2026 12:00",
                     "home": {
                         "id": 622502,
-                        "score": 0,
+                        "score": 2,
                         "name": "Azerbaijan (W)",
                         "longName": "Azerbaijan (W)"
                     },
@@ -2988,17 +3117,26 @@
                         "longName": "North Macedonia (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-03-03T11:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 12:00:00"
+                            "firstHalfStarted": "03.03.2026 12:00:20",
+                            "secondHalfStarted": "03.03.2026 13:04:21"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772535600000
                 }
@@ -3078,18 +3216,18 @@
                     "time": "03.03.2026 01:00",
                     "home": {
                         "id": 1317486,
-                        "score": 1,
+                        "score": 2,
                         "name": "Nicaragua",
                         "longName": "Nicaragua"
                     },
                     "away": {
                         "id": 967029,
-                        "score": 2,
+                        "score": 3,
                         "name": "Jamaica",
                         "longName": "Jamaica"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "Group B",
                     "status": {
                         "utcTime": "2026-03-03T00:00:00.000Z",
@@ -3098,19 +3236,16 @@
                             "secondHalfStarted": "03.03.2026 02:02:27"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "1 - 2",
-                        "liveTime": {
-                            "short": "65\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "64:34",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "2 - 3",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1772496000000
@@ -3279,12 +3414,12 @@
                     },
                     "away": {
                         "id": 1445755,
-                        "score": 2,
+                        "score": 3,
                         "name": "Huntsville City FC",
                         "longName": "Huntsville City FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "2",
                     "status": {
                         "utcTime": "2026-03-03T00:00:00.000Z",
@@ -3293,19 +3428,16 @@
                             "secondHalfStarted": "03.03.2026 02:09:36"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "1 - 2",
-                        "liveTime": {
-                            "short": "58\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "57:25",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "1 - 3",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1772496000000
@@ -3327,28 +3459,37 @@
                     "time": "03.03.2026 05:00",
                     "home": {
                         "id": 1896041,
-                        "score": 0,
+                        "score": 2,
                         "name": "Tahiti United",
                         "longName": "Tahiti United"
                     },
                     "away": {
                         "id": 156632,
-                        "score": 0,
+                        "score": 1,
                         "name": "Hekari United",
                         "longName": "Hekari United"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "2",
                     "status": {
                         "utcTime": "2026-03-03T04:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 05:00:00"
+                            "firstHalfStarted": "03.03.2026 05:06:18",
+                            "secondHalfStarted": "03.03.2026 06:11:28"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772510400000
                 },
@@ -3369,17 +3510,26 @@
                         "longName": "South Island United"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "2",
                     "status": {
                         "utcTime": "2026-03-03T08:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 09:00:00"
+                            "firstHalfStarted": "03.03.2026 09:06:36",
+                            "secondHalfStarted": "03.03.2026 10:08:40"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772524800000
                 }
@@ -3622,7 +3772,7 @@
                         "longName": "Curico Unido"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "2",
                     "status": {
                         "utcTime": "2026-03-02T23:30:00.000Z",
@@ -3631,19 +3781,16 @@
                             "secondHalfStarted": "03.03.2026 01:37:57"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
+                        "awarded": false,
                         "scoreStr": "1 - 1",
-                        "liveTime": {
-                            "short": "90\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "89:04",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1772494200000
@@ -3802,32 +3949,30 @@
                     },
                     "away": {
                         "id": 192875,
-                        "score": 0,
+                        "score": 2,
                         "name": "Independiente del Valle",
                         "longName": "Independiente del Valle"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 10,
+                    "statusId": 6,
                     "tournamentStage": "2",
                     "status": {
                         "utcTime": "2026-03-03T00:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 01:30:31"
+                            "firstHalfStarted": "03.03.2026 01:30:31",
+                            "secondHalfStarted": "03.03.2026 02:34:09"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "0 - 0",
-                        "liveTime": {
-                            "short": "HT",
-                            "shortKey": "halftime_short",
-                            "long": "Half-Time",
-                            "longKey": "pause_match",
-                            "maxTime": 45,
-                            "basePeriod": 45,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "0 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1772497800000
@@ -3900,7 +4045,7 @@
                     "time": "03.03.2026 12:00",
                     "home": {
                         "id": 1798879,
-                        "score": 0,
+                        "score": 3,
                         "name": "Rasi Salai United",
                         "longName": "Rasi Salai United"
                     },
@@ -3911,17 +4056,26 @@
                         "longName": "Nakhon Pathom"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "28",
                     "status": {
                         "utcTime": "2026-03-03T11:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 12:00:00"
+                            "firstHalfStarted": "03.03.2026 12:01:08",
+                            "secondHalfStarted": "03.03.2026 13:04:33"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772535600000
                 },
@@ -3931,28 +4085,37 @@
                     "time": "03.03.2026 13:00",
                     "home": {
                         "id": 559842,
-                        "score": 0,
+                        "score": 1,
                         "name": "Bangkok FC",
                         "longName": "Bangkok FC"
                     },
                     "away": {
                         "id": 564561,
-                        "score": 0,
+                        "score": 2,
                         "name": "Sisaket UTD",
                         "longName": "Sisaket UTD"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "28",
                     "status": {
                         "utcTime": "2026-03-03T12:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.03.2026 13:00:00"
+                            "firstHalfStarted": "03.03.2026 13:00:58",
+                            "secondHalfStarted": "03.03.2026 14:04:28"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1772539200000
                 }
