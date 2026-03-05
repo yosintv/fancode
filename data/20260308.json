@@ -2899,50 +2899,6 @@
             "simpleLeague": false
         },
         {
-            "ccode": "INT",
-            "id": 915708,
-            "primaryId": 489,
-            "name": "Club Friendlies",
-            "matches": [
-                {
-                    "id": 5126241,
-                    "leagueId": 915708,
-                    "time": "08.03.2026 12:00",
-                    "home": {
-                        "id": 8609,
-                        "score": 0,
-                        "name": "Sandefjord",
-                        "longName": "Sandefjord"
-                    },
-                    "away": {
-                        "id": 9919,
-                        "score": 0,
-                        "name": "Start",
-                        "longName": "Start"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1",
-                    "status": {
-                        "utcTime": "2026-03-08T11:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "08.03.2026 12:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1772967600000
-                }
-            ],
-            "parentLeagueId": 489,
-            "internalRank": 0,
-            "liveRank": 0,
-            "simpleLeague": false,
-            "localRank": 58
-        },
-        {
             "ccode": "NOR",
             "id": 206,
             "primaryId": 206,
@@ -3965,6 +3921,37 @@
             "name": "Erovnuli Liga",
             "matches": [
                 {
+                    "id": 5165250,
+                    "leagueId": 439,
+                    "time": "07.03.2026 16:00",
+                    "home": {
+                        "id": 321780,
+                        "score": 0,
+                        "name": "FC Rustavi",
+                        "longName": "FC Rustavi"
+                    },
+                    "away": {
+                        "id": 2216,
+                        "score": 0,
+                        "name": "Torpedo Kutaisi",
+                        "longName": "Torpedo Kutaisi"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "2",
+                    "status": {
+                        "utcTime": "2026-03-07T15:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.03.2026 16:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1772895600000
+                },
+                {
                     "id": 5165249,
                     "leagueId": 439,
                     "time": "07.03.2026 17:00",
@@ -3994,37 +3981,6 @@
                         "finished": false
                     },
                     "timeTS": 1772899200000
-                },
-                {
-                    "id": 5165250,
-                    "leagueId": 439,
-                    "time": "07.03.2026 18:00",
-                    "home": {
-                        "id": 321780,
-                        "score": 0,
-                        "name": "FC Rustavi",
-                        "longName": "FC Rustavi"
-                    },
-                    "away": {
-                        "id": 2216,
-                        "score": 0,
-                        "name": "Torpedo Kutaisi",
-                        "longName": "Torpedo Kutaisi"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "2",
-                    "status": {
-                        "utcTime": "2026-03-07T17:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.03.2026 18:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1772902800000
                 },
                 {
                     "id": 5165251,
@@ -5048,37 +5004,6 @@
                         "score": 0,
                         "name": "Harland & Wolff Welders F.C.",
                         "longName": "Harland & Wolff Welders F.C."
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1/4",
-                    "status": {
-                        "utcTime": "2026-03-07T15:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.03.2026 16:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1772895600000
-                },
-                {
-                    "id": 5174572,
-                    "leagueId": 9389,
-                    "time": "07.03.2026 16:00",
-                    "home": {
-                        "id": 2203,
-                        "score": 0,
-                        "name": "Glentoran",
-                        "longName": "Glentoran"
-                    },
-                    "away": {
-                        "id": 2206,
-                        "score": 0,
-                        "name": "Larne",
-                        "longName": "Larne"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -6857,7 +6782,7 @@
                         "longName": "Port Vale"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "36",
                     "status": {
                         "utcTime": "2026-03-07T15:00:00.000Z",
@@ -6865,9 +6790,15 @@
                             "firstHalfStarted": "07.03.2026 16:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1772895600000
                 },
@@ -9343,7 +9274,7 @@
                         "started": false,
                         "cancelled": false,
                         "finished": false,
-                        "aggregatedStr": "0 - 0"
+                        "aggregatedStr": "1 - 1"
                     },
                     "timeTS": 1772919000000
                 }
@@ -13848,7 +13779,7 @@
                         "longName": "Kickers Emden"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "25",
                     "status": {
                         "utcTime": "2026-03-08T14:00:00.000Z",
@@ -13856,9 +13787,15 @@
                             "firstHalfStarted": "08.03.2026 15:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1772978400000
                 },
@@ -18689,52 +18626,6 @@
                         "finished": false
                     },
                     "timeTS": 1772960400000
-                }
-            ],
-            "parentLeagueId": 10269,
-            "parentLeagueName": "Womens Asian Cup",
-            "internalRank": 0,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "isGroup": true,
-            "groupName": "C",
-            "ccode": "INT",
-            "id": 902144,
-            "primaryId": 10269,
-            "name": "Women's Asian Cup Grp. C",
-            "matches": [
-                {
-                    "id": 4903358,
-                    "leagueId": 902144,
-                    "time": "07.03.2026 16:00",
-                    "home": {
-                        "id": 1111871,
-                        "score": 0,
-                        "name": "Chinese Taipei (W)",
-                        "longName": "Chinese Taipei (W)"
-                    },
-                    "away": {
-                        "id": 633431,
-                        "score": 0,
-                        "name": "Vietnam (W)",
-                        "longName": "Vietnam (W)"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "2",
-                    "status": {
-                        "utcTime": "2026-03-07T15:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.03.2026 16:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1772895600000
                 }
             ],
             "parentLeagueId": 10269,

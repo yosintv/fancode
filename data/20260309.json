@@ -658,7 +658,7 @@
                         "longName": "Shabab Al-Ahli Dubai FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "1/8",
                     "status": {
                         "utcTime": "2026-03-09T11:00:00.000Z",
@@ -666,9 +666,15 @@
                             "firstHalfStarted": "09.03.2026 12:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
                         "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        },
                         "aggregatedStr": "0 - 0"
                     },
                     "timeTS": 1773054000000
@@ -1246,6 +1252,50 @@
             "internalRank": 29,
             "liveRank": 0,
             "simpleLeague": false
+        },
+        {
+            "ccode": "INT",
+            "id": 915708,
+            "primaryId": 489,
+            "name": "Club Friendlies",
+            "matches": [
+                {
+                    "id": 5126241,
+                    "leagueId": 915708,
+                    "time": "08.03.2026 16:00",
+                    "home": {
+                        "id": 8609,
+                        "score": 0,
+                        "name": "Sandefjord",
+                        "longName": "Sandefjord"
+                    },
+                    "away": {
+                        "id": 9919,
+                        "score": 0,
+                        "name": "Start",
+                        "longName": "Start"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-03-08T15:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.03.2026 16:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1772982000000
+                }
+            ],
+            "parentLeagueId": 489,
+            "internalRank": 0,
+            "liveRank": 0,
+            "simpleLeague": false,
+            "localRank": 58
         },
         {
             "ccode": "NOR",
@@ -2012,7 +2062,7 @@
                         "started": false,
                         "cancelled": false,
                         "finished": false,
-                        "aggregatedStr": "0 - 0"
+                        "aggregatedStr": "1 - 2"
                     },
                     "timeTS": 1772996400000
                 }
@@ -4182,7 +4232,7 @@
                         "started": false,
                         "cancelled": false,
                         "finished": false,
-                        "aggregatedStr": "0 - 0"
+                        "aggregatedStr": "0 - 1"
                     },
                     "timeTS": 1773012600000
                 }
