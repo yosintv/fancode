@@ -2910,43 +2910,6 @@
                     "timeTS": 1772895600000
                 },
                 {
-                    "id": 4819270,
-                    "leagueId": 900476,
-                    "time": "07.03.2026 16:00",
-                    "home": {
-                        "id": 9913,
-                        "score": 0,
-                        "name": "Ayr United",
-                        "longName": "Ayr United"
-                    },
-                    "away": {
-                        "id": 8457,
-                        "score": 0,
-                        "name": "Dunfermline Athletic",
-                        "longName": "Dunfermline Athletic"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 5,
-                    "tournamentStage": "28",
-                    "status": {
-                        "utcTime": "2026-03-07T15:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.03.2026 16:00:00"
-                        },
-                        "periodLength": 45,
-                        "cancelled": true,
-                        "started": false,
-                        "finished": false,
-                        "reason": {
-                            "short": "PP",
-                            "shortKey": "postponed_short",
-                            "long": "Postponed",
-                            "longKey": "postponed"
-                        }
-                    },
-                    "timeTS": 1772895600000
-                },
-                {
                     "id": 4819271,
                     "leagueId": 900476,
                     "time": "07.03.2026 16:00",
@@ -2974,43 +2937,6 @@
                         "started": false,
                         "cancelled": false,
                         "finished": false
-                    },
-                    "timeTS": 1772895600000
-                },
-                {
-                    "id": 4819273,
-                    "leagueId": 900476,
-                    "time": "07.03.2026 16:00",
-                    "home": {
-                        "id": 10250,
-                        "score": 0,
-                        "name": "Raith Rovers",
-                        "longName": "Raith Rovers"
-                    },
-                    "away": {
-                        "id": 8426,
-                        "score": 0,
-                        "name": "Partick Thistle",
-                        "longName": "Partick Thistle"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 5,
-                    "tournamentStage": "28",
-                    "status": {
-                        "utcTime": "2026-03-07T15:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.03.2026 16:00:00"
-                        },
-                        "periodLength": 45,
-                        "cancelled": true,
-                        "started": false,
-                        "finished": false,
-                        "reason": {
-                            "short": "PP",
-                            "shortKey": "postponed_short",
-                            "long": "Postponed",
-                            "longKey": "postponed"
-                        }
                     },
                     "timeTS": 1772895600000
                 }
@@ -4711,7 +4637,7 @@
                         "longName": "Wis\u0142a Krak\u00f3w"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "24",
                     "status": {
                         "utcTime": "2026-03-07T16:30:00.000Z",
@@ -4719,9 +4645,15 @@
                             "firstHalfStarted": "07.03.2026 17:30:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1772901000000
                 },
@@ -8356,37 +8288,6 @@
                     "timeTS": 1772924400000
                 },
                 {
-                    "id": 5101798,
-                    "leagueId": 916051,
-                    "time": "08.03.2026 02:00",
-                    "home": {
-                        "id": 7848,
-                        "score": 0,
-                        "name": "Pachuca",
-                        "longName": "Pachuca"
-                    },
-                    "away": {
-                        "id": 7847,
-                        "score": 0,
-                        "name": "Puebla",
-                        "longName": "Puebla"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "10",
-                    "status": {
-                        "utcTime": "2026-03-08T01:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "08.03.2026 02:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1772931600000
-                },
-                {
                     "id": 5101799,
                     "leagueId": 916051,
                     "time": "08.03.2026 02:05",
@@ -8416,6 +8317,37 @@
                         "finished": false
                     },
                     "timeTS": 1772931900000
+                },
+                {
+                    "id": 5101798,
+                    "leagueId": 916051,
+                    "time": "08.03.2026 02:06",
+                    "home": {
+                        "id": 7848,
+                        "score": 0,
+                        "name": "Pachuca",
+                        "longName": "Pachuca"
+                    },
+                    "away": {
+                        "id": 7847,
+                        "score": 0,
+                        "name": "Puebla",
+                        "longName": "Puebla"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "10",
+                    "status": {
+                        "utcTime": "2026-03-08T01:06:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.03.2026 02:06:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1772931960000
                 },
                 {
                     "id": 5101800,
@@ -11475,6 +11407,48 @@
             "simpleLeague": false
         },
         {
+            "ccode": "FRO",
+            "id": 250,
+            "primaryId": 250,
+            "name": "Premier League",
+            "matches": [
+                {
+                    "id": 5136308,
+                    "leagueId": 250,
+                    "time": "07.03.2026 17:45",
+                    "home": {
+                        "id": 59854,
+                        "score": 0,
+                        "name": "AB Argir",
+                        "longName": "AB Argir"
+                    },
+                    "away": {
+                        "id": 6700,
+                        "score": 0,
+                        "name": "B68 Toftir",
+                        "longName": "B68 Toftir"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-03-07T16:45:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.03.2026 17:45:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1772901900000
+                }
+            ],
+            "internalRank": 0,
+            "liveRank": 0,
+            "simpleLeague": false
+        },
+        {
             "ccode": "BIH",
             "id": 900837,
             "primaryId": 267,
@@ -12036,7 +12010,7 @@
                         "longName": "San Martin Burzaco"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "5",
                     "status": {
                         "utcTime": "2026-03-07T20:00:00.000Z",
@@ -12044,9 +12018,15 @@
                             "firstHalfStarted": "07.03.2026 21:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1772913600000
                 },
@@ -18309,6 +18289,49 @@
             "simpleLeague": false
         },
         {
+            "ccode": "USA",
+            "id": 901708,
+            "primaryId": 10699,
+            "name": "USL Super League",
+            "matches": [
+                {
+                    "id": 4930310,
+                    "leagueId": 901708,
+                    "time": "07.03.2026 20:00",
+                    "home": {
+                        "id": 1669149,
+                        "score": 0,
+                        "name": "Brooklyn FC (W)",
+                        "longName": "Brooklyn FC (W)"
+                    },
+                    "away": {
+                        "id": 1669152,
+                        "score": 0,
+                        "name": "DC Power FC (W)",
+                        "longName": "DC Power FC (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-03-07T19:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.03.2026 20:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1772910000000
+                }
+            ],
+            "parentLeagueId": 10699,
+            "internalRank": 0,
+            "liveRank": 0,
+            "simpleLeague": false
+        },
+        {
             "ccode": "VIE",
             "id": 9088,
             "primaryId": 9088,
@@ -20826,37 +20849,6 @@
             "primaryId": 246,
             "name": "Serie A",
             "matches": [
-                {
-                    "id": 1000008896,
-                    "leagueId": 246,
-                    "time": "07.03.2026 20:00",
-                    "home": {
-                        "id": 113053,
-                        "score": 0,
-                        "name": "Universidad Catolica",
-                        "longName": "Universidad Catolica"
-                    },
-                    "away": {
-                        "id": 1370528,
-                        "score": 0,
-                        "name": "Leones del Norte",
-                        "longName": "Leones del Norte"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "3",
-                    "status": {
-                        "utcTime": "2026-03-07T19:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.03.2026 20:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1772910000000
-                },
                 {
                     "id": 1000008889,
                     "leagueId": 246,

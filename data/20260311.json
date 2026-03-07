@@ -775,7 +775,7 @@
                         "longName": "Al-Sadd"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "1/8",
                     "status": {
                         "utcTime": "2026-03-10T18:15:00.000Z",
@@ -783,9 +783,15 @@
                             "firstHalfStarted": "10.03.2026 19:15:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
                         "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        },
                         "aggregatedStr": "0 - 0"
                     },
                     "timeTS": 1773166500000
@@ -807,7 +813,7 @@
                         "longName": "Al-Wahda"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "1/8",
                     "status": {
                         "utcTime": "2026-03-10T18:15:00.000Z",
@@ -815,9 +821,15 @@
                             "firstHalfStarted": "10.03.2026 19:15:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
                         "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        },
                         "aggregatedStr": "0 - 0"
                     },
                     "timeTS": 1773166500000
@@ -916,7 +928,7 @@
                         "longName": "Al-Ahli"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "1/4",
                     "status": {
                         "utcTime": "2026-03-10T18:15:00.000Z",
@@ -924,9 +936,15 @@
                             "firstHalfStarted": "10.03.2026 19:15:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
                         "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        },
                         "aggregatedStr": "0 - 0"
                     },
                     "timeTS": 1773166500000
@@ -3969,6 +3987,49 @@
             "simpleLeague": false
         },
         {
+            "ccode": "BRA",
+            "id": 916145,
+            "primaryId": 268,
+            "name": "Serie A",
+            "matches": [
+                {
+                    "id": 5103408,
+                    "leagueId": 916145,
+                    "time": "11.03.2026 01:30",
+                    "home": {
+                        "id": 163782,
+                        "score": 0,
+                        "name": "Mirassol",
+                        "longName": "Mirassol"
+                    },
+                    "away": {
+                        "id": 8514,
+                        "score": 0,
+                        "name": "Santos FC",
+                        "longName": "Santos FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "5",
+                    "status": {
+                        "utcTime": "2026-03-11T00:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "11.03.2026 01:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1773189000000
+                }
+            ],
+            "parentLeagueId": 268,
+            "internalRank": 10,
+            "liveRank": 0,
+            "simpleLeague": false
+        },
+        {
             "ccode": "ENG",
             "id": 901530,
             "primaryId": 8947,
@@ -4324,10 +4385,10 @@
                     "leagueId": 9067,
                     "time": "11.03.2026 01:00",
                     "home": {
-                        "id": 1,
+                        "id": 197791,
                         "score": 0,
-                        "name": "Santa Cruz/Sousa",
-                        "longName": "Santa Cruz/Sousa"
+                        "name": "Sousa",
+                        "longName": "Sousa"
                     },
                     "away": {
                         "id": 104821,
@@ -4392,10 +4453,10 @@
                         "longName": "Paysandu"
                     },
                     "away": {
-                        "id": 2,
+                        "id": 581912,
                         "score": 0,
-                        "name": "Maracana EC/Portuguesa RJ",
-                        "longName": "Maracana EC/Portuguesa RJ"
+                        "name": "Portuguesa RJ",
+                        "longName": "Portuguesa RJ"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -4479,10 +4540,10 @@
                     "leagueId": 9067,
                     "time": "11.03.2026 01:00",
                     "home": {
-                        "id": 1,
+                        "id": 6305,
                         "score": 0,
-                        "name": "Desportiva Ferroviaria/Sport Recife",
-                        "longName": "Desportiva Ferroviaria/Sport Recife"
+                        "name": "Sport Recife",
+                        "longName": "Sport Recife"
                     },
                     "away": {
                         "id": 412808,
@@ -4888,10 +4949,10 @@
                         "longName": "Goias"
                     },
                     "away": {
-                        "id": 2,
+                        "id": 1223501,
                         "score": 0,
-                        "name": "Fluminense PI/Trem DC",
-                        "longName": "Fluminense PI/Trem DC"
+                        "name": "Fluminense PI",
+                        "longName": "Fluminense PI"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -4950,10 +5011,10 @@
                         "longName": "Tuna Luso"
                     },
                     "away": {
-                        "id": 2,
+                        "id": 10274,
                         "score": 0,
-                        "name": "Guapore/Juventude",
-                        "longName": "Guapore/Juventude"
+                        "name": "Juventude",
+                        "longName": "Juventude"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -5338,6 +5399,48 @@
                         "finished": false
                     },
                     "timeTS": 1773180000000
+                }
+            ],
+            "internalRank": 0,
+            "liveRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "BRA",
+            "id": 268,
+            "primaryId": 268,
+            "name": "Serie A",
+            "matches": [
+                {
+                    "id": 4732619,
+                    "leagueId": 268,
+                    "time": "11.03.2026 01:30",
+                    "home": {
+                        "id": 163782,
+                        "score": 0,
+                        "name": "Mirassol",
+                        "longName": "Mirassol"
+                    },
+                    "away": {
+                        "id": 8514,
+                        "score": 0,
+                        "name": "Santos FC",
+                        "longName": "Santos FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "5",
+                    "status": {
+                        "utcTime": "2026-03-11T00:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "11.03.2026 01:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1773189000000
                 }
             ],
             "internalRank": 0,
