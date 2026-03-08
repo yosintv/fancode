@@ -2390,30 +2390,32 @@
             "simpleLeague": false
         },
         {
-            "ccode": "NIR",
-            "id": 8978,
-            "primaryId": 8978,
-            "name": "League Cup",
+            "isGroup": true,
+            "groupName": "1",
+            "ccode": "ISL",
+            "id": 915412,
+            "primaryId": 10076,
+            "name": "League Cup Grp. 1",
             "matches": [
                 {
-                    "id": 5054268,
-                    "leagueId": 8978,
+                    "id": 5093622,
+                    "leagueId": 915412,
                     "time": "08.03.2026 16:00",
                     "home": {
-                        "id": 2203,
+                        "id": 750462,
                         "score": 0,
-                        "name": "Glentoran",
-                        "longName": "Glentoran"
+                        "name": "Vestri",
+                        "longName": "Vestri"
                     },
                     "away": {
-                        "id": 7971,
+                        "id": 6343,
                         "score": 0,
-                        "name": "Linfield",
-                        "longName": "Linfield"
+                        "name": "Stjarnan",
+                        "longName": "Stjarnan"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
-                    "tournamentStage": "final",
+                    "tournamentStage": "5",
                     "status": {
                         "utcTime": "2026-03-08T15:00:00.000Z",
                         "halfs": {
@@ -2425,50 +2427,6 @@
                         "finished": false
                     },
                     "timeTS": 1772982000000
-                }
-            ],
-            "internalRank": 0,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "isGroup": true,
-            "groupName": "3",
-            "ccode": "ISL",
-            "id": 915414,
-            "primaryId": 10076,
-            "name": "League Cup Grp. 3",
-            "matches": [
-                {
-                    "id": 5093654,
-                    "leagueId": 915414,
-                    "time": "08.03.2026 19:00",
-                    "home": {
-                        "id": 2165,
-                        "score": 0,
-                        "name": "KA Akureyri",
-                        "longName": "KA Akureyri"
-                    },
-                    "away": {
-                        "id": 8298,
-                        "score": 0,
-                        "name": "Grindavik",
-                        "longName": "Grindavik"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "5",
-                    "status": {
-                        "utcTime": "2026-03-08T18:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "08.03.2026 19:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1772992800000
                 }
             ],
             "parentLeagueId": 10076,
@@ -4246,37 +4204,6 @@
                         "finished": false
                     },
                     "timeTS": 1772982000000
-                },
-                {
-                    "id": 4933296,
-                    "leagueId": 902172,
-                    "time": "08.03.2026 16:00",
-                    "home": {
-                        "id": 102068,
-                        "score": 0,
-                        "name": "Wikki Tourist",
-                        "longName": "Wikki Tourist"
-                    },
-                    "away": {
-                        "id": 430189,
-                        "score": 0,
-                        "name": "El Kanemi Warriors",
-                        "longName": "El Kanemi Warriors"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "29",
-                    "status": {
-                        "utcTime": "2026-03-08T15:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "08.03.2026 16:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1772982000000
                 }
             ],
             "parentLeagueId": 533,
@@ -4684,6 +4611,49 @@
             "simpleLeague": false
         },
         {
+            "ccode": "BIH",
+            "id": 900837,
+            "primaryId": 267,
+            "name": "Premier League",
+            "matches": [
+                {
+                    "id": 4835714,
+                    "leagueId": 900837,
+                    "time": "08.03.2026 19:00",
+                    "home": {
+                        "id": 10107,
+                        "score": 0,
+                        "name": "Zrinjski Mostar",
+                        "longName": "Zrinjski Mostar"
+                    },
+                    "away": {
+                        "id": 10124,
+                        "score": 0,
+                        "name": "Radnik Bijeljina",
+                        "longName": "Radnik Bijeljina"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "24",
+                    "status": {
+                        "utcTime": "2026-03-08T18:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.03.2026 19:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1772992800000
+                }
+            ],
+            "parentLeagueId": 267,
+            "internalRank": 0,
+            "liveRank": 0,
+            "simpleLeague": false
+        },
+        {
             "ccode": "ARM",
             "id": 118,
             "primaryId": 118,
@@ -4748,7 +4718,7 @@
                         "longName": "Al-Tadhamon"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "15",
                     "status": {
                         "utcTime": "2026-03-08T18:30:00.000Z",
@@ -4756,9 +4726,15 @@
                             "firstHalfStarted": "08.03.2026 19:30:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1772994600000
                 },
@@ -4779,7 +4755,7 @@
                         "longName": "Kazma"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "15",
                     "status": {
                         "utcTime": "2026-03-08T18:30:00.000Z",
@@ -4787,9 +4763,15 @@
                             "firstHalfStarted": "08.03.2026 19:30:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1772994600000
                 }
@@ -7824,7 +7806,7 @@
             "ccode": "ISR",
             "id": 127,
             "primaryId": 127,
-            "name": "Ligat Ha'al",
+            "name": "Ligat ha'Al",
             "matches": [
                 {
                     "id": 4864445,
