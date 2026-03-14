@@ -1143,7 +1143,7 @@
                         "longName": "Ironi Modiin"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-03-16T17:00:00.000Z",
@@ -1151,9 +1151,15 @@
                             "firstHalfStarted": "16.03.2026 18:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1773680400000
                 },
@@ -1174,7 +1180,7 @@
                         "longName": "Hapoel Kfar Saba"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-03-16T17:00:00.000Z",
@@ -1182,9 +1188,15 @@
                             "firstHalfStarted": "16.03.2026 18:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1773680400000
                 },
@@ -1205,7 +1217,7 @@
                         "longName": "Hapoel Kfar Shalem"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-03-16T18:00:00.000Z",
@@ -1213,9 +1225,15 @@
                             "firstHalfStarted": "16.03.2026 19:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1773684000000
                 }
@@ -1933,6 +1951,49 @@
                 }
             ],
             "internalRank": 10,
+            "liveRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "NGA",
+            "id": 902172,
+            "primaryId": 533,
+            "name": "NPFL",
+            "matches": [
+                {
+                    "id": 4933302,
+                    "leagueId": 902172,
+                    "time": "16.03.2026 16:00",
+                    "home": {
+                        "id": 1661097,
+                        "score": 0,
+                        "name": "Ikorodu City",
+                        "longName": "Ikorodu City"
+                    },
+                    "away": {
+                        "id": 184466,
+                        "score": 0,
+                        "name": "Rivers United FC",
+                        "longName": "Rivers United FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "30",
+                    "status": {
+                        "utcTime": "2026-03-16T15:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "16.03.2026 16:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1773673200000
+                }
+            ],
+            "parentLeagueId": 533,
+            "internalRank": 0,
             "liveRank": 0,
             "simpleLeague": false
         },
@@ -3198,10 +3259,10 @@
                         "longName": "Winner QF 2 (W)"
                     },
                     "away": {
-                        "id": 1986,
+                        "id": 5981,
                         "score": 0,
-                        "name": "Winner QF 1 (W)",
-                        "longName": "Winner QF 1 (W)"
+                        "name": "Australia (W)",
+                        "longName": "Australia (W)"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
