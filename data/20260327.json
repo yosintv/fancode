@@ -315,7 +315,7 @@
                         "longName": "Armenia"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 106,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-03-26T15:25:00.000Z",
@@ -323,9 +323,15 @@
                             "firstHalfStarted": "26.03.2026 16:25:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "Can",
+                            "shortKey": "cancelled_short",
+                            "long": "Cancelled",
+                            "longKey": "cancelled"
+                        }
                     },
                     "timeTS": 1774538700000
                 },
@@ -987,37 +993,6 @@
             "name": "Club Friendlies",
             "matches": [
                 {
-                    "id": 5126242,
-                    "leagueId": 915708,
-                    "time": "27.03.2026 12:00",
-                    "home": {
-                        "id": 8007,
-                        "score": 0,
-                        "name": "V\u00e5lerenga",
-                        "longName": "V\u00e5lerenga"
-                    },
-                    "away": {
-                        "id": 9893,
-                        "score": 0,
-                        "name": "IFK G\u00f6teborg",
-                        "longName": "IFK G\u00f6teborg"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1",
-                    "status": {
-                        "utcTime": "2026-03-27T11:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "27.03.2026 12:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1774609200000
-                },
-                {
                     "id": 5137630,
                     "leagueId": 915708,
                     "time": "27.03.2026 13:00",
@@ -1469,97 +1444,66 @@
             "name": "Leumit League",
             "matches": [
                 {
-                    "id": 4864759,
+                    "id": 4928036,
                     "leagueId": 901379,
-                    "time": "27.03.2026 14:00",
+                    "time": "27.03.2026 13:00",
                     "home": {
-                        "id": 857444,
+                        "id": 426452,
                         "score": 0,
-                        "name": "Hapoel Hadera",
-                        "longName": "Hapoel Hadera"
+                        "name": "Hapoel Afula",
+                        "longName": "Hapoel Afula"
                     },
                     "away": {
-                        "id": 6280,
+                        "id": 2215,
                         "score": 0,
-                        "name": "Hapoel Kfar Saba",
-                        "longName": "Hapoel Kfar Saba"
+                        "name": "Bnei Yehuda Tel Aviv",
+                        "longName": "Bnei Yehuda Tel Aviv"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
-                    "tournamentStage": "29",
+                    "tournamentStage": "26",
                     "status": {
-                        "utcTime": "2026-03-27T13:00:00.000Z",
+                        "utcTime": "2026-03-27T12:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "27.03.2026 14:00:00"
+                            "firstHalfStarted": "27.03.2026 13:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1774616400000
+                    "timeTS": 1774612800000
                 },
                 {
-                    "id": 4864758,
+                    "id": 4864739,
                     "leagueId": 901379,
-                    "time": "27.03.2026 14:00",
+                    "time": "27.03.2026 13:00",
                     "home": {
-                        "id": 2093,
+                        "id": 4125,
                         "score": 0,
-                        "name": "Hapoel Ironi Akko",
-                        "longName": "Hapoel Ironi Akko"
+                        "name": "Hapoel Nof HaGalil",
+                        "longName": "Hapoel Nof HaGalil"
                     },
                     "away": {
-                        "id": 1177310,
+                        "id": 196257,
                         "score": 0,
-                        "name": "Hapoel Kfar Shalem",
-                        "longName": "Hapoel Kfar Shalem"
+                        "name": "Maccabi Kabilio Jaffa",
+                        "longName": "Maccabi Kabilio Jaffa"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
-                    "tournamentStage": "29",
+                    "tournamentStage": "26",
                     "status": {
-                        "utcTime": "2026-03-27T13:00:00.000Z",
+                        "utcTime": "2026-03-27T12:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "27.03.2026 14:00:00"
+                            "firstHalfStarted": "27.03.2026 13:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1774616400000
-                },
-                {
-                    "id": 4864763,
-                    "leagueId": 901379,
-                    "time": "27.03.2026 14:00",
-                    "home": {
-                        "id": 752833,
-                        "score": 0,
-                        "name": "SC Kafr Qasim",
-                        "longName": "SC Kafr Qasim"
-                    },
-                    "away": {
-                        "id": 89753,
-                        "score": 0,
-                        "name": "Hapoel Ramat Gan",
-                        "longName": "Hapoel Ramat Gan"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "29",
-                    "status": {
-                        "utcTime": "2026-03-27T13:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "27.03.2026 14:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1774616400000
+                    "timeTS": 1774612800000
                 }
             ],
             "parentLeagueId": 128,
@@ -1691,6 +1635,37 @@
             "name": "Primera B Apertura",
             "matches": [
                 {
+                    "id": 5152396,
+                    "leagueId": 920002,
+                    "time": "26.03.2026 22:00",
+                    "home": {
+                        "id": 4408,
+                        "score": 0,
+                        "name": "Union Magdalena",
+                        "longName": "Union Magdalena"
+                    },
+                    "away": {
+                        "id": 193022,
+                        "score": 0,
+                        "name": "Real Santander",
+                        "longName": "Real Santander"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "12",
+                    "status": {
+                        "utcTime": "2026-03-26T21:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "26.03.2026 22:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1774558800000
+                },
+                {
                     "id": 5152393,
                     "leagueId": 920002,
                     "time": "26.03.2026 23:00",
@@ -1720,37 +1695,6 @@
                         "finished": false
                     },
                     "timeTS": 1774562400000
-                },
-                {
-                    "id": 5152395,
-                    "leagueId": 920002,
-                    "time": "27.03.2026 00:00",
-                    "home": {
-                        "id": 4407,
-                        "score": 0,
-                        "name": "Deportes Quindio",
-                        "longName": "Deportes Quindio"
-                    },
-                    "away": {
-                        "id": 721594,
-                        "score": 0,
-                        "name": "Orsomarso",
-                        "longName": "Orsomarso"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "12",
-                    "status": {
-                        "utcTime": "2026-03-26T23:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "27.03.2026 00:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1774566000000
                 },
                 {
                     "id": 5152394,
@@ -1784,35 +1728,35 @@
                     "timeTS": 1774566000000
                 },
                 {
-                    "id": 5152396,
+                    "id": 5152395,
                     "leagueId": 920002,
-                    "time": "27.03.2026 00:00",
+                    "time": "27.03.2026 01:00",
                     "home": {
-                        "id": 4408,
+                        "id": 4407,
                         "score": 0,
-                        "name": "Union Magdalena",
-                        "longName": "Union Magdalena"
+                        "name": "Deportes Quindio",
+                        "longName": "Deportes Quindio"
                     },
                     "away": {
-                        "id": 193022,
+                        "id": 721594,
                         "score": 0,
-                        "name": "Real Santander",
-                        "longName": "Real Santander"
+                        "name": "Orsomarso",
+                        "longName": "Orsomarso"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
                     "tournamentStage": "12",
                     "status": {
-                        "utcTime": "2026-03-26T23:00:00.000Z",
+                        "utcTime": "2026-03-27T00:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "27.03.2026 00:00:00"
+                            "firstHalfStarted": "27.03.2026 01:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1774566000000
+                    "timeTS": 1774569600000
                 }
             ],
             "parentLeagueId": 9125,
@@ -2194,6 +2138,48 @@
                         "finished": false
                     },
                     "timeTS": 1774562400000
+                }
+            ],
+            "internalRank": 0,
+            "liveRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "PAR",
+            "id": 199,
+            "primaryId": 199,
+            "name": "Division Profesional",
+            "matches": [
+                {
+                    "id": 1000005671,
+                    "leagueId": 199,
+                    "time": "27.03.2026 00:00",
+                    "home": {
+                        "id": 1427854,
+                        "score": 0,
+                        "name": "Recoleta",
+                        "longName": "Recoleta"
+                    },
+                    "away": {
+                        "id": 162557,
+                        "score": 0,
+                        "name": "Rubio Nu",
+                        "longName": "Rubio Nu"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "13",
+                    "status": {
+                        "utcTime": "2026-03-26T23:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "27.03.2026 00:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1774566000000
                 }
             ],
             "internalRank": 0,
