@@ -9,7 +9,7 @@
                 {
                     "id": 5276834,
                     "leagueId": 914609,
-                    "time": "28.03.2026 16:00",
+                    "time": "28.03.2026 17:00",
                     "home": {
                         "id": 5887,
                         "score": 0,
@@ -26,16 +26,16 @@
                     "statusId": 1,
                     "tournamentStage": "1",
                     "status": {
-                        "utcTime": "2026-03-28T15:00:00.000Z",
+                        "utcTime": "2026-03-28T16:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "28.03.2026 16:00:00"
+                            "firstHalfStarted": "28.03.2026 17:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1774710000000
+                    "timeTS": 1774713600000
                 },
                 {
                     "id": 5266832,
@@ -317,37 +317,6 @@
                     "timeTS": 1774746000000
                 },
                 {
-                    "id": 5277240,
-                    "leagueId": 914609,
-                    "time": "29.03.2026 14:00",
-                    "home": {
-                        "id": 4175,
-                        "score": 0,
-                        "name": "Macao",
-                        "longName": "Macao"
-                    },
-                    "away": {
-                        "id": 7941,
-                        "score": 0,
-                        "name": "Tanzania",
-                        "longName": "Tanzania"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1",
-                    "status": {
-                        "utcTime": "2026-03-29T12:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "29.03.2026 14:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1774785600000
-                },
-                {
                     "id": 5099918,
                     "leagueId": 914609,
                     "time": "29.03.2026 15:00",
@@ -362,6 +331,37 @@
                         "score": 0,
                         "name": "Georgia",
                         "longName": "Georgia"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-03-29T13:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "29.03.2026 15:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1774789200000
+                },
+                {
+                    "id": 5277240,
+                    "leagueId": 914609,
+                    "time": "29.03.2026 15:00",
+                    "home": {
+                        "id": 4175,
+                        "score": 0,
+                        "name": "Macao",
+                        "longName": "Macao"
+                    },
+                    "away": {
+                        "id": 7941,
+                        "score": 0,
+                        "name": "Tanzania",
+                        "longName": "Tanzania"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -667,7 +667,7 @@
                         "longName": "Shahrdari Nowshahr"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-03-29T12:00:00.000Z",
@@ -675,9 +675,15 @@
                             "firstHalfStarted": "29.03.2026 14:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1774785600000
                 },
@@ -698,7 +704,7 @@
                         "longName": "Mes Kerman"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-03-29T12:00:00.000Z",
@@ -706,9 +712,15 @@
                             "firstHalfStarted": "29.03.2026 14:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1774785600000
                 },
@@ -729,7 +741,7 @@
                         "longName": "Navad Urmia"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-03-29T12:00:00.000Z",
@@ -737,9 +749,15 @@
                             "firstHalfStarted": "29.03.2026 14:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1774785600000
                 },
@@ -760,7 +778,7 @@
                         "longName": "Beasat Kermanshah"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-03-29T12:00:00.000Z",
@@ -768,9 +786,15 @@
                             "firstHalfStarted": "29.03.2026 14:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1774785600000
                 }
@@ -3382,43 +3406,6 @@
                     "timeTS": 1774710000000
                 },
                 {
-                    "id": 4826047,
-                    "leagueId": 900639,
-                    "time": "28.03.2026 16:00",
-                    "home": {
-                        "id": 8484,
-                        "score": 0,
-                        "name": "Bradford",
-                        "longName": "Bradford City"
-                    },
-                    "away": {
-                        "id": 8401,
-                        "score": 0,
-                        "name": "Plymouth",
-                        "longName": "Plymouth Argyle"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 5,
-                    "tournamentStage": "40",
-                    "status": {
-                        "utcTime": "2026-03-28T15:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "28.03.2026 16:00:00"
-                        },
-                        "periodLength": 45,
-                        "cancelled": true,
-                        "started": false,
-                        "finished": false,
-                        "reason": {
-                            "short": "PP",
-                            "shortKey": "postponed_short",
-                            "long": "Postponed",
-                            "longKey": "postponed"
-                        }
-                    },
-                    "timeTS": 1774710000000
-                },
-                {
                     "id": 4826049,
                     "leagueId": 900639,
                     "time": "28.03.2026 16:00",
@@ -3718,43 +3705,6 @@
                         "started": false,
                         "cancelled": false,
                         "finished": false
-                    },
-                    "timeTS": 1774710000000
-                },
-                {
-                    "id": 4826617,
-                    "leagueId": 900640,
-                    "time": "28.03.2026 16:00",
-                    "home": {
-                        "id": 9786,
-                        "score": 0,
-                        "name": "Chesterfield",
-                        "longName": "Chesterfield"
-                    },
-                    "away": {
-                        "id": 10005,
-                        "score": 0,
-                        "name": "Grimsby",
-                        "longName": "Grimsby Town"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 5,
-                    "tournamentStage": "40",
-                    "status": {
-                        "utcTime": "2026-03-28T15:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "28.03.2026 16:00:00"
-                        },
-                        "periodLength": 45,
-                        "cancelled": true,
-                        "started": false,
-                        "finished": false,
-                        "reason": {
-                            "short": "PP",
-                            "shortKey": "postponed_short",
-                            "long": "Postponed",
-                            "longKey": "postponed"
-                        }
                     },
                     "timeTS": 1774710000000
                 },
@@ -8291,6 +8241,37 @@
                         "finished": false
                     },
                     "timeTS": 1774720800000
+                },
+                {
+                    "id": 5269327,
+                    "leagueId": 922760,
+                    "time": "28.03.2026 23:00",
+                    "home": {
+                        "id": 4669,
+                        "score": 0,
+                        "name": "Plaza Colonia",
+                        "longName": "Plaza Colonia"
+                    },
+                    "away": {
+                        "id": 6381,
+                        "score": 0,
+                        "name": "River Plate",
+                        "longName": "River Plate"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "3",
+                    "status": {
+                        "utcTime": "2026-03-28T22:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "28.03.2026 23:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1774735200000
                 }
             ],
             "parentLeagueId": 9122,
@@ -9467,37 +9448,6 @@
                     "timeTS": 1774715400000
                 },
                 {
-                    "id": 4898228,
-                    "leagueId": 901968,
-                    "time": "29.03.2026 12:30",
-                    "home": {
-                        "id": 1790497,
-                        "score": 0,
-                        "name": "Inter U23",
-                        "longName": "Inter U23"
-                    },
-                    "away": {
-                        "id": 6097,
-                        "score": 0,
-                        "name": "Trento",
-                        "longName": "Trento"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "34",
-                    "status": {
-                        "utcTime": "2026-03-29T10:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "29.03.2026 12:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1774780200000
-                },
-                {
                     "id": 4898229,
                     "leagueId": 901968,
                     "time": "29.03.2026 14:30",
@@ -9543,37 +9493,6 @@
             "primaryId": 147,
             "name": "Serie C Grp. B",
             "matches": [
-                {
-                    "id": 4898646,
-                    "leagueId": 901979,
-                    "time": "29.03.2026 14:30",
-                    "home": {
-                        "id": 956184,
-                        "score": 0,
-                        "name": "Juventus Next Gen",
-                        "longName": "Juventus Next Gen"
-                    },
-                    "away": {
-                        "id": 6457,
-                        "score": 0,
-                        "name": "Ternana",
-                        "longName": "Ternana"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "34",
-                    "status": {
-                        "utcTime": "2026-03-29T12:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "29.03.2026 14:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1774787400000
-                },
                 {
                     "id": 4898648,
                     "leagueId": 901979,
@@ -10605,6 +10524,49 @@
             "simpleLeague": false
         },
         {
+            "ccode": "GRE",
+            "id": 924685,
+            "primaryId": 8815,
+            "name": "Super League 2 Super Cup",
+            "matches": [
+                {
+                    "id": 5266460,
+                    "leagueId": 924685,
+                    "time": "28.03.2026 17:30",
+                    "home": {
+                        "id": 1585,
+                        "score": 0,
+                        "name": "Kalamata",
+                        "longName": "Kalamata"
+                    },
+                    "away": {
+                        "id": 8675,
+                        "score": 0,
+                        "name": "Iraklis",
+                        "longName": "Iraklis"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "final",
+                    "status": {
+                        "utcTime": "2026-03-28T16:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "28.03.2026 17:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1774715400000
+                }
+            ],
+            "parentLeagueId": 8815,
+            "internalRank": 0,
+            "liveRank": 0,
+            "simpleLeague": false
+        },
+        {
             "ccode": "NOR",
             "id": 916229,
             "primaryId": 331,
@@ -11175,7 +11137,7 @@
                 {
                     "id": 4930297,
                     "leagueId": 901708,
-                    "time": "28.03.2026 20:00",
+                    "time": "28.03.2026 18:00",
                     "home": {
                         "id": 1669149,
                         "score": 0,
@@ -11192,16 +11154,16 @@
                     "statusId": 1,
                     "tournamentStage": "1",
                     "status": {
-                        "utcTime": "2026-03-28T19:00:00.000Z",
+                        "utcTime": "2026-03-28T17:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "28.03.2026 20:00:00"
+                            "firstHalfStarted": "28.03.2026 18:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1774724400000
+                    "timeTS": 1774717200000
                 },
                 {
                     "id": 4930298,
@@ -12613,7 +12575,7 @@
                 {
                     "id": 1000008050,
                     "leagueId": 11017,
-                    "time": "28.03.2026 16:15",
+                    "time": "28.03.2026 16:30",
                     "home": {
                         "id": 101898,
                         "score": 0,
@@ -12630,47 +12592,16 @@
                     "statusId": 1,
                     "tournamentStage": "Semi-finals",
                     "status": {
-                        "utcTime": "2026-03-28T15:15:00.000Z",
+                        "utcTime": "2026-03-28T15:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "28.03.2026 16:15:00"
+                            "firstHalfStarted": "28.03.2026 16:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1774710900000
-                },
-                {
-                    "id": 1000008051,
-                    "leagueId": 11017,
-                    "time": "29.03.2026 16:15",
-                    "home": {
-                        "id": 479161,
-                        "score": 0,
-                        "name": "Muaither SC",
-                        "longName": "Muaither SC"
-                    },
-                    "away": {
-                        "id": 101899,
-                        "score": 0,
-                        "name": "Al-Arabi",
-                        "longName": "Al-Arabi"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "Semi-finals",
-                    "status": {
-                        "utcTime": "2026-03-29T14:15:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "29.03.2026 16:15:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1774793700000
+                    "timeTS": 1774711800000
                 }
             ],
             "internalRank": 0,
