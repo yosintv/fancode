@@ -38,6 +38,37 @@
                     "timeTS": 1774886400000
                 },
                 {
+                    "id": 5279687,
+                    "leagueId": 914609,
+                    "time": "30.03.2026 18:00",
+                    "home": {
+                        "id": 6548,
+                        "score": 0,
+                        "name": "Grenada",
+                        "longName": "Grenada"
+                    },
+                    "away": {
+                        "id": 5884,
+                        "score": 0,
+                        "name": "Kenya",
+                        "longName": "Kenya"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-03-30T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "30.03.2026 18:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1774886400000
+                },
+                {
                     "id": 5100790,
                     "leagueId": 914609,
                     "time": "30.03.2026 20:45",
@@ -67,6 +98,37 @@
                         "finished": false
                     },
                     "timeTS": 1774896300000
+                },
+                {
+                    "id": 5279688,
+                    "leagueId": 914609,
+                    "time": "30.03.2026 21:00",
+                    "home": {
+                        "id": 5885,
+                        "score": 0,
+                        "name": "Rwanda",
+                        "longName": "Rwanda"
+                    },
+                    "away": {
+                        "id": 8261,
+                        "score": 0,
+                        "name": "Estonia",
+                        "longName": "Estonia"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-03-30T19:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "30.03.2026 21:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1774897200000
                 },
                 {
                     "id": 5187280,
@@ -145,37 +207,6 @@
                         "score": 0,
                         "name": "Guinea",
                         "longName": "Guinea"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1",
-                    "status": {
-                        "utcTime": "2026-03-31T10:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "31.03.2026 12:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1774951200000
-                },
-                {
-                    "id": 5278653,
-                    "leagueId": 914609,
-                    "time": "31.03.2026 12:00",
-                    "home": {
-                        "id": 10259,
-                        "score": 0,
-                        "name": "Northern Ireland",
-                        "longName": "Northern Ireland"
-                    },
-                    "away": {
-                        "id": 6718,
-                        "score": 0,
-                        "name": "Ukraine",
-                        "longName": "Ukraine"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -369,7 +400,7 @@
                         "longName": "Yemen"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "6",
                     "status": {
                         "utcTime": "2026-03-31T10:00:00.000Z",
@@ -377,9 +408,15 @@
                             "firstHalfStarted": "31.03.2026 12:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1774951200000
                 },
