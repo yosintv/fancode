@@ -308,6 +308,48 @@
             "simpleLeague": false
         },
         {
+            "ccode": "MAR",
+            "id": 530,
+            "primaryId": 530,
+            "name": "Botola Pro",
+            "matches": [
+                {
+                    "id": 5146926,
+                    "leagueId": 530,
+                    "time": "02.04.2026 21:00",
+                    "home": {
+                        "id": 102035,
+                        "score": 0,
+                        "name": "FAR Rabat",
+                        "longName": "FAR Rabat"
+                    },
+                    "away": {
+                        "id": 570487,
+                        "score": 0,
+                        "name": "Olympique Dcheira",
+                        "longName": "Olympique Dcheira"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "10",
+                    "status": {
+                        "utcTime": "2026-04-02T19:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "02.04.2026 21:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1775156400000
+                }
+            ],
+            "internalRank": 0,
+            "liveRank": 0,
+            "simpleLeague": false
+        },
+        {
             "ccode": "POR",
             "id": 905808,
             "primaryId": 10449,
@@ -4779,7 +4821,7 @@
                         "longName": "Coastal Union"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 5,
+                    "statusId": 1,
                     "tournamentStage": "9",
                     "status": {
                         "utcTime": "2026-04-02T16:00:00.000Z",
@@ -4787,15 +4829,9 @@
                             "firstHalfStarted": "02.04.2026 18:00:00"
                         },
                         "periodLength": 45,
-                        "cancelled": true,
                         "started": false,
-                        "finished": false,
-                        "reason": {
-                            "short": "PP",
-                            "shortKey": "postponed_short",
-                            "long": "Postponed",
-                            "longKey": "postponed"
-                        }
+                        "cancelled": false,
+                        "finished": false
                     },
                     "timeTS": 1775145600000
                 }
@@ -6550,6 +6586,49 @@
             ],
             "parentLeagueId": 8947,
             "internalRank": 24,
+            "liveRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "IRQ",
+            "id": 905798,
+            "primaryId": 524,
+            "name": "Stars League",
+            "matches": [
+                {
+                    "id": 5285722,
+                    "leagueId": 905798,
+                    "time": "03.04.2026 16:00",
+                    "home": {
+                        "id": 1811191,
+                        "score": 0,
+                        "name": "Al-Mosul",
+                        "longName": "Al-Mosul"
+                    },
+                    "away": {
+                        "id": 191818,
+                        "score": 0,
+                        "name": "Al Karkh",
+                        "longName": "Al Karkh"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "26",
+                    "status": {
+                        "utcTime": "2026-04-03T14:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "03.04.2026 16:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1775224800000
+                }
+            ],
+            "parentLeagueId": 524,
+            "internalRank": 0,
             "liveRank": 0,
             "simpleLeague": false
         },
