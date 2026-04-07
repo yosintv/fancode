@@ -1006,6 +1006,52 @@
             "simpleLeague": false
         },
         {
+            "isGroup": true,
+            "groupName": "H",
+            "ccode": "INT",
+            "id": 924606,
+            "primaryId": 299,
+            "name": "Copa Sudamericana Grp. H",
+            "matches": [
+                {
+                    "id": 5261443,
+                    "leagueId": 924606,
+                    "time": "09.04.2026 02:30",
+                    "home": {
+                        "id": 49678,
+                        "score": 0,
+                        "name": "Blooming",
+                        "longName": "Blooming"
+                    },
+                    "away": {
+                        "id": 10076,
+                        "score": 0,
+                        "name": "River Plate",
+                        "longName": "River Plate"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-04-09T00:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "09.04.2026 02:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1775694600000
+                }
+            ],
+            "parentLeagueId": 299,
+            "parentLeagueName": "Copa Sudamericana",
+            "internalRank": 0,
+            "liveRank": 0,
+            "simpleLeague": false
+        },
+        {
             "ccode": "RUS",
             "id": 906616,
             "primaryId": 193,
@@ -3210,7 +3256,7 @@
                         "longName": "Caledonian Braves"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 5,
+                    "statusId": 1,
                     "tournamentStage": "Lowland League",
                     "status": {
                         "utcTime": "2026-04-08T18:45:00.000Z",
@@ -3218,15 +3264,9 @@
                             "firstHalfStarted": "08.04.2026 20:45:00"
                         },
                         "periodLength": 45,
-                        "cancelled": true,
                         "started": false,
-                        "finished": false,
-                        "reason": {
-                            "short": "PP",
-                            "shortKey": "postponed_short",
-                            "long": "Postponed",
-                            "longKey": "postponed"
-                        }
+                        "cancelled": false,
+                        "finished": false
                     },
                     "timeTS": 1775673900000
                 }
