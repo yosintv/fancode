@@ -1,48 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://www.yosin-tv.net/favicon.ico' rel='icon' type='image/x-icon'/>
-    <title>YoSinTV Player</title>
-    <style>
-        body, html { height: 100vh; margin: 0; padding: 0; background: #000; overflow: hidden; }
-        #player-container { position: relative; width: 100%; height: 100vh; }
-        #player-iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-    </style>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Combined HLS Player</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+<style>
+body {
+    margin: 0;
+    background: black;
+}
+video {
+    width: 100%;
+    height: 100vh;
+}
+</style>
 </head>
+
 <body>
 
-<div id="player-container">
-    <iframe id="player-iframe" allowfullscreen allow="autoplay; encrypted-media"></iframe>
-</div>
+<video id="video" controls autoplay muted></video>
 
 <script>
-    // 1. Get the combined 'source' parameter from the URL
-    // Expected format: ?source=admin-match-id-goes-here
-    const params = new URLSearchParams(window.location.search);
-    const combined = params.get('source'); 
-    const iframe = document.getElementById('player-iframe');
+const video = document.getElementById('video');
 
-    if (combined && combined.includes('-')) {
-        // 2. Find the first hyphen to separate the source from the ID
-        const firstHyphenIndex = combined.indexOf('-');
-        
-        // Everything before the hyphen (e.g., "admin", "delta", "echo")
-        const provider = combined.substring(0, firstHyphenIndex);
-        
-        // Everything after the hyphen (the actual match ID)
-        const matchId = combined.substring(firstHyphenIndex + 1);
+// Create hidden audio element
+const audio = document.createElement('audio');
+audio.style.display = 'none';
+document.body.appendChild(audio);
 
-        // 3. Construct the target embed URL
-        const targetURL = `https://embedsporty.top/embed/${provider}/${matchId}/1`;
+// URLs
+const videoSrc = "https://global-media.onlive.vn/live/video/2689994162/1280x720/playlist.m3u8";
+const audioSrc = "https://global-media.onlive.vn/live/audio/2689994162/origin/playlist.m3u8";
 
-        // 4. Set the iframe source
-        iframe.src = targetURL;
-    } else {
-        // Clear container if parameters are missing or invalid
-        document.getElementById('player-container').innerHTML = ``;
+// Load VIDEO
+if (Hls.isSupported()) {
+    const hlsVideo = new Hls();
+    hlsVideo.loadSource(videoSrc);
+    hlsVideo.attachMedia(video);
+} else {
+    video.src = videoSrc;
+}
+
+// Load AUDIO
+if (Hls.isSupported()) {
+    const hlsAudio = new Hls();
+    hlsAudio.loadSource(audioSrc);
+    hlsAudio.attachMedia(audio);
+} else {
+    audio.src = audioSrc;
+}
+
+// Sync play
+video.addEventListener('play', () => {
+    audio.play();
+});
+
+// Sync pause
+video.addEventListener('pause', () => {
+    audio.pause();
+});
+
+// Sync seeking
+video.addEventListener('seeking', () => {
+    audio.currentTime = video.currentTime;
+});
+
+// Keep sync (important)
+setInterval(() => {
+    if (Math.abs(video.currentTime - audio.currentTime) > 0.5) {
+        audio.currentTime = video.currentTime;
     }
+}, 1000);
+
+// Volume control (optional)
+video.addEventListener('volumechange', () => {
+    audio.volume = video.volume;
+});
+
 </script>
+
 </body>
 </html>
