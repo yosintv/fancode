@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Combined HLS Player</title>
+<title>Ultra Sync HLS Player</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
@@ -14,69 +14,104 @@ body {
 video {
     width: 100%;
     height: 100vh;
+    background: black;
 }
 </style>
 </head>
 
 <body>
 
-<video id="video" controls autoplay muted></video>
+<video id="video" controls autoplay muted playsinline></video>
 
 <script>
 const video = document.getElementById('video');
 
-// Create hidden audio element
+// Hidden audio
 const audio = document.createElement('audio');
 audio.style.display = 'none';
 document.body.appendChild(audio);
 
 // URLs
-const videoSrc = "https://global-media.onlive.vn/live/video/2689994162/1280x720/playlist.m3u8";
-const audioSrc = "https://global-media.onlive.vn/live/audio/2689994162/origin/playlist.m3u8";
+const VIDEO_URL = "https://global-media.onlive.vn/live/video/2689994162/1280x720/playlist.m3u8";
+const AUDIO_URL = "https://global-media.onlive.vn/live/audio/2689994162/origin/playlist.m3u8";
 
-// Load VIDEO
-if (Hls.isSupported()) {
-    const hlsVideo = new Hls();
-    hlsVideo.loadSource(videoSrc);
-    hlsVideo.attachMedia(video);
-} else {
-    video.src = videoSrc;
+// Load HLS
+function loadStream(media, url) {
+    if (Hls.isSupported()) {
+        const hls = new Hls({
+            maxBufferLength: 10,
+            liveSyncDuration: 3
+        });
+        hls.loadSource(url);
+        hls.attachMedia(media);
+        return hls;
+    } else {
+        media.src = url;
+    }
 }
 
-// Load AUDIO
-if (Hls.isSupported()) {
-    const hlsAudio = new Hls();
-    hlsAudio.loadSource(audioSrc);
-    hlsAudio.attachMedia(audio);
-} else {
-    audio.src = audioSrc;
+loadStream(video, VIDEO_URL);
+loadStream(audio, AUDIO_URL);
+
+// 🔥 MASTER SYNC ENGINE
+let syncing = false;
+
+function syncAV() {
+    if (!video || !audio || video.readyState < 2 || audio.readyState < 2) return;
+
+    const drift = video.currentTime - audio.currentTime;
+
+    // If big drift → hard sync
+    if (Math.abs(drift) > 1.5) {
+        audio.currentTime = video.currentTime;
+        audio.playbackRate = 1.0;
+        return;
+    }
+
+    // Medium drift → smooth correction
+    if (Math.abs(drift) > 0.2) {
+        audio.playbackRate = drift > 0 ? 1.05 : 0.95;
+    } else {
+        audio.playbackRate = 1.0;
+    }
 }
 
-// Sync play
+// Run sync loop (VERY IMPORTANT)
+setInterval(syncAV, 200);
+
+// Sync controls
 video.addEventListener('play', () => {
-    audio.play();
+    audio.play().catch(() => {});
 });
 
-// Sync pause
 video.addEventListener('pause', () => {
     audio.pause();
 });
 
-// Sync seeking
 video.addEventListener('seeking', () => {
     audio.currentTime = video.currentTime;
 });
 
-// Keep sync (important)
-setInterval(() => {
-    if (Math.abs(video.currentTime - audio.currentTime) > 0.5) {
-        audio.currentTime = video.currentTime;
-    }
-}, 1000);
+video.addEventListener('ratechange', () => {
+    audio.playbackRate = video.playbackRate;
+});
 
-// Volume control (optional)
 video.addEventListener('volumechange', () => {
     audio.volume = video.volume;
+});
+
+// Handle buffering resync
+video.addEventListener('waiting', () => {
+    audio.pause();
+});
+
+video.addEventListener('playing', () => {
+    audio.play().catch(() => {});
+});
+
+// Initial sync when ready
+video.addEventListener('loadeddata', () => {
+    audio.currentTime = video.currentTime;
 });
 
 </script>
