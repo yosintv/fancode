@@ -3607,7 +3607,7 @@
                         "longName": "Hohoe United"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "30",
                     "status": {
                         "utcTime": "2026-04-19T15:00:00.000Z",
@@ -3615,9 +3615,15 @@
                             "firstHalfStarted": "19.04.2026 17:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1776610800000
                 }
@@ -7860,37 +7866,6 @@
                     "timeTS": 1776623400000
                 },
                 {
-                    "id": 1000010528,
-                    "leagueId": 9464,
-                    "time": "19.04.2026 20:30",
-                    "home": {
-                        "id": 1922597,
-                        "score": 0,
-                        "name": "Blumenau Esporte Clube",
-                        "longName": "Blumenau Esporte Clube"
-                    },
-                    "away": {
-                        "id": 1223346,
-                        "score": 0,
-                        "name": "Azuriz",
-                        "longName": "Azuriz"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "3",
-                    "status": {
-                        "utcTime": "2026-04-19T18:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.04.2026 20:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1776623400000
-                },
-                {
                     "id": 1000010492,
                     "leagueId": 9464,
                     "time": "19.04.2026 21:00",
@@ -7967,37 +7942,6 @@
                         "score": 0,
                         "name": "Oratorio",
                         "longName": "Oratorio"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "3",
-                    "status": {
-                        "utcTime": "2026-04-19T19:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.04.2026 21:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1776625200000
-                },
-                {
-                    "id": 1000010496,
-                    "leagueId": 9464,
-                    "time": "19.04.2026 21:00",
-                    "home": {
-                        "id": 162177,
-                        "score": 0,
-                        "name": "Aguia de Maraba",
-                        "longName": "Aguia de Maraba"
-                    },
-                    "away": {
-                        "id": 197782,
-                        "score": 0,
-                        "name": "Imperatriz",
-                        "longName": "Imperatriz"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -8308,6 +8252,37 @@
                         "score": 0,
                         "name": "Gama",
                         "longName": "Gama"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "3",
+                    "status": {
+                        "utcTime": "2026-04-19T20:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.04.2026 22:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1776628800000
+                },
+                {
+                    "id": 1000010496,
+                    "leagueId": 9464,
+                    "time": "19.04.2026 22:00",
+                    "home": {
+                        "id": 162177,
+                        "score": 0,
+                        "name": "Aguia de Maraba",
+                        "longName": "Aguia de Maraba"
+                    },
+                    "away": {
+                        "id": 197782,
+                        "score": 0,
+                        "name": "Imperatriz",
+                        "longName": "Imperatriz"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
