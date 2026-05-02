@@ -3729,8 +3729,8 @@
                     "away": {
                         "id": 2182,
                         "score": 0,
-                        "name": "Lech Poznan",
-                        "longName": "Lech Poznan"
+                        "name": "Lech Pozna\u0144",
+                        "longName": "Lech Pozna\u0144"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -5242,8 +5242,8 @@
                     "home": {
                         "id": 585593,
                         "score": 0,
-                        "name": "Pogon Grodzisk Mazowiecki",
-                        "longName": "Pogon Grodzisk Mazowiecki"
+                        "name": "Pogo\u0144 Grodzisk Mazowiecki",
+                        "longName": "Pogo\u0144 Grodzisk Mazowiecki"
                     },
                     "away": {
                         "id": 1286895,
@@ -5273,8 +5273,8 @@
                     "home": {
                         "id": 1601,
                         "score": 0,
-                        "name": "Ruch Chorzow",
-                        "longName": "Ruch Chorzow"
+                        "name": "Ruch Chorz\u00f3w",
+                        "longName": "Ruch Chorz\u00f3w"
                     },
                     "away": {
                         "id": 8047,
@@ -5320,12 +5320,12 @@
                     },
                     "away": {
                         "id": 2417,
-                        "score": 0,
+                        "score": 3,
                         "name": "Skierniewice",
                         "longName": "Skierniewice"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 5,
+                    "statusId": 190,
                     "tournamentStage": "30",
                     "status": {
                         "utcTime": "2026-05-02T15:00:00.000Z",
@@ -5333,14 +5333,16 @@
                             "firstHalfStarted": "02.05.2026 17:00:00"
                         },
                         "periodLength": 45,
-                        "cancelled": true,
-                        "started": false,
-                        "finished": false,
+                        "finished": true,
+                        "started": true,
+                        "cancelled": false,
+                        "awarded": true,
+                        "scoreStr": "0 - 3",
                         "reason": {
-                            "short": "PP",
-                            "shortKey": "postponed_short",
-                            "long": "Postponed",
-                            "longKey": "postponed"
+                            "short": "AW",
+                            "shortKey": "",
+                            "long": "Awarded win",
+                            "longKey": "awarded_win"
                         }
                     },
                     "timeTS": 1777734000000
@@ -6649,37 +6651,6 @@
                         "finished": false
                     },
                     "timeTS": 1777734000000
-                },
-                {
-                    "id": 5165737,
-                    "leagueId": 920298,
-                    "time": "03.05.2026 16:00",
-                    "home": {
-                        "id": 1940,
-                        "score": 0,
-                        "name": "Sporting Covilha",
-                        "longName": "Sporting Covilha"
-                    },
-                    "away": {
-                        "id": 588631,
-                        "score": 0,
-                        "name": "Amora FC",
-                        "longName": "Amora FC"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "10",
-                    "status": {
-                        "utcTime": "2026-05-03T14:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "03.05.2026 16:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1777816800000
                 }
             ],
             "parentLeagueId": 9112,
@@ -9461,37 +9432,6 @@
                         "finished": false
                     },
                     "timeTS": 1777734000000
-                },
-                {
-                    "id": 5408814,
-                    "leagueId": 118,
-                    "time": "03.05.2026 14:00",
-                    "home": {
-                        "id": 866111,
-                        "score": 0,
-                        "name": "FC Noah",
-                        "longName": "FC Noah"
-                    },
-                    "away": {
-                        "id": 6345,
-                        "score": 0,
-                        "name": "Pyunik",
-                        "longName": "Pyunik"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "24",
-                    "status": {
-                        "utcTime": "2026-05-03T12:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "03.05.2026 14:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1777809600000
                 }
             ],
             "internalRank": 0,
@@ -9546,6 +9486,43 @@
             "primaryId": 522,
             "name": "Premier League",
             "matches": [
+                {
+                    "id": 4926523,
+                    "leagueId": 522,
+                    "time": "02.05.2026 17:00",
+                    "home": {
+                        "id": 1799015,
+                        "score": 0,
+                        "name": "Hohoe United",
+                        "longName": "Hohoe United"
+                    },
+                    "away": {
+                        "id": 159949,
+                        "score": 0,
+                        "name": "Berekum Chelsea",
+                        "longName": "Berekum Chelsea"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 5,
+                    "tournamentStage": "31",
+                    "status": {
+                        "utcTime": "2026-05-02T15:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "02.05.2026 17:00:00"
+                        },
+                        "periodLength": 45,
+                        "cancelled": true,
+                        "started": false,
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
+                    },
+                    "timeTS": 1777734000000
+                },
                 {
                     "id": 4926528,
                     "leagueId": 522,
@@ -16225,7 +16202,7 @@
                 {
                     "id": 1000007504,
                     "leagueId": 10282,
-                    "time": "03.05.2026 02:00",
+                    "time": "03.05.2026 02:30",
                     "home": {
                         "id": 1004921,
                         "score": 0,
@@ -16242,16 +16219,16 @@
                     "statusId": 1,
                     "tournamentStage": "10",
                     "status": {
-                        "utcTime": "2026-05-03T00:00:00.000Z",
+                        "utcTime": "2026-05-03T00:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.05.2026 02:00:00"
+                            "firstHalfStarted": "03.05.2026 02:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1777766400000
+                    "timeTS": 1777768200000
                 }
             ],
             "internalRank": 0,
