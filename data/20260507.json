@@ -4,7 +4,7 @@
             "ccode": "INT",
             "id": 904995,
             "primaryId": 42,
-            "name": "Champions League Final Stage",
+            "name": "Champions League",
             "matches": [
                 {
                     "id": 5205812,
@@ -12,29 +12,38 @@
                     "time": "06.05.2026 21:00",
                     "home": {
                         "id": 9823,
-                        "score": 0,
+                        "score": 1,
                         "name": "Bayern M\u00fcnchen",
                         "longName": "Bayern M\u00fcnchen"
                     },
                     "away": {
                         "id": 9847,
-                        "score": 0,
+                        "score": 1,
                         "name": "PSG",
                         "longName": "Paris Saint-Germain"
                     },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "eliminatedTeamId": 9823,
+                    "statusId": 6,
                     "tournamentStage": "1/2",
                     "status": {
                         "utcTime": "2026-05-06T19:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 21:00:00"
+                            "firstHalfStarted": "06.05.2026 21:02:09",
+                            "secondHalfStarted": "06.05.2026 22:07:30"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false,
-                        "aggregatedStr": "4 - 5"
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        },
+                        "aggregatedStr": "5 - 6"
                     },
                     "timeTS": 1778094000000
                 }
@@ -68,17 +77,28 @@
                         "longName": "Los Angeles FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 2,
                     "tournamentStage": "1/2",
                     "status": {
                         "utcTime": "2026-05-07T01:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 03:30:00"
+                            "firstHalfStarted": "07.05.2026 03:37:12"
                         },
                         "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
                         "finished": false,
+                        "started": true,
+                        "cancelled": false,
+                        "ongoing": true,
+                        "scoreStr": "0 - 0",
+                        "liveTime": {
+                            "short": "29\u200e\u2019\u200e",
+                            "shortKey": "",
+                            "long": "28:17",
+                            "longKey": "",
+                            "maxTime": 45,
+                            "basePeriod": 45,
+                            "addedTime": 0
+                        },
                         "aggregatedStr": "1 - 2"
                     },
                     "timeTS": 1778117400000
@@ -103,28 +123,37 @@
                     "time": "07.05.2026 00:00",
                     "home": {
                         "id": 305171,
-                        "score": 0,
+                        "score": 1,
                         "name": "Cusco FC",
                         "longName": "Cusco FC"
                     },
                     "away": {
                         "id": 10094,
-                        "score": 0,
+                        "score": 1,
                         "name": "Estudiantes",
                         "longName": "Estudiantes"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "4",
                     "status": {
                         "utcTime": "2026-05-06T22:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 00:00:00"
+                            "firstHalfStarted": "07.05.2026 00:00:47",
+                            "secondHalfStarted": "07.05.2026 01:04:22"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778104800000
                 }
@@ -160,17 +189,28 @@
                         "longName": "Nacional"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 2,
                     "tournamentStage": "4",
                     "status": {
                         "utcTime": "2026-05-07T02:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 04:00:00"
+                            "firstHalfStarted": "07.05.2026 04:00:58"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": false,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "ongoing": true,
+                        "scoreStr": "0 - 0",
+                        "liveTime": {
+                            "short": "5\u200e\u2019\u200e",
+                            "shortKey": "",
+                            "long": "4:31",
+                            "longKey": "",
+                            "maxTime": 45,
+                            "basePeriod": 45,
+                            "addedTime": 0
+                        }
                     },
                     "timeTS": 1778119200000
                 }
@@ -195,28 +235,37 @@
                     "time": "07.05.2026 00:00",
                     "home": {
                         "id": 176496,
-                        "score": 0,
+                        "score": 1,
                         "name": "Deportivo La Guaira",
                         "longName": "Deportivo La Guaira"
                     },
                     "away": {
                         "id": 5983,
-                        "score": 0,
+                        "score": 1,
                         "name": "Bolivar",
                         "longName": "Bolivar"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "4",
                     "status": {
                         "utcTime": "2026-05-06T22:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 00:00:00"
+                            "firstHalfStarted": "07.05.2026 00:01:12",
+                            "secondHalfStarted": "07.05.2026 01:05:07"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778104800000
                 },
@@ -226,7 +275,7 @@
                     "time": "07.05.2026 02:30",
                     "home": {
                         "id": 161729,
-                        "score": 0,
+                        "score": 1,
                         "name": "Independiente Rivadavia",
                         "longName": "Independiente Rivadavia"
                     },
@@ -237,17 +286,29 @@
                         "longName": "Fluminense"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 3,
                     "tournamentStage": "4",
                     "status": {
                         "utcTime": "2026-05-07T00:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 02:30:00"
+                            "firstHalfStarted": "07.05.2026 02:30:53",
+                            "secondHalfStarted": "07.05.2026 03:33:50"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": false,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "ongoing": true,
+                        "scoreStr": "1 - 0",
+                        "liveTime": {
+                            "short": "77\u200e\u2019\u200e",
+                            "shortKey": "",
+                            "long": "76:39",
+                            "longKey": "",
+                            "maxTime": 90,
+                            "basePeriod": 90,
+                            "addedTime": 0
+                        }
                     },
                     "timeTS": 1778113800000
                 }
@@ -283,17 +344,28 @@
                         "longName": "Cruzeiro"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 2,
                     "tournamentStage": "4",
                     "status": {
                         "utcTime": "2026-05-07T02:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 04:00:00"
+                            "firstHalfStarted": "07.05.2026 04:00:58"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": false,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "ongoing": true,
+                        "scoreStr": "0 - 0",
+                        "liveTime": {
+                            "short": "5\u200e\u2019\u200e",
+                            "shortKey": "",
+                            "long": "4:31",
+                            "longKey": "",
+                            "maxTime": 45,
+                            "basePeriod": 45,
+                            "addedTime": 0
+                        }
                     },
                     "timeTS": 1778119200000
                 }
@@ -318,7 +390,7 @@
                     "time": "07.05.2026 02:30",
                     "home": {
                         "id": 7818,
-                        "score": 0,
+                        "score": 1,
                         "name": "Santa Fe",
                         "longName": "Santa Fe"
                     },
@@ -329,17 +401,29 @@
                         "longName": "Corinthians"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 3,
                     "tournamentStage": "4",
                     "status": {
                         "utcTime": "2026-05-07T00:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 02:30:00"
+                            "firstHalfStarted": "07.05.2026 02:30:53",
+                            "secondHalfStarted": "07.05.2026 03:35:52"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": false,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "ongoing": true,
+                        "scoreStr": "1 - 0",
+                        "liveTime": {
+                            "short": "75\u200e\u2019\u200e",
+                            "shortKey": "",
+                            "long": "74:37",
+                            "longKey": "",
+                            "maxTime": 90,
+                            "basePeriod": 90,
+                            "addedTime": 0
+                        }
                     },
                     "timeTS": 1778113800000
                 }
@@ -362,28 +446,37 @@
                     "time": "06.05.2026 18:00",
                     "home": {
                         "id": 4722,
-                        "score": 0,
+                        "score": 2,
                         "name": "Egersund",
                         "longName": "Egersund"
                     },
                     "away": {
                         "id": 9812,
-                        "score": 0,
+                        "score": 1,
                         "name": "Raufoss",
                         "longName": "Raufoss"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-05-06T16:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 18:00:00"
+                            "firstHalfStarted": "06.05.2026 18:01:18",
+                            "secondHalfStarted": "06.05.2026 19:02:54"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778083200000
                 }
@@ -404,28 +497,37 @@
                     "time": "06.05.2026 17:30",
                     "home": {
                         "id": 736555,
-                        "score": 0,
+                        "score": 3,
                         "name": "Hegelmann",
                         "longName": "Hegelmann"
                     },
                     "away": {
                         "id": 479143,
-                        "score": 0,
+                        "score": 2,
                         "name": "FK Panevezys",
                         "longName": "FK Panevezys"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "12",
                     "status": {
                         "utcTime": "2026-05-06T15:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:30:00"
+                            "firstHalfStarted": "06.05.2026 17:30:38",
+                            "secondHalfStarted": "06.05.2026 18:30:54"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778081400000
                 },
@@ -435,28 +537,37 @@
                     "time": "06.05.2026 18:30",
                     "home": {
                         "id": 4616,
-                        "score": 0,
+                        "score": 3,
                         "name": "Zalgiris Vilnius",
                         "longName": "Zalgiris Vilnius"
                     },
                     "away": {
                         "id": 1099941,
-                        "score": 0,
+                        "score": 1,
                         "name": "FA Siauliai",
                         "longName": "FA Siauliai"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "12",
                     "status": {
                         "utcTime": "2026-05-06T16:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 18:30:00"
+                            "firstHalfStarted": "06.05.2026 18:32:24",
+                            "secondHalfStarted": "06.05.2026 19:32:17"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778085000000
                 },
@@ -466,28 +577,37 @@
                     "time": "06.05.2026 19:00",
                     "home": {
                         "id": 1447232,
-                        "score": 0,
+                        "score": 1,
                         "name": "FK TransINVEST",
                         "longName": "FK TransINVEST"
                     },
                     "away": {
                         "id": 8337,
-                        "score": 0,
+                        "score": 1,
                         "name": "Suduva",
                         "longName": "Suduva"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "12",
                     "status": {
                         "utcTime": "2026-05-06T17:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 19:00:00"
+                            "firstHalfStarted": "06.05.2026 19:02:30",
+                            "secondHalfStarted": "06.05.2026 20:04:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778086800000
                 }
@@ -508,28 +628,37 @@
                     "time": "06.05.2026 18:00",
                     "home": {
                         "id": 102036,
-                        "score": 0,
+                        "score": 1,
                         "name": "FUS Rabat",
                         "longName": "FUS Rabat"
                     },
                     "away": {
                         "id": 316657,
-                        "score": 0,
+                        "score": 1,
                         "name": "Ittihad Tanger",
                         "longName": "Ittihad Tanger"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "19",
                     "status": {
                         "utcTime": "2026-05-06T16:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 18:00:00"
+                            "firstHalfStarted": "06.05.2026 18:01:04",
+                            "secondHalfStarted": "06.05.2026 19:06:05"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778083200000
                 },
@@ -539,7 +668,7 @@
                     "time": "06.05.2026 20:00",
                     "home": {
                         "id": 102050,
-                        "score": 0,
+                        "score": 2,
                         "name": "Wydad Casablanca",
                         "longName": "Wydad Casablanca"
                     },
@@ -550,17 +679,26 @@
                         "longName": "CODM Meknes"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "19",
                     "status": {
                         "utcTime": "2026-05-06T18:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 20:00:00"
+                            "firstHalfStarted": "06.05.2026 20:01:20",
+                            "secondHalfStarted": "06.05.2026 21:14:30"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778090400000
                 },
@@ -576,22 +714,31 @@
                     },
                     "away": {
                         "id": 102049,
-                        "score": 0,
+                        "score": 2,
                         "name": "Raja Casablanca",
                         "longName": "Raja Casablanca"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "19",
                     "status": {
                         "utcTime": "2026-05-06T20:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 22:00:00"
+                            "firstHalfStarted": "06.05.2026 22:04:27",
+                            "secondHalfStarted": "06.05.2026 23:16:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778097600000
                 }
@@ -614,28 +761,39 @@
                     "time": "07.05.2026 02:00",
                     "home": {
                         "id": 6609,
-                        "score": 0,
+                        "score": 2,
                         "name": "CSD Macara",
+                        "redCards": 1,
                         "longName": "CSD Macara"
                     },
                     "away": {
                         "id": 89396,
-                        "score": 0,
+                        "score": 2,
                         "name": "Tigre",
                         "longName": "Tigre"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "4",
                     "status": {
                         "utcTime": "2026-05-07T00:00:00.000Z",
+                        "numberOfHomeRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 02:00:00"
+                            "firstHalfStarted": "07.05.2026 02:00:46",
+                            "secondHalfStarted": "07.05.2026 03:07:27"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778112000000
                 },
@@ -656,17 +814,28 @@
                         "longName": "America de Cali"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 2,
                     "tournamentStage": "4",
                     "status": {
                         "utcTime": "2026-05-07T02:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 04:00:00"
+                            "firstHalfStarted": "07.05.2026 04:00:58"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": false,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "ongoing": true,
+                        "scoreStr": "0 - 0",
+                        "liveTime": {
+                            "short": "5\u200e\u2019\u200e",
+                            "shortKey": "",
+                            "long": "4:31",
+                            "longKey": "",
+                            "maxTime": 45,
+                            "basePeriod": 45,
+                            "addedTime": 0
+                        }
                     },
                     "timeTS": 1778119200000
                 }
@@ -691,28 +860,40 @@
                     "time": "07.05.2026 02:30",
                     "home": {
                         "id": 8517,
-                        "score": 0,
+                        "score": 2,
                         "name": "Botafogo RJ",
                         "longName": "Botafogo RJ"
                     },
                     "away": {
                         "id": 10080,
-                        "score": 0,
+                        "score": 1,
                         "name": "Racing Club",
                         "longName": "Racing Club"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 3,
                     "tournamentStage": "4",
                     "status": {
                         "utcTime": "2026-05-07T00:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 02:30:00"
+                            "firstHalfStarted": "07.05.2026 02:30:53",
+                            "secondHalfStarted": "07.05.2026 03:34:18"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": false,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "ongoing": true,
+                        "scoreStr": "2 - 1",
+                        "liveTime": {
+                            "short": "77\u200e\u2019\u200e",
+                            "shortKey": "",
+                            "long": "76:11",
+                            "longKey": "",
+                            "maxTime": 90,
+                            "basePeriod": 90,
+                            "addedTime": 0
+                        }
                     },
                     "timeTS": 1778113800000
                 }
@@ -737,7 +918,7 @@
                     "time": "07.05.2026 00:00",
                     "home": {
                         "id": 395613,
-                        "score": 0,
+                        "score": 1,
                         "name": "Torque",
                         "longName": "Montevideo City Torque"
                     },
@@ -748,17 +929,26 @@
                         "longName": "Palestino"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "4",
                     "status": {
                         "utcTime": "2026-05-06T22:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 00:00:00"
+                            "firstHalfStarted": "07.05.2026 00:00:47",
+                            "secondHalfStarted": "07.05.2026 01:03:19"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778104800000
                 }
@@ -783,28 +973,39 @@
                     "time": "07.05.2026 00:00",
                     "home": {
                         "id": 4058,
-                        "score": 0,
+                        "score": 1,
                         "name": "Audax Italiano",
+                        "redCards": 1,
                         "longName": "Audax Italiano"
                     },
                     "away": {
                         "id": 10276,
-                        "score": 0,
+                        "score": 2,
                         "name": "Vasco da Gama",
                         "longName": "Vasco da Gama"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "4",
                     "status": {
                         "utcTime": "2026-05-06T22:00:00.000Z",
+                        "numberOfHomeRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 00:00:00"
+                            "firstHalfStarted": "07.05.2026 00:01:12",
+                            "secondHalfStarted": "07.05.2026 01:05:38"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778104800000
                 },
@@ -814,28 +1015,39 @@
                     "time": "07.05.2026 02:00",
                     "home": {
                         "id": 213534,
-                        "score": 0,
+                        "score": 1,
                         "name": "Barracas Central",
+                        "redCards": 1,
                         "longName": "Barracas Central"
                     },
                     "away": {
                         "id": 6619,
-                        "score": 0,
+                        "score": 2,
                         "name": "Olimpia",
                         "longName": "Olimpia"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "4",
                     "status": {
                         "utcTime": "2026-05-07T00:00:00.000Z",
+                        "numberOfHomeRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 02:00:00"
+                            "firstHalfStarted": "07.05.2026 02:00:46",
+                            "secondHalfStarted": "07.05.2026 03:08:18"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778112000000
                 }
@@ -858,7 +1070,7 @@
                     "time": "06.05.2026 19:00",
                     "home": {
                         "id": 8643,
-                        "score": 0,
+                        "score": 1,
                         "name": "Spartak",
                         "longName": "Spartak Moscow"
                     },
@@ -869,23 +1081,90 @@
                         "longName": "CSKA Moscow"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "Lower Bracket Final R1",
                     "status": {
                         "utcTime": "2026-05-06T17:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 19:00:00"
+                            "firstHalfStarted": "06.05.2026 19:10:26",
+                            "secondHalfStarted": "06.05.2026 20:11:07"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778086800000
                 }
             ],
             "parentLeagueId": 193,
             "internalRank": 9,
+            "liveRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "isGroup": true,
+            "groupName": "B",
+            "ccode": "COL",
+            "id": 929416,
+            "primaryId": 9490,
+            "name": "Cup Grp. B",
+            "matches": [
+                {
+                    "id": 5467652,
+                    "leagueId": 929416,
+                    "time": "07.05.2026 02:00",
+                    "home": {
+                        "id": 193028,
+                        "score": 0,
+                        "name": "Patriotas",
+                        "longName": "Patriotas"
+                    },
+                    "away": {
+                        "id": 6255,
+                        "score": 0,
+                        "name": "Chico FC",
+                        "longName": "Chico FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 3,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-05-07T00:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.05.2026 02:10:54",
+                            "secondHalfStarted": "07.05.2026 03:16:17"
+                        },
+                        "periodLength": 45,
+                        "finished": false,
+                        "started": true,
+                        "cancelled": false,
+                        "ongoing": true,
+                        "scoreStr": "0 - 0",
+                        "liveTime": {
+                            "short": "95\u200e\u2019\u200e",
+                            "shortKey": "",
+                            "long": "94:12",
+                            "longKey": "",
+                            "maxTime": 90,
+                            "basePeriod": 90,
+                            "addedTime": 0
+                        }
+                    },
+                    "timeTS": 1778112000000
+                }
+            ],
+            "parentLeagueId": 9490,
+            "parentLeagueName": "Copa Colombia",
+            "internalRank": 0,
             "liveRank": 0,
             "simpleLeague": false
         },
@@ -901,8 +1180,9 @@
                     "time": "06.05.2026 18:00",
                     "home": {
                         "id": 7797,
-                        "score": 0,
+                        "score": 1,
                         "name": "AEK Larnaca",
+                        "redCards": 1,
                         "longName": "AEK Larnaca"
                     },
                     "away": {
@@ -912,17 +1192,27 @@
                         "longName": "Apollon Limassol"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "33",
                     "status": {
                         "utcTime": "2026-05-06T16:00:00.000Z",
+                        "numberOfHomeRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 18:00:00"
+                            "firstHalfStarted": "06.05.2026 18:00:45",
+                            "secondHalfStarted": "06.05.2026 19:05:16"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778083200000
                 },
@@ -932,7 +1222,7 @@
                     "time": "06.05.2026 18:00",
                     "home": {
                         "id": 2136,
-                        "score": 0,
+                        "score": 1,
                         "name": "Aris Limassol",
                         "longName": "Aris Limassol"
                     },
@@ -940,20 +1230,31 @@
                         "id": 8621,
                         "score": 0,
                         "name": "APOEL Nicosia",
+                        "redCards": 1,
                         "longName": "APOEL Nicosia"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "33",
                     "status": {
                         "utcTime": "2026-05-06T16:00:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 18:00:00"
+                            "firstHalfStarted": "06.05.2026 18:01:30",
+                            "secondHalfStarted": "06.05.2026 19:03:45"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778083200000
                 },
@@ -969,22 +1270,31 @@
                     },
                     "away": {
                         "id": 8044,
-                        "score": 0,
+                        "score": 2,
                         "name": "Omonia Nicosia",
                         "longName": "Omonia Nicosia"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "33",
                     "status": {
                         "utcTime": "2026-05-06T16:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 18:00:00"
+                            "firstHalfStarted": "06.05.2026 18:02:14",
+                            "secondHalfStarted": "06.05.2026 19:05:15"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778083200000
                 }
@@ -1006,7 +1316,7 @@
                     "time": "06.05.2026 18:30",
                     "home": {
                         "id": 181464,
-                        "score": 0,
+                        "score": 3,
                         "name": "BK H\u00e4cken (W)",
                         "longName": "BK H\u00e4cken (W)"
                     },
@@ -1017,17 +1327,26 @@
                         "longName": "Djurg\u00e5rden (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "4",
                     "status": {
                         "utcTime": "2026-05-06T16:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 18:30:00"
+                            "firstHalfStarted": "06.05.2026 18:31:19",
+                            "secondHalfStarted": "06.05.2026 19:32:17"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778085000000
                 },
@@ -1037,7 +1356,7 @@
                     "time": "06.05.2026 19:00",
                     "home": {
                         "id": 181469,
-                        "score": 0,
+                        "score": 3,
                         "name": "Hammarby IF (W)",
                         "longName": "Hammarby IF (W)"
                     },
@@ -1048,17 +1367,26 @@
                         "longName": "IK Uppsala Fotboll (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "4",
                     "status": {
                         "utcTime": "2026-05-06T17:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 19:00:00"
+                            "firstHalfStarted": "06.05.2026 19:02:54",
+                            "secondHalfStarted": "06.05.2026 20:05:48"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778086800000
                 }
@@ -1076,33 +1404,42 @@
                 {
                     "id": 5427886,
                     "leagueId": 927403,
-                    "time": "06.05.2026 18:45",
+                    "time": "06.05.2026 19:00",
                     "home": {
                         "id": 4116,
-                        "score": 0,
+                        "score": 3,
                         "name": "Almere City FC",
                         "longName": "Almere City FC"
                     },
                     "away": {
                         "id": 8526,
-                        "score": 0,
+                        "score": 1,
                         "name": "De Graafschap",
                         "longName": "De Graafschap"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1/4",
                     "status": {
-                        "utcTime": "2026-05-06T16:45:00.000Z",
+                        "utcTime": "2026-05-06T17:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 18:45:00"
+                            "firstHalfStarted": "06.05.2026 19:02:10",
+                            "secondHalfStarted": "06.05.2026 20:07:33"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
-                    "timeTS": 1778085900000
+                    "timeTS": 1778086800000
                 }
             ],
             "parentLeagueId": 58,
@@ -1128,22 +1465,31 @@
                     },
                     "away": {
                         "id": 480291,
-                        "score": 0,
+                        "score": 1,
                         "name": "Iberia 1999",
                         "longName": "Iberia 1999"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "11",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:03:12",
+                            "secondHalfStarted": "06.05.2026 18:05:08"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 },
@@ -1153,28 +1499,37 @@
                     "time": "06.05.2026 17:00",
                     "home": {
                         "id": 316432,
-                        "score": 0,
+                        "score": 3,
                         "name": "FC Samgurali Tskhaltubo",
                         "longName": "FC Samgurali Tskhaltubo"
                     },
                     "away": {
                         "id": 316427,
-                        "score": 0,
+                        "score": 1,
                         "name": "FC Meshakhte Tkibuli",
                         "longName": "FC Meshakhte Tkibuli"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "11",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:03:12",
+                            "secondHalfStarted": "06.05.2026 18:08:47"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 },
@@ -1184,28 +1539,37 @@
                     "time": "06.05.2026 19:00",
                     "home": {
                         "id": 154186,
-                        "score": 0,
+                        "score": 1,
                         "name": "FC Gagra",
                         "longName": "FC Gagra"
                     },
                     "away": {
                         "id": 6193,
-                        "score": 0,
+                        "score": 2,
                         "name": "Dinamo Batumi",
                         "longName": "Dinamo Batumi"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "11",
                     "status": {
                         "utcTime": "2026-05-06T17:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 19:00:00"
+                            "firstHalfStarted": "06.05.2026 19:00:20",
+                            "secondHalfStarted": "06.05.2026 20:03:21"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778086800000
                 }
@@ -1226,28 +1590,37 @@
                     "time": "06.05.2026 19:00",
                     "home": {
                         "id": 10145,
-                        "score": 0,
+                        "score": 1,
                         "name": "Spartak Varna",
                         "longName": "Spartak Varna"
                     },
                     "away": {
                         "id": 10140,
-                        "score": 0,
+                        "score": 1,
                         "name": "Dobrudzha Dobrich",
                         "longName": "Dobrudzha Dobrich"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "33",
                     "status": {
                         "utcTime": "2026-05-06T17:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 19:00:00"
+                            "firstHalfStarted": "06.05.2026 19:00:15",
+                            "secondHalfStarted": "06.05.2026 20:02:14"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778086800000
                 }
@@ -1269,28 +1642,37 @@
                     "time": "06.05.2026 18:00",
                     "home": {
                         "id": 671935,
-                        "score": 0,
+                        "score": 1,
                         "name": "Bayern M\u00fcnchen (W)",
                         "longName": "Bayern M\u00fcnchen (W)"
                     },
                     "away": {
                         "id": 679910,
-                        "score": 0,
+                        "score": 1,
                         "name": "TSG 1899 Hoffenheim (W)",
                         "longName": "TSG 1899 Hoffenheim (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "24",
                     "status": {
                         "utcTime": "2026-05-06T16:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 18:00:00"
+                            "firstHalfStarted": "06.05.2026 18:00:18",
+                            "secondHalfStarted": "06.05.2026 19:04:11"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778083200000
                 }
@@ -1311,7 +1693,7 @@
                     "time": "06.05.2026 18:45",
                     "home": {
                         "id": 401657,
-                        "score": 0,
+                        "score": 5,
                         "name": "Barcelona (W)",
                         "longName": "Barcelona (W)"
                     },
@@ -1322,17 +1704,26 @@
                         "longName": "Levante (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-05-06T16:45:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 18:45:00"
+                            "firstHalfStarted": "06.05.2026 18:47:40",
+                            "secondHalfStarted": "06.05.2026 19:50:23"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "5 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778085900000
                 }
@@ -1354,7 +1745,7 @@
                     "time": "06.05.2026 17:30",
                     "home": {
                         "id": 1515102,
-                        "score": 0,
+                        "score": 2,
                         "name": "Corvinul Hunedoara",
                         "longName": "Corvinul Hunedoara"
                     },
@@ -1365,17 +1756,26 @@
                         "longName": "FC Voluntari"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "8",
                     "status": {
                         "utcTime": "2026-05-06T15:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:30:00"
+                            "firstHalfStarted": "06.05.2026 17:32:32",
+                            "secondHalfStarted": "06.05.2026 18:37:42"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778081400000
                 }
@@ -1440,28 +1840,39 @@
                     "time": "07.05.2026 02:00",
                     "home": {
                         "id": 1384118,
-                        "score": 0,
+                        "score": 1,
                         "name": "Olancho FC",
+                        "redCards": 1,
                         "longName": "Olancho FC"
                     },
                     "away": {
                         "id": 1512967,
-                        "score": 0,
+                        "score": 3,
                         "name": "Genesis FC",
                         "longName": "Genesis FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "2",
                     "status": {
                         "utcTime": "2026-05-07T00:00:00.000Z",
+                        "numberOfHomeRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 02:00:00"
+                            "firstHalfStarted": "07.05.2026 02:01:12",
+                            "secondHalfStarted": "07.05.2026 03:07:53"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 3",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778112000000
                 }
@@ -1475,7 +1886,7 @@
             "ccode": "GUA",
             "id": 927577,
             "primaryId": 336,
-            "name": "Liga Nacional Clausura Final Stage",
+            "name": "Liga Nacional Clausura",
             "matches": [
                 {
                     "id": 5450866,
@@ -1489,22 +1900,31 @@
                     },
                     "away": {
                         "id": 9933,
-                        "score": 0,
+                        "score": 2,
                         "name": "CSD Municipal",
                         "longName": "CSD Municipal"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1/2",
                     "status": {
                         "utcTime": "2026-05-06T21:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 23:00:00"
+                            "firstHalfStarted": "06.05.2026 23:05:19",
+                            "secondHalfStarted": "07.05.2026 00:09:30"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778101200000
                 }
@@ -1518,7 +1938,7 @@
             "ccode": "PAN",
             "id": 928938,
             "primaryId": 9039,
-            "name": "LPF Clausura Final Stage",
+            "name": "LPF Clausura",
             "matches": [
                 {
                     "id": 5448633,
@@ -1526,28 +1946,43 @@
                     "time": "06.05.2026 22:00",
                     "home": {
                         "id": 1888923,
-                        "score": 0,
+                        "score": 1,
                         "name": "Union Cocle",
+                        "penScore": 2,
                         "longName": "Union Cocle"
                     },
                     "away": {
                         "id": 1514007,
-                        "score": 0,
+                        "score": 1,
                         "name": "UMECIT FC",
+                        "penScore": 3,
+                        "redCards": 1,
                         "longName": "UMECIT FC"
                     },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "eliminatedTeamId": 1888923,
+                    "statusId": 13,
                     "tournamentStage": "1/4",
                     "status": {
                         "utcTime": "2026-05-06T20:00:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 22:00:00"
+                            "firstHalfStarted": "06.05.2026 22:00:12",
+                            "secondHalfStarted": "06.05.2026 23:02:17",
+                            "firstExtraHalfStarted": "06.05.2026 23:58:00",
+                            "secondExtraHalfStarted": "07.05.2026 00:15:46"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "Pen",
+                            "shortKey": "penalties_short",
+                            "long": "After penalties",
+                            "longKey": "afterpenalties"
+                        }
                     },
                     "timeTS": 1778097600000
                 }
@@ -1612,7 +2047,7 @@
                     "time": "06.05.2026 17:00",
                     "home": {
                         "id": 866109,
-                        "score": 0,
+                        "score": 1,
                         "name": "Ararat Armenia",
                         "longName": "Ararat Armenia"
                     },
@@ -1623,17 +2058,66 @@
                         "longName": "Pyunik"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "16",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:05:37",
+                            "secondHalfStarted": "06.05.2026 18:09:38"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
+                    },
+                    "timeTS": 1778079600000
+                },
+                {
+                    "id": 5185298,
+                    "leagueId": 118,
+                    "time": "06.05.2026 17:00",
+                    "home": {
+                        "id": 1388663,
+                        "score": 1,
+                        "name": "Gandzasar",
+                        "longName": "Gandzasar"
+                    },
+                    "away": {
+                        "id": 866111,
+                        "score": 4,
+                        "name": "FC Noah",
+                        "longName": "FC Noah"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 6,
+                    "tournamentStage": "16",
+                    "status": {
+                        "utcTime": "2026-05-06T15:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "06.05.2026 17:00:38",
+                            "secondHalfStarted": "06.05.2026 18:05:08"
+                        },
+                        "periodLength": 45,
+                        "finished": true,
+                        "started": true,
+                        "cancelled": false,
+                        "awarded": false,
+                        "scoreStr": "1 - 4",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 }
@@ -1654,28 +2138,37 @@
                     "time": "06.05.2026 17:00",
                     "home": {
                         "id": 102027,
-                        "score": 0,
+                        "score": 5,
                         "name": "All Blacks",
                         "longName": "All Blacks"
                     },
                     "away": {
                         "id": 1194058,
-                        "score": 0,
+                        "score": 2,
                         "name": "Eleven Wonders",
                         "longName": "Eleven Wonders"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "30",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:03:27",
+                            "secondHalfStarted": "06.05.2026 18:08:27"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "5 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 },
@@ -1722,28 +2215,37 @@
                     "time": "06.05.2026 17:00",
                     "home": {
                         "id": 289802,
-                        "score": 0,
+                        "score": 1,
                         "name": "Bechem United",
                         "longName": "Bechem United"
                     },
                     "away": {
                         "id": 723961,
-                        "score": 0,
+                        "score": 2,
                         "name": "Dreams FC",
                         "longName": "Dreams FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "30",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:03:12",
+                            "secondHalfStarted": "06.05.2026 18:08:27"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 },
@@ -1753,28 +2255,37 @@
                     "time": "06.05.2026 17:00",
                     "home": {
                         "id": 159949,
-                        "score": 0,
+                        "score": 2,
                         "name": "Berekum Chelsea",
                         "longName": "Berekum Chelsea"
                     },
                     "away": {
                         "id": 106975,
-                        "score": 0,
+                        "score": 1,
                         "name": "Medeama SC",
                         "longName": "Medeama SC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "30",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:03:12",
+                            "secondHalfStarted": "06.05.2026 18:08:27"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 },
@@ -1784,7 +2295,7 @@
                     "time": "06.05.2026 17:00",
                     "home": {
                         "id": 1300594,
-                        "score": 0,
+                        "score": 2,
                         "name": "Bibiani Gold Stars",
                         "longName": "Bibiani Gold Stars"
                     },
@@ -1795,17 +2306,26 @@
                         "longName": "Samartex"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "30",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:03:27",
+                            "secondHalfStarted": "06.05.2026 18:08:27"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 },
@@ -1821,22 +2341,31 @@
                     },
                     "away": {
                         "id": 1517695,
-                        "score": 0,
+                        "score": 1,
                         "name": "Nations FC",
                         "longName": "Nations FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "30",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:03:27",
+                            "secondHalfStarted": "06.05.2026 18:08:27"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 },
@@ -1857,17 +2386,26 @@
                         "longName": "Karela United"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "30",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:03:12",
+                            "secondHalfStarted": "06.05.2026 18:08:27"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 },
@@ -1877,7 +2415,7 @@
                     "time": "06.05.2026 17:00",
                     "home": {
                         "id": 1665707,
-                        "score": 0,
+                        "score": 2,
                         "name": "Holy Stars",
                         "longName": "Holy Stars"
                     },
@@ -1885,20 +2423,31 @@
                         "id": 186663,
                         "score": 0,
                         "name": "Aduana Stars",
+                        "redCards": 1,
                         "longName": "Aduana Stars"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "30",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:02:19",
+                            "secondHalfStarted": "06.05.2026 18:08:27"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 },
@@ -1908,28 +2457,37 @@
                     "time": "06.05.2026 17:00",
                     "home": {
                         "id": 1665706,
-                        "score": 0,
+                        "score": 3,
                         "name": "Young Apostles",
                         "longName": "Young Apostles"
                     },
                     "away": {
                         "id": 1665708,
-                        "score": 0,
+                        "score": 1,
                         "name": "Vision FC",
                         "longName": "Vision FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "30",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:03:12",
+                            "secondHalfStarted": "06.05.2026 18:08:27"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 }
@@ -1950,7 +2508,7 @@
                     "time": "06.05.2026 17:15",
                     "home": {
                         "id": 165086,
-                        "score": 0,
+                        "score": 1,
                         "name": "Simba SC",
                         "longName": "Simba SC"
                     },
@@ -1961,19 +2519,68 @@
                         "longName": "JKT Tanzania"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "20",
                     "status": {
                         "utcTime": "2026-05-06T15:15:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:15:00"
+                            "firstHalfStarted": "06.05.2026 17:15:43",
+                            "secondHalfStarted": "06.05.2026 18:21:26"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778080500000
+                },
+                {
+                    "id": 4951049,
+                    "leagueId": 9066,
+                    "time": "06.05.2026 19:30",
+                    "home": {
+                        "id": 165088,
+                        "score": 0,
+                        "name": "Mtibwa Sugar",
+                        "longName": "Mtibwa Sugar"
+                    },
+                    "away": {
+                        "id": 1177034,
+                        "score": 1,
+                        "name": "Dodoma Jiji FC",
+                        "longName": "Dodoma Jiji FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 6,
+                    "tournamentStage": "20",
+                    "status": {
+                        "utcTime": "2026-05-06T17:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "06.05.2026 19:32:53",
+                            "secondHalfStarted": "06.05.2026 20:37:01"
+                        },
+                        "periodLength": 45,
+                        "finished": true,
+                        "started": true,
+                        "cancelled": false,
+                        "awarded": false,
+                        "scoreStr": "0 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
+                    },
+                    "timeTS": 1778088600000
                 }
             ],
             "internalRank": 0,
@@ -2035,28 +2642,37 @@
                     "time": "06.05.2026 17:00",
                     "home": {
                         "id": 1169987,
-                        "score": 0,
+                        "score": 3,
                         "name": "Le Havre (W)",
                         "longName": "Le Havre (W)"
                     },
                     "away": {
                         "id": 1661332,
-                        "score": 0,
+                        "score": 3,
                         "name": "Nantes (W)",
                         "longName": "Nantes (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "22",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:00:58",
+                            "secondHalfStarted": "06.05.2026 18:03:28"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 3",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 },
@@ -2068,26 +2684,37 @@
                         "id": 626232,
                         "score": 0,
                         "name": "Marseille (W)",
+                        "redCards": 1,
                         "longName": "Marseille (W)"
                     },
                     "away": {
                         "id": 593381,
-                        "score": 0,
+                        "score": 1,
                         "name": "Dijon Foot (W)",
                         "longName": "Dijon Foot (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "22",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
+                        "numberOfHomeRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:02:41",
+                            "secondHalfStarted": "06.05.2026 18:06:47"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 },
@@ -2097,28 +2724,37 @@
                     "time": "06.05.2026 17:00",
                     "home": {
                         "id": 394119,
-                        "score": 0,
+                        "score": 3,
                         "name": "OL Lyonnes (W)",
                         "longName": "OL Lyonnes (W)"
                     },
                     "away": {
                         "id": 606039,
-                        "score": 0,
+                        "score": 1,
                         "name": "Montpellier (W)",
                         "longName": "Montpellier (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "22",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:01:46",
+                            "secondHalfStarted": "06.05.2026 18:05:08"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 },
@@ -2128,28 +2764,37 @@
                     "time": "06.05.2026 17:00",
                     "home": {
                         "id": 862893,
-                        "score": 0,
+                        "score": 6,
                         "name": "Paris FC (W)",
                         "longName": "Paris FC (W)"
                     },
                     "away": {
                         "id": 1784549,
-                        "score": 0,
+                        "score": 2,
                         "name": "Lens (W)",
                         "longName": "Lens (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "22",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:02:41",
+                            "secondHalfStarted": "06.05.2026 18:07:23"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "6 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 },
@@ -2159,7 +2804,7 @@
                     "time": "06.05.2026 17:00",
                     "home": {
                         "id": 294858,
-                        "score": 0,
+                        "score": 2,
                         "name": "Paris Saint Germain (W)",
                         "longName": "Paris Saint Germain (W)"
                     },
@@ -2170,17 +2815,26 @@
                         "longName": "Strasbourg (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "22",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:00:58",
+                            "secondHalfStarted": "06.05.2026 18:06:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 },
@@ -2190,28 +2844,39 @@
                     "time": "06.05.2026 17:00",
                     "home": {
                         "id": 612967,
-                        "score": 0,
+                        "score": 1,
                         "name": "Saint-Etienne (W)",
                         "longName": "Saint-Etienne (W)"
                     },
                     "away": {
                         "id": 862902,
-                        "score": 0,
+                        "score": 1,
                         "name": "Fleury Merogis U.S (W)",
+                        "redCards": 1,
                         "longName": "Fleury Merogis U.S (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "22",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:02:19",
+                            "secondHalfStarted": "06.05.2026 18:06:50"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 }
@@ -2233,28 +2898,37 @@
                     "time": "06.05.2026 19:30",
                     "home": {
                         "id": 102100,
-                        "score": 0,
+                        "score": 1,
                         "name": "AmaZulu FC",
                         "longName": "AmaZulu FC"
                     },
                     "away": {
                         "id": 102097,
-                        "score": 0,
+                        "score": 1,
                         "name": "Lamontville Golden Arrows",
                         "longName": "Lamontville Golden Arrows"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-05-06T17:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 19:30:00"
+                            "firstHalfStarted": "06.05.2026 19:30:31",
+                            "secondHalfStarted": "06.05.2026 20:35:53"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778088600000
                 },
@@ -2264,28 +2938,39 @@
                     "time": "06.05.2026 19:30",
                     "home": {
                         "id": 4530,
-                        "score": 0,
+                        "score": 1,
                         "name": "Mamelodi Sundowns FC",
+                        "redCards": 1,
                         "longName": "Mamelodi Sundowns FC"
                     },
                     "away": {
                         "id": 6279,
-                        "score": 0,
+                        "score": 1,
                         "name": "Kaizer Chiefs",
                         "longName": "Kaizer Chiefs"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-05-06T17:30:00.000Z",
+                        "numberOfHomeRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 19:30:00"
+                            "firstHalfStarted": "06.05.2026 19:30:53",
+                            "secondHalfStarted": "06.05.2026 20:39:44"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778088600000
                 },
@@ -2295,28 +2980,39 @@
                     "time": "06.05.2026 19:30",
                     "home": {
                         "id": 352390,
-                        "score": 0,
+                        "score": 1,
                         "name": "Marumo Gallants",
+                        "redCards": 1,
                         "longName": "Marumo Gallants"
                     },
                     "away": {
                         "id": 953498,
-                        "score": 0,
+                        "score": 1,
                         "name": "TS Galaxy",
                         "longName": "TS Galaxy"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-05-06T17:30:00.000Z",
+                        "numberOfHomeRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 19:30:00"
+                            "firstHalfStarted": "06.05.2026 19:30:29",
+                            "secondHalfStarted": "06.05.2026 20:32:28"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778088600000
                 },
@@ -2337,17 +3033,26 @@
                         "longName": "Polokwane City"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-05-06T17:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 19:30:00"
+                            "firstHalfStarted": "06.05.2026 19:32:36",
+                            "secondHalfStarted": "06.05.2026 20:33:59"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778088600000
                 }
@@ -2369,28 +3074,39 @@
                     "time": "06.05.2026 20:45",
                     "home": {
                         "id": 4615,
-                        "score": 0,
+                        "score": 3,
                         "name": "Dungannon Swifts",
                         "longName": "Dungannon Swifts"
                     },
                     "away": {
                         "id": 187969,
-                        "score": 0,
+                        "score": 1,
                         "name": "Carrick Rangers",
+                        "redCards": 1,
                         "longName": "Carrick Rangers"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1/4",
                     "status": {
                         "utcTime": "2026-05-06T18:45:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 20:45:00"
+                            "firstHalfStarted": "06.05.2026 20:45:40",
+                            "secondHalfStarted": "06.05.2026 21:53:36"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778093100000
                 }
@@ -2404,7 +3120,7 @@
             "ccode": "SLV",
             "id": 929068,
             "primaryId": 335,
-            "name": "Primera Division - Clausura Final Stage",
+            "name": "Primera Division - Clausura",
             "matches": [
                 {
                     "id": 5455922,
@@ -2412,28 +3128,37 @@
                     "time": "06.05.2026 23:00",
                     "home": {
                         "id": 49739,
-                        "score": 0,
+                        "score": 2,
                         "name": "CD \u00c1guila",
                         "longName": "CD \u00c1guila"
                     },
                     "away": {
                         "id": 49740,
-                        "score": 0,
+                        "score": 1,
                         "name": "Alianza FC",
                         "longName": "Alianza FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1/4",
                     "status": {
                         "utcTime": "2026-05-06T21:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 23:00:00"
+                            "firstHalfStarted": "06.05.2026 23:03:14",
+                            "secondHalfStarted": "07.05.2026 00:04:58"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778101200000
                 },
@@ -2449,22 +3174,33 @@
                     },
                     "away": {
                         "id": 49744,
-                        "score": 0,
+                        "score": 1,
                         "name": "Firpo",
                         "longName": "Firpo"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 10,
                     "tournamentStage": "1/4",
                     "status": {
                         "utcTime": "2026-05-07T01:15:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 03:15:00"
+                            "firstHalfStarted": "07.05.2026 03:16:34"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": false,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "ongoing": true,
+                        "scoreStr": "0 - 1",
+                        "liveTime": {
+                            "short": "HT",
+                            "shortKey": "halftime_short",
+                            "long": "Half-Time",
+                            "longKey": "pause_match",
+                            "maxTime": 45,
+                            "basePeriod": 45,
+                            "addedTime": 0
+                        }
                     },
                     "timeTS": 1778116500000
                 },
@@ -2485,17 +3221,28 @@
                         "longName": "CD FAS"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 2,
                     "tournamentStage": "1/4",
                     "status": {
                         "utcTime": "2026-05-07T02:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 04:00:00"
+                            "firstHalfStarted": "07.05.2026 04:03:08"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": false,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "ongoing": true,
+                        "scoreStr": "0 - 0",
+                        "liveTime": {
+                            "short": "3\u200e\u2019\u200e",
+                            "shortKey": "",
+                            "long": "2:21",
+                            "longKey": "",
+                            "maxTime": 45,
+                            "basePeriod": 45,
+                            "addedTime": 0
+                        }
                     },
                     "timeTS": 1778119200000
                 }
@@ -2517,28 +3264,37 @@
                     "time": "06.05.2026 18:45",
                     "home": {
                         "id": 102119,
-                        "score": 0,
+                        "score": 2,
                         "name": "Shabab Al-Ahli Dubai FC",
                         "longName": "Shabab Al-Ahli Dubai FC"
                     },
                     "away": {
                         "id": 102123,
-                        "score": 0,
+                        "score": 1,
                         "name": "Al-Nasr SC",
                         "longName": "Al-Nasr SC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "24",
                     "status": {
                         "utcTime": "2026-05-06T16:45:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 18:45:00"
+                            "firstHalfStarted": "06.05.2026 18:46:18",
+                            "secondHalfStarted": "06.05.2026 19:51:04"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778085900000
                 },
@@ -2554,22 +3310,31 @@
                     },
                     "away": {
                         "id": 102117,
-                        "score": 0,
+                        "score": 5,
                         "name": "Al-Ain",
                         "longName": "Al-Ain"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "24",
                     "status": {
                         "utcTime": "2026-05-06T16:45:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 18:45:00"
+                            "firstHalfStarted": "06.05.2026 18:47:00",
+                            "secondHalfStarted": "06.05.2026 19:50:23"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 5",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778085900000
                 }
@@ -2590,28 +3355,37 @@
                     "time": "07.05.2026 01:00",
                     "home": {
                         "id": 162165,
-                        "score": 0,
+                        "score": 1,
                         "name": "Brasil de Pelotas",
                         "longName": "Brasil de Pelotas"
                     },
                     "away": {
                         "id": 8702,
-                        "score": 0,
+                        "score": 2,
                         "name": "Internacional",
                         "longName": "Internacional"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "final",
                     "status": {
                         "utcTime": "2026-05-06T23:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 01:00:00"
+                            "firstHalfStarted": "07.05.2026 01:01:38",
+                            "secondHalfStarted": "07.05.2026 02:08:43"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778108400000
                 }
@@ -2632,28 +3406,37 @@
                     "time": "06.05.2026 18:00",
                     "home": {
                         "id": 8167,
-                        "score": 0,
+                        "score": 2,
                         "name": "Hannover 96 II",
                         "longName": "Hannover 96 II"
                     },
                     "away": {
                         "id": 8192,
-                        "score": 0,
+                        "score": 3,
                         "name": "Kickers Emden",
                         "longName": "Kickers Emden"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "25",
                     "status": {
                         "utcTime": "2026-05-06T16:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 18:00:00"
+                            "firstHalfStarted": "06.05.2026 18:06:22",
+                            "secondHalfStarted": "06.05.2026 19:06:20"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 3",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778083200000
                 },
@@ -2663,28 +3446,37 @@
                     "time": "06.05.2026 19:00",
                     "home": {
                         "id": 8663,
-                        "score": 0,
+                        "score": 3,
                         "name": "L\u00fcbeck",
                         "longName": "L\u00fcbeck"
                     },
                     "away": {
                         "id": 79905,
-                        "score": 0,
+                        "score": 1,
                         "name": "Oldenburg",
                         "longName": "Oldenburg"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "20",
                     "status": {
                         "utcTime": "2026-05-06T17:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 19:00:00"
+                            "firstHalfStarted": "06.05.2026 19:01:53",
+                            "secondHalfStarted": "06.05.2026 20:05:22"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778086800000
                 },
@@ -2694,28 +3486,37 @@
                     "time": "06.05.2026 19:00",
                     "home": {
                         "id": 4478,
-                        "score": 0,
+                        "score": 1,
                         "name": "St. Pauli II",
                         "longName": "St. Pauli II"
                     },
                     "away": {
                         "id": 145705,
-                        "score": 0,
+                        "score": 1,
                         "name": "Bremer SV",
                         "longName": "Bremer SV"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "19",
                     "status": {
                         "utcTime": "2026-05-06T17:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "16.11.2025 14:02:04"
+                            "firstHalfStarted": "06.05.2026 19:03:33",
+                            "secondHalfStarted": "06.05.2026 20:05:22"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778086800000
                 }
@@ -2737,28 +3538,37 @@
                     "time": "06.05.2026 20:00",
                     "home": {
                         "id": 2530,
-                        "score": 0,
+                        "score": 3,
                         "name": "Al Ahli",
                         "longName": "Al Ahli"
                     },
                     "away": {
                         "id": 177356,
-                        "score": 0,
+                        "score": 1,
                         "name": "Al Fateh FC",
                         "longName": "Al Fateh FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "28",
                     "status": {
                         "utcTime": "2026-05-06T18:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 20:00:00"
+                            "firstHalfStarted": "06.05.2026 20:02:40",
+                            "secondHalfStarted": "06.05.2026 21:10:30"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778090400000
                 }
@@ -2779,28 +3589,41 @@
                     "time": "06.05.2026 20:00",
                     "home": {
                         "id": 212658,
-                        "score": 0,
+                        "score": 1,
                         "name": "Campobasso",
+                        "redCards": 1,
                         "longName": "Campobasso"
                     },
                     "away": {
                         "id": 770928,
-                        "score": 0,
+                        "score": 1,
                         "name": "Pineto",
+                        "redCards": 1,
                         "longName": "Pineto"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1/16",
                     "status": {
                         "utcTime": "2026-05-06T18:00:00.000Z",
+                        "numberOfHomeRedCards": 1,
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 20:00:00"
+                            "firstHalfStarted": "06.05.2026 20:02:41",
+                            "secondHalfStarted": "06.05.2026 21:04:37"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778090400000
                 },
@@ -2810,28 +3633,37 @@
                     "time": "06.05.2026 20:00",
                     "home": {
                         "id": 277990,
-                        "score": 0,
+                        "score": 1,
                         "name": "Casertana",
                         "longName": "Casertana"
                     },
                     "away": {
                         "id": 9884,
-                        "score": 0,
+                        "score": 1,
                         "name": "Crotone",
                         "longName": "Crotone"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1/16",
                     "status": {
                         "utcTime": "2026-05-06T18:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 20:00:00"
+                            "firstHalfStarted": "06.05.2026 20:02:41",
+                            "secondHalfStarted": "06.05.2026 21:04:20"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778090400000
                 },
@@ -2841,7 +3673,7 @@
                     "time": "06.05.2026 20:00",
                     "home": {
                         "id": 6485,
-                        "score": 0,
+                        "score": 1,
                         "name": "Cittadella",
                         "longName": "Cittadella"
                     },
@@ -2852,17 +3684,26 @@
                         "longName": "Lumezzane"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1/16",
                     "status": {
                         "utcTime": "2026-05-06T18:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 20:00:00"
+                            "firstHalfStarted": "06.05.2026 20:02:41",
+                            "secondHalfStarted": "06.05.2026 21:02:43"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778090400000
                 },
@@ -2872,28 +3713,37 @@
                     "time": "06.05.2026 20:00",
                     "home": {
                         "id": 6456,
-                        "score": 0,
+                        "score": 1,
                         "name": "Cosenza",
                         "longName": "Cosenza"
                     },
                     "away": {
                         "id": 6460,
-                        "score": 0,
+                        "score": 5,
                         "name": "Casarano",
                         "longName": "Casarano"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1/16",
                     "status": {
                         "utcTime": "2026-05-06T18:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 20:00:00"
+                            "firstHalfStarted": "06.05.2026 20:02:41",
+                            "secondHalfStarted": "06.05.2026 21:07:05"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 5",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778090400000
                 },
@@ -2909,22 +3759,31 @@
                     },
                     "away": {
                         "id": 584069,
-                        "score": 0,
+                        "score": 2,
                         "name": "Pianese",
                         "longName": "Pianese"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1/16",
                     "status": {
                         "utcTime": "2026-05-06T18:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 20:00:00"
+                            "firstHalfStarted": "06.05.2026 20:02:41",
+                            "secondHalfStarted": "06.05.2026 21:02:43"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778090400000
                 },
@@ -2934,28 +3793,37 @@
                     "time": "06.05.2026 20:45",
                     "home": {
                         "id": 6512,
-                        "score": 0,
+                        "score": 2,
                         "name": "Lecco",
                         "longName": "Lecco"
                     },
                     "away": {
                         "id": 568741,
-                        "score": 0,
+                        "score": 1,
                         "name": "Giana Erminio",
                         "longName": "Giana Erminio"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1/16",
                     "status": {
                         "utcTime": "2026-05-06T18:45:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 20:45:00"
+                            "firstHalfStarted": "06.05.2026 20:47:18",
+                            "secondHalfStarted": "06.05.2026 21:51:23"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778093100000
                 }
@@ -2977,28 +3845,37 @@
                     "time": "06.05.2026 19:00",
                     "home": {
                         "id": 191818,
-                        "score": 0,
+                        "score": 3,
                         "name": "Al Karkh",
                         "longName": "Al Karkh"
                     },
                     "away": {
                         "id": 191814,
-                        "score": 0,
+                        "score": 1,
                         "name": "Zakho",
                         "longName": "Zakho"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "33",
                     "status": {
                         "utcTime": "2026-05-06T17:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 19:00:00"
+                            "firstHalfStarted": "06.05.2026 19:01:35",
+                            "secondHalfStarted": "06.05.2026 20:13:23"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778086800000
                 },
@@ -3008,28 +3885,37 @@
                     "time": "06.05.2026 19:00",
                     "home": {
                         "id": 101656,
-                        "score": 0,
+                        "score": 2,
                         "name": "Al Quwa Al Jawiya",
                         "longName": "Al Quwa Al Jawiya"
                     },
                     "away": {
                         "id": 1811191,
-                        "score": 0,
+                        "score": 1,
                         "name": "Al-Mosul",
                         "longName": "Al-Mosul"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "33",
                     "status": {
                         "utcTime": "2026-05-06T17:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 19:00:00"
+                            "firstHalfStarted": "06.05.2026 19:03:28",
+                            "secondHalfStarted": "06.05.2026 20:08:42"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778086800000
                 }
@@ -3048,33 +3934,44 @@
                 {
                     "id": 5109746,
                     "leagueId": 8972,
-                    "time": "07.05.2026 03:00",
+                    "time": "07.05.2026 03:07",
                     "home": {
                         "id": 1003208,
-                        "score": 0,
+                        "score": 2,
                         "name": "New Mexico United",
                         "longName": "New Mexico United"
                     },
                     "away": {
                         "id": 1003209,
-                        "score": 0,
+                        "score": 1,
                         "name": "El Paso Locomotive FC",
                         "longName": "El Paso Locomotive FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 10,
                     "tournamentStage": "1",
                     "status": {
-                        "utcTime": "2026-05-07T01:00:00.000Z",
+                        "utcTime": "2026-05-07T01:07:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 03:00:00"
+                            "firstHalfStarted": "07.05.2026 03:07:53"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": false,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "ongoing": true,
+                        "scoreStr": "2 - 1",
+                        "liveTime": {
+                            "short": "HT",
+                            "shortKey": "halftime_short",
+                            "long": "Half-Time",
+                            "longKey": "pause_match",
+                            "maxTime": 45,
+                            "basePeriod": 45,
+                            "addedTime": 0
+                        }
                     },
-                    "timeTS": 1778115600000
+                    "timeTS": 1778116020000
                 }
             ],
             "internalRank": 9,
@@ -3093,7 +3990,7 @@
                     "time": "07.05.2026 01:30",
                     "home": {
                         "id": 614315,
-                        "score": 0,
+                        "score": 1,
                         "name": "Charlotte Independence",
                         "longName": "Charlotte Independence"
                     },
@@ -3104,17 +4001,26 @@
                         "longName": "Boise"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-05-06T23:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 01:30:00"
+                            "firstHalfStarted": "07.05.2026 01:37:46",
+                            "secondHalfStarted": "07.05.2026 02:40:12"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778110200000
                 },
@@ -3124,7 +4030,7 @@
                     "time": "07.05.2026 01:30",
                     "home": {
                         "id": 1358072,
-                        "score": 0,
+                        "score": 3,
                         "name": "Fort Wayne",
                         "longName": "Fort Wayne"
                     },
@@ -3135,17 +4041,26 @@
                         "longName": "Portland Hearts of Pine"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-05-06T23:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 01:30:00"
+                            "firstHalfStarted": "07.05.2026 01:38:23",
+                            "secondHalfStarted": "07.05.2026 02:42:29"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778110200000
                 }
@@ -3164,7 +4079,7 @@
                 {
                     "id": 4930323,
                     "leagueId": 901708,
-                    "time": "07.05.2026 01:00",
+                    "time": "07.05.2026 01:07",
                     "home": {
                         "id": 1669152,
                         "score": 0,
@@ -3173,24 +4088,33 @@
                     },
                     "away": {
                         "id": 1787881,
-                        "score": 0,
+                        "score": 1,
                         "name": "Sporting JAX (W)",
                         "longName": "Sporting JAX (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
-                        "utcTime": "2026-05-06T23:00:00.000Z",
+                        "utcTime": "2026-05-06T23:07:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 01:00:00"
+                            "firstHalfStarted": "07.05.2026 01:07:59",
+                            "secondHalfStarted": "07.05.2026 02:12:48"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
-                    "timeTS": 1778108400000
+                    "timeTS": 1778108820000
                 }
             ],
             "parentLeagueId": 10699,
@@ -3210,28 +4134,37 @@
                     "time": "06.05.2026 20:45",
                     "home": {
                         "id": 231505,
-                        "score": 0,
+                        "score": 1,
                         "name": "Brighton (W)",
                         "longName": "Brighton (W)"
                     },
                     "away": {
                         "id": 258657,
-                        "score": 0,
+                        "score": 1,
                         "name": "Arsenal (W)",
                         "longName": "Arsenal (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "16",
                     "status": {
                         "utcTime": "2026-05-06T18:45:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 20:45:00"
+                            "firstHalfStarted": "06.05.2026 20:45:26",
+                            "secondHalfStarted": "06.05.2026 21:48:21"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778093100000
                 }
@@ -3252,7 +4185,7 @@
                     "time": "07.05.2026 01:30",
                     "home": {
                         "id": 161195,
-                        "score": 0,
+                        "score": 5,
                         "name": "Montreal",
                         "longName": "CF Montreal"
                     },
@@ -3263,17 +4196,26 @@
                         "longName": "Calgary Blizzard"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "Preliminary Round",
                     "status": {
                         "utcTime": "2026-05-06T23:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 01:30:00"
+                            "firstHalfStarted": "07.05.2026 01:36:48",
+                            "secondHalfStarted": "07.05.2026 02:38:02"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "5 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778110200000
                 }
@@ -3294,7 +4236,7 @@
                     "time": "07.05.2026 00:00",
                     "home": {
                         "id": 109708,
-                        "score": 0,
+                        "score": 4,
                         "name": "ABC",
                         "longName": "ABC"
                     },
@@ -3305,17 +4247,26 @@
                         "longName": "Juazeirense"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "Quarter-finals",
                     "status": {
                         "utcTime": "2026-05-06T22:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 00:00:00"
+                            "firstHalfStarted": "07.05.2026 00:01:27",
+                            "secondHalfStarted": "07.05.2026 01:07:15"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "4 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778104800000
                 },
@@ -3325,7 +4276,7 @@
                     "time": "07.05.2026 02:30",
                     "home": {
                         "id": 7733,
-                        "score": 0,
+                        "score": 1,
                         "name": "Vitoria",
                         "longName": "Vitoria"
                     },
@@ -3336,17 +4287,29 @@
                         "longName": "Ceara"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 3,
                     "tournamentStage": "Quarter-finals",
                     "status": {
                         "utcTime": "2026-05-07T00:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 02:30:00"
+                            "firstHalfStarted": "07.05.2026 02:30:34",
+                            "secondHalfStarted": "07.05.2026 03:35:20"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": false,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "ongoing": true,
+                        "scoreStr": "1 - 0",
+                        "liveTime": {
+                            "short": "76\u200e\u2019\u200e",
+                            "shortKey": "",
+                            "long": "75:09",
+                            "longKey": "",
+                            "maxTime": 90,
+                            "basePeriod": 90,
+                            "addedTime": 0
+                        }
                     },
                     "timeTS": 1778113800000
                 },
@@ -3367,17 +4330,29 @@
                         "longName": "ASA"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 3,
                     "tournamentStage": "Quarter-finals",
                     "status": {
                         "utcTime": "2026-05-07T00:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 02:30:00"
+                            "firstHalfStarted": "07.05.2026 02:31:47",
+                            "secondHalfStarted": "07.05.2026 03:36:51"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": false,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "ongoing": true,
+                        "scoreStr": "0 - 0",
+                        "liveTime": {
+                            "short": "74\u200e\u2019\u200e",
+                            "shortKey": "",
+                            "long": "73:38",
+                            "longKey": "",
+                            "maxTime": 90,
+                            "basePeriod": 90,
+                            "addedTime": 0
+                        }
                     },
                     "timeTS": 1778113800000
                 }
@@ -3398,28 +4373,37 @@
                     "time": "06.05.2026 17:00",
                     "home": {
                         "id": 132215,
-                        "score": 0,
+                        "score": 5,
                         "name": "Sparta Prague B",
                         "longName": "Sparta Prague B"
                     },
                     "away": {
                         "id": 358094,
-                        "score": 0,
+                        "score": 1,
                         "name": "SK Prostejov",
                         "longName": "SK Prostejov"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:00:11",
+                            "secondHalfStarted": "06.05.2026 18:03:09"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "5 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 },
@@ -3429,28 +4413,37 @@
                     "time": "06.05.2026 17:00",
                     "home": {
                         "id": 7840,
-                        "score": 0,
+                        "score": 3,
                         "name": "SK Dynamo Ceske Budejovice",
                         "longName": "SK Dynamo Ceske Budejovice"
                     },
                     "away": {
                         "id": 1949,
-                        "score": 0,
+                        "score": 1,
                         "name": "Vysocina Jihlava",
                         "longName": "Vysocina Jihlava"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:01:15",
+                            "secondHalfStarted": "06.05.2026 18:04:23"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 },
@@ -3460,28 +4453,37 @@
                     "time": "06.05.2026 17:00",
                     "home": {
                         "id": 1154238,
-                        "score": 0,
+                        "score": 1,
                         "name": "Banik Ostrava B",
                         "longName": "Banik Ostrava B"
                     },
                     "away": {
                         "id": 1673,
-                        "score": 0,
+                        "score": 1,
                         "name": "FC Zbrojovka Brno",
                         "longName": "FC Zbrojovka Brno"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:00:18",
+                            "secondHalfStarted": "06.05.2026 18:00:46"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 },
@@ -3491,7 +4493,7 @@
                     "time": "06.05.2026 17:00",
                     "home": {
                         "id": 2404,
-                        "score": 0,
+                        "score": 5,
                         "name": "Hanacka Slavia Kromeriz",
                         "longName": "Hanacka Slavia Kromeriz"
                     },
@@ -3502,17 +4504,26 @@
                         "longName": "Slavia Prague B"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 17:00:16",
+                            "secondHalfStarted": "06.05.2026 18:00:33"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "5 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 },
@@ -3522,7 +4533,7 @@
                     "time": "06.05.2026 18:00",
                     "home": {
                         "id": 157007,
-                        "score": 0,
+                        "score": 2,
                         "name": "FC Silon Taborsko",
                         "longName": "FC Silon Taborsko"
                     },
@@ -3533,17 +4544,26 @@
                         "longName": "MFK Chrudim"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-05-06T16:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 18:00:00"
+                            "firstHalfStarted": "06.05.2026 18:02:05",
+                            "secondHalfStarted": "06.05.2026 19:03:51"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778083200000
                 },
@@ -3553,28 +4573,37 @@
                     "time": "06.05.2026 18:00",
                     "home": {
                         "id": 5733,
-                        "score": 0,
+                        "score": 2,
                         "name": "Usti nad Labem",
                         "longName": "Usti nad Labem"
                     },
                     "away": {
                         "id": 1713,
-                        "score": 0,
+                        "score": 1,
                         "name": "Opava",
                         "longName": "Opava"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-05-06T16:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 18:00:00"
+                            "firstHalfStarted": "06.05.2026 18:00:13",
+                            "secondHalfStarted": "06.05.2026 19:02:39"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778083200000
                 },
@@ -3584,28 +4613,39 @@
                     "time": "06.05.2026 18:00",
                     "home": {
                         "id": 175807,
-                        "score": 0,
+                        "score": 3,
                         "name": "FC Vlasim",
                         "longName": "FC Vlasim"
                     },
                     "away": {
                         "id": 6096,
-                        "score": 0,
+                        "score": 1,
                         "name": "Zizkov",
+                        "redCards": 1,
                         "longName": "Zizkov"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-05-06T16:00:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 18:00:00"
+                            "firstHalfStarted": "06.05.2026 18:00:17",
+                            "secondHalfStarted": "06.05.2026 19:01:45"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778083200000
                 },
@@ -3621,22 +4661,31 @@
                     },
                     "away": {
                         "id": 1672,
-                        "score": 0,
+                        "score": 2,
                         "name": "Pribram",
                         "longName": "Pribram"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-05-06T16:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 18:00:00"
+                            "firstHalfStarted": "06.05.2026 18:01:34",
+                            "secondHalfStarted": "06.05.2026 19:03:43"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778083200000
                 }
@@ -3659,26 +4708,37 @@
                         "id": 10181,
                         "score": 0,
                         "name": "Hapoel Tel Aviv",
+                        "redCards": 1,
                         "longName": "Hapoel Tel Aviv"
                     },
                     "away": {
                         "id": 8173,
-                        "score": 0,
+                        "score": 1,
                         "name": "Beitar Jerusalem",
                         "longName": "Beitar Jerusalem"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "Championship Round - Round 5",
                     "status": {
                         "utcTime": "2026-05-06T16:30:00.000Z",
+                        "numberOfHomeRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 18:30:00"
+                            "firstHalfStarted": "06.05.2026 18:30:20",
+                            "secondHalfStarted": "06.05.2026 19:34:07"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778085000000
                 },
@@ -3690,26 +4750,37 @@
                         "id": 10185,
                         "score": 0,
                         "name": "Maccabi Haifa",
+                        "redCards": 1,
                         "longName": "Maccabi Haifa"
                     },
                     "away": {
                         "id": 9754,
-                        "score": 0,
+                        "score": 1,
                         "name": "Hapoel Beer Sheva",
                         "longName": "Hapoel Beer Sheva"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "Championship Round - Round 5",
                     "status": {
                         "utcTime": "2026-05-06T17:00:00.000Z",
+                        "numberOfHomeRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 19:00:00"
+                            "firstHalfStarted": "06.05.2026 19:00:22",
+                            "secondHalfStarted": "06.05.2026 20:04:38"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778086800000
                 }
@@ -3736,22 +4807,31 @@
                     },
                     "away": {
                         "id": 521005,
-                        "score": 0,
+                        "score": 2,
                         "name": "Ventura County FC",
                         "longName": "Ventura County FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "20",
                     "status": {
                         "utcTime": "2026-05-07T00:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 02:00:00"
+                            "firstHalfStarted": "07.05.2026 02:03:31",
+                            "secondHalfStarted": "07.05.2026 03:09:05"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778112000000
                 }
@@ -3772,7 +4852,7 @@
                     "time": "07.05.2026 01:00",
                     "home": {
                         "id": 1739719,
-                        "score": 0,
+                        "score": 4,
                         "name": "Ottawa Rapid FC",
                         "longName": "Ottawa Rapid FC"
                     },
@@ -3783,17 +4863,26 @@
                         "longName": "Vancouver Rise FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "Regular Season",
                     "status": {
                         "utcTime": "2026-05-06T23:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 01:00:00"
+                            "firstHalfStarted": "07.05.2026 01:10:58",
+                            "secondHalfStarted": "07.05.2026 02:18:54"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "4 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778108400000
                 }
@@ -3887,7 +4976,7 @@
                     "time": "07.05.2026 00:30",
                     "home": {
                         "id": 197778,
-                        "score": 0,
+                        "score": 1,
                         "name": "Moto Club MA",
                         "longName": "Moto Club MA"
                     },
@@ -3898,17 +4987,26 @@
                         "longName": "Sampaio Correa"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "3",
                     "status": {
                         "utcTime": "2026-05-06T22:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.05.2026 00:30:00"
+                            "firstHalfStarted": "07.05.2026 00:32:34",
+                            "secondHalfStarted": "07.05.2026 01:38:35"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778106600000
                 }
@@ -3929,7 +5027,7 @@
                     "time": "06.05.2026 17:00",
                     "home": {
                         "id": 192962,
-                        "score": 0,
+                        "score": 1,
                         "name": "FK Jelgava",
                         "longName": "FK Jelgava"
                     },
@@ -3940,17 +5038,26 @@
                         "longName": "SK Super Nova"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "11",
                     "status": {
                         "utcTime": "2026-05-06T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.05.2026 17:00:00"
+                            "firstHalfStarted": "06.05.2026 16:59:51",
+                            "secondHalfStarted": "06.05.2026 18:03:24"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1778079600000
                 }
