@@ -1271,7 +1271,7 @@
                 {
                     "id": 5225633,
                     "leagueId": 923422,
-                    "time": "10.05.2026 19:00",
+                    "time": "10.05.2026 18:30",
                     "home": {
                         "id": 2165,
                         "score": 0,
@@ -1288,16 +1288,16 @@
                     "statusId": 1,
                     "tournamentStage": "6",
                     "status": {
-                        "utcTime": "2026-05-10T17:00:00.000Z",
+                        "utcTime": "2026-05-10T16:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "10.05.2026 19:00:00"
+                            "firstHalfStarted": "10.05.2026 18:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1778432400000
+                    "timeTS": 1778430600000
                 }
             ],
             "parentLeagueId": 215,
@@ -3384,7 +3384,7 @@
                         "started": false,
                         "cancelled": false,
                         "finished": false,
-                        "aggregatedStr": "0 - 0"
+                        "aggregatedStr": "7 - 1"
                     },
                     "timeTS": 1778436000000
                 },
@@ -3416,7 +3416,7 @@
                         "started": false,
                         "cancelled": false,
                         "finished": false,
-                        "aggregatedStr": "0 - 0"
+                        "aggregatedStr": "0 - 2"
                     },
                     "timeTS": 1778458500000
                 }
@@ -3460,7 +3460,7 @@
                         "started": false,
                         "cancelled": false,
                         "finished": false,
-                        "aggregatedStr": "0 - 0"
+                        "aggregatedStr": "2 - 2"
                     },
                     "timeTS": 1778461200000
                 }
@@ -3718,6 +3718,49 @@
                 }
             ],
             "parentLeagueId": 544,
+            "internalRank": 0,
+            "liveRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "PAN",
+            "id": 928938,
+            "primaryId": 9039,
+            "name": "LPF Clausura Final Stage",
+            "matches": [
+                {
+                    "id": 5486196,
+                    "leagueId": 928938,
+                    "time": "10.05.2026 23:00",
+                    "home": {
+                        "id": 165476,
+                        "score": 0,
+                        "name": "CD Plaza Amador",
+                        "longName": "CD Plaza Amador"
+                    },
+                    "away": {
+                        "id": 1514007,
+                        "score": 0,
+                        "name": "UMECIT FC",
+                        "longName": "UMECIT FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/2",
+                    "status": {
+                        "utcTime": "2026-05-10T21:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "10.05.2026 23:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1778446800000
+                }
+            ],
+            "parentLeagueId": 9039,
             "internalRank": 0,
             "liveRank": 0,
             "simpleLeague": false
@@ -4933,7 +4976,7 @@
                         "longName": "Hohoe United"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 5,
+                    "statusId": 6,
                     "tournamentStage": "32",
                     "status": {
                         "utcTime": "2026-05-10T15:00:00.000Z",
@@ -4941,14 +4984,16 @@
                             "firstHalfStarted": "10.05.2026 17:00:00"
                         },
                         "periodLength": 45,
-                        "cancelled": true,
-                        "started": false,
-                        "finished": false,
+                        "finished": true,
+                        "started": true,
+                        "cancelled": false,
+                        "awarded": false,
+                        "scoreStr": "0 - 0",
                         "reason": {
-                            "short": "PP",
-                            "shortKey": "postponed_short",
-                            "long": "Postponed",
-                            "longKey": "postponed"
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1778425200000
@@ -6157,6 +6202,80 @@
             "simpleLeague": false
         },
         {
+            "ccode": "URU",
+            "id": 922761,
+            "primaryId": 9122,
+            "name": "Segunda Division",
+            "matches": [
+                {
+                    "id": 5205146,
+                    "leagueId": 922761,
+                    "time": "10.05.2026 19:00",
+                    "home": {
+                        "id": 688270,
+                        "score": 0,
+                        "name": "Oriental",
+                        "longName": "Oriental"
+                    },
+                    "away": {
+                        "id": 2220,
+                        "score": 0,
+                        "name": "Cerrito",
+                        "longName": "Cerrito"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-05-10T17:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "10.05.2026 19:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1778432400000
+                },
+                {
+                    "id": 5205143,
+                    "leagueId": 922761,
+                    "time": "10.05.2026 22:00",
+                    "home": {
+                        "id": 1837,
+                        "score": 0,
+                        "name": "Tacuarembo FC",
+                        "longName": "Tacuarembo FC"
+                    },
+                    "away": {
+                        "id": 2221,
+                        "score": 0,
+                        "name": "Rentistas",
+                        "longName": "Rentistas"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-05-10T20:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "10.05.2026 22:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1778443200000
+                }
+            ],
+            "parentLeagueId": 9122,
+            "internalRank": 0,
+            "liveRank": 0,
+            "simpleLeague": false
+        },
+        {
             "ccode": "ESP",
             "id": 928934,
             "primaryId": 9138,
@@ -6344,6 +6463,173 @@
             ],
             "parentLeagueId": 10178,
             "internalRank": 0,
+            "liveRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "ITA",
+            "id": 927519,
+            "primaryId": 147,
+            "name": "Serie C Promotion Playoff",
+            "matches": [
+                {
+                    "id": 5483805,
+                    "leagueId": 927519,
+                    "time": "10.05.2026 20:00",
+                    "home": {
+                        "id": 212658,
+                        "score": 0,
+                        "name": "Campobasso",
+                        "longName": "Campobasso"
+                    },
+                    "away": {
+                        "id": 6099,
+                        "score": 0,
+                        "name": "Potenza",
+                        "longName": "Potenza"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/8",
+                    "status": {
+                        "utcTime": "2026-05-10T18:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "10.05.2026 20:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1778436000000
+                },
+                {
+                    "id": 5483806,
+                    "leagueId": 927519,
+                    "time": "10.05.2026 20:00",
+                    "home": {
+                        "id": 6460,
+                        "score": 0,
+                        "name": "Casarano",
+                        "longName": "Casarano"
+                    },
+                    "away": {
+                        "id": 177522,
+                        "score": 0,
+                        "name": "Renate",
+                        "longName": "Renate"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/8",
+                    "status": {
+                        "utcTime": "2026-05-10T18:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "10.05.2026 20:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1778436000000
+                },
+                {
+                    "id": 5483809,
+                    "leagueId": 927519,
+                    "time": "10.05.2026 20:00",
+                    "home": {
+                        "id": 584069,
+                        "score": 0,
+                        "name": "Pianese",
+                        "longName": "Pianese"
+                    },
+                    "away": {
+                        "id": 6512,
+                        "score": 0,
+                        "name": "Lecco",
+                        "longName": "Lecco"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/8",
+                    "status": {
+                        "utcTime": "2026-05-10T18:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "10.05.2026 20:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1778436000000
+                },
+                {
+                    "id": 5483808,
+                    "leagueId": 927519,
+                    "time": "10.05.2026 20:45",
+                    "home": {
+                        "id": 6485,
+                        "score": 0,
+                        "name": "Cittadella",
+                        "longName": "Cittadella"
+                    },
+                    "away": {
+                        "id": 8545,
+                        "score": 0,
+                        "name": "Ravenna",
+                        "longName": "Ravenna"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/8",
+                    "status": {
+                        "utcTime": "2026-05-10T18:45:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "10.05.2026 20:45:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1778438700000
+                },
+                {
+                    "id": 5483807,
+                    "leagueId": 927519,
+                    "time": "10.05.2026 21:00",
+                    "home": {
+                        "id": 277990,
+                        "score": 0,
+                        "name": "Casertana",
+                        "longName": "Casertana"
+                    },
+                    "away": {
+                        "id": 6480,
+                        "score": 0,
+                        "name": "Salernitana",
+                        "longName": "Salernitana"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/8",
+                    "status": {
+                        "utcTime": "2026-05-10T19:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "10.05.2026 21:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1778439600000
+                }
+            ],
+            "parentLeagueId": 147,
+            "internalRank": 6,
             "liveRank": 0,
             "simpleLeague": false
         },
@@ -8390,6 +8676,37 @@
             "name": "Serie D",
             "matches": [
                 {
+                    "id": 1000010651,
+                    "leagueId": 9464,
+                    "time": "10.05.2026 20:00",
+                    "home": {
+                        "id": 1699616,
+                        "score": 0,
+                        "name": "Laguna RN",
+                        "longName": "Laguna RN"
+                    },
+                    "away": {
+                        "id": 197791,
+                        "score": 0,
+                        "name": "Sousa",
+                        "longName": "Sousa"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "6",
+                    "status": {
+                        "utcTime": "2026-05-10T18:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "10.05.2026 20:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1778436000000
+                },
+                {
                     "id": 1000010653,
                     "leagueId": 9464,
                     "time": "10.05.2026 20:00",
@@ -8590,37 +8907,6 @@
                         "score": 0,
                         "name": "Atletico Cearense",
                         "longName": "Atletico Cearense"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "6",
-                    "status": {
-                        "utcTime": "2026-05-10T19:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "10.05.2026 21:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1778439600000
-                },
-                {
-                    "id": 1000010651,
-                    "leagueId": 9464,
-                    "time": "10.05.2026 21:00",
-                    "home": {
-                        "id": 1699616,
-                        "score": 0,
-                        "name": "Laguna RN",
-                        "longName": "Laguna RN"
-                    },
-                    "away": {
-                        "id": 197791,
-                        "score": 0,
-                        "name": "Sousa",
-                        "longName": "Sousa"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
