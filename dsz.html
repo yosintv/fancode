@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head> 
@@ -80,8 +78,9 @@
     const customID = urlParams.get('m');
 
     // Replace (custome_ID) in the original URL with the custom ID
-    const originalURL = ` https://hlsplayers.pages.dev/player3.html?url=https://hls.livelivelive.space/live/${customID}.m3u8 `;
+    const originalURL = ` https://hlsplayers.pages.dev/player3.html?url=https://hlsplayers.pages.dev/player3?url=https://pull.livecdn.cc/live/${customID}.m3u8 `;
 
+	
 	
     // Set the iframe source to the modified URL
     document.getElementById('player-iframe').src = originalURL;
