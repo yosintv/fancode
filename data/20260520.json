@@ -1,78 +1,140 @@
 {
     "leagues": [
         {
-            "ccode": "ENG",
-            "id": 47,
-            "primaryId": 47,
-            "name": "Premier League",
+            "isGroup": true,
+            "groupName": "3",
+            "ccode": "NOR",
+            "id": 919794,
+            "primaryId": 205,
+            "name": "3. Divisjon Avd. 3",
             "matches": [
                 {
-                    "id": 4813735,
-                    "leagueId": 47,
-                    "time": "19.05.2026 20:30",
+                    "id": 5144117,
+                    "leagueId": 919794,
+                    "time": "19.05.2026 18:00",
                     "home": {
-                        "id": 8678,
+                        "id": 8469,
                         "score": 0,
-                        "name": "Bournemouth",
-                        "longName": "AFC Bournemouth"
+                        "name": "Brann 2",
+                        "longName": "Brann 2"
                     },
                     "away": {
-                        "id": 8456,
+                        "id": 4384,
                         "score": 0,
-                        "name": "Man City",
-                        "longName": "Manchester City"
+                        "name": "Sogndal 2",
+                        "longName": "Sogndal 2"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
-                    "tournamentStage": "37",
+                    "tournamentStage": "7",
                     "status": {
-                        "utcTime": "2026-05-19T18:30:00.000Z",
+                        "utcTime": "2026-05-19T16:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "19.05.2026 20:30:00"
+                            "firstHalfStarted": "19.05.2026 18:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1779215400000
-                },
-                {
-                    "id": 4813739,
-                    "leagueId": 47,
-                    "time": "19.05.2026 21:15",
-                    "home": {
-                        "id": 8455,
-                        "score": 0,
-                        "name": "Chelsea",
-                        "longName": "Chelsea"
-                    },
-                    "away": {
-                        "id": 8586,
-                        "score": 0,
-                        "name": "Tottenham",
-                        "longName": "Tottenham Hotspur"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "37",
-                    "status": {
-                        "utcTime": "2026-05-19T19:15:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 21:15:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779218100000
+                    "timeTS": 1779206400000
                 }
             ],
-            "internalRank": 30,
-            "liveRank": 101,
+            "parentLeagueId": 205,
+            "parentLeagueName": "Norsk Tipping-ligaen",
+            "internalRank": 0,
+            "liveRank": 999,
+            "simpleLeague": false
+        },
+        {
+            "isGroup": true,
+            "groupName": "6",
+            "ccode": "NOR",
+            "id": 919797,
+            "primaryId": 205,
+            "name": "3. Divisjon Avd. 6",
+            "matches": [
+                {
+                    "id": 5144674,
+                    "leagueId": 919797,
+                    "time": "19.05.2026 19:00",
+                    "home": {
+                        "id": 4204,
+                        "score": 0,
+                        "name": "Sarpsborg 08 2",
+                        "longName": "Sarpsborg 08 2"
+                    },
+                    "away": {
+                        "id": 4244,
+                        "score": 0,
+                        "name": "Lyn 2",
+                        "longName": "Lyn 2"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "7",
+                    "status": {
+                        "utcTime": "2026-05-19T17:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.05.2026 19:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779210000000
+                }
+            ],
+            "parentLeagueId": 205,
+            "parentLeagueName": "Norsk Tipping-ligaen",
+            "internalRank": 0,
+            "liveRank": 999,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "INT",
+            "id": 915708,
+            "primaryId": 489,
+            "name": "Club Friendlies",
+            "matches": [
+                {
+                    "id": 5648057,
+                    "leagueId": 915708,
+                    "time": "19.05.2026 18:30",
+                    "home": {
+                        "id": 95037,
+                        "score": 0,
+                        "name": "RW Frankfurt",
+                        "longName": "RW Frankfurt"
+                    },
+                    "away": {
+                        "id": 9810,
+                        "score": 0,
+                        "name": "Frankfurt",
+                        "longName": "Eintracht Frankfurt"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-05-19T16:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.05.2026 18:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779208200000
+                }
+            ],
+            "parentLeagueId": 489,
+            "internalRank": 0,
+            "liveRank": 999,
             "simpleLeague": false,
-            "localRank": 19
+            "localRank": 59
         },
         {
             "isGroup": true,
@@ -117,7 +179,7 @@
             "parentLeagueId": 45,
             "parentLeagueName": "Copa Libertadores",
             "internalRank": 0,
-            "liveRank": 100,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -163,7 +225,7 @@
             "parentLeagueId": 45,
             "parentLeagueName": "Copa Libertadores",
             "internalRank": 0,
-            "liveRank": 100,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -209,7 +271,7 @@
             "parentLeagueId": 45,
             "parentLeagueName": "Copa Libertadores",
             "internalRank": 0,
-            "liveRank": 100,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -255,7 +317,7 @@
             "parentLeagueId": 45,
             "parentLeagueName": "Copa Libertadores",
             "internalRank": 0,
-            "liveRank": 100,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -301,7 +363,7 @@
             "parentLeagueId": 45,
             "parentLeagueName": "Copa Libertadores",
             "internalRank": 0,
-            "liveRank": 100,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -378,247 +440,7 @@
             "parentLeagueId": 45,
             "parentLeagueName": "Copa Libertadores",
             "internalRank": 0,
-            "liveRank": 100,
-            "simpleLeague": false
-        },
-        {
-            "isGroup": true,
-            "groupName": "3",
-            "ccode": "NOR",
-            "id": 919794,
-            "primaryId": 205,
-            "name": "3. Divisjon Avd. 3",
-            "matches": [
-                {
-                    "id": 5144117,
-                    "leagueId": 919794,
-                    "time": "19.05.2026 18:00",
-                    "home": {
-                        "id": 8469,
-                        "score": 0,
-                        "name": "Brann 2",
-                        "longName": "Brann 2"
-                    },
-                    "away": {
-                        "id": 4384,
-                        "score": 0,
-                        "name": "Sogndal 2",
-                        "longName": "Sogndal 2"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "7",
-                    "status": {
-                        "utcTime": "2026-05-19T16:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 18:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779206400000
-                }
-            ],
-            "parentLeagueId": 205,
-            "parentLeagueName": "Norsk Tipping-ligaen",
-            "internalRank": 0,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "isGroup": true,
-            "groupName": "6",
-            "ccode": "NOR",
-            "id": 919797,
-            "primaryId": 205,
-            "name": "3. Divisjon Avd. 6",
-            "matches": [
-                {
-                    "id": 5144674,
-                    "leagueId": 919797,
-                    "time": "19.05.2026 19:00",
-                    "home": {
-                        "id": 4204,
-                        "score": 0,
-                        "name": "Sarpsborg 08 2",
-                        "longName": "Sarpsborg 08 2"
-                    },
-                    "away": {
-                        "id": 4244,
-                        "score": 0,
-                        "name": "Lyn 2",
-                        "longName": "Lyn 2"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "7",
-                    "status": {
-                        "utcTime": "2026-05-19T17:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 19:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779210000000
-                }
-            ],
-            "parentLeagueId": 205,
-            "parentLeagueName": "Norsk Tipping-ligaen",
-            "internalRank": 0,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "BEL",
-            "id": 924726,
-            "primaryId": 40,
-            "name": "Belgian Pro League Playoff Conference League Group",
-            "matches": [
-                {
-                    "id": 5268805,
-                    "leagueId": 924726,
-                    "time": "19.05.2026 20:30",
-                    "home": {
-                        "id": 9987,
-                        "score": 0,
-                        "name": "Genk",
-                        "longName": "Genk"
-                    },
-                    "away": {
-                        "id": 9988,
-                        "score": 0,
-                        "name": "Royal Antwerp",
-                        "longName": "Royal Antwerp"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "9",
-                    "status": {
-                        "utcTime": "2026-05-19T18:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 20:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779215400000
-                },
-                {
-                    "id": 5268804,
-                    "leagueId": 924726,
-                    "time": "19.05.2026 20:30",
-                    "home": {
-                        "id": 9986,
-                        "score": 0,
-                        "name": "Sporting Charleroi",
-                        "longName": "Sporting Charleroi"
-                    },
-                    "away": {
-                        "id": 1773,
-                        "score": 0,
-                        "name": "OH Leuven",
-                        "longName": "OH Leuven"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "9",
-                    "status": {
-                        "utcTime": "2026-05-19T18:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 20:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779215400000
-                },
-                {
-                    "id": 5268806,
-                    "leagueId": 924726,
-                    "time": "19.05.2026 20:30",
-                    "home": {
-                        "id": 10001,
-                        "score": 0,
-                        "name": "Westerlo",
-                        "longName": "Westerlo"
-                    },
-                    "away": {
-                        "id": 9985,
-                        "score": 0,
-                        "name": "Standard Liege",
-                        "longName": "Standard Liege"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "9",
-                    "status": {
-                        "utcTime": "2026-05-19T18:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 20:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779215400000
-                }
-            ],
-            "parentLeagueId": 40,
-            "internalRank": 9,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "AUT",
-            "id": 931415,
-            "primaryId": 38,
-            "name": "Bundesliga ECL Playoff",
-            "matches": [
-                {
-                    "id": 5629344,
-                    "leagueId": 931415,
-                    "time": "19.05.2026 18:30",
-                    "home": {
-                        "id": 10017,
-                        "score": 0,
-                        "name": "Ried",
-                        "longName": "Ried"
-                    },
-                    "away": {
-                        "id": 1954,
-                        "score": 0,
-                        "name": "Wolfsberger AC",
-                        "longName": "Wolfsberger AC"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1/2",
-                    "status": {
-                        "utcTime": "2026-05-19T16:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 18:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779208200000
-                }
-            ],
-            "parentLeagueId": 38,
-            "internalRank": 9,
-            "liveRank": 0,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -664,7 +486,7 @@
             "parentLeagueId": 299,
             "parentLeagueName": "Copa Sudamericana",
             "internalRank": 0,
-            "liveRank": 0,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -710,7 +532,7 @@
             "parentLeagueId": 299,
             "parentLeagueName": "Copa Sudamericana",
             "internalRank": 0,
-            "liveRank": 0,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -756,7 +578,7 @@
             "parentLeagueId": 299,
             "parentLeagueName": "Copa Sudamericana",
             "internalRank": 0,
-            "liveRank": 0,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -802,7 +624,7 @@
             "parentLeagueId": 299,
             "parentLeagueName": "Copa Sudamericana",
             "internalRank": 0,
-            "liveRank": 0,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -848,161 +670,7 @@
             "parentLeagueId": 299,
             "parentLeagueName": "Copa Sudamericana",
             "internalRank": 0,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "isGroup": true,
-            "groupName": "A",
-            "ccode": "COL",
-            "id": 929415,
-            "primaryId": 9490,
-            "name": "Cup Grp. A",
-            "matches": [
-                {
-                    "id": 5467648,
-                    "leagueId": 929415,
-                    "time": "19.05.2026 22:00",
-                    "home": {
-                        "id": 4401,
-                        "score": 0,
-                        "name": "Bucaramanga",
-                        "longName": "Bucaramanga"
-                    },
-                    "away": {
-                        "id": 193023,
-                        "score": 0,
-                        "name": "Boca Juniors de Cali",
-                        "longName": "Boca Juniors de Cali"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "4",
-                    "status": {
-                        "utcTime": "2026-05-19T20:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 22:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779220800000
-                },
-                {
-                    "id": 5467649,
-                    "leagueId": 929415,
-                    "time": "19.05.2026 22:00",
-                    "home": {
-                        "id": 6387,
-                        "score": 0,
-                        "name": "Deportivo Cali",
-                        "longName": "Deportivo Cali"
-                    },
-                    "away": {
-                        "id": 193029,
-                        "score": 0,
-                        "name": "Alianza FC",
-                        "longName": "Alianza FC"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "4",
-                    "status": {
-                        "utcTime": "2026-05-19T20:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 22:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779220800000
-                }
-            ],
-            "parentLeagueId": 9490,
-            "parentLeagueName": "Copa Colombia",
-            "internalRank": 0,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "isGroup": true,
-            "groupName": "B",
-            "ccode": "COL",
-            "id": 929416,
-            "primaryId": 9490,
-            "name": "Cup Grp. B",
-            "matches": [
-                {
-                    "id": 5467658,
-                    "leagueId": 929416,
-                    "time": "19.05.2026 22:00",
-                    "home": {
-                        "id": 348397,
-                        "score": 0,
-                        "name": "Llaneros FC",
-                        "longName": "Llaneros FC"
-                    },
-                    "away": {
-                        "id": 193028,
-                        "score": 0,
-                        "name": "Patriotas",
-                        "longName": "Patriotas"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "4",
-                    "status": {
-                        "utcTime": "2026-05-19T20:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 22:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779220800000
-                },
-                {
-                    "id": 5467659,
-                    "leagueId": 929416,
-                    "time": "19.05.2026 22:00",
-                    "home": {
-                        "id": 4403,
-                        "score": 0,
-                        "name": "Millonarios",
-                        "longName": "Millonarios"
-                    },
-                    "away": {
-                        "id": 6255,
-                        "score": 0,
-                        "name": "Chico FC",
-                        "longName": "Chico FC"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "4",
-                    "status": {
-                        "utcTime": "2026-05-19T20:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 22:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779220800000
-                }
-            ],
-            "parentLeagueId": 9490,
-            "parentLeagueName": "Copa Colombia",
-            "internalRank": 0,
-            "liveRank": 0,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -1013,37 +681,6 @@
             "primaryId": 9490,
             "name": "Cup Grp. C",
             "matches": [
-                {
-                    "id": 5467668,
-                    "leagueId": 929417,
-                    "time": "19.05.2026 22:00",
-                    "home": {
-                        "id": 244167,
-                        "score": 0,
-                        "name": "Fortaleza FC",
-                        "longName": "Fortaleza FC"
-                    },
-                    "away": {
-                        "id": 721594,
-                        "score": 0,
-                        "name": "Orsomarso",
-                        "longName": "Orsomarso"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "4",
-                    "status": {
-                        "utcTime": "2026-05-19T20:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 22:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779220800000
-                },
                 {
                     "id": 5467669,
                     "leagueId": 929417,
@@ -1079,84 +716,7 @@
             "parentLeagueId": 9490,
             "parentLeagueName": "Copa Colombia",
             "internalRank": 0,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "isGroup": true,
-            "groupName": "D",
-            "ccode": "COL",
-            "id": 929418,
-            "primaryId": 9490,
-            "name": "Cup Grp. D",
-            "matches": [
-                {
-                    "id": 5467678,
-                    "leagueId": 929418,
-                    "time": "19.05.2026 22:00",
-                    "home": {
-                        "id": 193025,
-                        "score": 0,
-                        "name": "Aguilas Doradas",
-                        "longName": "Aguilas Doradas"
-                    },
-                    "away": {
-                        "id": 4404,
-                        "score": 0,
-                        "name": "Deportivo Pereira",
-                        "longName": "Deportivo Pereira"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "4",
-                    "status": {
-                        "utcTime": "2026-05-19T20:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 22:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779220800000
-                },
-                {
-                    "id": 5467679,
-                    "leagueId": 929418,
-                    "time": "19.05.2026 22:00",
-                    "home": {
-                        "id": 424270,
-                        "score": 0,
-                        "name": "CD Jaguares",
-                        "longName": "CD Jaguares"
-                    },
-                    "away": {
-                        "id": 4400,
-                        "score": 0,
-                        "name": "Independiente Yumbo",
-                        "longName": "Independiente Yumbo"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "4",
-                    "status": {
-                        "utcTime": "2026-05-19T20:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 22:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779220800000
-                }
-            ],
-            "parentLeagueId": 9490,
-            "parentLeagueName": "Copa Colombia",
-            "internalRank": 0,
-            "liveRank": 0,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -1198,143 +758,7 @@
                 }
             ],
             "internalRank": 0,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "ISR",
-            "id": 927290,
-            "primaryId": 128,
-            "name": "Leumit League Relegation Group",
-            "matches": [
-                {
-                    "id": 5353082,
-                    "leagueId": 927290,
-                    "time": "19.05.2026 18:00",
-                    "home": {
-                        "id": 2093,
-                        "score": 0,
-                        "name": "Hapoel Ironi Akko",
-                        "longName": "Hapoel Ironi Akko"
-                    },
-                    "away": {
-                        "id": 857444,
-                        "score": 0,
-                        "name": "Hapoel Hadera",
-                        "longName": "Hapoel Hadera"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "36",
-                    "status": {
-                        "utcTime": "2026-05-19T16:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 18:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779206400000
-                },
-                {
-                    "id": 5353083,
-                    "leagueId": 927290,
-                    "time": "19.05.2026 18:00",
-                    "home": {
-                        "id": 4125,
-                        "score": 0,
-                        "name": "Hapoel Nof HaGalil",
-                        "longName": "Hapoel Nof HaGalil"
-                    },
-                    "away": {
-                        "id": 1691612,
-                        "score": 0,
-                        "name": "Ironi Modiin",
-                        "longName": "Ironi Modiin"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "36",
-                    "status": {
-                        "utcTime": "2026-05-19T16:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 18:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779206400000
-                },
-                {
-                    "id": 5353084,
-                    "leagueId": 927290,
-                    "time": "19.05.2026 18:00",
-                    "home": {
-                        "id": 2096,
-                        "score": 0,
-                        "name": "Hapoel Raanana",
-                        "longName": "Hapoel Raanana"
-                    },
-                    "away": {
-                        "id": 752833,
-                        "score": 0,
-                        "name": "SC Kafr Qasim",
-                        "longName": "SC Kafr Qasim"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "36",
-                    "status": {
-                        "utcTime": "2026-05-19T16:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 18:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779206400000
-                },
-                {
-                    "id": 5353081,
-                    "leagueId": 927290,
-                    "time": "19.05.2026 18:00",
-                    "home": {
-                        "id": 196257,
-                        "score": 0,
-                        "name": "Maccabi Kabilio Jaffa",
-                        "longName": "Maccabi Kabilio Jaffa"
-                    },
-                    "away": {
-                        "id": 426452,
-                        "score": 0,
-                        "name": "Hapoel Afula",
-                        "longName": "Hapoel Afula"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "36",
-                    "status": {
-                        "utcTime": "2026-05-19T16:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 18:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779206400000
-                }
-            ],
-            "parentLeagueId": 128,
-            "internalRank": 9,
-            "liveRank": 0,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -1469,7 +893,7 @@
                 }
             ],
             "internalRank": 0,
-            "liveRank": 0,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -1511,7 +935,80 @@
                 }
             ],
             "internalRank": 0,
-            "liveRank": 0,
+            "liveRank": 999,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "NOR",
+            "id": 333,
+            "primaryId": 333,
+            "name": "NM Kvinner",
+            "matches": [
+                {
+                    "id": 5647806,
+                    "leagueId": 333,
+                    "time": "19.05.2026 18:00",
+                    "home": {
+                        "id": 4500,
+                        "score": 0,
+                        "name": "Aalesund (W)",
+                        "longName": "Aalesund (W)"
+                    },
+                    "away": {
+                        "id": 726186,
+                        "score": 0,
+                        "name": "Molde (W)",
+                        "longName": "Molde (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "3",
+                    "status": {
+                        "utcTime": "2026-05-19T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.05.2026 18:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779206400000
+                },
+                {
+                    "id": 5647807,
+                    "leagueId": 333,
+                    "time": "19.05.2026 18:00",
+                    "home": {
+                        "id": 4486,
+                        "score": 0,
+                        "name": "LSK Kvinner (W)",
+                        "longName": "LSK Kvinner (W)"
+                    },
+                    "away": {
+                        "id": 920414,
+                        "score": 0,
+                        "name": "H\u00f8nefoss (W)",
+                        "longName": "H\u00f8nefoss (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "3",
+                    "status": {
+                        "utcTime": "2026-05-19T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.05.2026 18:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779206400000
+                }
+            ],
+            "internalRank": 0,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -1553,7 +1050,7 @@
                 }
             ],
             "internalRank": 0,
-            "liveRank": 0,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -1595,7 +1092,7 @@
                 }
             ],
             "internalRank": 0,
-            "liveRank": 0,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -1637,7 +1134,7 @@
                 }
             ],
             "internalRank": 8,
-            "liveRank": 0,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -1680,51 +1177,7 @@
             ],
             "parentLeagueId": 10022,
             "internalRank": 14,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "ITA",
-            "id": 930062,
-            "primaryId": 86,
-            "name": "Serie B Promotion Playoff",
-            "matches": [
-                {
-                    "id": 5499005,
-                    "leagueId": 930062,
-                    "time": "19.05.2026 20:00",
-                    "home": {
-                        "id": 6504,
-                        "score": 0,
-                        "name": "Monza",
-                        "longName": "Monza"
-                    },
-                    "away": {
-                        "id": 6106,
-                        "score": 0,
-                        "name": "Juve Stabia",
-                        "longName": "Juve Stabia"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1/2",
-                    "status": {
-                        "utcTime": "2026-05-19T18:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 20:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false,
-                        "aggregatedStr": "2 - 2"
-                    },
-                    "timeTS": 1779213600000
-                }
-            ],
-            "parentLeagueId": 86,
-            "internalRank": 8,
-            "liveRank": 0,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -1891,8 +1344,599 @@
             ],
             "parentLeagueId": 524,
             "internalRank": 0,
-            "liveRank": 0,
+            "liveRank": 999,
             "simpleLeague": false
+        },
+        {
+            "ccode": "MDA",
+            "id": 10065,
+            "primaryId": 10065,
+            "name": "Super Liga Qualification Playoff",
+            "matches": [
+                {
+                    "id": 5648435,
+                    "leagueId": 10065,
+                    "time": "20.05.2026 16:00",
+                    "home": {
+                        "id": 771910,
+                        "score": 0,
+                        "name": "CF Sparta Selemet",
+                        "longName": "CF Sparta Selemet"
+                    },
+                    "away": {
+                        "id": 1138823,
+                        "score": 0,
+                        "name": "FC Floresti",
+                        "longName": "FC Floresti"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/2",
+                    "status": {
+                        "utcTime": "2026-05-20T14:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "20.05.2026 16:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779285600000
+                },
+                {
+                    "id": 5648434,
+                    "leagueId": 10065,
+                    "time": "20.05.2026 16:00",
+                    "home": {
+                        "id": 1900141,
+                        "score": 0,
+                        "name": "Real Sireti",
+                        "longName": "Real Sireti"
+                    },
+                    "away": {
+                        "id": 1643442,
+                        "score": 0,
+                        "name": "Iskra Ribnita",
+                        "longName": "Iskra Ribnita"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/2",
+                    "status": {
+                        "utcTime": "2026-05-20T14:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "20.05.2026 16:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779285600000
+                }
+            ],
+            "internalRank": 0,
+            "liveRank": 999,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "USA",
+            "id": 922585,
+            "primaryId": 9441,
+            "name": "US Open Cup",
+            "matches": [
+                {
+                    "id": 5425226,
+                    "leagueId": 922585,
+                    "time": "20.05.2026 01:30",
+                    "home": {
+                        "id": 267810,
+                        "score": 0,
+                        "name": "Orlando",
+                        "longName": "Orlando City"
+                    },
+                    "away": {
+                        "id": 773958,
+                        "score": 0,
+                        "name": "Atlanta United",
+                        "longName": "Atlanta United"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/4",
+                    "status": {
+                        "utcTime": "2026-05-19T23:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "20.05.2026 01:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779233400000
+                },
+                {
+                    "id": 5425228,
+                    "leagueId": 922585,
+                    "time": "20.05.2026 02:00",
+                    "home": {
+                        "id": 1427963,
+                        "score": 0,
+                        "name": "St. Louis City",
+                        "longName": "St. Louis City"
+                    },
+                    "away": {
+                        "id": 8259,
+                        "score": 0,
+                        "name": "Houston",
+                        "longName": "Houston Dynamo FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/4",
+                    "status": {
+                        "utcTime": "2026-05-20T00:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "20.05.2026 02:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779235200000
+                }
+            ],
+            "parentLeagueId": 9441,
+            "internalRank": 4,
+            "liveRank": 999,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "SWE",
+            "id": 168,
+            "primaryId": 168,
+            "name": "Superettan",
+            "matches": [
+                {
+                    "id": 5125502,
+                    "leagueId": 168,
+                    "time": "19.05.2026 19:00",
+                    "home": {
+                        "id": 9859,
+                        "score": 0,
+                        "name": "Helsingborg",
+                        "longName": "Helsingborg"
+                    },
+                    "away": {
+                        "id": 6692,
+                        "score": 0,
+                        "name": "Varbergs BoIS FC",
+                        "longName": "Varbergs BoIS FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "8",
+                    "status": {
+                        "utcTime": "2026-05-19T17:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.05.2026 19:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779210000000
+                }
+            ],
+            "internalRank": 8,
+            "liveRank": 3,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "ISR",
+            "id": 927290,
+            "primaryId": 128,
+            "name": "Leumit League Relegation Group",
+            "matches": [
+                {
+                    "id": 5353082,
+                    "leagueId": 927290,
+                    "time": "19.05.2026 18:00",
+                    "home": {
+                        "id": 2093,
+                        "score": 0,
+                        "name": "Hapoel Ironi Akko",
+                        "longName": "Hapoel Ironi Akko"
+                    },
+                    "away": {
+                        "id": 857444,
+                        "score": 0,
+                        "name": "Hapoel Hadera",
+                        "longName": "Hapoel Hadera"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "36",
+                    "status": {
+                        "utcTime": "2026-05-19T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.05.2026 18:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779206400000
+                },
+                {
+                    "id": 5353083,
+                    "leagueId": 927290,
+                    "time": "19.05.2026 18:00",
+                    "home": {
+                        "id": 4125,
+                        "score": 0,
+                        "name": "Hapoel Nof HaGalil",
+                        "longName": "Hapoel Nof HaGalil"
+                    },
+                    "away": {
+                        "id": 1691612,
+                        "score": 0,
+                        "name": "Ironi Modiin",
+                        "longName": "Ironi Modiin"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "36",
+                    "status": {
+                        "utcTime": "2026-05-19T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.05.2026 18:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779206400000
+                },
+                {
+                    "id": 5353084,
+                    "leagueId": 927290,
+                    "time": "19.05.2026 18:00",
+                    "home": {
+                        "id": 2096,
+                        "score": 0,
+                        "name": "Hapoel Raanana",
+                        "longName": "Hapoel Raanana"
+                    },
+                    "away": {
+                        "id": 752833,
+                        "score": 0,
+                        "name": "SC Kafr Qasim",
+                        "longName": "SC Kafr Qasim"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "36",
+                    "status": {
+                        "utcTime": "2026-05-19T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.05.2026 18:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779206400000
+                },
+                {
+                    "id": 5353081,
+                    "leagueId": 927290,
+                    "time": "19.05.2026 18:00",
+                    "home": {
+                        "id": 196257,
+                        "score": 0,
+                        "name": "Maccabi Kabilio Jaffa",
+                        "longName": "Maccabi Kabilio Jaffa"
+                    },
+                    "away": {
+                        "id": 426452,
+                        "score": 0,
+                        "name": "Hapoel Afula",
+                        "longName": "Hapoel Afula"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "36",
+                    "status": {
+                        "utcTime": "2026-05-19T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.05.2026 18:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779206400000
+                }
+            ],
+            "parentLeagueId": 128,
+            "internalRank": 9,
+            "liveRank": 2,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "ITA",
+            "id": 930062,
+            "primaryId": 86,
+            "name": "Serie B Promotion Playoff",
+            "matches": [
+                {
+                    "id": 5499005,
+                    "leagueId": 930062,
+                    "time": "19.05.2026 20:00",
+                    "home": {
+                        "id": 6504,
+                        "score": 0,
+                        "name": "Monza",
+                        "longName": "Monza"
+                    },
+                    "away": {
+                        "id": 6106,
+                        "score": 0,
+                        "name": "Juve Stabia",
+                        "longName": "Juve Stabia"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/2",
+                    "status": {
+                        "utcTime": "2026-05-19T18:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.05.2026 20:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false,
+                        "aggregatedStr": "2 - 2"
+                    },
+                    "timeTS": 1779213600000
+                }
+            ],
+            "parentLeagueId": 86,
+            "internalRank": 8,
+            "liveRank": 2,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "BEL",
+            "id": 924726,
+            "primaryId": 40,
+            "name": "Belgian Pro League Playoff Conference League Group",
+            "matches": [
+                {
+                    "id": 5268805,
+                    "leagueId": 924726,
+                    "time": "19.05.2026 20:30",
+                    "home": {
+                        "id": 9987,
+                        "score": 0,
+                        "name": "Genk",
+                        "longName": "Genk"
+                    },
+                    "away": {
+                        "id": 9988,
+                        "score": 0,
+                        "name": "Royal Antwerp",
+                        "longName": "Royal Antwerp"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "9",
+                    "status": {
+                        "utcTime": "2026-05-19T18:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.05.2026 20:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779215400000
+                },
+                {
+                    "id": 5268804,
+                    "leagueId": 924726,
+                    "time": "19.05.2026 20:30",
+                    "home": {
+                        "id": 9986,
+                        "score": 0,
+                        "name": "Sporting Charleroi",
+                        "longName": "Sporting Charleroi"
+                    },
+                    "away": {
+                        "id": 1773,
+                        "score": 0,
+                        "name": "OH Leuven",
+                        "longName": "OH Leuven"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "9",
+                    "status": {
+                        "utcTime": "2026-05-19T18:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.05.2026 20:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779215400000
+                },
+                {
+                    "id": 5268806,
+                    "leagueId": 924726,
+                    "time": "19.05.2026 20:30",
+                    "home": {
+                        "id": 10001,
+                        "score": 0,
+                        "name": "Westerlo",
+                        "longName": "Westerlo"
+                    },
+                    "away": {
+                        "id": 9985,
+                        "score": 0,
+                        "name": "Standard Liege",
+                        "longName": "Standard Liege"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "9",
+                    "status": {
+                        "utcTime": "2026-05-19T18:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.05.2026 20:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779215400000
+                }
+            ],
+            "parentLeagueId": 40,
+            "internalRank": 9,
+            "liveRank": 1,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "AUT",
+            "id": 931415,
+            "primaryId": 38,
+            "name": "Bundesliga ECL Playoff",
+            "matches": [
+                {
+                    "id": 5629344,
+                    "leagueId": 931415,
+                    "time": "19.05.2026 18:30",
+                    "home": {
+                        "id": 10017,
+                        "score": 0,
+                        "name": "Ried",
+                        "longName": "Ried"
+                    },
+                    "away": {
+                        "id": 1954,
+                        "score": 0,
+                        "name": "Wolfsberger AC",
+                        "longName": "Wolfsberger AC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/2",
+                    "status": {
+                        "utcTime": "2026-05-19T16:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.05.2026 18:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779208200000
+                }
+            ],
+            "parentLeagueId": 38,
+            "internalRank": 9,
+            "liveRank": 1,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "ENG",
+            "id": 47,
+            "primaryId": 47,
+            "name": "Premier League",
+            "matches": [
+                {
+                    "id": 4813735,
+                    "leagueId": 47,
+                    "time": "19.05.2026 20:30",
+                    "home": {
+                        "id": 8678,
+                        "score": 0,
+                        "name": "Bournemouth",
+                        "longName": "AFC Bournemouth"
+                    },
+                    "away": {
+                        "id": 8456,
+                        "score": 0,
+                        "name": "Man City",
+                        "longName": "Manchester City"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "37",
+                    "status": {
+                        "utcTime": "2026-05-19T18:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.05.2026 20:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779215400000
+                },
+                {
+                    "id": 4813739,
+                    "leagueId": 47,
+                    "time": "19.05.2026 21:15",
+                    "home": {
+                        "id": 8455,
+                        "score": 0,
+                        "name": "Chelsea",
+                        "longName": "Chelsea"
+                    },
+                    "away": {
+                        "id": 8586,
+                        "score": 0,
+                        "name": "Tottenham",
+                        "longName": "Tottenham Hotspur"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "37",
+                    "status": {
+                        "utcTime": "2026-05-19T19:15:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.05.2026 21:15:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779218100000
+                }
+            ],
+            "internalRank": 30,
+            "liveRank": 1,
+            "simpleLeague": false,
+            "localRank": 19
         },
         {
             "ccode": "CHN",
@@ -2027,123 +2071,7 @@
             ],
             "parentLeagueId": 120,
             "internalRank": 11,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "SWE",
-            "id": 168,
-            "primaryId": 168,
-            "name": "Superettan",
-            "matches": [
-                {
-                    "id": 5125502,
-                    "leagueId": 168,
-                    "time": "19.05.2026 19:00",
-                    "home": {
-                        "id": 9859,
-                        "score": 0,
-                        "name": "Helsingborg",
-                        "longName": "Helsingborg"
-                    },
-                    "away": {
-                        "id": 6692,
-                        "score": 0,
-                        "name": "Varbergs BoIS FC",
-                        "longName": "Varbergs BoIS FC"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "8",
-                    "status": {
-                        "utcTime": "2026-05-19T17:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.05.2026 19:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779210000000
-                }
-            ],
-            "internalRank": 8,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "USA",
-            "id": 922585,
-            "primaryId": 9441,
-            "name": "US Open Cup",
-            "matches": [
-                {
-                    "id": 5425226,
-                    "leagueId": 922585,
-                    "time": "20.05.2026 01:30",
-                    "home": {
-                        "id": 267810,
-                        "score": 0,
-                        "name": "Orlando",
-                        "longName": "Orlando City"
-                    },
-                    "away": {
-                        "id": 773958,
-                        "score": 0,
-                        "name": "Atlanta United",
-                        "longName": "Atlanta United"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1/4",
-                    "status": {
-                        "utcTime": "2026-05-19T23:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "20.05.2026 01:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779233400000
-                },
-                {
-                    "id": 5425228,
-                    "leagueId": 922585,
-                    "time": "20.05.2026 02:00",
-                    "home": {
-                        "id": 1427963,
-                        "score": 0,
-                        "name": "St. Louis City",
-                        "longName": "St. Louis City"
-                    },
-                    "away": {
-                        "id": 8259,
-                        "score": 0,
-                        "name": "Houston",
-                        "longName": "Houston Dynamo FC"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1/4",
-                    "status": {
-                        "utcTime": "2026-05-20T00:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "20.05.2026 02:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779235200000
-                }
-            ],
-            "parentLeagueId": 9441,
-            "internalRank": 4,
-            "liveRank": 0,
+            "liveRank": 1,
             "simpleLeague": false
         },
         {
@@ -2313,10 +2241,10 @@
                         "longName": "South Melbourne"
                     },
                     "away": {
-                        "id": 2,
+                        "id": 1896042,
                         "score": 0,
-                        "name": "Bula FC/Vanuatu United",
-                        "longName": "Bula FC/Vanuatu United"
+                        "name": "Vanuatu United",
+                        "longName": "Vanuatu United"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
