@@ -2743,7 +2743,7 @@
                     "time": "24.05.2026 17:00",
                     "home": {
                         "id": 102019,
-                        "score": 0,
+                        "score": 3,
                         "name": "Heart of Lions",
                         "longName": "Heart of Lions"
                     },
@@ -2754,7 +2754,7 @@
                         "longName": "Hohoe United"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 106,
                     "tournamentStage": "34",
                     "status": {
                         "utcTime": "2026-05-24T15:00:00.000Z",
@@ -2762,9 +2762,15 @@
                             "firstHalfStarted": "24.05.2026 17:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "Can",
+                            "shortKey": "cancelled_short",
+                            "long": "Cancelled",
+                            "longKey": "cancelled"
+                        }
                     },
                     "timeTS": 1779634800000
                 },
@@ -4494,37 +4500,6 @@
                     "timeTS": 1779649200000
                 },
                 {
-                    "id": 5112952,
-                    "leagueId": 916553,
-                    "time": "24.05.2026 21:00",
-                    "home": {
-                        "id": 719912,
-                        "score": 0,
-                        "name": "Atletico Guemes",
-                        "longName": "Atletico Guemes"
-                    },
-                    "away": {
-                        "id": 207875,
-                        "score": 0,
-                        "name": "Patronato de Parana",
-                        "longName": "Patronato de Parana"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "15",
-                    "status": {
-                        "utcTime": "2026-05-24T19:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "24.05.2026 21:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779649200000
-                },
-                {
                     "id": 5113319,
                     "leagueId": 916553,
                     "time": "24.05.2026 21:00",
@@ -4647,6 +4622,37 @@
                         "finished": false
                     },
                     "timeTS": 1779656400000
+                },
+                {
+                    "id": 5112952,
+                    "leagueId": 916553,
+                    "time": "24.05.2026 23:30",
+                    "home": {
+                        "id": 719912,
+                        "score": 0,
+                        "name": "Atletico Guemes",
+                        "longName": "Atletico Guemes"
+                    },
+                    "away": {
+                        "id": 207875,
+                        "score": 0,
+                        "name": "Patronato de Parana",
+                        "longName": "Patronato de Parana"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "15",
+                    "status": {
+                        "utcTime": "2026-05-24T21:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "24.05.2026 23:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779658200000
                 },
                 {
                     "id": 5112953,
@@ -6498,7 +6504,7 @@
                         "longName": "Oriente Petrolero"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "9",
                     "status": {
                         "utcTime": "2026-05-24T23:30:00.000Z",
@@ -6506,9 +6512,15 @@
                             "firstHalfStarted": "25.05.2026 01:30:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1779665400000
                 }
@@ -7095,6 +7107,37 @@
             "name": "Serie D",
             "matches": [
                 {
+                    "id": 1000010730,
+                    "leagueId": 9464,
+                    "time": "24.05.2026 20:00",
+                    "home": {
+                        "id": 1320332,
+                        "score": 0,
+                        "name": "Guarany de Bage",
+                        "longName": "Guarany de Bage"
+                    },
+                    "away": {
+                        "id": 612190,
+                        "score": 0,
+                        "name": "FC Cascavel",
+                        "longName": "FC Cascavel"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "8",
+                    "status": {
+                        "utcTime": "2026-05-24T18:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "24.05.2026 20:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1779645600000
+                },
+                {
                     "id": 1000010422,
                     "leagueId": 9464,
                     "time": "24.05.2026 20:30",
@@ -7233,37 +7276,6 @@
                         "score": 0,
                         "name": "Maracana EC",
                         "longName": "Maracana EC"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "8",
-                    "status": {
-                        "utcTime": "2026-05-24T19:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "24.05.2026 21:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779649200000
-                },
-                {
-                    "id": 1000010428,
-                    "leagueId": 9464,
-                    "time": "24.05.2026 21:00",
-                    "home": {
-                        "id": 696928,
-                        "score": 0,
-                        "name": "Atletico Cearense",
-                        "longName": "Atletico Cearense"
-                    },
-                    "away": {
-                        "id": 1696139,
-                        "score": 0,
-                        "name": "Tirol",
-                        "longName": "Tirol"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -7450,37 +7462,6 @@
                         "score": 0,
                         "name": "Vitoria ES",
                         "longName": "Vitoria ES"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "8",
-                    "status": {
-                        "utcTime": "2026-05-24T19:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "24.05.2026 21:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1779649200000
-                },
-                {
-                    "id": 1000010730,
-                    "leagueId": 9464,
-                    "time": "24.05.2026 21:00",
-                    "home": {
-                        "id": 1320332,
-                        "score": 0,
-                        "name": "Guarany de Bage",
-                        "longName": "Guarany de Bage"
-                    },
-                    "away": {
-                        "id": 612190,
-                        "score": 0,
-                        "name": "FC Cascavel",
-                        "longName": "FC Cascavel"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
