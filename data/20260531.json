@@ -243,7 +243,7 @@
                         "started": false,
                         "cancelled": false,
                         "finished": false,
-                        "aggregatedStr": "0 - 0"
+                        "aggregatedStr": "4 - 1"
                     },
                     "timeTS": 1780225200000
                 }
@@ -1882,7 +1882,7 @@
                         "longName": "Slask Wroclaw ll"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 5,
+                    "statusId": 6,
                     "tournamentStage": "34",
                     "status": {
                         "utcTime": "2026-05-30T15:00:00.000Z",
@@ -1890,14 +1890,16 @@
                             "firstHalfStarted": "30.05.2026 17:00:00"
                         },
                         "periodLength": 45,
-                        "cancelled": true,
-                        "started": false,
-                        "finished": false,
+                        "finished": true,
+                        "started": true,
+                        "cancelled": false,
+                        "awarded": false,
+                        "scoreStr": "0 - 0",
                         "reason": {
-                            "short": "PP",
-                            "shortKey": "postponed_short",
-                            "long": "Postponed",
-                            "longKey": "postponed"
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1780153200000
@@ -6541,7 +6543,7 @@
                         "longName": "Orense"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "16",
                     "status": {
                         "utcTime": "2026-05-30T21:30:00.000Z",
@@ -6549,9 +6551,15 @@
                             "firstHalfStarted": "30.05.2026 23:30:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1780176600000
                 },
@@ -6597,6 +6605,37 @@
             "primaryId": 8814,
             "name": "Serie B",
             "matches": [
+                {
+                    "id": 5190544,
+                    "leagueId": 8814,
+                    "time": "30.05.2026 21:00",
+                    "home": {
+                        "id": 165545,
+                        "score": 0,
+                        "name": "Atletico GO",
+                        "longName": "Atletico GO"
+                    },
+                    "away": {
+                        "id": 9862,
+                        "score": 0,
+                        "name": "Goias",
+                        "longName": "Goias"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "11",
+                    "status": {
+                        "utcTime": "2026-05-30T19:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "30.05.2026 21:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780167600000
+                },
                 {
                     "id": 5190545,
                     "leagueId": 8814,
@@ -6930,37 +6969,6 @@
                     "timeTS": 1780167600000
                 },
                 {
-                    "id": 1000010746,
-                    "leagueId": 9464,
-                    "time": "30.05.2026 21:00",
-                    "home": {
-                        "id": 197654,
-                        "score": 0,
-                        "name": "Ceilandia",
-                        "longName": "Ceilandia"
-                    },
-                    "away": {
-                        "id": 1320846,
-                        "score": 0,
-                        "name": "Goiatuba SC",
-                        "longName": "Goiatuba SC"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "9",
-                    "status": {
-                        "utcTime": "2026-05-30T19:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "30.05.2026 21:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1780167600000
-                },
-                {
                     "id": 1000010752,
                     "leagueId": 9464,
                     "time": "30.05.2026 21:00",
@@ -7223,6 +7231,37 @@
                         "score": 0,
                         "name": "Mixto",
                         "longName": "Mixto"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "9",
+                    "status": {
+                        "utcTime": "2026-05-30T20:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "30.05.2026 22:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780171200000
+                },
+                {
+                    "id": 1000010746,
+                    "leagueId": 9464,
+                    "time": "30.05.2026 22:00",
+                    "home": {
+                        "id": 197654,
+                        "score": 0,
+                        "name": "Ceilandia",
+                        "longName": "Ceilandia"
+                    },
+                    "away": {
+                        "id": 1320846,
+                        "score": 0,
+                        "name": "Goiatuba SC",
+                        "longName": "Goiatuba SC"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
