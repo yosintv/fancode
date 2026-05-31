@@ -597,6 +597,79 @@
             "simpleLeague": false
         },
         {
+            "ccode": "NED",
+            "id": 9851,
+            "primaryId": 9851,
+            "name": "Tweede Divisie Qualification",
+            "matches": [
+                {
+                    "id": 5729190,
+                    "leagueId": 9851,
+                    "time": "03.06.2026 20:00",
+                    "home": {
+                        "id": 2262,
+                        "score": 0,
+                        "name": "ADO '20",
+                        "longName": "ADO '20"
+                    },
+                    "away": {
+                        "id": 2153,
+                        "score": 0,
+                        "name": "IJsselmeervogels",
+                        "longName": "IJsselmeervogels"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/2",
+                    "status": {
+                        "utcTime": "2026-06-03T18:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "03.06.2026 20:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780509600000
+                },
+                {
+                    "id": 5729191,
+                    "leagueId": 9851,
+                    "time": "03.06.2026 20:00",
+                    "home": {
+                        "id": 584417,
+                        "score": 0,
+                        "name": "Rijnvogels",
+                        "longName": "Rijnvogels"
+                    },
+                    "away": {
+                        "id": 2458,
+                        "score": 0,
+                        "name": "Excelsior Maassluis",
+                        "longName": "Excelsior Maassluis"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/2",
+                    "status": {
+                        "utcTime": "2026-06-03T18:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "03.06.2026 20:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780509600000
+                }
+            ],
+            "internalRank": 0,
+            "liveRank": 999,
+            "simpleLeague": false
+        },
+        {
             "ccode": "USA",
             "id": 8972,
             "primaryId": 8972,
@@ -934,6 +1007,37 @@
                         "finished": false
                     },
                     "timeTS": 1780506900000
+                },
+                {
+                    "id": 5629964,
+                    "leagueId": 931430,
+                    "time": "03.06.2026 19:45",
+                    "home": {
+                        "id": 517337,
+                        "score": 0,
+                        "name": "IFK \u00d6stersund",
+                        "longName": "IFK \u00d6stersund"
+                    },
+                    "away": {
+                        "id": 6127,
+                        "score": 0,
+                        "name": "Kubikenborgs IF",
+                        "longName": "Kubikenborgs IF"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-06-03T17:45:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "03.06.2026 19:45:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780508700000
                 }
             ],
             "parentLeagueId": 171,
@@ -964,7 +1068,7 @@
                         "longName": "Deportivo Riestra"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "16th Finals",
                     "status": {
                         "utcTime": "2026-06-04T00:10:00.000Z",
@@ -972,9 +1076,15 @@
                             "firstHalfStarted": "04.06.2026 02:10:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1780531800000
                 }
