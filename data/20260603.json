@@ -515,7 +515,6 @@
                         "id": 8425,
                         "score": 2,
                         "name": "Enk\u00f6ping",
-                        "redCards": 1,
                         "longName": "Enk\u00f6ping"
                     },
                     "eliminatedTeamId": null,
@@ -523,7 +522,6 @@
                     "tournamentStage": "10",
                     "status": {
                         "utcTime": "2026-06-02T17:30:00.000Z",
-                        "numberOfAwayRedCards": 1,
                         "halfs": {
                             "firstHalfStarted": "02.06.2026 19:31:33",
                             "secondHalfStarted": "02.06.2026 20:33:31"
@@ -720,28 +718,37 @@
                     "time": "03.06.2026 15:00",
                     "home": {
                         "id": 5875,
-                        "score": 0,
+                        "score": 1,
                         "name": "Japan U20",
                         "longName": "Japan U20"
                     },
                     "away": {
                         "id": 5956,
-                        "score": 0,
+                        "score": 4,
                         "name": "Portugal U20",
                         "longName": "Portugal U20"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "2",
                     "status": {
                         "utcTime": "2026-06-03T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.06.2026 15:00:00"
+                            "firstHalfStarted": "03.06.2026 15:02:45",
+                            "secondHalfStarted": "03.06.2026 16:17:14"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 4",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1780491600000
                 }
@@ -763,7 +770,7 @@
                     "time": "03.06.2026 15:00",
                     "home": {
                         "id": 727278,
-                        "score": 0,
+                        "score": 1,
                         "name": "Milford FC",
                         "longName": "Milford FC"
                     },
@@ -774,17 +781,26 @@
                         "longName": "Magesi FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "3",
                     "status": {
                         "utcTime": "2026-06-03T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.06.2026 15:00:00"
+                            "firstHalfStarted": "03.06.2026 15:01:11",
+                            "secondHalfStarted": "03.06.2026 16:02:33"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1780491600000
                 }
@@ -950,57 +966,6 @@
             ],
             "parentLeagueId": 10022,
             "internalRank": 14,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "ITA",
-            "id": 927519,
-            "primaryId": 147,
-            "name": "Serie C Promotion Playoff",
-            "matches": [
-                {
-                    "id": 5681713,
-                    "leagueId": 927519,
-                    "time": "02.06.2026 21:15",
-                    "home": {
-                        "id": 189481,
-                        "score": 1,
-                        "name": "Union Brescia",
-                        "longName": "Union Brescia"
-                    },
-                    "away": {
-                        "id": 8522,
-                        "score": 1,
-                        "name": "Ascoli",
-                        "longName": "Ascoli"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 17,
-                    "tournamentStage": "final",
-                    "status": {
-                        "utcTime": "2026-06-02T19:15:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "02.06.2026 21:21:13",
-                            "secondHalfStarted": "02.06.2026 22:23:44"
-                        },
-                        "periodLength": 45,
-                        "cancelled": true,
-                        "started": true,
-                        "finished": true,
-                        "reason": {
-                            "short": "Ab",
-                            "shortKey": "aborted_short",
-                            "long": "Abandoned",
-                            "longKey": "aborted"
-                        },
-                        "scoreStr": "1 - 1"
-                    },
-                    "timeTS": 1780427700000
-                }
-            ],
-            "parentLeagueId": 147,
-            "internalRank": 6,
             "liveRank": 0,
             "simpleLeague": false
         },
@@ -1374,6 +1339,7 @@
                         "id": 8287,
                         "score": 1,
                         "name": "Fortaleza",
+                        "redCards": 1,
                         "longName": "Fortaleza"
                     },
                     "away": {
@@ -1387,6 +1353,7 @@
                     "tournamentStage": "Final",
                     "status": {
                         "utcTime": "2026-06-03T00:00:00.000Z",
+                        "numberOfHomeRedCards": 1,
                         "halfs": {
                             "firstHalfStarted": "03.06.2026 02:04:16",
                             "secondHalfStarted": "03.06.2026 03:14:01"
