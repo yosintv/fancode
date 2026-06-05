@@ -2,6 +2,49 @@
     "leagues": [
         {
             "ccode": "INT",
+            "id": 926232,
+            "primaryId": 301,
+            "name": "EURO U17",
+            "matches": [
+                {
+                    "id": 5316958,
+                    "leagueId": 926232,
+                    "time": "07.06.2026 19:00",
+                    "home": {
+                        "id": 6589,
+                        "score": 0,
+                        "name": "Belgium U17",
+                        "longName": "Belgium U17"
+                    },
+                    "away": {
+                        "id": 5936,
+                        "score": 0,
+                        "name": "Italy U17",
+                        "longName": "Italy U17"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "final",
+                    "status": {
+                        "utcTime": "2026-06-07T17:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.06.2026 19:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780851600000
+                }
+            ],
+            "parentLeagueId": 301,
+            "internalRank": 0,
+            "liveRank": 999,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "INT",
             "id": 914609,
             "primaryId": 114,
             "name": "Friendlies",
@@ -240,7 +283,7 @@
                         "longName": "Madagascar"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 106,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-06-08T10:00:00.000Z",
@@ -248,102 +291,547 @@
                             "firstHalfStarted": "08.06.2026 12:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "Can",
+                            "shortKey": "cancelled_short",
+                            "long": "Cancelled",
+                            "longKey": "cancelled"
+                        }
                     },
                     "timeTS": 1780912800000
                 }
             ],
             "parentLeagueId": 114,
             "internalRank": 0,
-            "liveRank": 100,
+            "liveRank": 999,
             "simpleLeague": false,
             "localRank": 60
         },
         {
-            "ccode": "NOR",
-            "id": 203,
-            "primaryId": 203,
-            "name": "1. Divisjon",
+            "ccode": "INT",
+            "id": 344,
+            "primaryId": 344,
+            "name": "Friendlies U21",
             "matches": [
                 {
-                    "id": 5105087,
-                    "leagueId": 203,
-                    "time": "07.06.2026 17:00",
+                    "id": 5736140,
+                    "leagueId": 344,
+                    "time": "08.06.2026 15:00",
                     "home": {
-                        "id": 6563,
+                        "id": 6658,
                         "score": 0,
-                        "name": "Ranheim",
-                        "longName": "Ranheim"
+                        "name": "Ukraine U21",
+                        "longName": "Ukraine U21"
                     },
                     "away": {
-                        "id": 4249,
+                        "id": 5915,
                         "score": 0,
-                        "name": "Str\u00f8mmen",
-                        "longName": "Str\u00f8mmen"
+                        "name": "Japan U21",
+                        "longName": "Japan U21"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
                     "tournamentStage": "1",
                     "status": {
-                        "utcTime": "2026-06-07T15:00:00.000Z",
+                        "utcTime": "2026-06-08T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.06.2026 17:00:00"
+                            "firstHalfStarted": "08.06.2026 15:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1780844400000
+                    "timeTS": 1780923600000
                 }
             ],
-            "internalRank": 9,
-            "liveRank": 0,
+            "internalRank": 0,
+            "liveRank": 999,
+            "simpleLeague": true
+        },
+        {
+            "ccode": "EGY",
+            "id": 922249,
+            "primaryId": 10270,
+            "name": "League Cup",
+            "matches": [
+                {
+                    "id": 5737261,
+                    "leagueId": 922249,
+                    "time": "08.06.2026 16:00",
+                    "home": {
+                        "id": 205190,
+                        "score": 0,
+                        "name": "Wadi Degla FC",
+                        "longName": "Wadi Degla FC"
+                    },
+                    "away": {
+                        "id": 585662,
+                        "score": 0,
+                        "name": "ZED FC",
+                        "longName": "ZED FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "bronze",
+                    "status": {
+                        "utcTime": "2026-06-08T14:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.06.2026 16:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780927200000
+                }
+            ],
+            "parentLeagueId": 10270,
+            "internalRank": 0,
+            "liveRank": 999,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "URU",
+            "id": 930806,
+            "primaryId": 161,
+            "name": "Liga AUF Uruguaya Intermedio Grp. A",
+            "matches": [
+                {
+                    "id": 5670402,
+                    "leagueId": 930806,
+                    "time": "07.06.2026 20:00",
+                    "home": {
+                        "id": 1836,
+                        "score": 0,
+                        "name": "Cerro",
+                        "longName": "Cerro"
+                    },
+                    "away": {
+                        "id": 8450,
+                        "score": 0,
+                        "name": "Pe\u00f1arol",
+                        "longName": "Club Atletico Penarol"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "4",
+                    "status": {
+                        "utcTime": "2026-06-07T18:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.06.2026 20:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780855200000
+                },
+                {
+                    "id": 5670403,
+                    "leagueId": 930806,
+                    "time": "07.06.2026 23:30",
+                    "home": {
+                        "id": 7796,
+                        "score": 0,
+                        "name": "Defensor Sporting",
+                        "longName": "Defensor Sporting"
+                    },
+                    "away": {
+                        "id": 188313,
+                        "score": 0,
+                        "name": "Boston River",
+                        "longName": "Boston River"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "4",
+                    "status": {
+                        "utcTime": "2026-06-07T21:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.06.2026 23:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780867800000
+                }
+            ],
+            "parentLeagueId": 161,
+            "internalRank": 0,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
             "ccode": "INT",
-            "id": 926232,
-            "primaryId": 301,
-            "name": "EURO U17",
+            "id": 928682,
+            "primaryId": 305,
+            "name": "Maurice Revello Tournament Grp. A",
             "matches": [
                 {
-                    "id": 5316958,
-                    "leagueId": 926232,
-                    "time": "07.06.2026 19:00",
+                    "id": 5429863,
+                    "leagueId": 928682,
+                    "time": "07.06.2026 18:30",
                     "home": {
-                        "id": 2012989,
+                        "id": 5947,
                         "score": 0,
-                        "name": "Belgium U17/France U17",
-                        "longName": "Belgium U17/France U17"
+                        "name": "China U20",
+                        "longName": "China U20"
                     },
                     "away": {
-                        "id": 2012990,
+                        "id": 318826,
                         "score": 0,
-                        "name": "Italy U17/Spain U17",
-                        "longName": "Italy U17/Spain U17"
+                        "name": "Tunisia U23",
+                        "longName": "Tunisia U23"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "4",
+                    "status": {
+                        "utcTime": "2026-06-07T16:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.06.2026 18:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780849800000
+                }
+            ],
+            "parentLeagueId": 305,
+            "internalRank": 0,
+            "liveRank": 999,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "INT",
+            "id": 928683,
+            "primaryId": 305,
+            "name": "Maurice Revello Tournament Grp. B",
+            "matches": [
+                {
+                    "id": 5429872,
+                    "leagueId": 928683,
+                    "time": "08.06.2026 15:00",
+                    "home": {
+                        "id": 5882,
+                        "score": 0,
+                        "name": "Ivory Coast U20",
+                        "longName": "Ivory Coast U20"
+                    },
+                    "away": {
+                        "id": 5869,
+                        "score": 0,
+                        "name": "Canada U20",
+                        "longName": "Canada U20"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "4",
+                    "status": {
+                        "utcTime": "2026-06-08T13:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.06.2026 15:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780923600000
+                }
+            ],
+            "parentLeagueId": 305,
+            "internalRank": 0,
+            "liveRank": 999,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "VEN",
+            "id": 934959,
+            "primaryId": 339,
+            "name": "Primera Division - Apertura",
+            "matches": [
+                {
+                    "id": 5736485,
+                    "leagueId": 934959,
+                    "time": "08.06.2026 00:00",
+                    "home": {
+                        "id": 49681,
+                        "score": 0,
+                        "name": "Carabobo FC",
+                        "longName": "Carabobo FC"
+                    },
+                    "away": {
+                        "id": 657277,
+                        "score": 0,
+                        "name": "Academia Puerto Cabello",
+                        "longName": "Academia Puerto Cabello"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
                     "tournamentStage": "final",
                     "status": {
-                        "utcTime": "2026-06-07T17:00:00.000Z",
+                        "utcTime": "2026-06-07T22:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.06.2026 19:00:00"
+                            "firstHalfStarted": "08.06.2026 00:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1780851600000
+                    "timeTS": 1780869600000
                 }
             ],
-            "parentLeagueId": 301,
+            "parentLeagueId": 339,
             "internalRank": 0,
-            "liveRank": 0,
+            "liveRank": 999,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "ESP",
+            "id": 933862,
+            "primaryId": 8968,
+            "name": "Primera Federacion Promotion Playoff",
+            "matches": [
+                {
+                    "id": 5671514,
+                    "leagueId": 933862,
+                    "time": "07.06.2026 18:30",
+                    "home": {
+                        "id": 4031,
+                        "score": 0,
+                        "name": "Zamora",
+                        "longName": "Zamora"
+                    },
+                    "away": {
+                        "id": 161771,
+                        "score": 0,
+                        "name": "Villarreal B",
+                        "longName": "Villarreal B"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/2",
+                    "status": {
+                        "utcTime": "2026-06-07T16:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.06.2026 18:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false,
+                        "aggregatedStr": "0 - 2"
+                    },
+                    "timeTS": 1780849800000
+                }
+            ],
+            "parentLeagueId": 8968,
+            "internalRank": 8,
+            "liveRank": 999,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "URU",
+            "id": 922761,
+            "primaryId": 9122,
+            "name": "Segunda Division",
+            "matches": [
+                {
+                    "id": 5736490,
+                    "leagueId": 922761,
+                    "time": "07.06.2026 18:00",
+                    "home": {
+                        "id": 2220,
+                        "score": 0,
+                        "name": "Cerrito",
+                        "longName": "Cerrito"
+                    },
+                    "away": {
+                        "id": 181912,
+                        "score": 0,
+                        "name": "Atenas",
+                        "longName": "Atenas"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "5",
+                    "status": {
+                        "utcTime": "2026-06-07T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.06.2026 18:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780848000000
+                },
+                {
+                    "id": 5736491,
+                    "leagueId": 922761,
+                    "time": "07.06.2026 23:00",
+                    "home": {
+                        "id": 1837,
+                        "score": 0,
+                        "name": "Tacuarembo FC",
+                        "longName": "Tacuarembo FC"
+                    },
+                    "away": {
+                        "id": 1257662,
+                        "score": 0,
+                        "name": "Uruguay Montevideo",
+                        "longName": "Uruguay Montevideo"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "5",
+                    "status": {
+                        "utcTime": "2026-06-07T21:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.06.2026 23:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780866000000
+                },
+                {
+                    "id": 5736492,
+                    "leagueId": 922761,
+                    "time": "08.06.2026 02:00",
+                    "home": {
+                        "id": 4424,
+                        "score": 0,
+                        "name": "Miramar Misiones",
+                        "longName": "Miramar Misiones"
+                    },
+                    "away": {
+                        "id": 688270,
+                        "score": 0,
+                        "name": "Oriental",
+                        "longName": "Oriental"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "5",
+                    "status": {
+                        "utcTime": "2026-06-08T00:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.06.2026 02:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780876800000
+                }
+            ],
+            "parentLeagueId": 9122,
+            "internalRank": 0,
+            "liveRank": 999,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "ITA",
+            "id": 927519,
+            "primaryId": 147,
+            "name": "Serie C Promotion Playoff",
+            "matches": [
+                {
+                    "id": 5681714,
+                    "leagueId": 927519,
+                    "time": "07.06.2026 18:00",
+                    "home": {
+                        "id": 8522,
+                        "score": 0,
+                        "name": "Ascoli",
+                        "longName": "Ascoli"
+                    },
+                    "away": {
+                        "id": 189481,
+                        "score": 0,
+                        "name": "Union Brescia",
+                        "longName": "Union Brescia"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "final",
+                    "status": {
+                        "utcTime": "2026-06-07T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.06.2026 18:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false,
+                        "aggregatedStr": "1 - 1"
+                    },
+                    "timeTS": 1780848000000
+                }
+            ],
+            "parentLeagueId": 147,
+            "internalRank": 6,
+            "liveRank": 999,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "USA",
+            "id": 916389,
+            "primaryId": 10654,
+            "name": "USL Cup Grp. 5",
+            "matches": [
+                {
+                    "id": 5201632,
+                    "leagueId": 916389,
+                    "time": "07.06.2026 21:00",
+                    "home": {
+                        "id": 1877733,
+                        "score": 0,
+                        "name": "Brooklyn",
+                        "longName": "Brooklyn"
+                    },
+                    "away": {
+                        "id": 1701883,
+                        "score": 0,
+                        "name": "Portland Hearts of Pine",
+                        "longName": "Portland Hearts of Pine"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "3",
+                    "status": {
+                        "utcTime": "2026-06-07T19:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.06.2026 21:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780858800000
+                }
+            ],
+            "parentLeagueId": 10654,
+            "internalRank": 0,
+            "liveRank": 999,
             "simpleLeague": false
         },
         {
@@ -510,7 +998,7 @@
             ],
             "parentLeagueId": 9213,
             "internalRank": 7,
-            "liveRank": 0,
+            "liveRank": 3,
             "simpleLeague": false
         },
         {
@@ -646,7 +1134,7 @@
             ],
             "parentLeagueId": 9213,
             "internalRank": 7,
-            "liveRank": 0,
+            "liveRank": 3,
             "simpleLeague": false
         },
         {
@@ -782,7 +1270,7 @@
             ],
             "parentLeagueId": 9213,
             "internalRank": 7,
-            "liveRank": 0,
+            "liveRank": 3,
             "simpleLeague": false
         },
         {
@@ -918,50 +1406,93 @@
             ],
             "parentLeagueId": 9213,
             "internalRank": 7,
-            "liveRank": 0,
+            "liveRank": 3,
             "simpleLeague": false
         },
         {
-            "ccode": "INT",
-            "id": 344,
-            "primaryId": 344,
-            "name": "Friendlies U21",
+            "ccode": "ARG",
+            "id": 916561,
+            "primaryId": 9213,
+            "name": "Primera B Metropolitana",
             "matches": [
                 {
-                    "id": 5736140,
-                    "leagueId": 344,
-                    "time": "08.06.2026 12:00",
+                    "id": 5113877,
+                    "leagueId": 916561,
+                    "time": "07.06.2026 19:30",
                     "home": {
-                        "id": 6658,
+                        "id": 581808,
                         "score": 0,
-                        "name": "Ukraine U21",
-                        "longName": "Ukraine U21"
+                        "name": "Laferrere",
+                        "longName": "Laferrere"
                     },
                     "away": {
-                        "id": 5915,
+                        "id": 581802,
                         "score": 0,
-                        "name": "Japan U21",
-                        "longName": "Japan U21"
+                        "name": "Dock Sud",
+                        "longName": "Dock Sud"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
-                    "tournamentStage": "1",
+                    "tournamentStage": "19",
                     "status": {
-                        "utcTime": "2026-06-08T10:00:00.000Z",
+                        "utcTime": "2026-06-07T17:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "08.06.2026 12:00:00"
+                            "firstHalfStarted": "07.06.2026 19:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1780912800000
+                    "timeTS": 1780853400000
                 }
             ],
-            "internalRank": 0,
-            "liveRank": 0,
-            "simpleLeague": true
+            "parentLeagueId": 9213,
+            "internalRank": 7,
+            "liveRank": 3,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "NOR",
+            "id": 203,
+            "primaryId": 203,
+            "name": "1. Divisjon",
+            "matches": [
+                {
+                    "id": 5105087,
+                    "leagueId": 203,
+                    "time": "07.06.2026 17:00",
+                    "home": {
+                        "id": 6563,
+                        "score": 0,
+                        "name": "Ranheim",
+                        "longName": "Ranheim"
+                    },
+                    "away": {
+                        "id": 4249,
+                        "score": 0,
+                        "name": "Str\u00f8mmen",
+                        "longName": "Str\u00f8mmen"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-06-07T15:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.06.2026 17:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780844400000
+                }
+            ],
+            "internalRank": 9,
+            "liveRank": 2,
+            "simpleLeague": false
         },
         {
             "ccode": "ESP",
@@ -1003,297 +1534,7 @@
             ],
             "parentLeagueId": 140,
             "internalRank": 9,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "EGY",
-            "id": 922249,
-            "primaryId": 10270,
-            "name": "League Cup",
-            "matches": [
-                {
-                    "id": 5737261,
-                    "leagueId": 922249,
-                    "time": "08.06.2026 16:00",
-                    "home": {
-                        "id": 205190,
-                        "score": 0,
-                        "name": "Wadi Degla FC",
-                        "longName": "Wadi Degla FC"
-                    },
-                    "away": {
-                        "id": 585662,
-                        "score": 0,
-                        "name": "ZED FC",
-                        "longName": "ZED FC"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "bronze",
-                    "status": {
-                        "utcTime": "2026-06-08T14:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "08.06.2026 16:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1780927200000
-                }
-            ],
-            "parentLeagueId": 10270,
-            "internalRank": 0,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "URU",
-            "id": 930806,
-            "primaryId": 161,
-            "name": "Liga AUF Uruguaya Intermedio Grp. A",
-            "matches": [
-                {
-                    "id": 5670402,
-                    "leagueId": 930806,
-                    "time": "07.06.2026 20:00",
-                    "home": {
-                        "id": 1836,
-                        "score": 0,
-                        "name": "Cerro",
-                        "longName": "Cerro"
-                    },
-                    "away": {
-                        "id": 8450,
-                        "score": 0,
-                        "name": "Pe\u00f1arol",
-                        "longName": "Club Atletico Penarol"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "4",
-                    "status": {
-                        "utcTime": "2026-06-07T18:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.06.2026 20:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1780855200000
-                },
-                {
-                    "id": 5670403,
-                    "leagueId": 930806,
-                    "time": "07.06.2026 23:30",
-                    "home": {
-                        "id": 7796,
-                        "score": 0,
-                        "name": "Defensor Sporting",
-                        "longName": "Defensor Sporting"
-                    },
-                    "away": {
-                        "id": 188313,
-                        "score": 0,
-                        "name": "Boston River",
-                        "longName": "Boston River"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "4",
-                    "status": {
-                        "utcTime": "2026-06-07T21:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.06.2026 23:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1780867800000
-                }
-            ],
-            "parentLeagueId": 161,
-            "internalRank": 0,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "INT",
-            "id": 928682,
-            "primaryId": 305,
-            "name": "Maurice Revello Tournament Grp. A",
-            "matches": [
-                {
-                    "id": 5429863,
-                    "leagueId": 928682,
-                    "time": "07.06.2026 18:30",
-                    "home": {
-                        "id": 5947,
-                        "score": 0,
-                        "name": "China U20",
-                        "longName": "China U20"
-                    },
-                    "away": {
-                        "id": 318826,
-                        "score": 0,
-                        "name": "Tunisia U23",
-                        "longName": "Tunisia U23"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "4",
-                    "status": {
-                        "utcTime": "2026-06-07T16:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.06.2026 18:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1780849800000
-                }
-            ],
-            "parentLeagueId": 305,
-            "internalRank": 0,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "INT",
-            "id": 928683,
-            "primaryId": 305,
-            "name": "Maurice Revello Tournament Grp. B",
-            "matches": [
-                {
-                    "id": 5429872,
-                    "leagueId": 928683,
-                    "time": "08.06.2026 15:00",
-                    "home": {
-                        "id": 5882,
-                        "score": 0,
-                        "name": "Ivory Coast U20",
-                        "longName": "Ivory Coast U20"
-                    },
-                    "away": {
-                        "id": 5869,
-                        "score": 0,
-                        "name": "Canada U20",
-                        "longName": "Canada U20"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "4",
-                    "status": {
-                        "utcTime": "2026-06-08T13:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "08.06.2026 15:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1780923600000
-                }
-            ],
-            "parentLeagueId": 305,
-            "internalRank": 0,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "VEN",
-            "id": 934959,
-            "primaryId": 339,
-            "name": "Primera Division - Apertura",
-            "matches": [
-                {
-                    "id": 5736485,
-                    "leagueId": 934959,
-                    "time": "08.06.2026 00:00",
-                    "home": {
-                        "id": 49681,
-                        "score": 0,
-                        "name": "Carabobo FC",
-                        "longName": "Carabobo FC"
-                    },
-                    "away": {
-                        "id": 657277,
-                        "score": 0,
-                        "name": "Academia Puerto Cabello",
-                        "longName": "Academia Puerto Cabello"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "final",
-                    "status": {
-                        "utcTime": "2026-06-07T22:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "08.06.2026 00:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1780869600000
-                }
-            ],
-            "parentLeagueId": 339,
-            "internalRank": 0,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "ESP",
-            "id": 933862,
-            "primaryId": 8968,
-            "name": "Primera Federacion Promotion Playoff",
-            "matches": [
-                {
-                    "id": 5671514,
-                    "leagueId": 933862,
-                    "time": "07.06.2026 18:30",
-                    "home": {
-                        "id": 4031,
-                        "score": 0,
-                        "name": "Zamora",
-                        "longName": "Zamora"
-                    },
-                    "away": {
-                        "id": 161771,
-                        "score": 0,
-                        "name": "Villarreal B",
-                        "longName": "Villarreal B"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1/2",
-                    "status": {
-                        "utcTime": "2026-06-07T16:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.06.2026 18:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false,
-                        "aggregatedStr": "0 - 2"
-                    },
-                    "timeTS": 1780849800000
-                }
-            ],
-            "parentLeagueId": 8968,
-            "internalRank": 8,
-            "liveRank": 0,
+            "liveRank": 2,
             "simpleLeague": false
         },
         {
@@ -1363,6 +1604,37 @@
                         "finished": false
                     },
                     "timeTS": 1780855200000
+                },
+                {
+                    "id": 5113337,
+                    "leagueId": 916553,
+                    "time": "07.06.2026 20:30",
+                    "home": {
+                        "id": 161732,
+                        "score": 0,
+                        "name": "All Boys",
+                        "longName": "All Boys"
+                    },
+                    "away": {
+                        "id": 213592,
+                        "score": 0,
+                        "name": "Racing de Cordoba",
+                        "longName": "Racing de Cordoba"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "17",
+                    "status": {
+                        "utcTime": "2026-06-07T18:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.06.2026 20:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780857000000
                 },
                 {
                     "id": 5112970,
@@ -1553,7 +1825,7 @@
                 {
                     "id": 5112974,
                     "leagueId": 916553,
-                    "time": "08.06.2026 00:30",
+                    "time": "07.06.2026 22:30",
                     "home": {
                         "id": 146371,
                         "score": 0,
@@ -1570,213 +1842,21 @@
                     "statusId": 1,
                     "tournamentStage": "17",
                     "status": {
-                        "utcTime": "2026-06-07T22:30:00.000Z",
+                        "utcTime": "2026-06-07T20:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "08.06.2026 00:30:00"
+                            "firstHalfStarted": "07.06.2026 22:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1780871400000
+                    "timeTS": 1780864200000
                 }
             ],
             "parentLeagueId": 8965,
             "internalRank": 8,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "URU",
-            "id": 922761,
-            "primaryId": 9122,
-            "name": "Segunda Division",
-            "matches": [
-                {
-                    "id": 5736490,
-                    "leagueId": 922761,
-                    "time": "07.06.2026 18:00",
-                    "home": {
-                        "id": 2220,
-                        "score": 0,
-                        "name": "Cerrito",
-                        "longName": "Cerrito"
-                    },
-                    "away": {
-                        "id": 181912,
-                        "score": 0,
-                        "name": "Atenas",
-                        "longName": "Atenas"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "5",
-                    "status": {
-                        "utcTime": "2026-06-07T16:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.06.2026 18:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1780848000000
-                },
-                {
-                    "id": 5736491,
-                    "leagueId": 922761,
-                    "time": "07.06.2026 23:00",
-                    "home": {
-                        "id": 1837,
-                        "score": 0,
-                        "name": "Tacuarembo FC",
-                        "longName": "Tacuarembo FC"
-                    },
-                    "away": {
-                        "id": 1257662,
-                        "score": 0,
-                        "name": "Uruguay Montevideo",
-                        "longName": "Uruguay Montevideo"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "5",
-                    "status": {
-                        "utcTime": "2026-06-07T21:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.06.2026 23:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1780866000000
-                },
-                {
-                    "id": 5736492,
-                    "leagueId": 922761,
-                    "time": "08.06.2026 02:00",
-                    "home": {
-                        "id": 4424,
-                        "score": 0,
-                        "name": "Miramar Misiones",
-                        "longName": "Miramar Misiones"
-                    },
-                    "away": {
-                        "id": 688270,
-                        "score": 0,
-                        "name": "Oriental",
-                        "longName": "Oriental"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "5",
-                    "status": {
-                        "utcTime": "2026-06-08T00:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "08.06.2026 02:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1780876800000
-                }
-            ],
-            "parentLeagueId": 9122,
-            "internalRank": 0,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "ITA",
-            "id": 927519,
-            "primaryId": 147,
-            "name": "Serie C Promotion Playoff",
-            "matches": [
-                {
-                    "id": 5681714,
-                    "leagueId": 927519,
-                    "time": "07.06.2026 18:00",
-                    "home": {
-                        "id": 8522,
-                        "score": 0,
-                        "name": "Ascoli",
-                        "longName": "Ascoli"
-                    },
-                    "away": {
-                        "id": 189481,
-                        "score": 0,
-                        "name": "Union Brescia",
-                        "longName": "Union Brescia"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "final",
-                    "status": {
-                        "utcTime": "2026-06-07T16:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.06.2026 18:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false,
-                        "aggregatedStr": "1 - 1"
-                    },
-                    "timeTS": 1780848000000
-                }
-            ],
-            "parentLeagueId": 147,
-            "internalRank": 6,
-            "liveRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "USA",
-            "id": 916389,
-            "primaryId": 10654,
-            "name": "USL Cup Grp. 5",
-            "matches": [
-                {
-                    "id": 5201632,
-                    "leagueId": 916389,
-                    "time": "07.06.2026 21:00",
-                    "home": {
-                        "id": 1877733,
-                        "score": 0,
-                        "name": "Brooklyn",
-                        "longName": "Brooklyn"
-                    },
-                    "away": {
-                        "id": 1701883,
-                        "score": 0,
-                        "name": "Portland Hearts of Pine",
-                        "longName": "Portland Hearts of Pine"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "3",
-                    "status": {
-                        "utcTime": "2026-06-07T19:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.06.2026 21:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1780858800000
-                }
-            ],
-            "parentLeagueId": 10654,
-            "internalRank": 0,
-            "liveRank": 0,
+            "liveRank": 2,
             "simpleLeague": false
         },
         {

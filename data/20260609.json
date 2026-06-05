@@ -813,7 +813,7 @@
                         "longName": "Chile"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 106,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-06-09T10:00:00.000Z",
@@ -821,9 +821,15 @@
                             "firstHalfStarted": "09.06.2026 12:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "Can",
+                            "shortKey": "cancelled_short",
+                            "long": "Cancelled",
+                            "longKey": "cancelled"
+                        }
                     },
                     "timeTS": 1780999200000
                 },
@@ -1120,6 +1126,37 @@
             "name": "Friendlies U21",
             "matches": [
                 {
+                    "id": 5744887,
+                    "leagueId": 344,
+                    "time": "08.06.2026 17:00",
+                    "home": {
+                        "id": 5835,
+                        "score": 0,
+                        "name": "Belarus U21",
+                        "longName": "Belarus U21"
+                    },
+                    "away": {
+                        "id": 2131,
+                        "score": 0,
+                        "name": "Kazakhstan U21",
+                        "longName": "Kazakhstan U21"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-06-08T15:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.06.2026 17:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780930800000
+                },
+                {
                     "id": 5650524,
                     "leagueId": 344,
                     "time": "08.06.2026 18:00",
@@ -1324,7 +1361,7 @@
                 {
                     "id": 5735975,
                     "leagueId": 9829,
-                    "time": "09.06.2026 15:30",
+                    "time": "09.06.2026 14:30",
                     "home": {
                         "id": 1507991,
                         "score": 0,
@@ -1341,9 +1378,9 @@
                     "statusId": 1,
                     "tournamentStage": "final",
                     "status": {
-                        "utcTime": "2026-06-09T13:30:00.000Z",
+                        "utcTime": "2026-06-09T12:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "09.06.2026 15:30:00"
+                            "firstHalfStarted": "09.06.2026 14:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
@@ -1351,7 +1388,7 @@
                         "finished": false,
                         "aggregatedStr": "0 - 0"
                     },
-                    "timeTS": 1781011800000
+                    "timeTS": 1781008200000
                 }
             ],
             "internalRank": 10,
@@ -1403,6 +1440,49 @@
             "simpleLeague": false
         },
         {
+            "ccode": "ARG",
+            "id": 916561,
+            "primaryId": 9213,
+            "name": "Primera B Metropolitana",
+            "matches": [
+                {
+                    "id": 5113879,
+                    "leagueId": 916561,
+                    "time": "08.06.2026 20:30",
+                    "home": {
+                        "id": 425968,
+                        "score": 0,
+                        "name": "CD UAI Urquiza",
+                        "longName": "CD UAI Urquiza"
+                    },
+                    "away": {
+                        "id": 581822,
+                        "score": 0,
+                        "name": "CS Deportivo Liniers",
+                        "longName": "CS Deportivo Liniers"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "19",
+                    "status": {
+                        "utcTime": "2026-06-08T18:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.06.2026 20:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780943400000
+                }
+            ],
+            "parentLeagueId": 9213,
+            "internalRank": 7,
+            "liveRank": 3,
+            "simpleLeague": false
+        },
+        {
             "ccode": "FIN",
             "id": 920261,
             "primaryId": 251,
@@ -1451,6 +1531,37 @@
             "primaryId": 10282,
             "name": "MLS Next Pro",
             "matches": [
+                {
+                    "id": 1000008061,
+                    "leagueId": 10282,
+                    "time": "08.06.2026 21:00",
+                    "home": {
+                        "id": 1348126,
+                        "score": 0,
+                        "name": "Columbus Crew 2",
+                        "longName": "Columbus Crew 2"
+                    },
+                    "away": {
+                        "id": 1880719,
+                        "score": 0,
+                        "name": "Connecticut United",
+                        "longName": "Connecticut United"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "15",
+                    "status": {
+                        "utcTime": "2026-06-08T19:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.06.2026 21:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1780945200000
+                },
                 {
                     "id": 1000007660,
                     "leagueId": 10282,

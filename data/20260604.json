@@ -303,7 +303,7 @@
                         "longName": "El Salvador"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-06-04T01:00:00.000Z",
@@ -312,19 +312,16 @@
                             "secondHalfStarted": "04.06.2026 04:07:05"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
+                        "awarded": false,
                         "scoreStr": "1 - 0",
-                        "liveTime": {
-                            "short": "90\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "89:01",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1780534800000
@@ -335,7 +332,7 @@
                     "time": "04.06.2026 14:00",
                     "home": {
                         "id": 6332,
-                        "score": 0,
+                        "score": 4,
                         "name": "Cambodia",
                         "longName": "Cambodia"
                     },
@@ -346,17 +343,26 @@
                         "longName": "Bhutan"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-06-04T12:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "04.06.2026 14:00:00"
+                            "firstHalfStarted": "04.06.2026 14:00:40",
+                            "secondHalfStarted": "04.06.2026 15:02:34"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "4 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1780574400000
                 },
@@ -366,28 +372,37 @@
                     "time": "04.06.2026 15:00",
                     "home": {
                         "id": 5884,
-                        "score": 0,
+                        "score": 1,
                         "name": "Kenya",
                         "longName": "Kenya"
                     },
                     "away": {
                         "id": 4167,
-                        "score": 0,
+                        "score": 1,
                         "name": "Lesotho",
                         "longName": "Lesotho"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-06-04T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "04.06.2026 15:00:00"
+                            "firstHalfStarted": "04.06.2026 15:02:15",
+                            "secondHalfStarted": "04.06.2026 16:06:29"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1780578000000
                 }
@@ -1038,28 +1053,37 @@
                     "time": "04.06.2026 13:30",
                     "home": {
                         "id": 6589,
-                        "score": 0,
+                        "score": 2,
                         "name": "Belgium U17",
                         "longName": "Belgium U17"
                     },
                     "away": {
                         "id": 74659,
-                        "score": 0,
+                        "score": 1,
                         "name": "France U17",
                         "longName": "France U17"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1/2",
                     "status": {
                         "utcTime": "2026-06-04T11:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "04.06.2026 13:30:00"
+                            "firstHalfStarted": "04.06.2026 13:32:50",
+                            "secondHalfStarted": "04.06.2026 14:37:12"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1780572600000
                 }
@@ -1694,7 +1718,7 @@
                 {
                     "id": 1000010265,
                     "leagueId": 9305,
-                    "time": "04.06.2026 02:10",
+                    "time": "04.06.2026 02:00",
                     "home": {
                         "id": 10083,
                         "score": 0,
@@ -1711,9 +1735,9 @@
                     "statusId": 5,
                     "tournamentStage": "16th Finals",
                     "status": {
-                        "utcTime": "2026-06-04T00:10:00.000Z",
+                        "utcTime": "2026-06-04T00:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "04.06.2026 02:10:00"
+                            "firstHalfStarted": "04.06.2026 02:00:00"
                         },
                         "periodLength": 45,
                         "cancelled": true,
@@ -1726,7 +1750,7 @@
                             "longKey": "postponed"
                         }
                     },
-                    "timeTS": 1780531800000
+                    "timeTS": 1780531200000
                 }
             ],
             "internalRank": 0,
