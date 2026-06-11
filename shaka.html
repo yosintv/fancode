@@ -8,29 +8,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/controls.min.css" crossorigin="anonymous">
 
 <script>
-(function() {
+(function () {
 
-    const ALLOWED_PARENT = "s1.hls-player.net";
+    const allowedParents = [
+        "s1.hls-player.net",
+        "www.hls-player.net"
+    ];
 
     try {
 
-        // Direct visit
         if (window.top === window.self) {
             location.replace("https://www.yosintv.net");
             return;
         }
 
-        // Embedded in iframe
-        const parentHost = document.referrer
-            ? new URL(document.referrer).hostname
-            : "";
+        const ref = document.referrer;
 
-        if (parentHost !== ALLOWED_PARENT) {
+        if (!ref) {
             location.replace("https://www.yosintv.net");
             return;
         }
 
-    } catch (e) {
+        const host = new URL(ref).hostname;
+
+        if (!allowedParents.includes(host)) {
+            location.replace("https://www.yosintv.net");
+            return;
+        }
+
+    } catch (err) {
         location.replace("https://www.yosintv.net");
     }
 
