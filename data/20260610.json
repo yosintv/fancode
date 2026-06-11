@@ -373,24 +373,24 @@
                     "leagueId": 914609,
                     "time": "10.06.2026 01:00",
                     "home": {
+                        "id": 7795,
+                        "score": 0,
+                        "name": "Saudi Arabia",
+                        "longName": "Saudi Arabia"
+                    },
+                    "away": {
                         "id": 6395,
                         "score": 0,
                         "name": "Senegal",
                         "redCards": 1,
                         "longName": "Senegal"
                     },
-                    "away": {
-                        "id": 7795,
-                        "score": 0,
-                        "name": "Saudi Arabia",
-                        "longName": "Saudi Arabia"
-                    },
                     "eliminatedTeamId": null,
                     "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-06-09T23:00:00.000Z",
-                        "numberOfHomeRedCards": 1,
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
                             "firstHalfStarted": "10.06.2026 01:07:37",
                             "secondHalfStarted": "10.06.2026 02:16:10"
@@ -416,7 +416,7 @@
                     "time": "10.06.2026 03:00",
                     "home": {
                         "id": 6706,
-                        "score": 1,
+                        "score": 3,
                         "name": "Argentina",
                         "longName": "Argentina"
                     },
@@ -427,7 +427,7 @@
                         "longName": "Iceland"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-06-10T01:00:00.000Z",
@@ -436,19 +436,16 @@
                             "secondHalfStarted": "10.06.2026 04:15:54"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "1 - 0",
-                        "liveTime": {
-                            "short": "68\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "67:39",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "3 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1781053200000
@@ -458,40 +455,39 @@
                     "leagueId": 914609,
                     "time": "10.06.2026 03:00",
                     "home": {
+                        "id": 5819,
+                        "score": 0,
+                        "name": "Iraq",
+                        "redCards": 1,
+                        "longName": "Iraq"
+                    },
+                    "away": {
                         "id": 5800,
                         "score": 2,
                         "name": "Venezuela",
                         "longName": "Venezuela"
                     },
-                    "away": {
-                        "id": 5819,
-                        "score": 0,
-                        "name": "Iraq",
-                        "longName": "Iraq"
-                    },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-06-10T01:00:00.000Z",
+                        "numberOfHomeRedCards": 1,
                         "halfs": {
                             "firstHalfStarted": "10.06.2026 03:06:11",
                             "secondHalfStarted": "10.06.2026 04:12:07"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "2 - 0",
-                        "liveTime": {
-                            "short": "72\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "71:26",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "0 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1781053200000
@@ -601,22 +597,31 @@
                     },
                     "away": {
                         "id": 961464,
-                        "score": 0,
+                        "score": 7,
                         "name": "Mes Shahr Babak",
                         "longName": "Mes Shahr Babak"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "28",
                     "status": {
                         "utcTime": "2026-06-10T13:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "10.06.2026 15:30:00"
+                            "firstHalfStarted": "10.06.2026 15:31:36",
+                            "secondHalfStarted": "10.06.2026 16:36:38"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 7",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1781098200000
                 },
@@ -626,7 +631,7 @@
                     "time": "10.06.2026 16:30",
                     "home": {
                         "id": 1675873,
-                        "score": 0,
+                        "score": 1,
                         "name": "Naft Bandar Abbas",
                         "longName": "Naft Bandar Abbas"
                     },
@@ -637,17 +642,26 @@
                         "longName": "Shahrdari Nowshahr"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "28",
                     "status": {
                         "utcTime": "2026-06-10T14:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "10.06.2026 16:30:00"
+                            "firstHalfStarted": "10.06.2026 16:33:31",
+                            "secondHalfStarted": "10.06.2026 17:44:55"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1781101800000
                 }
@@ -1056,26 +1070,37 @@
                         "id": 1693,
                         "score": 0,
                         "name": "KuPS",
+                        "penScore": 4,
                         "longName": "KuPS"
                     },
                     "away": {
                         "id": 6597,
                         "score": 0,
                         "name": "VPS",
+                        "penScore": 5,
                         "longName": "VPS"
                     },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "eliminatedTeamId": 1693,
+                    "statusId": 13,
                     "tournamentStage": "1/4",
                     "status": {
                         "utcTime": "2026-06-10T14:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "10.06.2026 16:00:00"
+                            "firstHalfStarted": "10.06.2026 16:01:10",
+                            "secondHalfStarted": "10.06.2026 17:04:46"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 0",
+                        "reason": {
+                            "short": "Pen",
+                            "shortKey": "penalties_short",
+                            "long": "After penalties",
+                            "longKey": "afterpenalties"
+                        }
                     },
                     "timeTS": 1781100000000
                 }
@@ -1099,7 +1124,7 @@
                         "id": 5903,
                         "score": 0,
                         "name": "Brazil (W)",
-                        "redCards": 1,
+                        "redCards": 4,
                         "longName": "Brazil (W)"
                     },
                     "away": {
@@ -1109,29 +1134,26 @@
                         "longName": "USA (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-06-10T00:30:00.000Z",
-                        "numberOfHomeRedCards": 1,
+                        "numberOfHomeRedCards": 4,
                         "halfs": {
                             "firstHalfStarted": "10.06.2026 02:34:00",
                             "secondHalfStarted": "10.06.2026 03:45:08"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
+                        "awarded": false,
                         "scoreStr": "0 - 1",
-                        "liveTime": {
-                            "short": "99\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "98:25",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1781051400000
@@ -1354,7 +1376,7 @@
                     "time": "10.06.2026 13:30",
                     "home": {
                         "id": 439306,
-                        "score": 0,
+                        "score": 2,
                         "name": "DR Congo U20",
                         "longName": "DR Congo U20"
                     },
@@ -1362,20 +1384,31 @@
                         "id": 610874,
                         "score": 0,
                         "name": "Saudi Arabia U23",
+                        "redCards": 1,
                         "longName": "Saudi Arabia U23"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "5",
                     "status": {
                         "utcTime": "2026-06-10T11:30:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "10.06.2026 13:30:00"
+                            "firstHalfStarted": "10.06.2026 13:31:00",
+                            "secondHalfStarted": "10.06.2026 14:37:15"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1781091000000
                 }
@@ -1453,28 +1486,37 @@
                     "time": "10.06.2026 15:00",
                     "home": {
                         "id": 773994,
-                        "score": 0,
+                        "score": 1,
                         "name": "Cape Town City FC",
                         "longName": "Cape Town City FC"
                     },
                     "away": {
                         "id": 429859,
-                        "score": 0,
+                        "score": 1,
                         "name": "Magesi FC",
                         "longName": "Magesi FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "5",
                     "status": {
                         "utcTime": "2026-06-10T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "10.06.2026 15:00:00"
+                            "firstHalfStarted": "10.06.2026 15:00:05",
+                            "secondHalfStarted": "10.06.2026 16:02:33"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1781096400000
                 }
