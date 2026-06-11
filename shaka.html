@@ -6,6 +6,37 @@
     <title> Shaka Player</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/shaka-player.ui.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/controls.min.css" crossorigin="anonymous">
+
+<script>
+(function() {
+
+    const ALLOWED_PARENT = "s1.hls-player.net";
+
+    try {
+
+        // Direct visit
+        if (window.top === window.self) {
+            location.replace("https://www.yosintv.net");
+            return;
+        }
+
+        // Embedded in iframe
+        const parentHost = document.referrer
+            ? new URL(document.referrer).hostname
+            : "";
+
+        if (parentHost !== ALLOWED_PARENT) {
+            location.replace("https://www.yosintv.net");
+            return;
+        }
+
+    } catch (e) {
+        location.replace("https://www.yosintv.net");
+    }
+
+})();
+</script>
+    
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html, body { 
