@@ -52,40 +52,7 @@ const _0x5e3d79=_0x6f0c;function _0x6f0c(_0x49dd4d,_0x1398a9){_0x49dd4d=_0x49dd4
     <script type="text/javascript">sc_online_i(1735264,"ffffff","ffffff");</script>
 </div>
 
-<script>
-(function () {
-    const allowedHosts = [
-        "s1.hls-player.net",
-        "www.hls-player.net"
-    ];
 
-    const currentHost = window.location.hostname;
-
-    if (!allowedHosts.includes(currentHost)) {
-        window.location.replace("https://yosintv.net");
-        return;
-    }
-
-    if (document.referrer) {
-        try {
-            const refHost = new URL(document.referrer).hostname;
-
-            const allowedReferrers = [
-                "s1.hls-player.net",
-                "www.s1.hls-player.net"
-            ];
-
-            if (!allowedReferrers.includes(refHost)) {
-                window.location.replace("https://yosintv.net");
-                return;
-            }
-        } catch (e) {
-            window.location.replace("https://www.yosintv.net");
-            return;
-        }
-    }
-})();
-</script>
 
     
 </body>
