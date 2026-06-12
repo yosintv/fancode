@@ -1,6 +1,6 @@
 (function(){
 
-const BLOCK_URL = "https://yonotv-now.pages.dev/block";
+const BLOCK_URL = "https://www.cricfoot.net/";
 
 // allow localhost for development
 if(location.origin === "https://yonotv-now.pages.dev") return;
