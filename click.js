@@ -12,7 +12,7 @@
  */
 
 (function () {
-  const REDIRECT_URL = "https://www.cricfoot.net/";
+  const REDIRECT_URL = "https://www.yosintv.net/";
 
   const ALLOWED_HOSTS = [
     "www.cricfoot.net",
