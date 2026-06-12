@@ -1,50 +1,70 @@
-(function(){
+/**
+ * protect.js — Referrer protection for cr7world.pages.dev/shaka
+ * Allowed embeds: cricfoot.net, s2.hls-player.net
+ * Direct access → redirect to https://www.cricfoot.net/
+ */
 
-const BLOCK_URL = "https://www.cricfoot.net/";
+(function () {
+  const REDIRECT_URL = "https://www.cricfoot.net/";
 
-// allow localhost for development
-if(location.origin === "https://yonotv-now.pages.dev") return;
+  const ALLOWED_HOSTS = [
+    "www.cricfoot.net",
+    "cricfoot.net",
+    "s2.hls-player.net",
+  ];
 
-// allow Google AMP embeds
-try{
-    const origins = window.location.ancestorOrigins;
-    if(origins && origins.length){
-        const parent = origins[origins.length-1];
-        if(parent.includes("www.cricfoot.net")) return;
-    }
-}catch(e){}
-
-// must be inside iframe
-if(window.self === window.top){
-    location.replace(BLOCK_URL);
-    return;
-}
-
-// check parent domain
-try{
+  function getAllowedStatus() {
     const ref = document.referrer;
-    if(!ref){
-        location.replace(BLOCK_URL);
-        return;
+
+    // No referrer = direct access (typed URL, bookmark, empty iframe src, etc.)
+    if (!ref) return false;
+
+    try {
+      const refHost = new URL(ref).hostname.toLowerCase();
+
+      // Check if the referrer matches any allowed host
+      return ALLOWED_HOSTS.some(
+        (allowed) => refHost === allowed || refHost.endsWith("." + allowed)
+      );
+    } catch (e) {
+      // Malformed referrer — treat as direct
+      return false;
+    }
+  }
+
+  function isEmbeddedInFrame() {
+    try {
+      return window.self !== window.top;
+    } catch (e) {
+      // Cross-origin frame — access denied to window.top, so it IS in a frame
+      return true;
+    }
+  }
+
+  function protect() {
+    const inFrame = isEmbeddedInFrame();
+    const allowed = getAllowedStatus();
+
+    if (!inFrame) {
+      // Opened directly in a browser tab → always redirect
+      window.location.replace(REDIRECT_URL);
+      return;
     }
 
-    const domain = new URL(ref).hostname;
-
-    const allowed = [
-        "s1.hls-player.net",
-        "redirects.pages.dev"
-    ];
-
-    const ok = allowed.some(d => domain.includes(d));
-
-    if(!ok){
-        location.replace(BLOCK_URL);
-        return;
+    if (!allowed) {
+      // Embedded in an unauthorized domain → redirect the top frame if possible,
+      // otherwise just blank out this frame
+      try {
+        window.top.location.replace(REDIRECT_URL);
+      } catch (e) {
+        // Can't navigate top frame (cross-origin restriction)
+        window.location.replace(REDIRECT_URL);
+      }
+      return;
     }
 
-}catch(e){
-    location.replace(BLOCK_URL);
-}
+    // All checks passed — allow the player to load normally
+  }
 
-
+  protect();
 })();
