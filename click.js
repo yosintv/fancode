@@ -1,36 +1,50 @@
-document.addEventListener('contextmenu', function(event) {
-    event.preventDefault();
-    window.location.href = 'https://www.cricfoot.net/';
-});
+(function(){
 
-document.addEventListener('keydown', function(event) {
-    // List of key combinations to prevent
-    const blockedKeys = [
-        { key: 'a', ctrl: true },  // Select all (Ctrl+A / Command+A)
-        { key: 'c', ctrl: true },  // Copy (Ctrl+C / Command+C)
-        { key: 'x', ctrl: true },  // Cut (Ctrl+X / Command+X)
-        { key: 'u', ctrl: true },  // View source (Ctrl+U / Command+U)
-        { key: 's', ctrl: true },  // Save (Ctrl+S / Command+S)
-        { key: 'p', ctrl: true },  // Print (Ctrl+P / Command+P)
-        { key: 'i', ctrl: true, shift: true },  // DevTools (Ctrl+Shift+I / Command+Option+I)
-        { key: 'j', ctrl: true, shift: true },  // DevTools (Ctrl+Shift+J / Command+Option+J)
-        { key: 'k', ctrl: true, shift: true },  // DevTools (Ctrl+Shift+K for Firefox)
-        { key: 'c', ctrl: true, shift: true }   // DevTools console (Ctrl+Shift+C)
+const BLOCK_URL = "https://yonotv-now.pages.dev/block";
+
+// allow localhost for development
+if(location.origin === "https://yonotv-now.pages.dev") return;
+
+// allow Google AMP embeds
+try{
+    const origins = window.location.ancestorOrigins;
+    if(origins && origins.length){
+        const parent = origins[origins.length-1];
+        if(parent.includes("www.cricfoot.net")) return;
+    }
+}catch(e){}
+
+// must be inside iframe
+if(window.self === window.top){
+    location.replace(BLOCK_URL);
+    return;
+}
+
+// check parent domain
+try{
+    const ref = document.referrer;
+    if(!ref){
+        location.replace(BLOCK_URL);
+        return;
+    }
+
+    const domain = new URL(ref).hostname;
+
+    const allowed = [
+        "s1.hls-player.net",
+        "www.hls-player.net"
     ];
 
-    for (const combo of blockedKeys) {
-        if (event.key.toLowerCase() === combo.key.toLowerCase() && 
-            (combo.ctrl && (event.ctrlKey || event.metaKey)) && 
-            (!combo.shift || event.shiftKey)) {
-            event.preventDefault();
-            window.location.href = 'https://www.cricfoot.net/';
-            return;
-        }
+    const ok = allowed.some(d => domain.includes(d));
+
+    if(!ok){
+        location.replace(BLOCK_URL);
+        return;
     }
 
-    // Block F12 (DevTools)
-    if (event.key === 'F12') {
-        event.preventDefault();
-        window.location.href = 'https://www.cricfoot.net/';
-    }
-});
+}catch(e){
+    location.replace(BLOCK_URL);
+}
+
+
+})();
