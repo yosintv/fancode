@@ -32,7 +32,7 @@ try{
 
     const allowed = [
         "s1.hls-player.net",
-        "www.hls-player.net"
+        "redirects.pages.dev"
     ];
 
     const ok = allowed.some(d => domain.includes(d));
