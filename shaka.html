@@ -7,29 +7,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/shaka-player.ui.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/controls.min.css" crossorigin="anonymous">
     
-<script>
-(function () {
-
-    // Allow direct access from these hosts
-    const allowedHosts = [
-        "s1.hls-player.net",
-        "www.s1.hls-player.net",
-        "yosintv-live.pages.dev"
-    ];
-
-    const currentHost = location.hostname;
-
-    // If page itself is on an allowed host, allow it
-    if (allowedHosts.includes(currentHost)) {
-        return;
-    }
-
-    // Otherwise redirect
-    location.replace("https://www.yosintv.net");
-
-})();
-</script>
-    
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html, body { 
