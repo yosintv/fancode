@@ -18,6 +18,7 @@
     "www.cricfoot.net",
     "cricfoot.net",
     "s2.hls-player.net",
+    "redirects.pages.dev",
   ];
 
   function hostIsAllowed(hostname) {
