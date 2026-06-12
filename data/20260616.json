@@ -576,6 +576,49 @@
             "localRank": 4
         },
         {
+            "ccode": "ARG",
+            "id": 923718,
+            "primaryId": 9213,
+            "name": "Federal A Zona A",
+            "matches": [
+                {
+                    "id": 5238312,
+                    "leagueId": 923718,
+                    "time": "15.06.2026 23:00",
+                    "home": {
+                        "id": 213593,
+                        "score": 0,
+                        "name": "Sportivo Belgrano",
+                        "longName": "Sportivo Belgrano"
+                    },
+                    "away": {
+                        "id": 278653,
+                        "score": 0,
+                        "name": "Defensores de Belgrano de Villa Ramallo",
+                        "longName": "Defensores de Belgrano de Villa Ramallo"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "13",
+                    "status": {
+                        "utcTime": "2026-06-15T21:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "15.06.2026 23:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1781557200000
+                }
+            ],
+            "parentLeagueId": 9213,
+            "internalRank": 7,
+            "liveRank": 3,
+            "simpleLeague": false
+        },
+        {
             "ccode": "SWE",
             "id": 168,
             "primaryId": 168,
@@ -714,7 +757,7 @@
                         "longName": "Guabira"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "9",
                     "status": {
                         "utcTime": "2026-06-15T23:00:00.000Z",
@@ -722,9 +765,15 @@
                             "firstHalfStarted": "16.06.2026 01:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1781564400000
                 }
