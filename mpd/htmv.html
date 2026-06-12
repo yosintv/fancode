@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Football - South Korea vs Czechia</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shaka-player@latest/dist/controls.css" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/shaka-player@latest/dist/shaka-player.ui.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #000;
+      overflow: hidden;
+      font-family: sans-serif
+    }
+    .video-container, #player-wrap {
+      position: absolute;
+      inset: 0;
+      background: #000
+    }
+    #video {
+      width: 100%;
+      height: 100%
+    }
+    .shaka-spinner-container, .shaka-buffering-spinner, .shaka-spinner {
+      display: none !important
+    }
+    #status {
+      position: fixed;
+      left: 12px;
+      bottom: 12px;
+      z-index: 5;
+      color: rgba(255, 255, 255, .9);
+      background: rgba(0, 0, 0, .55);
+      border: 1px solid rgba(255, 255, 255, .2);
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 12px;
+      max-width: 88vw
+    }
+    #status:empty {
+      display: none
+    }
+    .hidden {
+      display: none !important
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-container">
+    <div id="player-wrap" data-shaka-player-container>
+      <video autoplay muted playsinline data-shaka-player id="video"></video>
+    </div>
+  </div>
+
+  <div id="status"></div>
+
+  <script>
+    function showStatus(text) {
+      var s = document.getElementById('status');
+      if (s) s.textContent = text;
+    }
+
+    function onPlayerError(error) {
+      var code = error && error.code ? error.code : 'UNKNOWN';
+      console.error('Shaka error', error);
+      showStatus('Stream failed (' + code + ')');
+    }
+
+    async function initPlayer() {
+      if (!window.shaka || !shaka.Player || !shaka.Player.isBrowserSupported()) {
+        showStatus('Browser not supported');
+        return;
+      }
+
+      shaka.polyfill.installAll();
+
+      var video = document.getElementById('video');
+      if (!video || !video.ui) {
+        setTimeout(initPlayer, 80);
+        return;
+      }
+
+      var ui = video.ui;
+      var controls = ui.getControls();
+      var player = controls.getPlayer();
+
+      player.addEventListener('error', function(ev) { onPlayerError(ev.detail); });
+      controls.addEventListener('error', function(ev) { onPlayerError(ev.detail); });
+
+      ui.configure({
+        controlPanelElements: [
+          "play_pause",
+          "mute",
+          "volume",
+          "spacer",
+          "time_and_duration",
+          "quality",
+          "fullscreen",
+          "overflow_menu"
+        ]
+      });
+
+      player.configure({
+        drm: {
+          clearKeys: { "220d8978f3fd45b696137c5b94f7a264": "7bfe13500edee4f837ec03a907896306" }
+        },
+        streaming: { bufferingGoal: 20, rebufferingGoal: 2, bufferBehind: 20 }
+      });
+
+      try {
+        await player.load("https://ottlive.dishhome.com.np/protected/GgTOzZkB0RDJ74Ryniuo/dash/manifest.mpd");
+        showStatus('');
+        video.muted = false;
+        video.play().catch(function() {});
+      } catch (e) {
+        onPlayerError(e);
+      }
+    }
+
+    function initFailed() {
+      showStatus('Unable to load Shaka UI');
+    }
+
+    document.addEventListener('shaka-ui-loaded', initPlayer);
+    document.addEventListener('shaka-ui-load-failed', initFailed);
+
+    if ('wakeLock' in navigator) {
+      navigator.wakeLock.request('screen').catch(function() {});
+    }
+  </script>
+</body>
+</html>
