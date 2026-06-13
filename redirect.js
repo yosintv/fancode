@@ -5,12 +5,12 @@
  *  1. Page is embedded in a frame AND referrer is from an allowed host
  *  2. Page is embedded in a frame AND the *parent page URL* contains an allowed host
  *  3. The current page URL was loaded as a ?src= target from an allowed host
- *
  * Direct access or unauthorized embed → redirect to https://www.yosintv.net/ after 40s
+ * https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjqvffrpoSVAxUfslYBHeorFdsQFnoECBYQAQ&url=https%3A%2F%2Fwww.cricfoot.net%2F&usg=AOvVaw2zr7hYbc4BMsU6PRVQlM9z&opi=89978449
  */
 
 (function () {
-  const REDIRECT_URL = "https://www.yosintv.net/";
+  const REDIRECT_URL = "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjqvffrpoSVAxUfslYBHeorFdsQFnoECBYQAQ&url=https%3A%2F%2Fwww.cricfoot.net%2F&usg=AOvVaw2zr7hYbc4BMsU6PRVQlM9z&opi=89978449";
   const REDIRECT_DELAY_MS = 40000; // 40 seconds
 
   const ALLOWED_HOSTS = [
