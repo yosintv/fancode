@@ -4,21 +4,21 @@
  * Allowed access when ANY of these are true:
  *  1. Page is embedded in a frame AND referrer is from an allowed host
  *  2. Page is embedded in a frame AND the *parent page URL* contains an allowed host
- *     (detected via document.referrer or window.location being linked from allowed src)
  *  3. The current page URL was loaded as a ?src= target from an allowed host
- *     e.g. https://s2.hls-player.net/ft?src=https://cr7world.pages.dev/shaka?id=pc1
  *
- * Direct access (no frame, no allowed referrer) → redirect to https://www.cricfoot.net/
+ * Direct access or unauthorized embed → redirect to https://www.yosintv.net/ after 40s
  */
 
 (function () {
   const REDIRECT_URL = "https://www.yosintv.net/";
+  const REDIRECT_DELAY_MS = 40000; // 40 seconds
 
   const ALLOWED_HOSTS = [
     "www.cricfoot.net",
     "cricfoot.net",
     "s2.hls-player.net",
     "redirects.pages.dev",
+    "cr7world.pages.dev",
   ];
 
   function hostIsAllowed(hostname) {
@@ -31,7 +31,7 @@
     try {
       return window.self !== window.top;
     } catch (e) {
-      return true; // cross-origin frame = definitely embedded
+      return true;
     }
   }
 
@@ -45,31 +45,16 @@
     }
   }
 
-  /**
-   * Check if this page's own URL appears as a ?src= (or similar) value
-   * inside a parent URL from an allowed host.
-   *
-   * When s2.hls-player.net embeds us via:
-   *   https://s2.hls-player.net/ft?src=https://cr7world.pages.dev/shaka?id=pc1
-   * …the referrer will be https://s2.hls-player.net/ft?src=...
-   * So referrerAllowed() already covers it IF referrer is sent.
-   * This function is the fallback for when referrer is suppressed.
-   *
-   * Strategy: check if window.location.href is the "src" of a known
-   * allowed-host wrapper by inspecting URL params of the referrer.
-   */
   function loadedAsSrcParam() {
     try {
       const ref = document.referrer;
       if (!ref) return false;
       const refUrl = new URL(ref);
-      // Already handled by referrerAllowed(); this adds src-param check
       const srcParam = refUrl.searchParams.get("src") ||
                        refUrl.searchParams.get("url") ||
                        refUrl.searchParams.get("file") ||
                        refUrl.searchParams.get("stream");
       if (!srcParam) return false;
-      // The src param should point to our own domain
       const srcHost = new URL(srcParam).hostname.toLowerCase();
       return srcHost === "cr7world.pages.dev";
     } catch (e) {
@@ -77,10 +62,6 @@
     }
   }
 
-  /**
-   * Last resort: check postMessage origin from parent.
-   * Some players send a handshake. We wait 800ms for it.
-   */
   function waitForParentHandshake(callback) {
     let resolved = false;
     const timer = setTimeout(() => {
@@ -104,12 +85,20 @@
     });
   }
 
+  function doRedirect() {
+    try {
+      window.top.location.replace(REDIRECT_URL);
+    } catch (e) {
+      window.location.replace(REDIRECT_URL);
+    }
+  }
+
   function protect() {
     const inFrame = isEmbeddedInFrame();
 
-    // Direct browser tab access → always redirect
+    // Direct browser tab access → redirect after 40 seconds
     if (!inFrame) {
-      window.location.replace(REDIRECT_URL);
+      setTimeout(() => window.location.replace(REDIRECT_URL), REDIRECT_DELAY_MS);
       return;
     }
 
@@ -121,12 +110,8 @@
     // Slow path: wait briefly for a postMessage handshake from parent
     waitForParentHandshake(function (trusted) {
       if (!trusted) {
-        // No valid signal — redirect
-        try {
-          window.top.location.replace(REDIRECT_URL);
-        } catch (e) {
-          window.location.replace(REDIRECT_URL);
-        }
+        // Unauthorized embed → redirect after 40 seconds
+        setTimeout(doRedirect, REDIRECT_DELAY_MS);
       }
       // else: ✅ allow
     });
