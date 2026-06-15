@@ -111,13 +111,13 @@
 
       player.configure({
         drm: {
-          clearKeys: { "220d8978f3fd45b696137c5b94f7a264": "7bfe13500edee4f837ec03a907896306" }
+          clearKeys: { "1cb20afcd9d979c833cfd208c7d3eeb2": "fef0c15b4a523370892edd5e4133c269" }
         },
         streaming: { bufferingGoal: 20, rebufferingGoal: 2, bufferBehind: 20 }
       });
 
       try {
-        await player.load("https://ottlive.dishhome.com.np/protected/GgTOzZkB0RDJ74Ryniuo/dash/manifest.mpd");
+        await player.load("https://svc45.main.sl.t-online.de/bpk-tv/KID01037_FUSSBALLTV1_hd/DASH/index.mpd");
         showStatus('');
         video.muted = false;
         video.play().catch(function() {});
