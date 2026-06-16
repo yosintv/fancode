@@ -150,7 +150,7 @@
                     "time": "15.06.2026 04:00",
                     "home": {
                         "id": 8520,
-                        "score": 2,
+                        "score": 5,
                         "name": "Sweden",
                         "longName": "Sweden"
                     },
@@ -161,27 +161,25 @@
                         "longName": "Tunisia"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 10,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-06-15T02:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "15.06.2026 04:00:43"
+                            "firstHalfStarted": "15.06.2026 04:00:43",
+                            "secondHalfStarted": "15.06.2026 05:05:46"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "2 - 1",
-                        "liveTime": {
-                            "short": "HT",
-                            "shortKey": "halftime_short",
-                            "long": "Half-Time",
-                            "longKey": "pause_match",
-                            "maxTime": 45,
-                            "basePeriod": 45,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "5 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1781488800000
@@ -334,97 +332,44 @@
             "name": "Azadegan League",
             "matches": [
                 {
-                    "id": 5774209,
+                    "id": 5774213,
                     "leagueId": 9372,
-                    "time": "15.06.2026 15:30",
+                    "time": "15.06.2026 16:00",
                     "home": {
-                        "id": 1320146,
-                        "score": 0,
-                        "name": "Shahrdari Nowshahr",
-                        "longName": "Shahrdari Nowshahr"
+                        "id": 955322,
+                        "score": 1,
+                        "name": "Havadar SC",
+                        "longName": "Havadar SC"
                     },
                     "away": {
-                        "id": 958608,
-                        "score": 0,
-                        "name": "Navad",
-                        "longName": "Navad Urmia"
+                        "id": 101622,
+                        "score": 1,
+                        "name": "Mes Kerman",
+                        "longName": "Mes Kerman"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "29",
                     "status": {
-                        "utcTime": "2026-06-15T13:30:00.000Z",
+                        "utcTime": "2026-06-15T14:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "15.06.2026 15:30:00"
+                            "firstHalfStarted": "15.06.2026 16:07:15",
+                            "secondHalfStarted": "15.06.2026 17:16:50"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
-                    "timeTS": 1781530200000
-                },
-                {
-                    "id": 5774210,
-                    "leagueId": 9372,
-                    "time": "15.06.2026 15:45",
-                    "home": {
-                        "id": 1528916,
-                        "score": 0,
-                        "name": "Kara Gostar",
-                        "longName": "Kara Gostar"
-                    },
-                    "away": {
-                        "id": 392200,
-                        "score": 0,
-                        "name": "Nassaji",
-                        "longName": "Nassaji Mazandaran FC"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "29",
-                    "status": {
-                        "utcTime": "2026-06-15T13:45:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "15.06.2026 15:45:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1781531100000
-                },
-                {
-                    "id": 5774211,
-                    "leagueId": 9372,
-                    "time": "15.06.2026 16:30",
-                    "home": {
-                        "id": 1431260,
-                        "score": 0,
-                        "name": "Ario Islamshahr",
-                        "longName": "Ario Islamshahr"
-                    },
-                    "away": {
-                        "id": 1675873,
-                        "score": 0,
-                        "name": "Naft Bandar Abbas",
-                        "longName": "Naft Bandar Abbas"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "29",
-                    "status": {
-                        "utcTime": "2026-06-15T14:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "15.06.2026 16:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1781533800000
+                    "timeTS": 1781532000000
                 },
                 {
                     "id": 5774212,
@@ -432,59 +377,77 @@
                     "time": "15.06.2026 16:30",
                     "home": {
                         "id": 1693132,
-                        "score": 0,
+                        "score": 1,
                         "name": "FC Fard",
                         "longName": "FC Fard"
                     },
                     "away": {
                         "id": 101624,
-                        "score": 0,
+                        "score": 2,
                         "name": "Sanat-Naft",
                         "longName": "Sanat Naft Abadan"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "29",
                     "status": {
                         "utcTime": "2026-06-15T14:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "15.06.2026 16:30:00"
+                            "firstHalfStarted": "15.06.2026 16:32:28",
+                            "secondHalfStarted": "15.06.2026 17:37:39"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1781533800000
                 },
                 {
-                    "id": 5774213,
+                    "id": 5774210,
                     "leagueId": 9372,
                     "time": "15.06.2026 16:30",
                     "home": {
-                        "id": 955322,
-                        "score": 0,
-                        "name": "Havadar SC",
-                        "longName": "Havadar SC"
+                        "id": 1528916,
+                        "score": 1,
+                        "name": "Kara Gostar",
+                        "longName": "Kara Gostar"
                     },
                     "away": {
-                        "id": 101622,
-                        "score": 0,
-                        "name": "Mes Kerman",
-                        "longName": "Mes Kerman"
+                        "id": 392200,
+                        "score": 1,
+                        "name": "Nassaji",
+                        "longName": "Nassaji Mazandaran FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "29",
                     "status": {
                         "utcTime": "2026-06-15T14:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "15.06.2026 16:30:00"
+                            "firstHalfStarted": "15.06.2026 16:36:44",
+                            "secondHalfStarted": "15.06.2026 17:38:40"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1781533800000
                 },
@@ -505,17 +468,26 @@
                         "longName": "Beasat Kermanshah"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "29",
                     "status": {
                         "utcTime": "2026-06-15T14:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "15.06.2026 16:30:00"
+                            "firstHalfStarted": "15.06.2026 16:33:53",
+                            "secondHalfStarted": "15.06.2026 17:38:40"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1781533800000
                 }
@@ -1726,28 +1698,37 @@
                     "time": "15.06.2026 15:00",
                     "home": {
                         "id": 1045551,
-                        "score": 0,
+                        "score": 1,
                         "name": "Kinondoni MC",
                         "longName": "Kinondoni MC"
                     },
                     "away": {
                         "id": 287669,
-                        "score": 0,
+                        "score": 3,
                         "name": "Coastal Union",
                         "longName": "Coastal Union"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-06-15T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "15.06.2026 15:00:00"
+                            "firstHalfStarted": "15.06.2026 15:01:08",
+                            "secondHalfStarted": "15.06.2026 16:03:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 3",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1781528400000
                 }
@@ -3442,6 +3423,7 @@
                         "id": 581840,
                         "score": 2,
                         "name": "Inter de Limeira",
+                        "redCards": 1,
                         "longName": "Inter de Limeira"
                     },
                     "eliminatedTeamId": null,
@@ -3449,6 +3431,7 @@
                     "tournamentStage": "10",
                     "status": {
                         "utcTime": "2026-06-14T19:00:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
                             "firstHalfStarted": "14.06.2026 21:04:09",
                             "secondHalfStarted": "14.06.2026 22:10:05"
