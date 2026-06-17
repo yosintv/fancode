@@ -161,7 +161,7 @@
                         "longName": "New Zealand"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-06-16T01:00:00.000Z",
@@ -170,19 +170,16 @@
                             "secondHalfStarted": "16.06.2026 04:12:39"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
+                        "awarded": false,
                         "scoreStr": "2 - 2",
-                        "liveTime": {
-                            "short": "88\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "87:20",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1781571600000
@@ -391,17 +388,26 @@
                         "longName": "Navad Urmia"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "29",
                     "status": {
                         "utcTime": "2026-06-16T13:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "16.06.2026 15:30:00"
+                            "firstHalfStarted": "16.06.2026 15:34:15",
+                            "secondHalfStarted": "16.06.2026 16:40:11"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1781616600000
                 },
@@ -411,7 +417,7 @@
                     "time": "16.06.2026 16:30",
                     "home": {
                         "id": 1431260,
-                        "score": 0,
+                        "score": 1,
                         "name": "Ario Islamshahr",
                         "longName": "Ario Islamshahr"
                     },
@@ -422,17 +428,26 @@
                         "longName": "Naft Bandar Abbas"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "29",
                     "status": {
                         "utcTime": "2026-06-16T14:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "16.06.2026 16:30:00"
+                            "firstHalfStarted": "16.06.2026 16:30:34",
+                            "secondHalfStarted": "16.06.2026 17:36:39"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1781620200000
                 }
@@ -883,17 +898,26 @@
                         "longName": "TRA United"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "27",
                     "status": {
                         "utcTime": "2026-06-16T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "16.06.2026 15:00:00"
+                            "firstHalfStarted": "16.06.2026 15:02:45",
+                            "secondHalfStarted": "16.06.2026 16:03:25"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1781614800000
                 }
@@ -1286,6 +1310,7 @@
                         "id": 197792,
                         "score": 1,
                         "name": "Botafogo PB",
+                        "redCards": 1,
                         "longName": "Botafogo PB"
                     },
                     "eliminatedTeamId": null,
@@ -1293,6 +1318,7 @@
                     "tournamentStage": "10",
                     "status": {
                         "utcTime": "2026-06-15T23:30:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
                             "firstHalfStarted": "16.06.2026 01:32:01",
                             "secondHalfStarted": "16.06.2026 02:35:35"
