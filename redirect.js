@@ -11,7 +11,7 @@
 
 (function () {
   const REDIRECT_URL = " https://www.yosintv.net/apk ";
-  const REDIRECT_DELAY_MS = 40000; // 40 seconds
+  const REDIRECT_DELAY_MS = 20000; // 40 seconds
 
   const ALLOWED_HOSTS = [
     "www.cricfoot.net",
