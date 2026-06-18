@@ -2,7 +2,7 @@ import json
 import os
 from collections import defaultdict
 
-INPUT_FILE = "india.json"
+INPUT_FILE = "india.csv"
 OUTPUT_DIR = "india"
 
 # Create output directory
