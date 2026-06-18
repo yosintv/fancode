@@ -48,9 +48,6 @@
     #status:empty {
       display: none
     }
-    .hidden {
-      display: none !important
-    }
   </style>
 </head>
 <body>
@@ -75,48 +72,66 @@
       showStatus('Stream failed (' + code + ')');
     }
 
-    // Extracts the "?id=name" parameter from the browser's address bar url
+    // Extracts the "?id=name" parameter from the browser window URL string
     function getStreamIdFromUrl() {
       const urlParams = new URLSearchParams(window.location.search);
       const id = urlParams.get('id');
       return id ? id.trim().toLowerCase() : null;
     }
 
-    // Parses line-by-line items from your raw text format within mpd.js
+    // Advanced non-linear parser that tolerates random line-breaks inside configs
     async function parseMpdPlaylist() {
       try {
         const response = await fetch('mpd.js');
         if (!response.ok) throw new Error('Could not load mpd.js');
         const text = await response.text();
         
-        // Split file content row by row
-        const lines = text.split('\n').map(line => line.trim()).filter(line => line.length > 0);
+        // 1. Break the whole file down completely by comma delimiters
+        // Removes all line-breaks, extra spacing, and filters out blank items
+        const allSegments = text.split(',')
+                                .map(seg => seg.replace(/\r?\n|\r/g, ' ').trim())
+                                .filter(seg => seg.length > 0);
+        
         const playlist = [];
+        let i = 0;
 
-        for (let line of lines) {
-          // Split elements on the line by their individual commas
-          const segments = line.split(',').map(seg => seg.trim()).filter(seg => seg.length > 0);
-          
-          if (segments.length >= 3) {
-            const id = segments[0].toLowerCase(); // 1st element: Custom Stream Name/ID
-            const url = segments[1];              // 2nd element: Complete MPD Stream URL
+        // 2. Loop dynamically to identify blocks
+        while (i < allSegments.length) {
+          const item = allSegments[i];
+
+          // Check if current segment looks like an MPD endpoint URL
+          if (item.toLowerCase().includes('.mpd')) {
+            // The value immediately before the MPD URL is always treated as the target ID
+            const id = allSegments[i - 1] ? allSegments[i - 1].split(' ').pop().toLowerCase() : null;
+            const url = item;
             const clearKeys = {};
+            
+            i++; // Shift view right to check for keys
 
-            // 3rd element and onwards: Read key configurations
-            for (let i = 2; i < segments.length; i++) {
-              if (segments[i].includes(':')) {
-                const [keyId, key] = segments[i].split(':');
+            // 3. Scan forward gathering all keys until hitting another stream URL or reaching file end
+            while (i < allSegments.length && !allSegments[i].toLowerCase().includes('.mpd')) {
+              const prospectiveKey = allSegments[i];
+              if (prospectiveKey.includes(':')) {
+                const [keyId, key] = prospectiveKey.split(':');
                 if (keyId && key) {
-                  clearKeys[keyId.trim()] = key.trim();
+                  // If extra text ID got bunched into the last key string segment, pick the clean clearKey block
+                  const cleanKeyId = keyId.trim().split(' ').pop();
+                  const cleanKey = key.trim().split(' ')[0];
+                  clearKeys[cleanKeyId] = cleanKey;
                 }
               }
+              i++;
             }
 
-            playlist.push({ id, url, clearKeys });
+            if (id && url) {
+              playlist.push({ id, url, clearKeys });
+            }
+          } else {
+            i++;
           }
         }
 
-        if (playlist.length === 0) throw new Error('No valid streams found in configuration.');
+        if (playlist.length === 0) throw new Error('No valid stream configurations discovered.');
         return playlist;
 
       } catch (error) {
@@ -140,23 +155,22 @@
         return;
       }
 
-      // 1. Fetch data arrays parsed line by line out of mpd.js
+      // Fetch dynamic streaming configurations
       const streams = await parseMpdPlaylist();
       if (!streams || streams.length === 0) return;
 
-      // 2. Identify custom channel name or default fallback
+      // Extract current router identifier parameter target
       const targetId = getStreamIdFromUrl();
       let targetStream = null;
 
       if (targetId) {
-        // Search array entries for a matching name field identifier
         targetStream = streams.find(stream => stream.id === targetId);
         if (!targetStream) {
           showStatus('Stream ID error: "' + targetId + '" not found in mpd.js');
           return;
         }
       } else {
-        // No custom ID parameter requested; load the very first entry line item automatically
+        // Fallback default structure setup index index position
         targetStream = streams[0];
       }
 
