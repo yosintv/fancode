@@ -166,7 +166,7 @@
       if (targetId) {
         targetStream = streams.find(stream => stream.id === targetId);
         if (!targetStream) {
-          showStatus('Stream ID error: "' + targetId + '" not found in mpd.js');
+          showStatus('Stream ID error: "' + targetId + '" not found in server');
           return;
         }
       } else {
