@@ -3,9 +3,9 @@ name: Split India Pincodes by State
 on:
   push:
     paths:
-      - 'india.json'
+      - 'india.csv'
       - 'split_india_states.py'
-      - '.github/workflows/split_states.yml'
+      - '.github/workflows/split_india_states.yml'
   workflow_dispatch:
 
 permissions:
@@ -22,7 +22,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: '3.12'
 
       - name: Run split script
         run: python split_india_states.py
