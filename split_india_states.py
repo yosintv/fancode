@@ -1,3 +1,4 @@
+import csv
 import json
 import os
 from collections import defaultdict
@@ -5,23 +6,31 @@ from collections import defaultdict
 INPUT_FILE = "india.csv"
 OUTPUT_DIR = "india"
 
-# Create output directory
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# Load master JSON file
-with open(INPUT_FILE, "r", encoding="utf-8") as f:
-    data = json.load(f)
-
-# Group records by state
 states = defaultdict(list)
 
-for item in data:
-    state = item.get("stateName", "").strip().upper()
+# Try cp1252 if utf-8 fails
+with open(INPUT_FILE, "r", encoding="cp1252", newline="") as f:
+    reader = csv.DictReader(f)
 
-    if state:
-        states[state].append(item)
+    for row in reader:
+        state = row["stateName"].strip().upper()
 
-# Create one JSON file per state
+        states[state].append({
+            "officeName": row["officeName"],
+            "pincode": row["pincode"],
+            "officeType": row["officeType"],
+            "deliveryStatus": row["deliveryStatus"],
+            "divisionName": row["divisionName"],
+            "regionName": row["regionName"],
+            "circleName": row["circleName"],
+            "taluk": row["taluk"],
+            "districtName": row["districtName"],
+            "stateName": state
+        })
+
+# Write state files
 for state, records in states.items():
     filename = (
         state.lower()
@@ -34,15 +43,13 @@ for state, records in states.items():
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(records, f, ensure_ascii=False, separators=(",", ":"))
 
-    print(f"Created: {filepath}")
-
-# Create index.json listing all states
-state_files = sorted([
+# Create index.json
+index = sorted(
     state.lower().replace("&", "and").replace(" ", "_") + ".json"
     for state in states
-])
+)
 
 with open(os.path.join(OUTPUT_DIR, "index.json"), "w", encoding="utf-8") as f:
-    json.dump(state_files, f, indent=2)
+    json.dump(index, f, indent=2)
 
-print(f"\nDone! Generated {len(states)} state files.")
+print(f"Done! Generated {len(states)} state files.")
