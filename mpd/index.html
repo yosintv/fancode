@@ -78,23 +78,17 @@
       return id ? id.trim().toLowerCase() : null;
     }
 
-    // Advanced non-linear parser that ignores custom commented line elements
+    // Dynamic parser that handles both .mpd and .m3u8 source tags
     async function parseMpdPlaylist() {
       try {
         const response = await fetch('mpd.js');
         if (!response.ok) throw new Error('Could not load mpd.js');
         const text = await response.text();
         
-        // 1. Split text into lines to easily strip out notes/comments first
-        const cleanLines = text.split('\n')
-                               .map(line => line.trim())
-                               .filter(line => line.length > 0 && !line.startsWith('#') && !line.startsWith('//'));
-
-        // 2. Re-combine clean lines and split everything precisely by commas
-        const allSegments = cleanLines.join(' ')
-                                      .split(',')
-                                      .map(seg => seg.trim())
-                                      .filter(seg => seg.length > 0);
+        // Break down entire workspace data file using commas
+        const allSegments = text.split(',')
+                                .map(seg => seg.replace(/\r?\n|\r/g, ' ').trim())
+                                .filter(seg => seg.length > 0);
         
         const playlist = [];
         let i = 0;
@@ -103,7 +97,7 @@
           const item = allSegments[i];
           const lowerItem = item.toLowerCase();
 
-          // Match streaming source addresses (.mpd or .m3u8)
+          // Check if segment is a stream endpoint URL (.mpd or .m3u8)
           if (lowerItem.includes('.mpd') || lowerItem.includes('.m3u8')) {
             const id = allSegments[i - 1] ? allSegments[i - 1].split(' ').pop().toLowerCase() : null;
             const url = item;
@@ -111,7 +105,7 @@
             
             i++; 
 
-            // Gather structural clearKeys values sequentially
+            // Gather clearKeys only if they exist on following entries before next URL context
             while (i < allSegments.length && 
                    !allSegments[i].toLowerCase().includes('.mpd') && 
                    !allSegments[i].toLowerCase().includes('.m3u8')) {
@@ -195,6 +189,7 @@
         ]
       });
 
+      // Simple conditional configuration step
       const playerConfig = {
         streaming: { 
           bufferingGoal: 20, 
@@ -203,6 +198,7 @@
         }
       };
 
+      // Only apply DRM layout parameters if clearKeys keys exist inside config block
       if (Object.keys(targetStream.clearKeys).length > 0) {
         playerConfig.drm = { clearKeys: targetStream.clearKeys };
       }
