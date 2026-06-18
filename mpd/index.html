@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="referrer" content="no-referrer">
-  <title>Football - Live Streams</title>
+  <title>Live Stream Player</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shaka-player@latest/dist/controls.css" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/shaka-player@latest/dist/shaka-player.ui.js" crossorigin="anonymous"></script>
   <style>
@@ -72,49 +72,53 @@
       showStatus('Stream failed (' + code + ')');
     }
 
-    // Extracts the "?id=name" parameter from the browser window URL string
     function getStreamIdFromUrl() {
       const urlParams = new URLSearchParams(window.location.search);
       const id = urlParams.get('id');
       return id ? id.trim().toLowerCase() : null;
     }
 
-    // Advanced non-linear parser that tolerates random line-breaks inside configs
+    // Advanced non-linear parser that ignores custom commented line elements
     async function parseMpdPlaylist() {
       try {
         const response = await fetch('mpd.js');
         if (!response.ok) throw new Error('Could not load mpd.js');
         const text = await response.text();
         
-        // 1. Break the whole file down completely by comma delimiters
-        // Removes all line-breaks, extra spacing, and filters out blank items
-        const allSegments = text.split(',')
-                                .map(seg => seg.replace(/\r?\n|\r/g, ' ').trim())
-                                .filter(seg => seg.length > 0);
+        // 1. Split text into lines to easily strip out notes/comments first
+        const cleanLines = text.split('\n')
+                               .map(line => line.trim())
+                               .filter(line => line.length > 0 && !line.startsWith('#') && !line.startsWith('//'));
+
+        // 2. Re-combine clean lines and split everything precisely by commas
+        const allSegments = cleanLines.join(' ')
+                                      .split(',')
+                                      .map(seg => seg.trim())
+                                      .filter(seg => seg.length > 0);
         
         const playlist = [];
         let i = 0;
 
-        // 2. Loop dynamically to identify blocks
         while (i < allSegments.length) {
           const item = allSegments[i];
+          const lowerItem = item.toLowerCase();
 
-          // Check if current segment looks like an MPD endpoint URL
-          if (item.toLowerCase().includes('.mpd')) {
-            // The value immediately before the MPD URL is always treated as the target ID
+          // Match streaming source addresses (.mpd or .m3u8)
+          if (lowerItem.includes('.mpd') || lowerItem.includes('.m3u8')) {
             const id = allSegments[i - 1] ? allSegments[i - 1].split(' ').pop().toLowerCase() : null;
             const url = item;
             const clearKeys = {};
             
-            i++; // Shift view right to check for keys
+            i++; 
 
-            // 3. Scan forward gathering all keys until hitting another stream URL or reaching file end
-            while (i < allSegments.length && !allSegments[i].toLowerCase().includes('.mpd')) {
+            // Gather structural clearKeys values sequentially
+            while (i < allSegments.length && 
+                   !allSegments[i].toLowerCase().includes('.mpd') && 
+                   !allSegments[i].toLowerCase().includes('.m3u8')) {
               const prospectiveKey = allSegments[i];
               if (prospectiveKey.includes(':')) {
                 const [keyId, key] = prospectiveKey.split(':');
                 if (keyId && key) {
-                  // If extra text ID got bunched into the last key string segment, pick the clean clearKey block
                   const cleanKeyId = keyId.trim().split(' ').pop();
                   const cleanKey = key.trim().split(' ')[0];
                   clearKeys[cleanKeyId] = cleanKey;
@@ -131,7 +135,7 @@
           }
         }
 
-        if (playlist.length === 0) throw new Error('No valid stream configurations discovered.');
+        if (playlist.length === 0) throw new Error('No valid streams found.');
         return playlist;
 
       } catch (error) {
@@ -155,22 +159,19 @@
         return;
       }
 
-      // Fetch dynamic streaming configurations
       const streams = await parseMpdPlaylist();
       if (!streams || streams.length === 0) return;
 
-      // Extract current router identifier parameter target
       const targetId = getStreamIdFromUrl();
       let targetStream = null;
 
       if (targetId) {
         targetStream = streams.find(stream => stream.id === targetId);
         if (!targetStream) {
-          showStatus('Stream ID error: "' + targetId + '" not found in server');
+          showStatus('Stream ID error: "' + targetId + '" not found');
           return;
         }
       } else {
-        // Fallback default structure setup index index position
         targetStream = streams[0];
       }
 
@@ -194,16 +195,19 @@
         ]
       });
 
-      player.configure({
-        drm: { 
-          clearKeys: targetStream.clearKeys 
-        },
+      const playerConfig = {
         streaming: { 
           bufferingGoal: 20, 
           rebufferingGoal: 2, 
           bufferBehind: 20 
         }
-      });
+      };
+
+      if (Object.keys(targetStream.clearKeys).length > 0) {
+        playerConfig.drm = { clearKeys: targetStream.clearKeys };
+      }
+
+      player.configure(playerConfig);
 
       try {
         await player.load(targetStream.url);
@@ -215,12 +219,8 @@
       }
     }
 
-    function initFailed() {
-      showStatus('Unable to load Shaka UI');
-    }
-
     document.addEventListener('shaka-ui-loaded', initPlayer);
-    document.addEventListener('shaka-ui-load-failed', initFailed);
+    document.addEventListener('shaka-ui-load-failed', () => showStatus('Unable to load Shaka UI'));
 
     if ('wakeLock' in navigator) {
       navigator.wakeLock.request('screen').catch(function() {});
