@@ -6,9 +6,9 @@ tsn3,
 https://live-pv-ta.amazon.fastly-edge.com/syd-nitro/live/clients/dash/enc/lzhmuzmjsl/out/v1/c171eeb214c749f2b351c79df317b21e/cenc.mpd,
 key1=f5c2b30eac11be1e8cdfc9585f5fe6af:a8198d17bf9b0da77450fbb919a38b2d
 
-htv,
-https://ottlive.dishhome.com.np/protected/GgTOzZkB0RDJ74Ryniuo/dash/manifest.mpd,
-220d8978f3fd45b696137c5b94f7a264:220d8978f3fd45b696137c5b94f7a264
+tvp,
+https://estreams.tv.nej.cz/dash/CH_TVP_SPORT_Portable.ism/playlist.mpd,
+:
 
 zdf,
 https://simplitv-live.mdn.ors.at/live/eds/zdf_hd/dash4h/zdf_hd.mpd,
