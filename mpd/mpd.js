@@ -3,3 +3,6 @@ https://a35live-pv-ta-amazon.akamaized.net/iad-nitro/live/clients/dash/enc/pfcxj
 1f68713028d439ec03be07f56c1d6213:20093db6455160fffed4c394def3193d
 
 foxalt2, https://another-stream-url.com/live/index.mpd, abc123keyid67890:def456keyvalue0987
+
+elta,
+https://live.666666.zip/stream/86597104_okehlpipbdoz2lujaxkrvv9eylmlbduv.m3u8
