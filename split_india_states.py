@@ -1,40 +1,48 @@
-import csv
 import json
 import os
 from collections import defaultdict
 
-# Input CSV file
-INPUT_FILE = "india_pincodes.csv"
-
-# Output folder
+INPUT_FILE = "india.json"
 OUTPUT_DIR = "india"
 
+# Create output directory
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# Store records by state
+# Load master JSON file
+with open(INPUT_FILE, "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+# Group records by state
 states = defaultdict(list)
 
-with open(INPUT_FILE, "r", encoding="utf-8") as f:
-    reader = csv.DictReader(f)
+for item in data:
+    state = item.get("stateName", "").strip().upper()
 
-    for row in reader:
-        state = row["state"].strip()
-
-        states[state].append({
-            "pincode": row["pincode"],
-            "office_name": row["office_name"],
-            "district": row["district"],
-            "state": state
-        })
+    if state:
+        states[state].append(item)
 
 # Create one JSON file per state
 for state, records in states.items():
-    filename = state.lower().replace(" ", "_") + ".json"
+    filename = (
+        state.lower()
+        .replace("&", "and")
+        .replace(" ", "_")
+    ) + ".json"
+
     filepath = os.path.join(OUTPUT_DIR, filename)
 
     with open(filepath, "w", encoding="utf-8") as f:
-        json.dump(records, f, ensure_ascii=False, indent=2)
+        json.dump(records, f, ensure_ascii=False, separators=(",", ":"))
 
-    print(f"Created {filepath}")
+    print(f"Created: {filepath}")
 
-print("Done!")
+# Create index.json listing all states
+state_files = sorted([
+    state.lower().replace("&", "and").replace(" ", "_") + ".json"
+    for state in states
+])
+
+with open(os.path.join(OUTPUT_DIR, "index.json"), "w", encoding="utf-8") as f:
+    json.dump(state_files, f, indent=2)
+
+print(f"\nDone! Generated {len(states)} state files.")
