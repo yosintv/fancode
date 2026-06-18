@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="referrer" content="no-referrer">
-  <title>Football - Live Stream</title>
+  <title>Football - Live Streams</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shaka-player@latest/dist/controls.css" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/shaka-player@latest/dist/shaka-player.ui.js" crossorigin="anonymous"></script>
   <style>
@@ -75,34 +75,50 @@
       showStatus('Stream failed (' + code + ')');
     }
 
-    // Helper to parse your exact custom format from mpd.js
-    async function parseMpdConfig() {
+    // Extracts the "?id=name" parameter from the browser's address bar url
+    function getStreamIdFromUrl() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const id = urlParams.get('id');
+      return id ? id.trim().toLowerCase() : null;
+    }
+
+    // Parses line-by-line items from your raw text format within mpd.js
+    async function parseMpdPlaylist() {
       try {
         const response = await fetch('mpd.js');
         if (!response.ok) throw new Error('Could not load mpd.js');
         const text = await response.text();
         
-        // Split by commas and clean extra whitespace/newlines
-        const items = text.split(',').map(item => item.trim()).filter(item => item.length > 0);
-        
-        if (items.length < 3) {
-          throw new Error('Invalid format in mpd.js');
-        }
+        // Split file content row by row
+        const lines = text.split('\n').map(line => line.trim()).filter(line => line.length > 0);
+        const playlist = [];
 
-        const mpdUrl = items[1]; // Second item is always the manifest URL
-        const clearKeys = {};
+        for (let line of lines) {
+          // Split elements on the line by their individual commas
+          const segments = line.split(',').map(seg => seg.trim()).filter(seg => seg.length > 0);
+          
+          if (segments.length >= 3) {
+            const id = segments[0].toLowerCase(); // 1st element: Custom Stream Name/ID
+            const url = segments[1];              // 2nd element: Complete MPD Stream URL
+            const clearKeys = {};
 
-        // Parse everything from the 3rd element onwards as keyID:key configurations
-        for (let i = 2; i < items.length; i++) {
-          if (items[i].includes(':')) {
-            const [keyId, key] = items[i].split(':');
-            if (keyId && key) {
-              clearKeys[keyId.trim()] = key.trim();
+            // 3rd element and onwards: Read key configurations
+            for (let i = 2; i < segments.length; i++) {
+              if (segments[i].includes(':')) {
+                const [keyId, key] = segments[i].split(':');
+                if (keyId && key) {
+                  clearKeys[keyId.trim()] = key.trim();
+                }
+              }
             }
+
+            playlist.push({ id, url, clearKeys });
           }
         }
 
-        return { url: mpdUrl, clearKeys: clearKeys };
+        if (playlist.length === 0) throw new Error('No valid streams found in configuration.');
+        return playlist;
+
       } catch (error) {
         console.error('Parsing error:', error);
         showStatus('Configuration Error: ' + error.message);
@@ -124,9 +140,25 @@
         return;
       }
 
-      // Fetch and process your custom raw text file format
-      const config = await parseMpdConfig();
-      if (!config) return;
+      // 1. Fetch data arrays parsed line by line out of mpd.js
+      const streams = await parseMpdPlaylist();
+      if (!streams || streams.length === 0) return;
+
+      // 2. Identify custom channel name or default fallback
+      const targetId = getStreamIdFromUrl();
+      let targetStream = null;
+
+      if (targetId) {
+        // Search array entries for a matching name field identifier
+        targetStream = streams.find(stream => stream.id === targetId);
+        if (!targetStream) {
+          showStatus('Stream ID error: "' + targetId + '" not found in mpd.js');
+          return;
+        }
+      } else {
+        // No custom ID parameter requested; load the very first entry line item automatically
+        targetStream = streams[0];
+      }
 
       var ui = video.ui;
       var controls = ui.getControls();
@@ -150,7 +182,7 @@
 
       player.configure({
         drm: { 
-          clearKeys: config.clearKeys 
+          clearKeys: targetStream.clearKeys 
         },
         streaming: { 
           bufferingGoal: 20, 
@@ -160,7 +192,7 @@
       });
 
       try {
-        await player.load(config.url);
+        await player.load(targetStream.url);
         showStatus('');
         video.muted = false;
         video.play().catch(function() {});
