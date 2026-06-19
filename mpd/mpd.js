@@ -1,6 +1,6 @@
 foxalt, 
-https://a35live-pv-ta-amazon.akamaized.net/iad-nitro/live/clients/dash/enc/pfcxjf1zas/out/v1/31d30c91fc65458789b84209d3fa22e4/cenc.mpd, 
-1f68713028d439ec03be07f56c1d6213:20093db6455160fffed4c394def3193d
+https://otte-qw.live.pv-cdn.net/iad-nitro/live/dash/enc/ap5wz1ofsp/out/v1/7fa6feef143747beaa186ebb6dfb2532/cenc.mpd,
+c620c93c60c04999eb9ddc28ecfb70a8:e76a709c251313190e76cb3c3d3a5824
 
 tvp,
 https://estreams.tv.nej.cz/dash/CH_TVP_SPORT_Portable.ism/playlist.mpd,
@@ -9,3 +9,4 @@ https://estreams.tv.nej.cz/dash/CH_TVP_SPORT_Portable.ism/playlist.mpd,
 m6france,
 https://origin-m6web.live.6cloud.fr/out/v1/6play/6play-m6/cmaf_cenc00/dash-short-hd.mpd,
 433ffba670963e70857859a9dff4be04:51ede3a821229fe81e71282c8eff80e3
+
