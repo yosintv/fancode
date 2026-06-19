@@ -18,3 +18,8 @@ https://origin-m6web.live.6cloud.fr/out/v1/6play/6play-m6/cmaf_cenc00/dash-short
 tsn4,
 https://otte-qw.live.pv-cdn.net/bom-nitro/live/clients/dash/enc/w0rehjjrwe/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd,
 14eeabf30c14b7fbf3008c03099ce011:17d2ac8dbc5429bd70af3433aa12158d
+
+
+ctsports,
+https://dash2.antik.sk/stream/nvidia_ct_sport/playlist_cenc.mpd,
+11223344556677889900112233445566:4b80724d0ef86bcb2c21f7999d67739d
