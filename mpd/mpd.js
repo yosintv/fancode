@@ -23,3 +23,7 @@ https://otte-qw.live.pv-cdn.net/bom-nitro/live/clients/dash/enc/w0rehjjrwe/out/v
 ctsports,
 https://dash2.antik.sk/stream/nvidia_ct_sport/playlist_cenc.mpd,
 11223344556677889900112233445566:4b80724d0ef86bcb2c21f7999d67739d
+
+sporza,
+https://live.vrtcdn.be/groupd/live/0761024f-37fe-4254-bc37-e95d7c62b2d1/playout.isml/.mpd,
+7c0a14fc7dc3c641af8cb6506431a628:f318ff7c01cca20c4a5b3d91074ca460
