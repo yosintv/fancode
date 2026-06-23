@@ -16,8 +16,9 @@
   const ALLOWED_HOSTS = [
     "www.cricfoot.net",
     "cricfoot.net",
-    "s5.hls-player.net",
     "s6.hls-player.net",
+    "s7.hls-player.net",
+    "cr7.hls-player.net",
     "redirects.pages.dev",
     "cr7world.pages.dev",
   ];
