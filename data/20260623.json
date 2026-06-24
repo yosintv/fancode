@@ -54,28 +54,37 @@
                     "time": "23.06.2026 05:00",
                     "home": {
                         "id": 5816,
-                        "score": 0,
+                        "score": 1,
                         "name": "Jordan",
                         "longName": "Jordan"
                     },
                     "away": {
                         "id": 6317,
-                        "score": 0,
+                        "score": 2,
                         "name": "Algeria",
                         "longName": "Algeria"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "2",
                     "status": {
                         "utcTime": "2026-06-23T03:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "23.06.2026 05:00:00"
+                            "firstHalfStarted": "23.06.2026 05:00:27",
+                            "secondHalfStarted": "23.06.2026 06:07:39"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1782183600000
                 }
@@ -83,7 +92,6 @@
             "parentLeagueId": 77,
             "parentLeagueName": "World Cup",
             "internalRank": 0,
-            "liveRank": 1001,
             "simpleLeague": false,
             "localRank": 4
         },
@@ -179,7 +187,6 @@
             "parentLeagueId": 77,
             "parentLeagueName": "World Cup",
             "internalRank": 0,
-            "liveRank": 1001,
             "simpleLeague": false,
             "localRank": 4
         },
@@ -228,7 +235,6 @@
                 }
             ],
             "internalRank": 0,
-            "liveRank": 0,
             "simpleLeague": false
         },
         {
@@ -280,7 +286,6 @@
             ],
             "parentLeagueId": 215,
             "internalRank": 100,
-            "liveRank": 0,
             "simpleLeague": false
         },
         {
@@ -374,7 +379,6 @@
             ],
             "parentLeagueId": 171,
             "internalRank": 5,
-            "liveRank": 0,
             "simpleLeague": false
         },
         {
@@ -465,7 +469,6 @@
                 }
             ],
             "internalRank": 0,
-            "liveRank": 0,
             "simpleLeague": false
         },
         {
@@ -517,7 +520,6 @@
             ],
             "parentLeagueId": 9213,
             "internalRank": 7,
-            "liveRank": 0,
             "simpleLeague": false
         },
         {
@@ -572,7 +574,6 @@
             "parentLeagueId": 205,
             "parentLeagueName": "Norsk Tipping-ligaen",
             "internalRank": 0,
-            "liveRank": 0,
             "simpleLeague": false
         },
         {
@@ -667,7 +668,6 @@
             "parentLeagueId": 205,
             "parentLeagueName": "Norsk Tipping-ligaen",
             "internalRank": 0,
-            "liveRank": 0,
             "simpleLeague": false
         },
         {
@@ -762,7 +762,6 @@
             "parentLeagueId": 205,
             "parentLeagueName": "Norsk Tipping-ligaen",
             "internalRank": 0,
-            "liveRank": 0,
             "simpleLeague": false
         },
         {
@@ -855,7 +854,6 @@
                 }
             ],
             "internalRank": 10,
-            "liveRank": 0,
             "simpleLeague": false
         },
         {
@@ -989,7 +987,6 @@
             ],
             "parentLeagueId": 529,
             "internalRank": 0,
-            "liveRank": 0,
             "simpleLeague": false
         },
         {
@@ -1120,7 +1117,6 @@
                 }
             ],
             "internalRank": 8,
-            "liveRank": 0,
             "simpleLeague": false
         },
         {
@@ -1173,7 +1169,6 @@
                 }
             ],
             "internalRank": 0,
-            "liveRank": 0,
             "simpleLeague": false
         },
         {
@@ -1190,12 +1185,14 @@
                         "id": 162167,
                         "score": 2,
                         "name": "Confianca",
+                        "redCards": 1,
                         "longName": "Confianca"
                     },
                     "away": {
                         "id": 7817,
                         "score": 0,
                         "name": "Guarani",
+                        "redCards": 1,
                         "longName": "Guarani"
                     },
                     "eliminatedTeamId": null,
@@ -1203,6 +1200,8 @@
                     "tournamentStage": "11",
                     "status": {
                         "utcTime": "2026-06-22T22:30:00.000Z",
+                        "numberOfHomeRedCards": 1,
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
                             "firstHalfStarted": "23.06.2026 00:32:37",
                             "secondHalfStarted": "23.06.2026 01:38:24"
@@ -1224,7 +1223,6 @@
                 }
             ],
             "internalRank": 0,
-            "liveRank": 0,
             "simpleLeague": false
         },
         {
@@ -1275,7 +1273,6 @@
                 }
             ],
             "internalRank": 0,
-            "liveRank": 0,
             "simpleLeague": false
         }
     ],
