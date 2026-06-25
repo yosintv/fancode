@@ -20,7 +20,7 @@
     "s7.hls-player.net",
     "cr7.hls-player.net",
     "redirects.pages.dev",
-    "cr7world.pages.dev",
+    "suii.pages.dev",
   ];
 
   function hostIsAllowed(hostname) {
