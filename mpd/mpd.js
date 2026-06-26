@@ -1,3 +1,9 @@
+wtv,
+https://qp-pldt-live-bpk-ucd-prod.akamaized.net/bpk-tv/fifa_ppv1/default/index.mpd,
+2c338a117d434ce4bbe3569231af90f1:a9633d901ee8a3f4f58ac314b5c5f4fb
+  
+
+
 ch1,
 https://otte-qw.live.pv-cdn.net/gru-nitro/live/clients/dash/enc/3gg2jnixjn/out/v1/e1840e01f3f14563b66bbb944d5cc54c/cenc.mpd,
 f8b207c10f3f76aeba32a360ec52b9e4:afad49d20eb39670e93e371c1d669921
