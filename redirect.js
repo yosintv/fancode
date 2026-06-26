@@ -15,7 +15,7 @@
 
   const ALLOWED_HOSTS = [
     "www.cricfoot.net",
-    "cricfoot.net",
+    "www.yonotv.online",
     "s6.hls-player.net",
     "s7.hls-player.net",
     "cr7.hls-player.net",
