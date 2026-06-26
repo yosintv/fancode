@@ -46,6 +46,11 @@ https://live.vrtcdn.be/groupd/live/0761024f-37fe-4254-bc37-e95d7c62b2d1/playout.
 
 
 
+tnt,
+https://otte-azion.live.pv-cdn.net/syd-nitro/live/clients/dash/enc/vaplpo3app/out/v1/49b4d538ec854efa90d45084866cf7f9/cenc.mpd,
+d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11
+
+
 
 willow,
 https://abkyrm4aaaaaaaamfyfksth3wr44v.ta.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/wkyr0oiayl/out/v1/ab6df1604fe34712a1a5bc16cc8489c3/cenc.mpd,
