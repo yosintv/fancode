@@ -210,12 +210,12 @@
                     },
                     "away": {
                         "id": 6710,
-                        "score": 2,
+                        "score": 3,
                         "name": "Mexico",
                         "longName": "Mexico"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "3",
                     "status": {
                         "utcTime": "2026-06-25T01:00:00.000Z",
@@ -224,19 +224,16 @@
                             "secondHalfStarted": "25.06.2026 04:05:43"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "0 - 2",
-                        "liveTime": {
-                            "short": "73\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "72:17",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "0 - 3",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1782349200000
@@ -258,7 +255,7 @@
                         "longName": "South Korea"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "3",
                     "status": {
                         "utcTime": "2026-06-25T01:00:00.000Z",
@@ -267,19 +264,16 @@
                             "secondHalfStarted": "25.06.2026 04:05:53"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
+                        "awarded": false,
                         "scoreStr": "1 - 0",
-                        "liveTime": {
-                            "short": "73\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "72:07",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1782349200000
@@ -336,6 +330,46 @@
                         }
                     },
                     "timeTS": 1782316800000
+                },
+                {
+                    "id": 5835439,
+                    "leagueId": 915708,
+                    "time": "25.06.2026 15:00",
+                    "home": {
+                        "id": 8608,
+                        "score": 4,
+                        "name": "Troms\u00f8",
+                        "longName": "Troms\u00f8"
+                    },
+                    "away": {
+                        "id": 10002,
+                        "score": 1,
+                        "name": "\u00d6rgryte",
+                        "longName": "\u00d6rgryte"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 6,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-06-25T13:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "25.06.2026 15:05:52",
+                            "secondHalfStarted": "25.06.2026 16:43:10"
+                        },
+                        "periodLength": 45,
+                        "finished": true,
+                        "started": true,
+                        "cancelled": false,
+                        "awarded": false,
+                        "scoreStr": "4 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
+                    },
+                    "timeTS": 1782392400000
                 }
             ],
             "parentLeagueId": 489,
@@ -1052,13 +1086,63 @@
         },
         {
             "ccode": "USA",
-            "id": 916345,
+            "id": 10282,
+            "primaryId": 10282,
+            "name": "MLS Next Pro",
+            "matches": [
+                {
+                    "id": 1000007790,
+                    "leagueId": 10282,
+                    "time": "25.06.2026 04:00",
+                    "home": {
+                        "id": 1451871,
+                        "score": 1,
+                        "name": "Los Angeles FC II",
+                        "longName": "Los Angeles FC II"
+                    },
+                    "away": {
+                        "id": 1348105,
+                        "score": 0,
+                        "name": "Minnesota United 2",
+                        "longName": "Minnesota United 2"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 6,
+                    "tournamentStage": "30",
+                    "status": {
+                        "utcTime": "2026-06-25T02:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "25.06.2026 04:04:02",
+                            "secondHalfStarted": "25.06.2026 05:04:59"
+                        },
+                        "periodLength": 45,
+                        "finished": true,
+                        "started": true,
+                        "cancelled": false,
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
+                    },
+                    "timeTS": 1782352800000
+                }
+            ],
+            "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "USA",
+            "id": 9296,
             "primaryId": 9296,
             "name": "USL League One",
             "matches": [
                 {
                     "id": 5109437,
-                    "leagueId": 916345,
+                    "leagueId": 9296,
                     "time": "25.06.2026 01:00",
                     "home": {
                         "id": 1701883,
@@ -1074,12 +1158,12 @@
                     },
                     "eliminatedTeamId": null,
                     "statusId": 6,
-                    "tournamentStage": "1",
+                    "tournamentStage": "17",
                     "status": {
                         "utcTime": "2026-06-24T23:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "25.06.2026 01:07:02",
-                            "secondHalfStarted": "25.06.2026 02:10:46"
+                            "firstHalfStarted": "25.06.2026 01:06:36",
+                            "secondHalfStarted": "25.06.2026 02:10:26"
                         },
                         "periodLength": 45,
                         "finished": true,
@@ -1097,8 +1181,39 @@
                     "timeTS": 1782342000000
                 },
                 {
+                    "id": 1000016171,
+                    "leagueId": 9296,
+                    "time": "25.06.2026 01:00",
+                    "home": {
+                        "id": 422694,
+                        "score": 0,
+                        "name": "Cosmos",
+                        "longName": "Cosmos"
+                    },
+                    "away": {
+                        "id": 727430,
+                        "score": 0,
+                        "name": "South Georgia Tormenta FC",
+                        "longName": "South Georgia Tormenta FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "17",
+                    "status": {
+                        "utcTime": "2026-06-24T23:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "25.06.2026 01:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1782342000000
+                },
+                {
                     "id": 5109435,
-                    "leagueId": 916345,
+                    "leagueId": 9296,
                     "time": "25.06.2026 02:30",
                     "home": {
                         "id": 1128317,
@@ -1113,35 +1228,32 @@
                         "longName": "AV Alta"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
-                    "tournamentStage": "1",
+                    "statusId": 6,
+                    "tournamentStage": "17",
                     "status": {
                         "utcTime": "2026-06-25T00:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "25.06.2026 02:37:31",
-                            "secondHalfStarted": "25.06.2026 03:42:19"
+                            "firstHalfStarted": "25.06.2026 02:37:22",
+                            "secondHalfStarted": "25.06.2026 03:40:58"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
+                        "awarded": false,
                         "scoreStr": "0 - 0",
-                        "liveTime": {
-                            "short": "96\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "95:41",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1782347400000
                 },
                 {
                     "id": 5109438,
-                    "leagueId": 916345,
+                    "leagueId": 9296,
                     "time": "25.06.2026 03:00",
                     "home": {
                         "id": 1584038,
@@ -1156,84 +1268,28 @@
                         "longName": "Westchester SC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
-                    "tournamentStage": "1",
+                    "statusId": 6,
+                    "tournamentStage": "17",
                     "status": {
                         "utcTime": "2026-06-25T01:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "25.06.2026 03:07:20",
-                            "secondHalfStarted": "25.06.2026 04:12:15"
+                            "firstHalfStarted": "25.06.2026 03:06:52",
+                            "secondHalfStarted": "25.06.2026 04:11:43"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
+                        "awarded": false,
                         "scoreStr": "2 - 1",
-                        "liveTime": {
-                            "short": "66\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "65:45",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1782349200000
-                }
-            ],
-            "parentLeagueId": 9296,
-            "internalRank": 8,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "USA",
-            "id": 10282,
-            "primaryId": 10282,
-            "name": "MLS Next Pro",
-            "matches": [
-                {
-                    "id": 1000007790,
-                    "leagueId": 10282,
-                    "time": "25.06.2026 04:00",
-                    "home": {
-                        "id": 1451871,
-                        "score": 0,
-                        "name": "Los Angeles FC II",
-                        "longName": "Los Angeles FC II"
-                    },
-                    "away": {
-                        "id": 1348105,
-                        "score": 0,
-                        "name": "Minnesota United 2",
-                        "longName": "Minnesota United 2"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 2,
-                    "tournamentStage": "30",
-                    "status": {
-                        "utcTime": "2026-06-25T02:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "25.06.2026 04:04:02"
-                        },
-                        "periodLength": 45,
-                        "finished": false,
-                        "started": true,
-                        "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "0 - 0",
-                        "liveTime": {
-                            "short": "29\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "28:58",
-                            "longKey": "",
-                            "maxTime": 45,
-                            "basePeriod": 45,
-                            "addedTime": 0
-                        }
-                    },
-                    "timeTS": 1782352800000
                 }
             ],
             "internalRank": 0,
@@ -1262,17 +1318,26 @@
                         "longName": "Auda"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "20",
                     "status": {
                         "utcTime": "2026-06-25T14:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "25.06.2026 16:00:00"
+                            "firstHalfStarted": "25.06.2026 16:02:54",
+                            "secondHalfStarted": "25.06.2026 17:08:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1782396000000
                 }
