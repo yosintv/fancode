@@ -395,7 +395,7 @@
                         "longName": "FC Rapperswil-Jona"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 106,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-06-28T16:00:00.000Z",
@@ -403,9 +403,15 @@
                             "firstHalfStarted": "28.06.2026 18:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "Can",
+                            "shortKey": "cancelled_short",
+                            "long": "Cancelled",
+                            "longKey": "cancelled"
+                        }
                     },
                     "timeTS": 1782662400000
                 },
@@ -1050,7 +1056,7 @@
         {
             "isGroup": true,
             "groupName": "A",
-            "ccode": "INT",
+            "ccode": "WAL",
             "id": 927004,
             "primaryId": 287,
             "name": "EURO U19 Grp. A",
