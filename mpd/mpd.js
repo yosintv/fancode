@@ -53,8 +53,8 @@ https://live.vrtcdn.be/groupd/live/0761024f-37fe-4254-bc37-e95d7c62b2d1/playout.
 
 
 tnt,
-https://otte-azion.live.pv-cdn.net/syd-nitro/live/clients/dash/enc/vaplpo3app/out/v1/49b4d538ec854efa90d45084866cf7f9/cenc.mpd,
-d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/65ldy4ejuu/out/v1/69bc6b64f1c14e36bb21e0075a71d8ca/cenc.mpd,
+570c19f1be3410e4e409be4dc7923f2b:9a4dea8af2a2a703dffa8a477e9edc50
 
 
 
