@@ -1,3 +1,8 @@
+m6france,
+https://edge-fastly-m6web.live.6cloud.fr/out/v1/6play/6play-m6/cmaf_cenc00/dash-short-hd.mpd,
+0182ed7af02734ecb17a2f55eec98f99:60346785b1095596de621031e9daf3ec
+  
+
 wtv,
 https://qp-pldt-live-bpk-ucd-prod.akamaized.net/bpk-tv/fifa_ppv1/default/index.mpd,
 2c338a117d434ce4bbe3569231af90f1:a9633d901ee8a3f4f58ac314b5c5f4fb
