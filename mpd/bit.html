@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>CR7World Player</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.15.12/shaka-player.compiled.js"></script>
+<script src="https://cr7world.pages.dev/mpd/mpd.js"></script>
+
+<style>
+
+html,
+body{
+    margin:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    overflow:hidden;
+    font-family:Arial,sans-serif;
+}
+
+#player{
+    width:100%;
+    height:100%;
+    background:#000;
+}
+
+#loading{
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background:#000;
+    z-index:999;
+}
+
+.spinner{
+    width:50px;
+    height:50px;
+    border:4px solid rgba(255,255,255,.15);
+    border-top:4px solid #00ff55;
+    border-radius:50%;
+    animation:spin .8s linear infinite;
+}
+
+@keyframes spin{
+to{
+transform:rotate(360deg);
+}
+}
+
+#text{
+    color:#fff;
+    margin-top:18px;
+    font-size:18px;
+}
+
+#error{
+    position:absolute;
+    inset:0;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size:22px;
+    background:#000;
+    z-index:1000;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="loading">
+
+<div class="spinner"></div>
+
+<div id="text">
+Loading...
+</div>
+
+</div>
+
+<div id="error"></div>
+
+<video
+id="player"
+controls
+autoplay
+playsinline>
+</video>
+
+<script>
+
+const params=new URLSearchParams(location.search);
+
+const id=params.get("id") || "m6france";
+
+if(typeof channels==="undefined"){
+    showError("mpd.js not loaded");
+}
+
+const channel=channels[id];
+
+if(!channel){
+    showError("Channel not found : "+id);
+}
+
+const parts=channel.key.split(":");
+
+const keyId=parts[0];
+
+const key=parts[1];
+
+async function init(){
+
+    shaka.polyfill.installAll();
+
+    if(!shaka.Player.isBrowserSupported()){
+        showError("Browser not supported");
+        return;
+    }
+
+    const video=document.getElementById("player");
+
+    const player=new shaka.Player(video);
+
+    player.addEventListener("error",onError);
+
+    player.configure({
+
+        drm:{
+            clearKeys:{
+                [keyId]:key
+            }
+        }
+
+    });
+
+    try{
+
+        await player.load(channel.mpd);
+
+        document.getElementById("loading").style.display="none";
+
+        console.log("Playing",id);
+
+    }catch(e){
+
+        onError(e);
+
+    }
+
+}
+
+function onError(e){
+
+    console.error(e);
+
+    showError("Playback Error");
+
+}
+
+function showError(msg){
+
+    document.getElementById("loading").style.display="none";
+
+    const err=document.getElementById("error");
+
+    err.style.display="flex";
+
+    err.innerHTML=msg;
+
+}
+
+init();
+
+</script>
+
+</body>
+</html>
