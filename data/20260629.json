@@ -2747,12 +2747,12 @@
                     },
                     "away": {
                         "id": 1451870,
-                        "score": 1,
+                        "score": 2,
                         "name": "Austin FC II",
                         "longName": "Austin FC II"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "18",
                     "status": {
                         "utcTime": "2026-06-28T23:00:00.000Z",
@@ -2762,19 +2762,16 @@
                             "secondHalfStarted": "29.06.2026 04:17:14"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "0 - 1",
-                        "liveTime": {
-                            "short": "70\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "69:04",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "0 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1782687600000
@@ -2829,16 +2826,18 @@
                         "id": 722266,
                         "score": 2,
                         "name": "Orlando City B",
+                        "penScore": 4,
                         "longName": "Orlando City B"
                     },
                     "away": {
                         "id": 1348126,
-                        "score": 1,
+                        "score": 2,
                         "name": "Columbus Crew 2",
+                        "penScore": 5,
                         "longName": "Columbus Crew 2"
                     },
-                    "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "eliminatedTeamId": 722266,
+                    "statusId": 13,
                     "tournamentStage": "18",
                     "status": {
                         "utcTime": "2026-06-29T00:58:00.000Z",
@@ -2847,19 +2846,16 @@
                             "secondHalfStarted": "29.06.2026 03:59:33"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "2 - 1",
-                        "liveTime": {
-                            "short": "87\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "86:45",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "2 - 2",
+                        "reason": {
+                            "short": "Pen",
+                            "shortKey": "penalties_short",
+                            "long": "After penalties",
+                            "longKey": "afterpenalties"
                         }
                     },
                     "timeTS": 1782694680000
@@ -2870,40 +2866,40 @@
                     "time": "29.06.2026 04:00",
                     "home": {
                         "id": 1451871,
-                        "score": 1,
+                        "score": 3,
                         "name": "Los Angeles FC II",
                         "redCards": 1,
                         "longName": "Los Angeles FC II"
                     },
                     "away": {
                         "id": 1348104,
-                        "score": 0,
+                        "score": 1,
                         "name": "Houston Dynamo 2",
+                        "redCards": 1,
                         "longName": "Houston Dynamo 2"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 2,
+                    "statusId": 6,
                     "tournamentStage": "18",
                     "status": {
                         "utcTime": "2026-06-29T02:00:00.000Z",
                         "numberOfHomeRedCards": 1,
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "29.06.2026 04:04:00"
+                            "firstHalfStarted": "29.06.2026 04:04:00",
+                            "secondHalfStarted": "29.06.2026 05:11:53"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "1 - 0",
-                        "liveTime": {
-                            "short": "38\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "37:18",
-                            "longKey": "",
-                            "maxTime": 45,
-                            "basePeriod": 45,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "3 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1782698400000
