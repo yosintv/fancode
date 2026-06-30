@@ -98,17 +98,11 @@
     </div>
 
     <script>
-        /* =========================================================
-           CHANNEL LIST  —  paste channels in this exact format:
+        /* Remote channel list (your file, in your format) */
+        var CHANNELS_URL = "https://cr7world.pages.dev/mpd/mpd.js";
 
-               channelname,
-               https://.....mpd,
-               KEYID:KEY
-
-           - Separate each channel with a blank line.
-           - Key is  keyId:key  (colon between them).
-           ========================================================= */
-        var CHANNELS_RAW = `
+        /* Embedded fallback — used only if the remote file can't be reached */
+        var CHANNELS_FALLBACK = `
 
 m6france,
 https://edge-fastly-m6web.live.6cloud.fr/out/v1/6play/6play-m6/cmaf_cenc00/dash-short-hd.mpd,
@@ -131,8 +125,14 @@ f6564ec2aee819046328a0e153be574d:ff46a8a1031eb27ef22576a077c98ab7
 
 `;
 
-        /* ---- Parse the text above into a channel map ---- */
-        var CHANNELS = (function (raw) {
+        /* ---- Parse channel text in the format:  name, mpd, keyId:key ----
+           Also handles a JS-wrapped file (e.g. window.CHANNELS_RAW = `...`). */
+        function parseChannels(raw) {
+            if (!raw) return {};
+            // If the file wraps the list in a JS template literal, pull it out
+            var lit = raw.match(/`([\s\S]*?)`/);
+            if (lit) raw = lit[1];
+
             var map = {};
             raw.trim().split(/\n\s*\n+/).forEach(function (block) {
                 var parts = block.replace(/\s*\n\s*/g, ' ').split(',');
@@ -149,9 +149,39 @@ f6564ec2aee819046328a0e153be574d:ff46a8a1031eb27ef22576a077c98ab7
                 };
             });
             return map;
-        })(CHANNELS_RAW);
+        }
 
-        /* ---- Read ?id=channelname from the URL ---- */
+        /* ---- Try to load the remote list. Order:
+               1) <script> tag   (works cross-origin, no CORS needed)
+               2) fetch() text   (works same-origin or if CORS allowed)
+               3) embedded fallback                                      ---- */
+        function loadChannels() {
+            return new Promise(function (resolve) {
+                var s = document.createElement('script');
+                s.src = CHANNELS_URL + (CHANNELS_URL.indexOf('?') > -1 ? '&' : '?') + 'v=' + Date.now();
+                s.onload = function () {
+                    // Remote file may have set a global; use it if present
+                    var g = window.CHANNELS_RAW || window.CHANNELS;
+                    if (g && typeof g === 'object' && Object.keys(g).length) return resolve(g);
+                    if (typeof g === 'string' && g.trim()) return resolve(parseChannels(g));
+                    // Script loaded but set nothing usable -> try fetch as text
+                    fetchText();
+                };
+                s.onerror = fetchText;
+                document.head.appendChild(s);
+
+                function fetchText() {
+                    fetch(CHANNELS_URL + '?v=' + Date.now(), { cache: 'no-store' })
+                        .then(function (r) { return r.ok ? r.text() : Promise.reject(); })
+                        .then(function (t) {
+                            var m = parseChannels(t);
+                            resolve(Object.keys(m).length ? m : parseChannels(CHANNELS_FALLBACK));
+                        })
+                        .catch(function () { resolve(parseChannels(CHANNELS_FALLBACK)); });
+                }
+            });
+        }
+
         function getParam(name) {
             return new URLSearchParams(window.location.search).get(name);
         }
@@ -181,43 +211,38 @@ f6564ec2aee819046328a0e153be574d:ff46a8a1031eb27ef22576a077c98ab7
 
         document.addEventListener('DOMContentLoaded', function () {
             var id = getParam('id');
+            if (!id) return fail("No channel selected. Add ?id=channelname to the URL.");
 
-            if (!id) {
-                return fail("No channel selected. Add ?id=channelname to the URL.");
-            }
+            loadChannels().then(function (CHANNELS) {
+                var ch = CHANNELS[id];
+                if (!ch) return fail("Unknown channel: " + id);
 
-            var ch = CHANNELS[id];
-            if (!ch) {
-                return fail("Unknown channel: " + id);
-            }
+                document.querySelector('.s-title').innerText = "Loading " + (ch.name || id);
 
-            document.querySelector('.s-title').innerText = "Loading " + (ch.name || id);
+                var config = {
+                    key: '11d3698c-efdf-42f1-8769-54663995de2b',
+                    playback: { autoplay: true, muted: false },
+                    style:    { width: '100%', height: '100%' }
+                };
 
-            var config = {
-                key: '11d3698c-efdf-42f1-8769-54663995de2b',
-                playback: { autoplay: true, muted: false },
-                style:    { width: '100%', height: '100%' }
-            };
+                var source = {
+                    dash: ch.mpd,
+                    drm: { clearkey: [{ keyId: ch.keyId, key: ch.key }] }
+                };
 
-            var source = {
-                dash: ch.mpd,
-                drm: {
-                    clearkey: [{ keyId: ch.keyId, key: ch.key }]
-                }
-            };
+                var player = new bitmovin.player.Player(document.getElementById('player'), config);
 
-            var player = new bitmovin.player.Player(document.getElementById('player'), config);
+                player.load(source).then(function () {
+                    document.getElementById('status').style.display = 'none';
+                    console.log("Reproduciendo: " + (ch.name || id));
+                }).catch(function (err) {
+                    fail("Could not load this channel.");
+                    console.error('Bitmovin error:', err);
+                });
 
-            player.load(source).then(function () {
-                document.getElementById('status').style.display = 'none';
-                console.log("Reproduciendo: " + (ch.name || id));
-            }).catch(function (err) {
-                fail("Could not load this channel.");
-                console.error('Bitmovin error:', err);
-            });
-
-            window.addEventListener('resize', function () {
-                document.getElementById('player').style.height = '100%';
+                window.addEventListener('resize', function () {
+                    document.getElementById('player').style.height = '100%';
+                });
             });
         });
     </script>
