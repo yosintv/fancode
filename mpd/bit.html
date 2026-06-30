@@ -172,6 +172,29 @@
                 document.getElementById('player').style.height = '100%';
             });
         });
-    </script>
+
+/* ---- Parser: turns the text above into window.CHANNELS (do not edit) ---- */
+window.CHANNELS = (function (raw) {
+    var map = {};
+    // Split into per-channel blocks on blank lines
+    raw.trim().split(/\n\s*\n+/).forEach(function (block) {
+        // Collapse any line breaks inside a block, then split into the 3 fields
+        var parts = block.replace(/\s*\n\s*/g, ' ').split(',');
+        if (parts.length < 3) return;
+        var name    = parts[0].trim();
+        var mpd     = parts[1].trim();
+        var keyPair = parts[2].trim().split(':');
+        if (!name || !mpd || keyPair.length < 2) return;
+        map[name] = {
+            name:  name,
+            mpd:   mpd,
+            keyId: keyPair[0].trim(),
+            key:   keyPair[1].trim()
+        };
+    });
+    return map;
+})(window.CHANNELS_RAW);
+</script>
+    
 </body>
 </html>
