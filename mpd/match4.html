@@ -1,139 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="referrer" content="no-referrer">
-  <title>Football - South Korea vs Czechia</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shaka-player@latest/dist/controls.css" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/shaka-player@latest/dist/shaka-player.ui.js" crossorigin="anonymous"></script>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box
-    }
-    html, body {
-      width: 100%;
-      height: 100%;
-      background: #000;
-      overflow: hidden;
-      font-family: sans-serif
-    }
-    .video-container, #player-wrap {
-      position: absolute;
-      inset: 0;
-      background: #000
-    }
-    #video {
-      width: 100%;
-      height: 100%
-    }
-    .shaka-spinner-container, .shaka-buffering-spinner, .shaka-spinner {
-      display: none !important
-    }
-    #status {
-      position: fixed;
-      left: 12px;
-      bottom: 12px;
-      z-index: 5;
-      color: rgba(255, 255, 255, .9);
-      background: rgba(0, 0, 0, .55);
-      border: 1px solid rgba(255, 255, 255, .2);
-      border-radius: 8px;
-      padding: 6px 10px;
-      font-size: 12px;
-      max-width: 88vw
-    }
-    #status:empty {
-      display: none
-    }
-    .hidden {
-      display: none !important
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Player</title>
+    <script src="//cdn.bitmovin.com/player/web/8/bitmovinplayer.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            background: #000;
+            overflow: hidden;
+            font-family: sans-serif;
+            /* Use dynamic viewport height so mobile address bars don't crop the player */
+            height: 100vh;
+            height: 100dvh;
+        }
+
+        #wrapper {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            /* Respect notches / rounded corners on phones */
+            padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+        }
+
+        #player {
+            width: 100%;
+            height: 100%;
+            background: #000;
+        }
+
+        /* Make Bitmovin's own container fill the wrapper on every device */
+        #player .bmpui-ui-uicontainer,
+        #player video,
+        #player .bitmovinplayer-container {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        #status {
+            position: absolute;
+            inset: 0;
+            z-index: 100;
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 18px;
+            padding: 32px;
+            text-align: center;
+        }
+
+        .spinner {
+            width: 46px;
+            height: 46px;
+            border: 4px solid rgba(255, 255, 255, 0.12);
+            border-top-color: #a6e30b;
+            border-radius: 50%;
+            animation: spin 0.75s linear infinite;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .s-title {
+            font-size: 1.15em;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        /* Scale loading UI down a touch on small screens */
+        @media (max-width: 480px) {
+            .spinner { width: 38px; height: 38px; border-width: 3px; }
+            .s-title { font-size: 1em; }
+        }
+
+        /* Bitmovin UI styling */
+        .bmpui-ui-watermark {
+            background-image: url("https://github.io") !important;
+            top: 0;
+            left: 0;
+            min-width: 5em;
+        }
+
+        .bmpui-ui-seekbar .bmpui-seekbar .bmpui-seekbar-playbackposition,
+        .bmpui-ui-volumeslider .bmpui-seekbar .bmpui-seekbar-playbackposition {
+            background-color: #e3d80b !important;
+        }
+
+        .bmpui-ui-selectbox,
+        .bmpui-on { color: #e3d80b !important; }
+    </style>
 </head>
 <body>
-
-  <div class="video-container">
-    <div id="player-wrap" data-shaka-player-container>
-      <video autoplay muted playsinline data-shaka-player id="video"></video>
+    <div id="wrapper">
+        <div id="status">
+            <div class="spinner"></div>
+            <div class="s-title">Loading</div>
+        </div>
+        <div id="player"></div>
     </div>
-  </div>
 
-  <div id="status"></div>
+    <script>
+        var url = "https://edge-fastly-m6web.live.6cloud.fr/out/v1/6play/6play-m6/cmaf_cenc00/dash-short-hd.mpd";
+        var ck_keyid = "0182ed7af02734ecb17a2f55eec98f99";
+        var ck_key = "60346785b1095596de621031e9daf3ec";
 
-  <script>
-    function showStatus(text) {
-      var s = document.getElementById('status');
-      if (s) s.textContent = text;
-    }
+        function override(url) {
+            var wm = document.querySelector('button.bmpui-ui-watermark');
+            if (wm) wm.setAttribute('disabled', 'disabled');
+            if (url.indexOf('licensing.bitmovin.com/licensing') > -1)
+                return 'data:text/plain;charset=utf-8;base64,eyJzdGF0dXMiOiJncmFudGVkIiwibWVzc2FnZSI6IlRoZXJlIHlvdSBnby4ifQ==';
+            if (url.indexOf('licensing.bitmovin.com/impression') > -1)
+                return 'data:text/plain;charset=utf-8;base64,eyJzdGF0dXMiOiJncmFudGVkIiwibWVzc2FnZSI6IlRoZXJlIHlvdSBnby4ifQ==';
+            return url;
+        }
 
-    function onPlayerError(error) {
-      var code = error && error.code ? error.code : 'UNKNOWN';
-      console.error('Shaka error', error);
-      showStatus('Stream failed (' + code + ')');
-    }
+        var _xhrOpen = XMLHttpRequest.prototype.open;
+        XMLHttpRequest.prototype.open = function () {
+            arguments[1] = override(arguments[1]);
+            return _xhrOpen.apply(this, arguments);
+        };
 
-    async function initPlayer() {
-      if (!window.shaka || !shaka.Player || !shaka.Player.isBrowserSupported()) {
-        showStatus('Browser not supported');
-        return;
-      }
+        document.addEventListener('DOMContentLoaded', function () {
+            var config = {
+                key: '11d3698c-efdf-42f1-8769-54663995de2b',
+                playback: {
+                    autoplay: true,
+                    muted: false
+                },
+                // Fluid sizing — fills the responsive wrapper instead of a fixed 400px
+                style: {
+                    width: '100%',
+                    height: '100%'
+                },
+                ui: {
+                    // Keep the UI usable on touch devices
+                    playbackSpeedSelectionEnabled: true
+                }
+            };
 
-      shaka.polyfill.installAll();
+            var source = {
+                dash: url,
+                drm: {
+                    clearkey: [{ keyId: ck_keyid, key: ck_key }]
+                }
+            };
 
-      var video = document.getElementById('video');
-      if (!video || !video.ui) {
-        setTimeout(initPlayer, 80);
-        return;
-      }
+            var player = new bitmovin.player.Player(document.getElementById('player'), config);
 
-      var ui = video.ui;
-      var controls = ui.getControls();
-      var player = controls.getPlayer();
+            player.load(source).then(function () {
+                document.getElementById('status').style.display = 'none';
+                console.log("Reproduciendo: TUDN");
+            }).catch(function (err) {
+                document.querySelector('.s-title').innerText = "Error al cargar el canal";
+                console.error('Bitmovin error:', err);
+            });
 
-      player.addEventListener('error', function(ev) { onPlayerError(ev.detail); });
-      controls.addEventListener('error', function(ev) { onPlayerError(ev.detail); });
-
-      ui.configure({
-        controlPanelElements: [
-          "play_pause",
-          "mute",
-          "volume",
-          "spacer",
-          "time_and_duration",
-          "quality",
-          "fullscreen",
-          "overflow_menu"
-        ]
-      });
-
-      player.configure({
-    drm:{ clearKeys:{"9145a6e0f778e61866f573d4944dd533":"d02173d40515fea5c83944f21d0f3114"} },
-        streaming: { bufferingGoal: 20, rebufferingGoal: 2, bufferBehind: 20 }
-      });
-
-      try {
-    await player.load("https://video.beeline.tv/live/d/channel319.isml/manifest-stb.mpd");
-        showStatus('');
-        video.muted = false;
-        video.play().catch(function() {});
-      } catch (e) {
-        onPlayerError(e);
-      }
-    }
-
-    function initFailed() {
-      showStatus('Unable to load Shaka UI');
-    }
-
-    document.addEventListener('shaka-ui-loaded', initPlayer);
-    document.addEventListener('shaka-ui-load-failed', initFailed);
-
-    if ('wakeLock' in navigator) {
-      navigator.wakeLock.request('screen').catch(function() {});
-    }
-  </script>
+            // Re-fit the player when the device rotates or the viewport changes
+            window.addEventListener('resize', function () {
+                if (player && typeof player.getPlayerType === 'function') {
+                    // Bitmovin auto-resizes with style:100%, this just nudges a redraw on rotate
+                    var p = document.getElementById('player');
+                    p.style.height = '100%';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
