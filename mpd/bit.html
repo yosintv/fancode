@@ -7,8 +7,6 @@
     <meta name="mobile-web-app-capable" content="yes">
     <title>Player</title>
     <script src="//cdn.bitmovin.com/player/web/8/bitmovinplayer.js"></script>
-    <!-- Central channel config -->
-    <script src="https://cr7world.pages.dev/mpd/mpd.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -100,7 +98,60 @@
     </div>
 
     <script>
-        // ---- Read ?id=channelname from the URL ----
+        /* =========================================================
+           CHANNEL LIST  —  paste channels in this exact format:
+
+               channelname,
+               https://.....mpd,
+               KEYID:KEY
+
+           - Separate each channel with a blank line.
+           - Key is  keyId:key  (colon between them).
+           ========================================================= */
+        var CHANNELS_RAW = `
+
+m6france,
+https://edge-fastly-m6web.live.6cloud.fr/out/v1/6play/6play-m6/cmaf_cenc00/dash-short-hd.mpd,
+0182ed7af02734ecb17a2f55eec98f99:60346785b1095596de621031e9daf3ec
+
+
+wtv,
+https://qp-pldt-live-bpk-ucd-prod.akamaized.net/bpk-tv/fifa_ppv1/default/index.mpd,
+2c338a117d434ce4bbe3569231af90f1:a9633d901ee8a3f4f58ac314b5c5f4fb
+
+
+tsn1,
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w0rehjjrwe/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd,
+14eeabf30c14b7fbf3008c03099ce011:17d2ac8dbc5429bd70af3433aa12158d
+
+
+fox4k,
+https://otte-qw.live.pv-cdn.net/pdx-nitro/live/clients/dash/enc/ajfoeddkbz/out/v1/b78800b9b2304879b15843f455836829/cenc.mpd,
+f6564ec2aee819046328a0e153be574d:ff46a8a1031eb27ef22576a077c98ab7
+
+`;
+
+        /* ---- Parse the text above into a channel map ---- */
+        var CHANNELS = (function (raw) {
+            var map = {};
+            raw.trim().split(/\n\s*\n+/).forEach(function (block) {
+                var parts = block.replace(/\s*\n\s*/g, ' ').split(',');
+                if (parts.length < 3) return;
+                var name    = parts[0].trim();
+                var mpd     = parts[1].trim();
+                var keyPair = parts[2].trim().split(':');
+                if (!name || !mpd || keyPair.length < 2) return;
+                map[name] = {
+                    name:  name,
+                    mpd:   mpd,
+                    keyId: keyPair[0].trim(),
+                    key:   keyPair[1].trim()
+                };
+            });
+            return map;
+        })(CHANNELS_RAW);
+
+        /* ---- Read ?id=channelname from the URL ---- */
         function getParam(name) {
             return new URLSearchParams(window.location.search).get(name);
         }
@@ -111,7 +162,7 @@
             document.querySelector('.s-sub').innerText = msg;
         }
 
-        // ---- Watermark / license override (unchanged) ----
+        /* ---- Watermark / license override ---- */
         function override(url) {
             var wm = document.querySelector('button.bmpui-ui-watermark');
             if (wm) wm.setAttribute('disabled', 'disabled');
@@ -131,14 +182,11 @@
         document.addEventListener('DOMContentLoaded', function () {
             var id = getParam('id');
 
-            if (!window.CHANNELS) {
-                return fail("Channel list (mpd.js) failed to load.");
-            }
             if (!id) {
                 return fail("No channel selected. Add ?id=channelname to the URL.");
             }
 
-            var ch = window.CHANNELS[id];
+            var ch = CHANNELS[id];
             if (!ch) {
                 return fail("Unknown channel: " + id);
             }
@@ -172,29 +220,6 @@
                 document.getElementById('player').style.height = '100%';
             });
         });
-
-/* ---- Parser: turns the text above into window.CHANNELS (do not edit) ---- */
-window.CHANNELS = (function (raw) {
-    var map = {};
-    // Split into per-channel blocks on blank lines
-    raw.trim().split(/\n\s*\n+/).forEach(function (block) {
-        // Collapse any line breaks inside a block, then split into the 3 fields
-        var parts = block.replace(/\s*\n\s*/g, ' ').split(',');
-        if (parts.length < 3) return;
-        var name    = parts[0].trim();
-        var mpd     = parts[1].trim();
-        var keyPair = parts[2].trim().split(':');
-        if (!name || !mpd || keyPair.length < 2) return;
-        map[name] = {
-            name:  name,
-            mpd:   mpd,
-            keyId: keyPair[0].trim(),
-            key:   keyPair[1].trim()
-        };
-    });
-    return map;
-})(window.CHANNELS_RAW);
-</script>
-    
+    </script>
 </body>
 </html>
