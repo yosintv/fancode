@@ -98,37 +98,38 @@
                         "id": 6708,
                         "score": 1,
                         "name": "Netherlands",
+                        "penScore": 2,
                         "longName": "Netherlands"
                     },
                     "away": {
                         "id": 6262,
-                        "score": 0,
+                        "score": 1,
                         "name": "Morocco",
+                        "penScore": 3,
                         "longName": "Morocco"
                     },
-                    "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "eliminatedTeamId": 6708,
+                    "statusId": 13,
                     "tournamentStage": "1/16",
                     "status": {
                         "utcTime": "2026-06-30T01:00:00.000Z",
                         "halfs": {
                             "firstHalfStarted": "30.06.2026 03:00:09",
-                            "secondHalfStarted": "30.06.2026 04:07:13"
+                            "secondHalfStarted": "30.06.2026 04:07:13",
+                            "firstExtraHalfStarted": "30.06.2026 05:03:38",
+                            "secondExtraHalfStarted": "30.06.2026 05:22:30"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "1 - 0",
-                        "liveTime": {
-                            "short": "74\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "73:38",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "Pen",
+                            "shortKey": "penalties_short",
+                            "long": "After penalties",
+                            "longKey": "afterpenalties"
                         }
                     },
                     "timeTS": 1782781200000
@@ -280,6 +281,58 @@
             ],
             "internalRank": 0,
             "simpleLeague": false
+        },
+        {
+            "ccode": "INT",
+            "id": 915708,
+            "primaryId": 489,
+            "name": "Club Friendlies",
+            "matches": [
+                {
+                    "id": 5863646,
+                    "leagueId": 915708,
+                    "time": "30.06.2026 16:00",
+                    "home": {
+                        "id": 9760,
+                        "score": 1,
+                        "name": "CSKA",
+                        "longName": "CSKA Moscow"
+                    },
+                    "away": {
+                        "id": 8712,
+                        "score": 1,
+                        "name": "Shinnik Yaroslavl",
+                        "longName": "Shinnik Yaroslavl"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 6,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-06-30T14:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "30.06.2026 16:03:49",
+                            "secondHalfStarted": "30.06.2026 17:04:08"
+                        },
+                        "periodLength": 45,
+                        "finished": true,
+                        "started": true,
+                        "cancelled": false,
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
+                    },
+                    "timeTS": 1782828000000
+                }
+            ],
+            "parentLeagueId": 489,
+            "internalRank": 0,
+            "simpleLeague": false,
+            "localRank": 59
         },
         {
             "ccode": "CHI",
@@ -476,7 +529,7 @@
                     "time": "30.06.2026 15:00",
                     "home": {
                         "id": 165091,
-                        "score": 0,
+                        "score": 2,
                         "name": "Azam FC",
                         "longName": "Azam FC"
                     },
@@ -487,17 +540,26 @@
                         "longName": "Dodoma Jiji FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "30",
                     "status": {
                         "utcTime": "2026-06-30T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "30.06.2026 15:00:00"
+                            "firstHalfStarted": "30.06.2026 15:02:25",
+                            "secondHalfStarted": "30.06.2026 16:04:33"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1782824400000
                 },
@@ -507,28 +569,37 @@
                     "time": "30.06.2026 15:00",
                     "home": {
                         "id": 287669,
-                        "score": 0,
+                        "score": 2,
                         "name": "Coastal Union",
                         "longName": "Coastal Union"
                     },
                     "away": {
                         "id": 1056183,
-                        "score": 0,
+                        "score": 1,
                         "name": "Pamba Jiji",
                         "longName": "Pamba Jiji"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "30",
                     "status": {
                         "utcTime": "2026-06-30T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "30.06.2026 15:00:00"
+                            "firstHalfStarted": "30.06.2026 15:02:25",
+                            "secondHalfStarted": "30.06.2026 16:04:33"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1782824400000
                 },
@@ -538,28 +609,37 @@
                     "time": "30.06.2026 15:00",
                     "home": {
                         "id": 1396530,
-                        "score": 0,
+                        "score": 4,
                         "name": "Fountain Gate FC",
                         "longName": "Fountain Gate FC"
                     },
                     "away": {
                         "id": 1171766,
-                        "score": 0,
+                        "score": 3,
                         "name": "Singida Black Stars",
                         "longName": "Singida Black Stars"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "30",
                     "status": {
                         "utcTime": "2026-06-30T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "30.06.2026 15:00:00"
+                            "firstHalfStarted": "30.06.2026 15:02:25",
+                            "secondHalfStarted": "30.06.2026 16:05:08"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "4 - 3",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1782824400000
                 },
@@ -571,26 +651,37 @@
                         "id": 1045552,
                         "score": 0,
                         "name": "JKT Tanzania",
+                        "redCards": 1,
                         "longName": "JKT Tanzania"
                     },
                     "away": {
                         "id": 165084,
-                        "score": 0,
+                        "score": 3,
                         "name": "Young Africans",
                         "longName": "Young Africans"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "30",
                     "status": {
                         "utcTime": "2026-06-30T13:00:00.000Z",
+                        "numberOfHomeRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "30.06.2026 15:00:00"
+                            "firstHalfStarted": "30.06.2026 15:01:28",
+                            "secondHalfStarted": "30.06.2026 16:09:45"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 3",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1782824400000
                 },
@@ -606,22 +697,31 @@
                     },
                     "away": {
                         "id": 165087,
-                        "score": 0,
+                        "score": 1,
                         "name": "Tanzania Prisons",
                         "longName": "Tanzania Prisons"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "30",
                     "status": {
                         "utcTime": "2026-06-30T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "30.06.2026 15:00:00"
+                            "firstHalfStarted": "30.06.2026 15:01:28",
+                            "secondHalfStarted": "30.06.2026 16:15:40"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1782824400000
                 },
@@ -642,17 +742,26 @@
                         "longName": "TRA United"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "30",
                     "status": {
                         "utcTime": "2026-06-30T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "30.06.2026 15:00:00"
+                            "firstHalfStarted": "30.06.2026 15:01:28",
+                            "secondHalfStarted": "30.06.2026 16:03:14"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1782824400000
                 },
@@ -662,28 +771,37 @@
                     "time": "30.06.2026 15:00",
                     "home": {
                         "id": 1084108,
-                        "score": 0,
+                        "score": 2,
                         "name": "Namungo FC",
                         "longName": "Namungo FC"
                     },
                     "away": {
                         "id": 165088,
-                        "score": 0,
+                        "score": 1,
                         "name": "Mtibwa Sugar",
                         "longName": "Mtibwa Sugar"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "30",
                     "status": {
                         "utcTime": "2026-06-30T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "30.06.2026 15:00:00"
+                            "firstHalfStarted": "30.06.2026 15:00:52",
+                            "secondHalfStarted": "30.06.2026 16:04:33"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1782824400000
                 },
@@ -693,7 +811,7 @@
                     "time": "30.06.2026 15:00",
                     "home": {
                         "id": 165086,
-                        "score": 0,
+                        "score": 1,
                         "name": "Simba SC",
                         "longName": "Simba SC"
                     },
@@ -704,17 +822,26 @@
                         "longName": "Kinondoni MC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "30",
                     "status": {
                         "utcTime": "2026-06-30T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "30.06.2026 15:00:00"
+                            "firstHalfStarted": "30.06.2026 15:00:52",
+                            "secondHalfStarted": "30.06.2026 16:04:13"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1782824400000
                 }
