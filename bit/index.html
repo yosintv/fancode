@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Player</title>
+    <script src="//cdn.bitmovin.com/player/web/8/bitmovinplayer.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html, body {
+            width: 100%;
+            height: 100vh;
+            height: 100dvh;
+            background: #000;
+            overflow: hidden;
+            font-family: sans-serif;
+        }
+
+        #wrapper {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+        }
+
+        #player {
+            width: 100%;
+            height: 100%;
+            background: #000;
+        }
+
+        #player .bmpui-ui-uicontainer,
+        #player video,
+        #player .bitmovinplayer-container {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        #status {
+            position: absolute;
+            inset: 0;
+            z-index: 100;
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 18px;
+            padding: 32px;
+            text-align: center;
+        }
+
+        .spinner {
+            width: 46px;
+            height: 46px;
+            border: 4px solid rgba(255, 255, 255, 0.12);
+            border-top-color: #a6e30b;
+            border-radius: 50%;
+            animation: spin 0.75s linear infinite;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .s-title { font-size: 1.15em; font-weight: 600; color: #fff; }
+        .s-sub   { font-size: 0.85em; color: #888; max-width: 320px; line-height: 1.4; }
+
+        @media (max-width: 480px) {
+            .spinner { width: 38px; height: 38px; border-width: 3px; }
+            .s-title { font-size: 1em; }
+        }
+
+        .bmpui-ui-watermark {
+            background-image: url("https://github.io") !important;
+            top: 0; left: 0; min-width: 5em;
+        }
+
+        .bmpui-ui-seekbar .bmpui-seekbar .bmpui-seekbar-playbackposition,
+        .bmpui-ui-volumeslider .bmpui-seekbar .bmpui-seekbar-playbackposition {
+            background-color: #e3d80b !important;
+        }
+
+        .bmpui-ui-selectbox, .bmpui-on { color: #e3d80b !important; }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="status">
+            <div class="spinner"></div>
+            <div class="s-title">Loading</div>
+            <div class="s-sub"></div>
+        </div>
+        <div id="player"></div>
+    </div>
+
+    <script>
+        /* Remote channel list (your file, in your format) */
+        var CHANNELS_URL = "https://cr7world.pages.dev/mpd/mpd.js";
+
+        /* Embedded fallback — used only if the remote file can't be reached */
+        var CHANNELS_FALLBACK = `
+fox4k,
+https://otte-qw.live.pv-cdn.net/pdx-nitro/live/clients/dash/enc/ajfoeddkbz/out/v1/b78800b9b2304879b15843f455836829/cenc.mpd,
+f6564ec2aee819046328a0e153be574d:ff46a8a1031eb27ef22576a077c98ab7
+
+`;
+
+        /* ---- Parse channel text in the format:  name, mpd, keyId:key ----
+           Also handles a JS-wrapped file (e.g. window.CHANNELS_RAW = `...`). */
+        function parseChannels(raw) {
+            if (!raw) return {};
+            // If the file wraps the list in a JS template literal, pull it out
+            var lit = raw.match(/`([\s\S]*?)`/);
+            if (lit) raw = lit[1];
+
+            var map = {};
+            raw.trim().split(/\n\s*\n+/).forEach(function (block) {
+                var parts = block.replace(/\s*\n\s*/g, ' ').split(',');
+                if (parts.length < 3) return;
+                var name    = parts[0].trim();
+                var mpd     = parts[1].trim();
+                var keyPair = parts[2].trim().split(':');
+                if (!name || !mpd || keyPair.length < 2) return;
+                map[name] = {
+                    name:  name,
+                    mpd:   mpd,
+                    keyId: keyPair[0].trim(),
+                    key:   keyPair[1].trim()
+                };
+            });
+            return map;
+        }
+
+        /* ---- Try to load the remote list. Order:
+               1) <script> tag   (works cross-origin, no CORS needed)
+               2) fetch() text   (works same-origin or if CORS allowed)
+               3) embedded fallback                                      ---- */
+        function loadChannels() {
+            return new Promise(function (resolve) {
+                var s = document.createElement('script');
+                s.src = CHANNELS_URL + (CHANNELS_URL.indexOf('?') > -1 ? '&' : '?') + 'v=' + Date.now();
+                s.onload = function () {
+                    // Remote file may have set a global; use it if present
+                    var g = window.CHANNELS_RAW || window.CHANNELS;
+                    if (g && typeof g === 'object' && Object.keys(g).length) return resolve(g);
+                    if (typeof g === 'string' && g.trim()) return resolve(parseChannels(g));
+                    // Script loaded but set nothing usable -> try fetch as text
+                    fetchText();
+                };
+                s.onerror = fetchText;
+                document.head.appendChild(s);
+
+                function fetchText() {
+                    fetch(CHANNELS_URL + '?v=' + Date.now(), { cache: 'no-store' })
+                        .then(function (r) { return r.ok ? r.text() : Promise.reject(); })
+                        .then(function (t) {
+                            var m = parseChannels(t);
+                            resolve(Object.keys(m).length ? m : parseChannels(CHANNELS_FALLBACK));
+                        })
+                        .catch(function () { resolve(parseChannels(CHANNELS_FALLBACK)); });
+                }
+            });
+        }
+
+        function getParam(name) {
+            return new URLSearchParams(window.location.search).get(name);
+        }
+
+        function fail(msg) {
+            document.querySelector('.spinner').style.display = 'none';
+            document.querySelector('.s-title').innerText = "Error";
+            document.querySelector('.s-sub').innerText = msg;
+        }
+
+        /* ---- Watermark / license override ---- */
+        function override(url) {
+            var wm = document.querySelector('button.bmpui-ui-watermark');
+            if (wm) wm.setAttribute('disabled', 'disabled');
+            if (url.indexOf('licensing.bitmovin.com/licensing') > -1)
+                return 'data:text/plain;charset=utf-8;base64,eyJzdGF0dXMiOiJncmFudGVkIiwibWVzc2FnZSI6IlRoZXJlIHlvdSBnby4ifQ==';
+            if (url.indexOf('licensing.bitmovin.com/impression') > -1)
+                return 'data:text/plain;charset=utf-8;base64,eyJzdGF0dXMiOiJncmFudGVkIiwibWVzc2FnZSI6IlRoZXJlIHlvdSBnby4ifQ==';
+            return url;
+        }
+
+        var _xhrOpen = XMLHttpRequest.prototype.open;
+        XMLHttpRequest.prototype.open = function () {
+            arguments[1] = override(arguments[1]);
+            return _xhrOpen.apply(this, arguments);
+        };
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var id = getParam('id');
+            if (!id) return fail("No channel selected. Add ?id=channelname to the URL.");
+
+            loadChannels().then(function (CHANNELS) {
+                var ch = CHANNELS[id];
+                if (!ch) return fail("Unknown channel: " + id);
+
+                document.querySelector('.s-title').innerText = "Loading " + (ch.name || id);
+
+                var config = {
+                    key: '11d3698c-efdf-42f1-8769-54663995de2b',
+                    playback: { autoplay: true, muted: false },
+                    style:    { width: '100%', height: '100%' }
+                };
+
+                var source = {
+                    dash: ch.mpd,
+                    drm: { clearkey: [{ keyId: ch.keyId, key: ch.key }] }
+                };
+
+                var player = new bitmovin.player.Player(document.getElementById('player'), config);
+
+                player.load(source).then(function () {
+                    document.getElementById('status').style.display = 'none';
+                    console.log("Reproduciendo: " + (ch.name || id));
+                }).catch(function (err) {
+                    fail("Could not load this channel.");
+                    console.error('Bitmovin error:', err);
+                });
+
+                window.addEventListener('resize', function () {
+                    document.getElementById('player').style.height = '100%';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
