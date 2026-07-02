@@ -100,30 +100,30 @@
                         "id": 6707,
                         "score": 0,
                         "name": "Ecuador",
+                        "redCards": 1,
                         "longName": "Ecuador"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 2,
+                    "statusId": 6,
                     "tournamentStage": "1/16",
                     "status": {
                         "utcTime": "2026-07-01T02:00:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "01.07.2026 04:00:48"
+                            "firstHalfStarted": "01.07.2026 04:00:48",
+                            "secondHalfStarted": "01.07.2026 05:07:27"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
+                        "awarded": false,
                         "scoreStr": "2 - 0",
-                        "liveTime": {
-                            "short": "41\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "40:53",
-                            "longKey": "",
-                            "maxTime": 45,
-                            "basePeriod": 45,
-                            "addedTime": 0
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1782871200000
@@ -266,7 +266,7 @@
                     "time": "01.07.2026 16:00",
                     "home": {
                         "id": 8698,
-                        "score": 0,
+                        "score": 2,
                         "name": "Zenit",
                         "longName": "Zenit St. Petersburg"
                     },
@@ -277,17 +277,26 @@
                         "longName": "Dynamo Makhachkala"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-07-01T14:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "01.07.2026 16:00:00"
+                            "firstHalfStarted": "01.07.2026 16:00:40",
+                            "secondHalfStarted": "01.07.2026 17:02:26"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1782914400000
                 }
@@ -560,6 +569,7 @@
                         "id": 1340094,
                         "score": 0,
                         "name": "Amazonas FC",
+                        "redCards": 1,
                         "longName": "Amazonas FC"
                     },
                     "eliminatedTeamId": null,
@@ -567,6 +577,7 @@
                     "tournamentStage": "12",
                     "status": {
                         "utcTime": "2026-06-30T23:30:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
                             "firstHalfStarted": "01.07.2026 01:30:53",
                             "secondHalfStarted": "01.07.2026 02:37:04"
