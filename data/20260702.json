@@ -198,7 +198,7 @@
                     "time": "02.07.2026 16:00",
                     "home": {
                         "id": 8643,
-                        "score": 0,
+                        "score": 1,
                         "name": "Spartak",
                         "longName": "Spartak Moscow"
                     },
@@ -209,17 +209,26 @@
                         "longName": "Spartak Kostroma"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-07-02T14:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "02.07.2026 16:00:00"
+                            "firstHalfStarted": "02.07.2026 16:00:53",
+                            "secondHalfStarted": "02.07.2026 17:19:05"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1783000800000
                 }
@@ -599,6 +608,57 @@
             "simpleLeague": false
         },
         {
+            "ccode": "KAZ",
+            "id": 922739,
+            "primaryId": 225,
+            "name": "Premier League",
+            "matches": [
+                {
+                    "id": 5204154,
+                    "leagueId": 922739,
+                    "time": "02.07.2026 16:00",
+                    "home": {
+                        "id": 8037,
+                        "score": 5,
+                        "name": "Kairat Almaty",
+                        "longName": "Kairat Almaty"
+                    },
+                    "away": {
+                        "id": 2128,
+                        "score": 0,
+                        "name": "Okzhetpes Kokshetau",
+                        "longName": "Okzhetpes Kokshetau"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 6,
+                    "tournamentStage": "15",
+                    "status": {
+                        "utcTime": "2026-07-02T14:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "02.07.2026 16:01:36",
+                            "secondHalfStarted": "02.07.2026 17:09:33"
+                        },
+                        "periodLength": 45,
+                        "finished": true,
+                        "started": true,
+                        "cancelled": false,
+                        "awarded": false,
+                        "scoreStr": "5 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
+                    },
+                    "timeTS": 1783000800000
+                }
+            ],
+            "parentLeagueId": 225,
+            "internalRank": 11,
+            "simpleLeague": false
+        },
+        {
             "isGroup": true,
             "groupName": "A",
             "ccode": "WAL",
@@ -717,17 +777,26 @@
                         "longName": "Italy U19"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "2",
                     "status": {
                         "utcTime": "2026-07-02T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "02.07.2026 15:00:00"
+                            "firstHalfStarted": "02.07.2026 15:00:50",
+                            "secondHalfStarted": "02.07.2026 16:02:39"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1782997200000
                 }
@@ -975,32 +1044,30 @@
                     },
                     "away": {
                         "id": 1004919,
-                        "score": 0,
+                        "score": 1,
                         "name": "Forward Madison FC",
                         "longName": "Forward Madison FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 2,
+                    "statusId": 6,
                     "tournamentStage": "18",
                     "status": {
                         "utcTime": "2026-07-02T02:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "02.07.2026 04:07:55"
+                            "firstHalfStarted": "02.07.2026 04:07:55",
+                            "secondHalfStarted": "02.07.2026 05:09:39"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "0 - 0",
-                        "liveTime": {
-                            "short": "24\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "23:14",
-                            "longKey": "",
-                            "maxTime": 45,
-                            "basePeriod": 45,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "0 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1782957600000
@@ -1011,28 +1078,37 @@
                     "time": "02.07.2026 04:30",
                     "home": {
                         "id": 1121685,
-                        "score": 0,
+                        "score": 3,
                         "name": "Union Omaha",
                         "longName": "Union Omaha"
                     },
                     "away": {
                         "id": 1701876,
-                        "score": 0,
+                        "score": 1,
                         "name": "AV Alta",
                         "longName": "AV Alta"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "18",
                     "status": {
                         "utcTime": "2026-07-02T02:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "02.07.2026 04:30:00"
+                            "firstHalfStarted": "02.07.2026 04:36:50",
+                            "secondHalfStarted": "02.07.2026 05:40:22"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1782959400000
                 }
