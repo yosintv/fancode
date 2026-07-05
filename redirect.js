@@ -17,7 +17,7 @@
     "www.cricfoot.net",
     "yonotv.online",
     "www.yonotv.online",
-    "play9.getemoji.online",
+    "play9.hls-player.net",
     "cr7.hls-player.net",
     "redirects.pages.dev",
     "suii.pages.dev",
