@@ -28,11 +28,6 @@ https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/enc/ajfoeddkbz/out/v1/b788
 f6564ec2aee819046328a0e153be574d:ff46a8a1031eb27ef22576a077c98ab7
 
 
-nova1y,
-https://qp-pldt-live-bpk-ucd-prod.akamaized.net/bpk-tv/fifa_ppv1/default/index.mpd,
-2c338a117d434ce4bbe3569231af90f1:a9633d901ee8a3f4f58ac314b5c5f4fb
-
-
 
 
 
