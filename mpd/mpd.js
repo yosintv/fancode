@@ -28,7 +28,9 @@ https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/enc/ajfoeddkbz/out/v1/b788
 f6564ec2aee819046328a0e153be574d:ff46a8a1031eb27ef22576a077c98ab7
 
 
-
+telemundo,
+https://proxy.sevaexchange.com/https://live-oneapp-prd-news.akamaized.net/Content/CMAF_OL2-CTR-4s-v2/Live/channel(kvea)/master.mpd,
+ce7ab3022e753307997f58afe001bac4:72d631a66e635c60829a0fe7705516c1
 
 
 
