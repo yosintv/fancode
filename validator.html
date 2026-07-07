@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JSON Validator</title>
+
+<style>
+html,body{
+    margin:0;
+    height:100%;
+    background:#1e1e1e;
+    color:#fff;
+    font-family:Arial,sans-serif;
+}
+
+header{
+    display:flex;
+    gap:10px;
+    padding:15px;
+    background:#252526;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+input{
+    flex:1;
+    min-width:300px;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    background:#3c3c3c;
+    color:white;
+}
+
+button{
+    padding:10px 18px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    background:#0078d4;
+    color:white;
+}
+
+button:hover{
+    background:#005fa3;
+}
+
+#editor{
+    width:100%;
+    height:calc(100vh - 70px);
+}
+
+#status{
+    margin-left:auto;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<input
+id="url"
+value="https://cr7world.pages.dev/playlist.json">
+
+<button onclick="loadJSON()">Load JSON</button>
+
+<button onclick="formatJSON()">Format</button>
+
+<button onclick="copyJSON()">Copy</button>
+
+<button onclick="downloadJSON()">Download</button>
+
+<div id="status">Ready</div>
+
+</header>
+
+<div id="editor"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.52.2/min/vs/loader.min.js"></script>
+
+<script>
+
+require.config({
+paths:{
+vs:"https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.52.2/min/vs"
+}
+});
+
+require(["vs/editor/editor.main"],function(){
+
+window.editor=monaco.editor.create(document.getElementById("editor"),{
+
+value:"Loading...",
+
+language:"json",
+
+theme:"vs-dark",
+
+automaticLayout:true,
+
+minimap:{
+enabled:true
+},
+
+fontSize:15,
+
+formatOnPaste:true,
+
+formatOnType:true
+
+});
+
+loadJSON();
+
+});
+
+async function loadJSON(){
+
+const url=document.getElementById("url").value;
+
+document.getElementById("status").innerHTML="Loading...";
+
+try{
+
+const res=await fetch(url);
+
+const text=await res.text();
+
+editor.setValue(text);
+
+validate();
+
+}
+catch(e){
+
+document.getElementById("status").innerHTML="❌ "+e.message;
+
+}
+
+}
+
+function validate(){
+
+try{
+
+JSON.parse(editor.getValue());
+
+document.getElementById("status").innerHTML="✅ Valid JSON";
+
+}
+catch(e){
+
+document.getElementById("status").innerHTML="❌ "+e.message;
+
+}
+
+}
+
+function formatJSON(){
+
+try{
+
+const obj=JSON.parse(editor.getValue());
+
+editor.setValue(JSON.stringify(obj,null,2));
+
+document.getElementById("status").innerHTML="✅ Formatted";
+
+}
+catch(e){
+
+document.getElementById("status").innerHTML="❌ Invalid JSON";
+
+}
+
+}
+
+editor?.onDidChangeModelContent(validate);
+
+function copyJSON(){
+
+navigator.clipboard.writeText(editor.getValue());
+
+}
+
+function downloadJSON(){
+
+const blob=new Blob([editor.getValue()],{
+
+type:"application/json"
+
+});
+
+const a=document.createElement("a");
+
+a.href=URL.createObjectURL(blob);
+
+a.download="playlist.json";
+
+a.click();
+
+}
+
+</script>
+
+</body>
+</html>
