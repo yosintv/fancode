@@ -52,7 +52,7 @@
                     "time": "06.07.2026 03:00",
                     "home": {
                         "id": 6710,
-                        "score": 1,
+                        "score": 2,
                         "name": "Mexico",
                         "longName": "Mexico"
                     },
@@ -64,7 +64,7 @@
                         "longName": "England"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "1/8",
                     "status": {
                         "utcTime": "2026-07-06T01:00:00.000Z",
@@ -74,19 +74,16 @@
                             "secondHalfStarted": "06.07.2026 04:07:27"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "1 - 3",
-                        "liveTime": {
-                            "short": "63\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "62:22",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "2 - 3",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1783299600000
@@ -3318,7 +3315,7 @@
                         "longName": "Colorado Rapids 2"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "19",
                     "status": {
                         "utcTime": "2026-07-06T00:30:00.000Z",
@@ -3327,19 +3324,16 @@
                             "secondHalfStarted": "06.07.2026 03:38:47"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
+                        "awarded": false,
                         "scoreStr": "3 - 2",
-                        "liveTime": {
-                            "short": "92\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "91:02",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1783297800000
@@ -3350,18 +3344,20 @@
                     "time": "06.07.2026 03:00",
                     "home": {
                         "id": 1451871,
-                        "score": 1,
+                        "score": 2,
                         "name": "Los Angeles FC II",
+                        "penScore": 8,
                         "longName": "Los Angeles FC II"
                     },
                     "away": {
                         "id": 614324,
-                        "score": 1,
+                        "score": 2,
                         "name": "Real Monarchs SLC",
+                        "penScore": 9,
                         "longName": "Real Monarchs SLC"
                     },
-                    "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "eliminatedTeamId": 1451871,
+                    "statusId": 13,
                     "tournamentStage": "19",
                     "status": {
                         "utcTime": "2026-07-06T01:00:00.000Z",
@@ -3370,19 +3366,16 @@
                             "secondHalfStarted": "06.07.2026 04:09:30"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "1 - 1",
-                        "liveTime": {
-                            "short": "61\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "60:19",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "2 - 2",
+                        "reason": {
+                            "short": "Pen",
+                            "shortKey": "penalties_short",
+                            "long": "After penalties",
+                            "longKey": "afterpenalties"
                         }
                     },
                     "timeTS": 1783299600000
@@ -3395,36 +3388,36 @@
                         "id": 614327,
                         "score": 0,
                         "name": "Tacoma Defiance",
+                        "redCards": 1,
                         "longName": "Tacoma Defiance"
                     },
                     "away": {
                         "id": 614322,
-                        "score": 0,
+                        "score": 2,
                         "name": "Portland Timbers 2",
                         "longName": "Portland Timbers 2"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 2,
+                    "statusId": 6,
                     "tournamentStage": "19",
                     "status": {
                         "utcTime": "2026-07-06T02:00:00.000Z",
+                        "numberOfHomeRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "06.07.2026 04:05:14"
+                            "firstHalfStarted": "06.07.2026 04:05:14",
+                            "secondHalfStarted": "06.07.2026 05:07:28"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "0 - 0",
-                        "liveTime": {
-                            "short": "20\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "19:35",
-                            "longKey": "",
-                            "maxTime": 45,
-                            "basePeriod": 45,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "0 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1783303200000
@@ -3905,28 +3898,37 @@
                     "time": "06.07.2026 05:00",
                     "home": {
                         "id": 1701876,
-                        "score": 0,
+                        "score": 1,
                         "name": "AV Alta",
                         "longName": "AV Alta"
                     },
                     "away": {
                         "id": 614315,
-                        "score": 0,
+                        "score": 1,
                         "name": "Charlotte Independence",
                         "longName": "Charlotte Independence"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "18",
                     "status": {
                         "utcTime": "2026-07-06T03:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.07.2026 05:00:00"
+                            "firstHalfStarted": "06.07.2026 05:06:59",
+                            "secondHalfStarted": "06.07.2026 06:08:55"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1783306800000
                 }
