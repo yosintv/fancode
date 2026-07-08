@@ -736,8 +736,7 @@ function resultText(m,det){
 function tgText(m,det){
   const mn=['January','February','March','April','May','June','July','August','September','October','November','December'];
   const dp=m.jstDate.split('-'); const ds=`${+dp[2]} ${mn[+dp[1]-1]} ${dp[0]}`;
-return `⚠️ Today's Football Matches ‼️\n📅 Date: \${ds}\n\n🏆 \${m.league}\n⚽ \${m.home} 🆚 \${m.away}\n👉 https://www.yosin-tv.net/\n👉 https://www.yosintv.me/\n\n📱 Download YoSinTV APK Now ⬇️\n👉 https://www.yosintv.me/apk`;}
-const clean=s=>(s||'').replace(/[^a-z0-9]/gi,'');
+return `⚠️ Today's Matches | L!ve ‼️\n📅 Date: ${ds}\n\n🏆 ${m.league}\n⚽ ${m.home} 🆚 ${m.away}\n👉 https://www.yosin-tv.net/\n👉 https://www.yosintv.net/\n\n📱 Download YoSinTV APK Now ⬇️\n👉 https://www.yosintv.net/apk`;const clean=s=>(s||'').replace(/[^a-z0-9]/gi,'');
 
 /* ════════ Copy / Telegram / Download ════════ */
 function toast(){ const t=document.getElementById('toast'); t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),1800); }
