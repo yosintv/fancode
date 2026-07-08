@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -737,8 +736,7 @@ function resultText(m,det){
 function tgText(m,det){
   const mn=['January','February','March','April','May','June','July','August','September','October','November','December'];
   const dp=m.jstDate.split('-'); const ds=`${+dp[2]} ${mn[+dp[1]-1]} ${dp[0]}`;
-  return `⚠️ Today's Matches | L!ve ‼️\n📅 Date: ${ds}\n\n🔗 Join YoSinTV WhatsApp\n👉 https://whatsapp.com/channel/0029Vb7ikzn9hXF5ec0uUI0H\n\n🏆 ${m.league}\n⚽ ${m.home} 🆚 ${m.away}\n👉 https://www.yosin-tv.net/\n👉 https://www.yosintv.net/\n\n📱 Download YoSinTV APK Now ⬇️\n👉 https://www.yosintv.net/apk`;
-}
+return `⚠️ Today's Matches | L!ve ‼️\n📅 Date: \${ds}\n\n🏆 \${m.league}\n⚽ \${m.home} 🆚 \${m.away}\n👉 https://www.yosin-tv.net/\n👉 https://www.yosintv.me/\n\n📱 Download YoSinTV APK Now ⬇️\n👉 https://www.yosintv.me/apk`;}
 const clean=s=>(s||'').replace(/[^a-z0-9]/gi,'');
 
 /* ════════ Copy / Telegram / Download ════════ */
