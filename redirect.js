@@ -14,6 +14,7 @@
   const REDIRECT_DELAY_MS = 22000; // 40 seconds
 
   const ALLOWED_HOSTS = [
+    "www.footem.co",
     "hlsplayers.pages.dev",
     "www.cricfoot.net",
     "yonotv.online",
