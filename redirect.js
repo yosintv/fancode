@@ -10,7 +10,7 @@
  */
 
 (function () {
-  const REDIRECT_URL = " https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiX1NPVjI2VAxUsqVYBHf3sMNMQFnoECBYQAQ&url=https%3A%2F%2Fwww.cricfoot.net%2F&usg=AOvVaw2zr7hYbc4BMsU6PRVQlM9z&opi=89978449 ";
+  const REDIRECT_URL = " https://www.yosintv.me/ ";
   const REDIRECT_DELAY_MS = 22000; // 40 seconds
 
   const ALLOWED_HOSTS = [
