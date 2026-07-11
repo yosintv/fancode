@@ -22,7 +22,7 @@
     "play8.hls-player.net",
     "cr7.hls-player.net",
     "redirects.pages.dev",
-    "suii.pages.dev",
+    "suiiiiiii.pages.dev",
   ];
 
   function hostIsAllowed(hostname) {
