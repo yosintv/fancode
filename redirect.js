@@ -22,7 +22,7 @@
     "play8.hls-player.net",
     "cr7.hls-player.net",
     "redirects.pages.dev",
-    "suiiiiiii.pages.dev",
+    "yosintv-live.pages.dev",
   ];
 
   function hostIsAllowed(hostname) {
