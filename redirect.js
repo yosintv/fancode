@@ -19,7 +19,7 @@
     "www.cricfoot.net",
     "yonotv.online",
     "www.yonotv.online",
-    "play8.hls-player.net",
+    "home99.hls-player.net",
     "cr7.hls-player.net",
     "redirects.pages.dev",
     "yosintv-live.pages.dev",
