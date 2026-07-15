@@ -1916,6 +1916,47 @@
             "simpleLeague": false
         },
         {
+            "ccode": "ISR",
+            "id": 9098,
+            "primaryId": 9098,
+            "name": "Toto Cup UEFA Qualifiers Match",
+            "matches": [
+                {
+                    "id": 5923033,
+                    "leagueId": 9098,
+                    "time": "18.07.2026 20:30",
+                    "home": {
+                        "id": 8173,
+                        "score": 0,
+                        "name": "Beitar Jerusalem",
+                        "longName": "Beitar Jerusalem"
+                    },
+                    "away": {
+                        "id": 10181,
+                        "score": 0,
+                        "name": "Hapoel Tel Aviv",
+                        "longName": "Hapoel Tel Aviv"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "final",
+                    "status": {
+                        "utcTime": "2026-07-18T18:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "18.07.2026 20:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1784399400000
+                }
+            ],
+            "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
             "ccode": "USA",
             "id": 8972,
             "primaryId": 8972,
@@ -2361,10 +2402,10 @@
                     "leagueId": 894789,
                     "time": "18.07.2026 23:00",
                     "home": {
-                        "id": 2075533,
+                        "id": 6723,
                         "score": 0,
-                        "name": "France/Spain",
-                        "longName": "France/Spain"
+                        "name": "France",
+                        "longName": "France"
                     },
                     "away": {
                         "id": 2076509,
@@ -2515,12 +2556,12 @@
                     },
                     "away": {
                         "id": 4594,
-                        "score": 0,
+                        "score": 3,
                         "name": "Bohemian FC",
                         "longName": "Bohemian FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 190,
                     "tournamentStage": "1/16",
                     "status": {
                         "utcTime": "2026-07-19T13:00:00.000Z",
@@ -2528,9 +2569,17 @@
                             "firstHalfStarted": "19.07.2026 15:00:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": true,
+                        "scoreStr": "0 - 3",
+                        "reason": {
+                            "short": "AW",
+                            "shortKey": "",
+                            "long": "Awarded win",
+                            "longKey": "awarded_win"
+                        }
                     },
                     "timeTS": 1784466000000
                 }
@@ -3609,47 +3658,6 @@
                         "finished": false
                     },
                     "timeTS": 1784469600000
-                }
-            ],
-            "internalRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "CHI",
-            "id": 11697,
-            "primaryId": 11697,
-            "name": "Copa de la Liga",
-            "matches": [
-                {
-                    "id": 1000013924,
-                    "leagueId": 11697,
-                    "time": "19.07.2026 00:00",
-                    "home": {
-                        "id": 4062,
-                        "score": 0,
-                        "name": "Coquimbo Unido",
-                        "longName": "Coquimbo Unido"
-                    },
-                    "away": {
-                        "id": 6296,
-                        "score": 0,
-                        "name": "O'Higgins",
-                        "longName": "O'Higgins"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "Final",
-                    "status": {
-                        "utcTime": "2026-07-18T22:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "19.07.2026 00:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1784412000000
                 }
             ],
             "internalRank": 0,
