@@ -409,6 +409,37 @@
                     "timeTS": 1784388600000
                 },
                 {
+                    "id": 5900175,
+                    "leagueId": 915708,
+                    "time": "18.07.2026 18:00",
+                    "home": {
+                        "id": 8583,
+                        "score": 0,
+                        "name": "Auxerre",
+                        "longName": "Auxerre"
+                    },
+                    "away": {
+                        "id": 1823,
+                        "score": 0,
+                        "name": "St Maur Lusitanos",
+                        "longName": "St Maur Lusitanos"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-07-18T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "18.07.2026 18:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1784390400000
+                },
+                {
                     "id": 5900182,
                     "leagueId": 915708,
                     "time": "18.07.2026 18:00",
@@ -640,6 +671,37 @@
                         "score": 0,
                         "name": "Kaizer Chiefs",
                         "longName": "Kaizer Chiefs"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-07-18T17:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "18.07.2026 19:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1784394000000
+                },
+                {
+                    "id": 5944915,
+                    "leagueId": 915708,
+                    "time": "18.07.2026 19:00",
+                    "home": {
+                        "id": 9748,
+                        "score": 0,
+                        "name": "Lyon",
+                        "longName": "Lyon"
+                    },
+                    "away": {
+                        "id": 7787,
+                        "score": 0,
+                        "name": "Slavia Prague",
+                        "longName": "Slavia Prague"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -1937,7 +1999,7 @@
                         "longName": "FC Astana"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "18",
                     "status": {
                         "utcTime": "2026-07-19T14:00:00.000Z",
@@ -1945,15 +2007,63 @@
                             "firstHalfStarted": "19.07.2026 16:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1784469600000
                 }
             ],
             "parentLeagueId": 225,
             "internalRank": 11,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "CRC",
+            "id": 941072,
+            "primaryId": 121,
+            "name": "Primera Division Qualification",
+            "matches": [
+                {
+                    "id": 5943668,
+                    "leagueId": 941072,
+                    "time": "19.07.2026 03:00",
+                    "home": {
+                        "id": 1285005,
+                        "score": 0,
+                        "name": "Escorpiones",
+                        "longName": "Escorpiones"
+                    },
+                    "away": {
+                        "id": 855904,
+                        "score": 0,
+                        "name": "Guadalupe FC",
+                        "longName": "Guadalupe FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "final",
+                    "status": {
+                        "utcTime": "2026-07-19T01:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.07.2026 03:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1784422800000
+                }
+            ],
+            "parentLeagueId": 121,
+            "internalRank": 0,
             "simpleLeague": false
         },
         {
