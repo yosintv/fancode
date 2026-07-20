@@ -2105,7 +2105,7 @@
                         "longName": "Gimnasia y Tiro"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "21",
                     "status": {
                         "utcTime": "2026-07-21T18:00:00.000Z",
@@ -2113,9 +2113,15 @@
                             "firstHalfStarted": "21.07.2026 20:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1784656800000
                 },
@@ -2313,7 +2319,7 @@
                 {
                     "id": 1000014509,
                     "leagueId": 230,
-                    "time": "22.07.2026 05:00",
+                    "time": "22.07.2026 05:05",
                     "home": {
                         "id": 6618,
                         "score": 0,
@@ -2330,16 +2336,16 @@
                     "statusId": 1,
                     "tournamentStage": "2",
                     "status": {
-                        "utcTime": "2026-07-22T03:00:00.000Z",
+                        "utcTime": "2026-07-22T03:05:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "22.07.2026 05:00:00"
+                            "firstHalfStarted": "22.07.2026 05:05:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1784689200000
+                    "timeTS": 1784689500000
                 }
             ],
             "internalRank": 0,
@@ -2625,7 +2631,7 @@
                         "longName": "Independiente Rivadavia"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "Final",
                     "status": {
                         "utcTime": "2026-07-21T21:00:00.000Z",
@@ -2633,9 +2639,15 @@
                             "firstHalfStarted": "21.07.2026 23:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1784667600000
                 }
