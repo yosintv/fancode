@@ -1301,38 +1301,36 @@
                     "time": "20.07.2026 03:30",
                     "home": {
                         "id": 614324,
-                        "score": 1,
+                        "score": 2,
                         "name": "Real Monarchs SLC",
                         "longName": "Real Monarchs SLC"
                     },
                     "away": {
                         "id": 614327,
-                        "score": 1,
+                        "score": 4,
                         "name": "Tacoma Defiance",
                         "longName": "Tacoma Defiance"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 2,
+                    "statusId": 6,
                     "tournamentStage": "21",
                     "status": {
                         "utcTime": "2026-07-20T01:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "20.07.2026 03:34:52"
+                            "firstHalfStarted": "20.07.2026 03:34:52",
+                            "secondHalfStarted": "20.07.2026 04:39:31"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "1 - 1",
-                        "liveTime": {
-                            "short": "36\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "35:43",
-                            "longKey": "",
-                            "maxTime": 45,
-                            "basePeriod": 45,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "2 - 4",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1784511000000
@@ -1445,7 +1443,7 @@
                         "longName": "Rangers"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "16",
                     "status": {
                         "utcTime": "2026-07-19T16:00:00.000Z",
@@ -1453,9 +1451,15 @@
                             "firstHalfStarted": "19.07.2026 18:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1784476800000
                 },
@@ -1590,7 +1594,7 @@
                         "longName": "Real Tomayapo"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "9",
                     "status": {
                         "utcTime": "2026-07-20T00:30:00.000Z",
@@ -1599,19 +1603,16 @@
                             "secondHalfStarted": "20.07.2026 03:33:35"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
+                        "awarded": false,
                         "scoreStr": "1 - 0",
-                        "liveTime": {
-                            "short": "83\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "82:00",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1784507400000
