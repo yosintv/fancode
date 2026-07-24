@@ -1,6 +1,89 @@
 {
     "leagues": [
         {
+            "ccode": "NOR",
+            "id": 203,
+            "primaryId": 203,
+            "name": "1. Divisjon",
+            "matches": [
+                {
+                    "id": 5105199,
+                    "leagueId": 203,
+                    "time": "27.07.2026 19:00",
+                    "home": {
+                        "id": 9918,
+                        "score": 0,
+                        "name": "Stab\u00e6k",
+                        "longName": "Stab\u00e6k"
+                    },
+                    "away": {
+                        "id": 7937,
+                        "score": 0,
+                        "name": "H\u00f8dd",
+                        "longName": "H\u00f8dd"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "15",
+                    "status": {
+                        "utcTime": "2026-07-27T17:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "27.07.2026 19:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785171600000
+                }
+            ],
+            "internalRank": 9,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "CZE",
+            "id": 938182,
+            "primaryId": 122,
+            "name": "1. Liga",
+            "matches": [
+                {
+                    "id": 5943685,
+                    "leagueId": 938182,
+                    "time": "27.07.2026 18:00",
+                    "home": {
+                        "id": 106189,
+                        "score": 0,
+                        "name": "Artis Brno",
+                        "longName": "Artis Brno"
+                    },
+                    "away": {
+                        "id": 10180,
+                        "score": 0,
+                        "name": "Mlada Boleslav",
+                        "longName": "Mlada Boleslav"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-07-27T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "27.07.2026 18:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785168000000
+                }
+            ],
+            "parentLeagueId": 122,
+            "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
             "ccode": "SVK",
             "id": 938006,
             "primaryId": 8973,
@@ -81,6 +164,47 @@
                 }
             ],
             "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "SWE",
+            "id": 67,
+            "primaryId": 67,
+            "name": "Allsvenskan",
+            "matches": [
+                {
+                    "id": 5107542,
+                    "leagueId": 67,
+                    "time": "27.07.2026 19:00",
+                    "home": {
+                        "id": 8428,
+                        "score": 0,
+                        "name": "H\u00e4cken",
+                        "longName": "H\u00e4cken"
+                    },
+                    "away": {
+                        "id": 8349,
+                        "score": 0,
+                        "name": "AIK",
+                        "longName": "AIK"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "14",
+                    "status": {
+                        "utcTime": "2026-07-27T17:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "27.07.2026 19:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785171600000
+                }
+            ],
+            "internalRank": 10,
             "simpleLeague": false
         },
         {
@@ -266,6 +390,48 @@
         },
         {
             "ccode": "SWE",
+            "id": 931430,
+            "primaryId": 171,
+            "name": "Cup",
+            "matches": [
+                {
+                    "id": 5629962,
+                    "leagueId": 931430,
+                    "time": "27.07.2026 19:00",
+                    "home": {
+                        "id": 610365,
+                        "score": 0,
+                        "name": "IFK Sk\u00f6vde FK",
+                        "longName": "IFK Sk\u00f6vde FK"
+                    },
+                    "away": {
+                        "id": 8510,
+                        "score": 0,
+                        "name": "J\u00f6nk\u00f6ping S.",
+                        "longName": "J\u00f6nk\u00f6ping S."
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-07-27T17:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "27.07.2026 19:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785171600000
+                }
+            ],
+            "parentLeagueId": 171,
+            "internalRank": 5,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "SWE",
             "id": 9089,
             "primaryId": 9089,
             "name": "Damallsvenskan",
@@ -307,51 +473,6 @@
         },
         {
             "isGroup": true,
-            "groupName": "A",
-            "ccode": "IND",
-            "id": 939505,
-            "primaryId": 10309,
-            "name": "Durand Cup Group A",
-            "matches": [
-                {
-                    "id": 5897856,
-                    "leagueId": 939505,
-                    "time": "28.07.2026 12:00",
-                    "home": {
-                        "id": 1782581,
-                        "score": 0,
-                        "name": "South United",
-                        "longName": "South United"
-                    },
-                    "away": {
-                        "id": 1660221,
-                        "score": 0,
-                        "name": "CISF Protectors",
-                        "longName": "CISF Protectors"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1",
-                    "status": {
-                        "utcTime": "2026-07-28T10:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "28.07.2026 12:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785232800000
-                }
-            ],
-            "parentLeagueId": 10309,
-            "parentLeagueName": "Durand Cup",
-            "internalRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "isGroup": true,
             "groupName": "D",
             "ccode": "IND",
             "id": 939510,
@@ -361,7 +482,7 @@
                 {
                     "id": 5897883,
                     "leagueId": 939510,
-                    "time": "28.07.2026 12:00",
+                    "time": "28.07.2026 13:30",
                     "home": {
                         "id": 1111274,
                         "score": 0,
@@ -378,21 +499,149 @@
                     "statusId": 1,
                     "tournamentStage": "1",
                     "status": {
-                        "utcTime": "2026-07-28T10:00:00.000Z",
+                        "utcTime": "2026-07-28T11:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "28.07.2026 12:00:00"
+                            "firstHalfStarted": "28.07.2026 13:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1785232800000
+                    "timeTS": 1785238200000
                 }
             ],
             "parentLeagueId": 10309,
             "parentLeagueName": "Durand Cup",
             "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "isGroup": true,
+            "groupName": "A",
+            "ccode": "IND",
+            "id": 939505,
+            "primaryId": 10309,
+            "name": "Durand Cup Group A",
+            "matches": [
+                {
+                    "id": 5897856,
+                    "leagueId": 939505,
+                    "time": "28.07.2026 16:00",
+                    "home": {
+                        "id": 1782581,
+                        "score": 0,
+                        "name": "South United",
+                        "longName": "South United"
+                    },
+                    "away": {
+                        "id": 1660221,
+                        "score": 0,
+                        "name": "CISF Protectors",
+                        "longName": "CISF Protectors"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-07-28T14:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "28.07.2026 16:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785247200000
+                }
+            ],
+            "parentLeagueId": 10309,
+            "parentLeagueName": "Durand Cup",
+            "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "POL",
+            "id": 937879,
+            "primaryId": 196,
+            "name": "Ekstraklasa",
+            "matches": [
+                {
+                    "id": 5803906,
+                    "leagueId": 937879,
+                    "time": "27.07.2026 19:00",
+                    "home": {
+                        "id": 8021,
+                        "score": 0,
+                        "name": "Zag\u0142\u0119bie Lubin",
+                        "longName": "Zag\u0142\u0119bie Lubin"
+                    },
+                    "away": {
+                        "id": 8028,
+                        "score": 0,
+                        "name": "Piast Gliwice",
+                        "longName": "Piast Gliwice"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-07-27T17:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "27.07.2026 19:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785171600000
+                }
+            ],
+            "parentLeagueId": 196,
+            "internalRank": 10,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "NOR",
+            "id": 59,
+            "primaryId": 59,
+            "name": "Eliteserien",
+            "matches": [
+                {
+                    "id": 5104956,
+                    "leagueId": 59,
+                    "time": "27.07.2026 19:00",
+                    "home": {
+                        "id": 8422,
+                        "score": 0,
+                        "name": "Rosenborg",
+                        "longName": "Rosenborg"
+                    },
+                    "away": {
+                        "id": 8417,
+                        "score": 0,
+                        "name": "Fredrikstad",
+                        "longName": "Fredrikstad"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "15",
+                    "status": {
+                        "utcTime": "2026-07-27T17:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "27.07.2026 19:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785171600000
+                }
+            ],
+            "internalRank": 10,
             "simpleLeague": false
         },
         {
@@ -435,6 +684,79 @@
             ],
             "parentLeagueId": 338,
             "internalRank": 7,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "BUL",
+            "id": 936550,
+            "primaryId": 270,
+            "name": "First Professional League",
+            "matches": [
+                {
+                    "id": 5760444,
+                    "leagueId": 936550,
+                    "time": "27.07.2026 18:00",
+                    "home": {
+                        "id": 46474,
+                        "score": 0,
+                        "name": "Dunav Ruse",
+                        "longName": "Dunav Ruse"
+                    },
+                    "away": {
+                        "id": 210173,
+                        "score": 0,
+                        "name": "Ludogorets Razgrad",
+                        "longName": "Ludogorets Razgrad"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "2",
+                    "status": {
+                        "utcTime": "2026-07-27T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "27.07.2026 18:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785168000000
+                },
+                {
+                    "id": 5760442,
+                    "leagueId": 936550,
+                    "time": "27.07.2026 20:15",
+                    "home": {
+                        "id": 10144,
+                        "score": 0,
+                        "name": "CSKA Sofia",
+                        "longName": "CSKA Sofia"
+                    },
+                    "away": {
+                        "id": 10131,
+                        "score": 0,
+                        "name": "Botev Plovdiv",
+                        "longName": "Botev Plovdiv"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "2",
+                    "status": {
+                        "utcTime": "2026-07-27T18:15:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "27.07.2026 20:15:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785176100000
+                }
+            ],
+            "parentLeagueId": 270,
+            "internalRank": 11,
             "simpleLeague": false
         },
         {
@@ -501,7 +823,7 @@
                         "longName": "Montevideo Wanderers"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "7",
                     "status": {
                         "utcTime": "2026-07-27T22:30:00.000Z",
@@ -509,9 +831,15 @@
                             "firstHalfStarted": "28.07.2026 00:30:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1785191400000
                 }
@@ -1029,6 +1357,121 @@
             "simpleLeague": false
         },
         {
+            "ccode": "IDN",
+            "id": 941560,
+            "primaryId": 10059,
+            "name": "President's Cup Grp. A",
+            "matches": [
+                {
+                    "id": 5964440,
+                    "leagueId": 941560,
+                    "time": "28.07.2026 10:30",
+                    "home": {
+                        "id": 67386,
+                        "score": 0,
+                        "name": "Tampines Rovers FC",
+                        "longName": "Tampines Rovers FC"
+                    },
+                    "away": {
+                        "id": 165200,
+                        "score": 0,
+                        "name": "Arema",
+                        "longName": "Arema"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "2",
+                    "status": {
+                        "utcTime": "2026-07-28T08:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "28.07.2026 10:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785227400000
+                },
+                {
+                    "id": 5964441,
+                    "leagueId": 941560,
+                    "time": "28.07.2026 14:30",
+                    "home": {
+                        "id": 165158,
+                        "score": 0,
+                        "name": "Brunei DPMM",
+                        "longName": "Brunei DPMM"
+                    },
+                    "away": {
+                        "id": 165196,
+                        "score": 0,
+                        "name": "Persib Bandung",
+                        "longName": "Persib Bandung"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "2",
+                    "status": {
+                        "utcTime": "2026-07-28T12:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "28.07.2026 14:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785241800000
+                }
+            ],
+            "parentLeagueId": 10059,
+            "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "ARG",
+            "id": 916553,
+            "primaryId": 8965,
+            "name": "Primera Nacional",
+            "matches": [
+                {
+                    "id": 5113013,
+                    "leagueId": 916553,
+                    "time": "28.07.2026 01:00",
+                    "home": {
+                        "id": 213525,
+                        "score": 0,
+                        "name": "Atlanta",
+                        "longName": "Atlanta"
+                    },
+                    "away": {
+                        "id": 10099,
+                        "score": 0,
+                        "name": "Almagro",
+                        "longName": "Almagro"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "22",
+                    "status": {
+                        "utcTime": "2026-07-27T23:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "28.07.2026 01:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785193200000
+                }
+            ],
+            "parentLeagueId": 8965,
+            "internalRank": 8,
+            "simpleLeague": false
+        },
+        {
             "ccode": "URU",
             "id": 922761,
             "primaryId": 9122,
@@ -1068,6 +1511,151 @@
             ],
             "parentLeagueId": 9122,
             "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "SWE",
+            "id": 168,
+            "primaryId": 168,
+            "name": "Superettan",
+            "matches": [
+                {
+                    "id": 5125569,
+                    "leagueId": 168,
+                    "time": "27.07.2026 19:00",
+                    "home": {
+                        "id": 8527,
+                        "score": 0,
+                        "name": "\u00d6rebro",
+                        "longName": "\u00d6rebro"
+                    },
+                    "away": {
+                        "id": 6160,
+                        "score": 0,
+                        "name": "IK Oddevold",
+                        "longName": "IK Oddevold"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "16",
+                    "status": {
+                        "utcTime": "2026-07-27T17:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "27.07.2026 19:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785171600000
+                },
+                {
+                    "id": 5125570,
+                    "leagueId": 168,
+                    "time": "27.07.2026 19:05",
+                    "home": {
+                        "id": 8641,
+                        "score": 0,
+                        "name": "\u00d6sters IF",
+                        "longName": "\u00d6sters IF"
+                    },
+                    "away": {
+                        "id": 6692,
+                        "score": 0,
+                        "name": "Varbergs BoIS FC",
+                        "longName": "Varbergs BoIS FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "16",
+                    "status": {
+                        "utcTime": "2026-07-27T17:05:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "27.07.2026 19:05:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785171900000
+                }
+            ],
+            "internalRank": 8,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "ROU",
+            "id": 938428,
+            "primaryId": 189,
+            "name": "Superliga",
+            "matches": [
+                {
+                    "id": 5853440,
+                    "leagueId": 938428,
+                    "time": "27.07.2026 17:30",
+                    "home": {
+                        "id": 9731,
+                        "score": 0,
+                        "name": "CFR Cluj",
+                        "longName": "CFR Cluj"
+                    },
+                    "away": {
+                        "id": 405332,
+                        "score": 0,
+                        "name": "FC Voluntari",
+                        "longName": "FC Voluntari"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "2",
+                    "status": {
+                        "utcTime": "2026-07-27T15:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "27.07.2026 17:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785166200000
+                },
+                {
+                    "id": 5853445,
+                    "leagueId": 938428,
+                    "time": "27.07.2026 20:30",
+                    "home": {
+                        "id": 188191,
+                        "score": 0,
+                        "name": "Botosani",
+                        "longName": "Botosani"
+                    },
+                    "away": {
+                        "id": 9738,
+                        "score": 0,
+                        "name": "Rapid Bucuresti",
+                        "longName": "Rapid Bucuresti"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "2",
+                    "status": {
+                        "utcTime": "2026-07-27T18:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "27.07.2026 20:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785177000000
+                }
+            ],
+            "parentLeagueId": 189,
+            "internalRank": 10,
             "simpleLeague": false
         },
         {
@@ -1171,515 +1759,6 @@
                 }
             ],
             "internalRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "SWE",
-            "id": 931430,
-            "primaryId": 171,
-            "name": "Cup",
-            "matches": [
-                {
-                    "id": 5629962,
-                    "leagueId": 931430,
-                    "time": "27.07.2026 19:00",
-                    "home": {
-                        "id": 610365,
-                        "score": 0,
-                        "name": "IFK Sk\u00f6vde FK",
-                        "longName": "IFK Sk\u00f6vde FK"
-                    },
-                    "away": {
-                        "id": 8510,
-                        "score": 0,
-                        "name": "J\u00f6nk\u00f6ping S.",
-                        "longName": "J\u00f6nk\u00f6ping S."
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1",
-                    "status": {
-                        "utcTime": "2026-07-27T17:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "27.07.2026 19:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785171600000
-                }
-            ],
-            "parentLeagueId": 171,
-            "internalRank": 5,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "SWE",
-            "id": 168,
-            "primaryId": 168,
-            "name": "Superettan",
-            "matches": [
-                {
-                    "id": 5125569,
-                    "leagueId": 168,
-                    "time": "27.07.2026 19:00",
-                    "home": {
-                        "id": 8527,
-                        "score": 0,
-                        "name": "\u00d6rebro",
-                        "longName": "\u00d6rebro"
-                    },
-                    "away": {
-                        "id": 6160,
-                        "score": 0,
-                        "name": "IK Oddevold",
-                        "longName": "IK Oddevold"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "16",
-                    "status": {
-                        "utcTime": "2026-07-27T17:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "27.07.2026 19:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785171600000
-                },
-                {
-                    "id": 5125570,
-                    "leagueId": 168,
-                    "time": "27.07.2026 19:05",
-                    "home": {
-                        "id": 8641,
-                        "score": 0,
-                        "name": "\u00d6sters IF",
-                        "longName": "\u00d6sters IF"
-                    },
-                    "away": {
-                        "id": 6692,
-                        "score": 0,
-                        "name": "Varbergs BoIS FC",
-                        "longName": "Varbergs BoIS FC"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "16",
-                    "status": {
-                        "utcTime": "2026-07-27T17:05:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "27.07.2026 19:05:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785171900000
-                }
-            ],
-            "internalRank": 8,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "NOR",
-            "id": 203,
-            "primaryId": 203,
-            "name": "1. Divisjon",
-            "matches": [
-                {
-                    "id": 5105199,
-                    "leagueId": 203,
-                    "time": "27.07.2026 19:00",
-                    "home": {
-                        "id": 9918,
-                        "score": 0,
-                        "name": "Stab\u00e6k",
-                        "longName": "Stab\u00e6k"
-                    },
-                    "away": {
-                        "id": 7937,
-                        "score": 0,
-                        "name": "H\u00f8dd",
-                        "longName": "H\u00f8dd"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "15",
-                    "status": {
-                        "utcTime": "2026-07-27T17:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "27.07.2026 19:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785171600000
-                }
-            ],
-            "internalRank": 9,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "ARG",
-            "id": 916553,
-            "primaryId": 8965,
-            "name": "Primera Nacional",
-            "matches": [
-                {
-                    "id": 5113013,
-                    "leagueId": 916553,
-                    "time": "28.07.2026 01:00",
-                    "home": {
-                        "id": 213525,
-                        "score": 0,
-                        "name": "Atlanta",
-                        "longName": "Atlanta"
-                    },
-                    "away": {
-                        "id": 10099,
-                        "score": 0,
-                        "name": "Almagro",
-                        "longName": "Almagro"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "22",
-                    "status": {
-                        "utcTime": "2026-07-27T23:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "28.07.2026 01:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785193200000
-                }
-            ],
-            "parentLeagueId": 8965,
-            "internalRank": 8,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "CZE",
-            "id": 938182,
-            "primaryId": 122,
-            "name": "1. Liga",
-            "matches": [
-                {
-                    "id": 5943685,
-                    "leagueId": 938182,
-                    "time": "27.07.2026 18:00",
-                    "home": {
-                        "id": 106189,
-                        "score": 0,
-                        "name": "Artis Brno",
-                        "longName": "Artis Brno"
-                    },
-                    "away": {
-                        "id": 10180,
-                        "score": 0,
-                        "name": "Mlada Boleslav",
-                        "longName": "Mlada Boleslav"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1",
-                    "status": {
-                        "utcTime": "2026-07-27T16:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "27.07.2026 18:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785168000000
-                }
-            ],
-            "parentLeagueId": 122,
-            "internalRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "SWE",
-            "id": 67,
-            "primaryId": 67,
-            "name": "Allsvenskan",
-            "matches": [
-                {
-                    "id": 5107542,
-                    "leagueId": 67,
-                    "time": "27.07.2026 19:00",
-                    "home": {
-                        "id": 8428,
-                        "score": 0,
-                        "name": "H\u00e4cken",
-                        "longName": "H\u00e4cken"
-                    },
-                    "away": {
-                        "id": 8349,
-                        "score": 0,
-                        "name": "AIK",
-                        "longName": "AIK"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "14",
-                    "status": {
-                        "utcTime": "2026-07-27T17:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "27.07.2026 19:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785171600000
-                }
-            ],
-            "internalRank": 10,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "POL",
-            "id": 937879,
-            "primaryId": 196,
-            "name": "Ekstraklasa",
-            "matches": [
-                {
-                    "id": 5803906,
-                    "leagueId": 937879,
-                    "time": "27.07.2026 19:00",
-                    "home": {
-                        "id": 8021,
-                        "score": 0,
-                        "name": "Zag\u0142\u0119bie Lubin",
-                        "longName": "Zag\u0142\u0119bie Lubin"
-                    },
-                    "away": {
-                        "id": 8028,
-                        "score": 0,
-                        "name": "Piast Gliwice",
-                        "longName": "Piast Gliwice"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1",
-                    "status": {
-                        "utcTime": "2026-07-27T17:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "27.07.2026 19:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785171600000
-                }
-            ],
-            "parentLeagueId": 196,
-            "internalRank": 10,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "NOR",
-            "id": 59,
-            "primaryId": 59,
-            "name": "Eliteserien",
-            "matches": [
-                {
-                    "id": 5104956,
-                    "leagueId": 59,
-                    "time": "27.07.2026 19:00",
-                    "home": {
-                        "id": 8422,
-                        "score": 0,
-                        "name": "Rosenborg",
-                        "longName": "Rosenborg"
-                    },
-                    "away": {
-                        "id": 8417,
-                        "score": 0,
-                        "name": "Fredrikstad",
-                        "longName": "Fredrikstad"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "15",
-                    "status": {
-                        "utcTime": "2026-07-27T17:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "27.07.2026 19:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785171600000
-                }
-            ],
-            "internalRank": 10,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "BUL",
-            "id": 936550,
-            "primaryId": 270,
-            "name": "First Professional League",
-            "matches": [
-                {
-                    "id": 5760444,
-                    "leagueId": 936550,
-                    "time": "27.07.2026 18:00",
-                    "home": {
-                        "id": 46474,
-                        "score": 0,
-                        "name": "Dunav Ruse",
-                        "longName": "Dunav Ruse"
-                    },
-                    "away": {
-                        "id": 210173,
-                        "score": 0,
-                        "name": "Ludogorets Razgrad",
-                        "longName": "Ludogorets Razgrad"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "2",
-                    "status": {
-                        "utcTime": "2026-07-27T16:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "27.07.2026 18:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785168000000
-                },
-                {
-                    "id": 5760442,
-                    "leagueId": 936550,
-                    "time": "27.07.2026 20:15",
-                    "home": {
-                        "id": 10144,
-                        "score": 0,
-                        "name": "CSKA Sofia",
-                        "longName": "CSKA Sofia"
-                    },
-                    "away": {
-                        "id": 10131,
-                        "score": 0,
-                        "name": "Botev Plovdiv",
-                        "longName": "Botev Plovdiv"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "2",
-                    "status": {
-                        "utcTime": "2026-07-27T18:15:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "27.07.2026 20:15:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785176100000
-                }
-            ],
-            "parentLeagueId": 270,
-            "internalRank": 11,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "ROU",
-            "id": 938428,
-            "primaryId": 189,
-            "name": "Superliga",
-            "matches": [
-                {
-                    "id": 5853440,
-                    "leagueId": 938428,
-                    "time": "27.07.2026 17:30",
-                    "home": {
-                        "id": 9731,
-                        "score": 0,
-                        "name": "CFR Cluj",
-                        "longName": "CFR Cluj"
-                    },
-                    "away": {
-                        "id": 405332,
-                        "score": 0,
-                        "name": "FC Voluntari",
-                        "longName": "FC Voluntari"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "2",
-                    "status": {
-                        "utcTime": "2026-07-27T15:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "27.07.2026 17:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785166200000
-                },
-                {
-                    "id": 5853445,
-                    "leagueId": 938428,
-                    "time": "27.07.2026 20:30",
-                    "home": {
-                        "id": 188191,
-                        "score": 0,
-                        "name": "Botosani",
-                        "longName": "Botosani"
-                    },
-                    "away": {
-                        "id": 9738,
-                        "score": 0,
-                        "name": "Rapid Bucuresti",
-                        "longName": "Rapid Bucuresti"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "2",
-                    "status": {
-                        "utcTime": "2026-07-27T18:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "27.07.2026 20:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785177000000
-                }
-            ],
-            "parentLeagueId": 189,
-            "internalRank": 10,
             "simpleLeague": false
         },
         {
@@ -2099,6 +2178,47 @@
                         "finished": false
                     },
                     "timeTS": 1785178800000
+                }
+            ],
+            "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "CHI",
+            "id": 273,
+            "primaryId": 273,
+            "name": "Primera Divisi\u00f3n",
+            "matches": [
+                {
+                    "id": 1000013176,
+                    "leagueId": 273,
+                    "time": "28.07.2026 01:00",
+                    "home": {
+                        "id": 192435,
+                        "score": 0,
+                        "name": "Union La Calera",
+                        "longName": "Union La Calera"
+                    },
+                    "away": {
+                        "id": 1890,
+                        "score": 0,
+                        "name": "Everton CD",
+                        "longName": "Everton CD"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "16",
+                    "status": {
+                        "utcTime": "2026-07-27T23:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "28.07.2026 01:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785193200000
                 }
             ],
             "internalRank": 0,
