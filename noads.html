@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Search</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0f0f0f;color:#fff;min-height:100vh}
+.header{position:sticky;top:0;z-index:10;background:#0f0f0f;padding:16px 24px;border-bottom:1px solid #2a2a2a}
+.header-inner{max-width:1200px;margin:0 auto;display:flex;gap:12px;align-items:center}
+.logo{font-size:1.3rem;font-weight:700;color:#ff0000;white-space:nowrap}
+.search-wrap{flex:1;display:flex;gap:0;max-width:640px;position:relative}
+.search-wrap input{flex:1;padding:10px 16px;border-radius:20px 0 0 20px;border:1px solid #2a2a2a;background:#121212;color:#fff;font-size:0.95rem;outline:none}
+.search-wrap input:focus{border-color:#3ea6ff}
+.search-wrap button{padding:10px 22px;border-radius:0 20px 20px 0;border:1px solid #2a2a2a;border-left:none;background:#2a2a2a;color:#fff;cursor:pointer;font-size:0.95rem;font-weight:600}
+.search-wrap button:hover{background:#3a3a3a}
+.mode-toggle{display:flex;gap:0;border:1px solid #333;border-radius:16px;overflow:hidden;flex-shrink:0}
+.mode-toggle button{padding:5px 14px;background:0 0;color:#888;border:none;cursor:pointer;font-size:0.8rem;transition:.15s}
+.mode-toggle button.active{background:#3ea6ff;color:#000;font-weight:600}
+.mode-toggle button:first-child{border-right:1px solid #333}
+.suggestions{position:absolute;top:100%;left:0;right:0;background:#1a1a1a;border:1px solid #2a2a2a;border-radius:0 0 12px 12px;max-height:360px;overflow-y:auto;display:none;z-index:100}
+.suggestions.show{display:block}
+.suggestions div{padding:10px 16px;cursor:pointer;font-size:0.9rem;color:#ddd}
+.suggestions div:hover{background:#2a2a2a}
+.suggestions .highlight{color:#aaa;font-size:0.75rem;margin-left:8px}
+.main{max-width:1200px;margin:0 auto;padding:24px}
+.player-wrap{width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:24px;display:none}
+.player-wrap.show{display:block}
+.player-wrap iframe{width:100%;height:100%;border:none}
+.results{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.video-card{background:#1a1a1a;border-radius:12px;overflow:hidden;cursor:pointer;transition:transform .15s}
+.video-card:hover{transform:scale(1.02)}
+.thumb-wrap{position:relative;width:100%;aspect-ratio:16/9;background:#2a2a2a}
+.thumb-wrap img{width:100%;height:100%;object-fit:cover}
+.duration{position:absolute;bottom:6px;right:6px;background:rgba(0,0,0,.85);color:#fff;padding:2px 6px;border-radius:4px;font-size:0.75rem;font-weight:600}
+.info{padding:12px}
+.title{font-size:0.95rem;font-weight:600;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:6px}
+.meta{font-size:0.8rem;color:#aaa;display:flex;gap:10px}
+.channel{color:#aaa;font-size:0.8rem;margin-top:2px}
+.loading{text-align:center;padding:40px;color:#888;font-size:1.1rem}
+.error{text-align:center;padding:40px;color:#ff4444}
+.empty{text-align:center;padding:60px 20px;color:#666}
+.empty-icon{font-size:3rem;margin-bottom:12px}
+.empty-text{font-size:1.1rem;margin-bottom:6px}
+.empty-sub{font-size:0.85rem;color:#555}
+.countries{max-width:1200px;margin:12px auto 0;padding:0 24px;display:flex;gap:6px;flex-wrap:wrap}
+.countries button{padding:4px 14px;border-radius:16px;border:1px solid #333;background:0 0;color:#aaa;cursor:pointer;font-size:0.8rem;transition:.15s}
+.countries button:hover{border-color:#3ea6ff;color:#3ea6ff}
+.countries button.active{background:#3ea6ff;color:#000;border-color:#3ea6ff;font-weight:600}
+.recent-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.card-sm{background:#1a1a1a;border-radius:8px;overflow:hidden;cursor:pointer;transition:transform .15s}
+.card-sm:hover{transform:scale(1.03)}
+.card-sm .thumb-wrap{position:relative;width:100%;aspect-ratio:16/9;background:#2a2a2a}
+.card-sm .thumb-wrap img{width:100%;height:100%;object-fit:cover}
+.card-sm .info{padding:8px}
+.card-sm .title{font-size:0.8rem;font-weight:600;line-height:1.2;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:3px}
+.card-sm .channel{font-size:0.7rem;color:#888}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <div class="logo">▶ YouTube</div>
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="Search videos..." autocomplete="off" oninput="autoSearch()" onkeydown="if(event.key==='Enter') search()" onblur="setTimeout(()=>suggestionsHide(),200)">
+      <button onclick="search()">Search</button>
+      <div class="suggestions" id="suggestions"></div>
+    </div>
+    <div class="mode-toggle">
+      <button class="active" id="modeVideo" onclick="setMode('video')">🎬 Video</button>
+      <button id="modeMusic" onclick="setMode('music')">🎵 Music</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="countries" id="countryBar">
+  <button class="active" onclick="loadTrending('US')">🇺🇸 US</button>
+  <button onclick="loadTrending('GB')">🇬🇧 UK</button>
+  <button onclick="loadTrending('CA')">🇨🇦 Canada</button>
+  <button onclick="loadTrending('AU')">🇦🇺 Australia</button>
+  <button onclick="loadTrending('DE')">🇩🇪 Germany</button>
+  <button onclick="loadTrending('FR')">🇫🇷 France</button>
+  <button onclick="loadTrending('IN')">🇮🇳 India</button>
+  <button onclick="loadTrending('BR')">🇧🇷 Brazil</button>
+  <button onclick="loadTrending('JP')">🇯🇵 Japan</button>
+  <button onclick="loadTrending('KR')">🇰🇷 South Korea</button>
+  <button onclick="loadTrending('NP')">🇳🇵 Nepal</button>
+</div>
+<div class="countries" id="sportBar">
+  <button onclick="loadSport('football')">⚽ Football</button>
+  <button onclick="loadSport('cricket')">🏏 Cricket</button>
+  <button onclick="loadSport('tech')">💻 Tech</button>
+  <button onclick="loadSport('saas')">🚀 SaaS</button>
+  <button onclick="loadSport('blogging')">✍️ Blogging</button>
+  <button onclick="loadSport('adsense')">💰 AdSense</button>
+  <button onclick="loadSport('selfhelp')">📚 Self Help</button>
+</div>
+
+<div class="main">
+  <div id="resultsContainer">
+    <div class="empty">
+      <div class="empty-icon">🔍</div>
+      <div class="empty-text">Search YouTube</div>
+      <div class="empty-sub">Enter a query above to find videos</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const API_BASE = 'https://www.googleapis.com/youtube/v3';
+let apiKey = localStorage.getItem('ytApiKey') || '';
+let playMode = 'video';
+
+apiKey = 'AIzaSyBhPwlFOjLGeHtZE6NXr5bEihd0jn_KWWI';
+
+function setMode(m) {
+  playMode = m;
+  document.getElementById('modeVideo').classList.toggle('active', m === 'video');
+  document.getElementById('modeMusic').classList.toggle('active', m === 'music');
+}
+function getPlayerUrl(vid) {
+  return playMode === 'music' ? `https://music.youtube.com/watch?v=${vid}` : `https://hlsplayers.pages.dev/yt?url=${vid}`;
+}
+function playVideo(vid, title, channel, thumb) {
+  window.open(getPlayerUrl(vid), '_blank');
+  const recent = JSON.parse(localStorage.getItem('ytRecent') || '[]');
+  const existing = recent.findIndex(r => r.id === vid);
+  if (existing !== -1) recent.splice(existing, 1);
+  recent.unshift({ id: vid, title: decodeURIComponent(title), channel: decodeURIComponent(channel), thumb: decodeURIComponent(thumb), played: Date.now() });
+  if (recent.length > 30) recent.length = 30;
+  localStorage.setItem('ytRecent', JSON.stringify(recent));
+}
+function showRecent(container) {
+  const recent = JSON.parse(localStorage.getItem('ytRecent') || '[]');
+  if (!recent.length) return;
+  let html = '<div style="margin-bottom:16px;font-size:1.1rem;font-weight:600;color:#ccc">⏱️ Recently Played</div><div class="recent-grid">';
+  recent.forEach(r => {
+    html += `<div class="card-sm" onclick="playVideo('${r.id}','${encodeURIComponent(r.title)}','${encodeURIComponent(r.channel)}','${encodeURIComponent(r.thumb)}')">
+      <div class="thumb-wrap"><img src="${r.thumb}" alt="${r.title}" loading="lazy"></div>
+      <div class="info"><div class="title">${r.title}</div><div class="channel">${r.channel}</div></div>
+    </div>`;
+  });
+  html += '</div>';
+  container.innerHTML = html;
+}
+
+function formatDuration(iso) {
+  if (!iso) return '';
+  const m = iso.match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/);
+  if (!m) return iso;
+  const h = parseInt(m[1]||0), mi = parseInt(m[2]||0), s = parseInt(m[3]||0);
+  const p = n => n.toString().padStart(2,'0');
+  return h ? `${h}:${p(mi)}:${p(s)}` : `${mi}:${p(s)}`;
+}
+
+function formatCount(n) {
+  if (!n) return '';
+  if (n >= 1e6) return (n/1e6).toFixed(1)+'M';
+  if (n >= 1e3) return (n/1e3).toFixed(1)+'K';
+  return n.toString();
+}
+
+function timeAgo(dateStr) {
+  const d = new Date(dateStr);
+  const now = new Date();
+  const s = Math.floor((now - d) / 1000);
+  if (s < 60) return 'Just now';
+  const m = Math.floor(s / 60);
+  if (m < 60) return m + ' min ago';
+  const h = Math.floor(m / 60);
+  if (h < 24) return h + ' hour' + (h>1?'s':'') + ' ago';
+  const days = Math.floor(h / 24);
+  if (days < 30) return days + ' day' + (days>1?'s':'') + ' ago';
+  return d.toLocaleDateString();
+}
+
+    let searchTimer, suggestTimer;
+    function suggestionsHide() {
+      document.getElementById('suggestions').classList.remove('show');
+    }
+    function suggestionsShow(list) {
+      const el = document.getElementById('suggestions');
+      el.innerHTML = list.map(s => `<div onmousedown="suggestionPick('${s.replace(/'/g,"\\'")}')">${s}</div>`).join('');
+      el.classList.add('show');
+    }
+    function suggestionPick(q) {
+      document.getElementById('searchInput').value = q;
+      suggestionsHide();
+      search();
+    }
+    function fetchSuggestions(q) {
+      const prev = document.getElementById('suggestScript');
+      if (prev) prev.remove();
+      if (!q.trim()) { suggestionsHide(); return; }
+      window.suggestCallback = function(d) {
+        (d[1] && d[1].length) ? suggestionsShow(d[1]) : suggestionsHide();
+      };
+      const s = document.createElement('script');
+      s.id = 'suggestScript';
+      s.src = `https://suggestqueries.google.com/complete/search?client=youtube&ds=yt&q=${encodeURIComponent(q)}&callback=suggestCallback`;
+      document.body.appendChild(s);
+    }
+    function autoSearch() {
+      clearTimeout(searchTimer);
+      clearTimeout(suggestTimer);
+      const v = document.getElementById('searchInput').value.trim();
+      suggestTimer = setTimeout(() => fetchSuggestions(v), 200);
+      searchTimer = setTimeout(() => { if (v) search(); }, 400);
+    }
+
+    async function search() {
+  const query = document.getElementById('searchInput').value.trim();
+  if (!query) return;
+
+  if (!apiKey) {
+    document.getElementById('resultsContainer').innerHTML = `
+      <div class="error">⚠️ Please enter your YouTube Data API v3 key above</div>`;
+    return;
+  }
+
+  document.querySelectorAll('#countryBar button, #sportBar button').forEach(b => b.classList.remove('active'));
+
+  const container = document.getElementById('resultsContainer');
+  container.innerHTML = '<div class="loading">Searching...</div>';
+
+  try {
+    const searchUrl = `${API_BASE}/search?part=snippet&q=${encodeURIComponent(query)}&type=video&maxResults=50&key=${apiKey}`;
+    const searchRes = await fetch(searchUrl);
+    if (!searchRes.ok) {
+      const err = await searchRes.json();
+      throw new Error(err.error?.message || `HTTP ${searchRes.status}`);
+    }
+    const searchData = await searchRes.json();
+    const items = searchData.items || [];
+
+    if (!items.length) {
+      container.innerHTML = '<div class="empty"><div class="empty-icon">😕</div><div class="empty-text">No results found</div></div>';
+      return;
+    }
+
+    // Fetch video details (duration, stats) in batch
+    const ids = items.map(i => i.id.videoId).join(',');
+    const detailUrl = `${API_BASE}/videos?part=contentDetails,statistics&id=${ids}&key=${apiKey}`;
+    const detailRes = await fetch(detailUrl);
+    const detailData = await detailRes.json();
+    const detailsMap = {};
+    (detailData.items || []).forEach(v => { detailsMap[v.id] = v; });
+
+    let html = '<div class="results">';
+    items.forEach(item => {
+      const vid = item.id.videoId;
+      const snip = item.snippet;
+      const detail = detailsMap[vid];
+      const duration = detail ? formatDuration(detail.contentDetails?.duration) : '';
+      const views = detail ? formatCount(parseInt(detail.statistics?.viewCount)) : '';
+      const published = timeAgo(snip.publishedAt);
+      const thumb = snip.thumbnails?.maxres?.url || snip.thumbnails?.high?.url || snip.thumbnails?.medium?.url || snip.thumbnails?.default?.url;
+
+      html += `<div class="video-card" onclick="playVideo('${vid}','${encodeURIComponent(snip.title)}','${encodeURIComponent(snip.channelTitle)}','${encodeURIComponent(thumb)}')">
+        <div class="thumb-wrap">
+          <img src="${thumb}" alt="${snip.title}" loading="lazy">
+          ${duration ? `<div class="duration">${duration}</div>` : ''}
+        </div>
+        <div class="info">
+          <div class="title">${snip.title}</div>
+          <div class="channel">${snip.channelTitle}</div>
+          <div class="meta">${views ? views + ' views · ' : ''}${published}</div>
+        </div>
+      </div>`;
+    });
+    html += '</div>';
+    container.innerHTML = html;
+  } catch(e) {
+    container.innerHTML = `<div class="error">Error: ${e.message}</div>`;
+  }
+}
+
+    async function loadTrending(region) {
+      document.querySelectorAll('#countryBar button, #sportBar button').forEach(b => b.classList.remove('active'));
+      document.querySelector(`#countryBar button[onclick*="'${region}'"]`).classList.add('active');
+      document.getElementById('searchInput').value = '';
+      suggestionsHide();
+      const container = document.getElementById('resultsContainer');
+      container.innerHTML = '<div class="loading">Loading trending...</div>';
+      if (!apiKey) { container.innerHTML = '<div class="error">API key missing</div>'; return; }
+      try {
+        const url = `${API_BASE}/videos?part=snippet,contentDetails,statistics&chart=mostPopular&regionCode=${region}&maxResults=50&key=${apiKey}`;
+        const r = await fetch(url);
+        if (!r.ok) { const e = await r.json(); throw new Error(e.error?.message || `HTTP ${r.status}`); }
+        const d = await r.json();
+        const items = d.items || [];
+        if (!items.length) { container.innerHTML = '<div class="empty"><div class="empty-icon">😕</div><div class="empty-text">No trending found</div></div>'; return; }
+        let html = '<div class="results">';
+        items.forEach(item => {
+          const vid = item.id;
+          const snip = item.snippet;
+          const dur = formatDuration(item.contentDetails?.duration);
+          const views = formatCount(parseInt(item.statistics?.viewCount));
+          const pub = timeAgo(snip.publishedAt);
+          const thumb = snip.thumbnails?.maxres?.url || snip.thumbnails?.high?.url || snip.thumbnails?.medium?.url || snip.thumbnails?.default?.url;
+          html += `<div class="video-card" onclick="playVideo('${vid}','${encodeURIComponent(snip.title)}','${encodeURIComponent(snip.channelTitle)}','${encodeURIComponent(thumb)}')">
+            <div class="thumb-wrap"><img src="${thumb}" alt="${snip.title}" loading="lazy">${dur ? `<div class="duration">${dur}</div>` : ''}</div>
+            <div class="info"><div class="title">${snip.title}</div><div class="channel">${snip.channelTitle}</div><div class="meta">${views ? views+' views · ' : ''}${pub}</div></div>
+          </div>`;
+        });
+        html += '</div>';
+        container.innerHTML = html;
+      } catch(e) { container.innerHTML = `<div class="error">Error: ${e.message}</div>`; }
+    }
+
+    const recent = JSON.parse(localStorage.getItem('ytRecent') || '[]');
+    if (recent.length) {
+      showRecent(document.getElementById('resultsContainer'));
+      document.querySelector('#countryBar .active')?.classList.remove('active');
+    } else {
+      loadTrending('US');
+    }
+
+    async function loadSport(sport) {
+      document.querySelectorAll('#countryBar button, #sportBar button').forEach(b => b.classList.remove('active'));
+      document.querySelector(`#sportBar button[onclick*="loadSport('${sport}'"]`).classList.add('active');
+      document.getElementById('searchInput').value = '';
+      suggestionsHide();
+      const container = document.getElementById('resultsContainer');
+      container.innerHTML = '<div class="loading">Loading trending...</div>';
+      if (!apiKey) { container.innerHTML = '<div class="error">API key missing</div>'; return; }
+      try {
+        const q = sport === 'football' ? 'football highlights goals' : sport === 'cricket' ? 'cricket highlights match' : sport === 'tech' ? 'tech news gadgets reviews' : sport === 'saas' ? 'saas website builder tools review' : sport === 'blogging' ? 'blogging tips make money blogging' : sport === 'adsense' ? 'google adsense tips earnings' : 'best self help books personal development';
+        const publishedAfter = sport === 'football' ? new Date(Date.now() - 7200000).toISOString() : '';
+        let url = `${API_BASE}/search?part=snippet&q=${encodeURIComponent(q)}&type=video&order=date&maxResults=50&key=${apiKey}`;
+        if (publishedAfter) url += `&publishedAfter=${publishedAfter}`;
+        const r = await fetch(url);
+        if (!r.ok) { const e = await r.json(); throw new Error(e.error?.message || `HTTP ${r.status}`); }
+        const d = await r.json();
+        const items = d.items || [];
+        if (!items.length) { container.innerHTML = '<div class="empty"><div class="empty-icon">😕</div><div class="empty-text">No videos found</div></div>'; return; }
+        const ids = items.map(i => i.id.videoId).join(',');
+        const dr = await fetch(`${API_BASE}/videos?part=contentDetails,statistics&id=${ids}&key=${apiKey}`);
+        const dd = await dr.json();
+        const dm = {}; (dd.items || []).forEach(v => { dm[v.id] = v; });
+        let html = '<div class="results">';
+        items.forEach(item => {
+          const vid = item.id.videoId;
+          const snip = item.snippet;
+          const det = dm[vid];
+          const dur = det ? formatDuration(det.contentDetails?.duration) : '';
+          const views = det ? formatCount(parseInt(det.statistics?.viewCount)) : '';
+          const pub = timeAgo(snip.publishedAt);
+          const thumb = snip.thumbnails?.maxres?.url || snip.thumbnails?.high?.url || snip.thumbnails?.medium?.url || snip.thumbnails?.default?.url;
+          html += `<div class="video-card" onclick="playVideo('${vid}','${encodeURIComponent(snip.title)}','${encodeURIComponent(snip.channelTitle)}','${encodeURIComponent(thumb)}')">
+            <div class="thumb-wrap"><img src="${thumb}" alt="${snip.title}" loading="lazy">${dur ? `<div class="duration">${dur}</div>` : ''}</div>
+            <div class="info"><div class="title">${snip.title}</div><div class="channel">${snip.channelTitle}</div><div class="meta">${views ? views+' views · ' : ''}${pub}</div></div>
+          </div>`;
+        });
+        html += '</div>';
+        container.innerHTML = html;
+      } catch(e) { container.innerHTML = `<div class="error">Error: ${e.message}</div>`; }
+    }
+
+function showToast(msg) {
+  const t = document.createElement('div');
+  t.textContent = msg;
+  Object.assign(t.style, {position:'fixed',bottom:'20px',left:'50%',transform:'translateX(-50%)',background:'#2a2a2a',color:'#fff',padding:'10px 20px',borderRadius:'8px',fontSize:'0.85rem',zIndex:'9999',transition:'opacity .3s',boxShadow:'0 4px 12px rgba(0,0,0,.4)'});
+  document.body.appendChild(t);
+  setTimeout(() => { t.style.opacity = '0'; setTimeout(() => t.remove(), 300); }, 2000);
+}
+</script>
+</body>
+</html>
