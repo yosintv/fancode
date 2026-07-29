@@ -863,6 +863,37 @@
                     "timeTS": 1785348000000
                 },
                 {
+                    "id": 5978391,
+                    "leagueId": 915708,
+                    "time": "29.07.2026 20:30",
+                    "home": {
+                        "id": 9906,
+                        "score": 0,
+                        "name": "Atletico Madrid",
+                        "longName": "Atletico Madrid"
+                    },
+                    "away": {
+                        "id": 8305,
+                        "score": 0,
+                        "name": "Getafe",
+                        "longName": "Getafe"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-07-29T18:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "29.07.2026 20:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785349800000
+                },
+                {
                     "id": 5898825,
                     "leagueId": 915708,
                     "time": "29.07.2026 20:30",
@@ -1047,37 +1078,6 @@
                         "finished": false
                     },
                     "timeTS": 1785367800000
-                },
-                {
-                    "id": 5963449,
-                    "leagueId": 915708,
-                    "time": "30.07.2026 02:00",
-                    "home": {
-                        "id": 207967,
-                        "score": 0,
-                        "name": "MLS All-Stars",
-                        "longName": "MLS All-Stars"
-                    },
-                    "away": {
-                        "id": 1394436,
-                        "score": 0,
-                        "name": "Liga MX All-Stars",
-                        "longName": "Liga MX All-Stars"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1",
-                    "status": {
-                        "utcTime": "2026-07-30T00:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "30.07.2026 02:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785369600000
                 },
                 {
                     "id": 5899060,
@@ -1721,6 +1721,48 @@
             ],
             "parentLeagueId": 112,
             "internalRank": 9,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "INT",
+            "id": 942131,
+            "primaryId": 13169,
+            "name": "MLS All-Star Game",
+            "matches": [
+                {
+                    "id": 5963449,
+                    "leagueId": 942131,
+                    "time": "30.07.2026 02:00",
+                    "home": {
+                        "id": 207967,
+                        "score": 0,
+                        "name": "MLS All-Stars",
+                        "longName": "MLS All-Stars"
+                    },
+                    "away": {
+                        "id": 1394436,
+                        "score": 0,
+                        "name": "Liga MX All-Stars",
+                        "longName": "Liga MX All-Stars"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "final",
+                    "status": {
+                        "utcTime": "2026-07-30T00:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "30.07.2026 02:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785369600000
+                }
+            ],
+            "parentLeagueId": 13169,
+            "internalRank": 0,
             "simpleLeague": false
         },
         {
