@@ -816,64 +816,44 @@
                     "timeTS": 1785264300000
                 },
                 {
-                    "id": 5960988,
-                    "leagueId": 915708,
-                    "time": "29.07.2026 11:00",
-                    "home": {
-                        "id": 9910,
-                        "score": 0,
-                        "name": "Celta Vigo",
-                        "longName": "Celta Vigo"
-                    },
-                    "away": {
-                        "id": 1786,
-                        "score": 0,
-                        "name": "Academico Viseu",
-                        "longName": "Academico Viseu"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1",
-                    "status": {
-                        "utcTime": "2026-07-29T09:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "29.07.2026 11:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785315600000
-                },
-                {
                     "id": 5199447,
                     "leagueId": 915708,
                     "time": "29.07.2026 11:45",
                     "home": {
                         "id": 10164,
-                        "score": 0,
+                        "score": 1,
                         "name": "Sydney FC",
+                        "penScore": 2,
                         "longName": "Sydney FC"
                     },
                     "away": {
                         "id": 8586,
-                        "score": 0,
+                        "score": 1,
                         "name": "Tottenham",
+                        "penScore": 4,
                         "longName": "Tottenham Hotspur"
                     },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "eliminatedTeamId": 10164,
+                    "statusId": 13,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-07-29T09:45:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "29.07.2026 11:45:00"
+                            "firstHalfStarted": "29.07.2026 11:45:06",
+                            "secondHalfStarted": "29.07.2026 12:47:19"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "Pen",
+                            "shortKey": "penalties_short",
+                            "long": "After penalties",
+                            "longKey": "afterpenalties"
+                        }
                     },
                     "timeTS": 1785318300000
                 },
@@ -883,7 +863,7 @@
                     "time": "29.07.2026 12:00",
                     "home": {
                         "id": 4692,
-                        "score": 0,
+                        "score": 1,
                         "name": "Cerezo Osaka",
                         "longName": "Cerezo Osaka"
                     },
@@ -894,17 +874,26 @@
                         "longName": "Borussia Dortmund"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-07-29T10:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "29.07.2026 12:00:00"
+                            "firstHalfStarted": "29.07.2026 12:05:51",
+                            "secondHalfStarted": "29.07.2026 13:08:28"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1785319200000
                 },
@@ -951,7 +940,7 @@
                     "time": "29.07.2026 15:00",
                     "home": {
                         "id": 8178,
-                        "score": 0,
+                        "score": 4,
                         "name": "Leverkusen",
                         "longName": "Bayer Leverkusen"
                     },
@@ -962,50 +951,28 @@
                         "longName": "Genk"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-07-29T13:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "29.07.2026 15:00:00"
+                            "firstHalfStarted": "29.07.2026 15:02:23",
+                            "secondHalfStarted": "29.07.2026 16:04:40"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "4 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1785330000000
-                },
-                {
-                    "id": 5900858,
-                    "leagueId": 915708,
-                    "time": "29.07.2026 16:30",
-                    "home": {
-                        "id": 9891,
-                        "score": 0,
-                        "name": "Frosinone",
-                        "longName": "Frosinone"
-                    },
-                    "away": {
-                        "id": 8482,
-                        "score": 0,
-                        "name": "Sambenedettese",
-                        "longName": "Sambenedettese"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1",
-                    "status": {
-                        "utcTime": "2026-07-29T14:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "29.07.2026 16:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785335400000
                 }
             ],
             "parentLeagueId": 489,
@@ -1033,12 +1000,12 @@
                     },
                     "away": {
                         "id": 49785,
-                        "score": 4,
+                        "score": 5,
                         "name": "FC Motagua",
                         "longName": "FC Motagua"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-07-29T00:00:00.000Z",
@@ -1047,19 +1014,16 @@
                             "secondHalfStarted": "29.07.2026 03:08:20"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "0 - 4",
-                        "liveTime": {
-                            "short": "87\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "86:29",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "0 - 5",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1785283200000
@@ -1084,28 +1048,39 @@
                     "time": "29.07.2026 04:00",
                     "home": {
                         "id": 165479,
-                        "score": 0,
+                        "score": 4,
                         "name": "Diriang\u00e9n FC",
                         "longName": "Diriang\u00e9n FC"
                     },
                     "away": {
                         "id": 165476,
-                        "score": 0,
+                        "score": 2,
                         "name": "CD Plaza Amador",
+                        "redCards": 1,
                         "longName": "CD Plaza Amador"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-07-29T02:00:00.000Z",
+                        "numberOfAwayRedCards": 1,
                         "halfs": {
-                            "firstHalfStarted": "29.07.2026 04:00:00"
+                            "firstHalfStarted": "29.07.2026 04:06:53",
+                            "secondHalfStarted": "29.07.2026 05:11:07"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "4 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1785290400000
                 }
@@ -1129,7 +1104,7 @@
                     "time": "29.07.2026 04:00",
                     "home": {
                         "id": 6336,
-                        "score": 0,
+                        "score": 2,
                         "name": "CD Olimpia",
                         "longName": "CD Olimpia"
                     },
@@ -1140,17 +1115,26 @@
                         "longName": "Deportivo Mixco"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-07-29T02:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "29.07.2026 04:00:00"
+                            "firstHalfStarted": "29.07.2026 04:06:42",
+                            "secondHalfStarted": "29.07.2026 05:11:07"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1785290400000
                 }
@@ -1346,29 +1330,38 @@
                     "time": "29.07.2026 16:30",
                     "home": {
                         "id": 1077223,
-                        "score": 0,
+                        "score": 1,
                         "name": "Dukagjini",
                         "longName": "Dukagjini"
                     },
                     "away": {
                         "id": 7896,
-                        "score": 0,
+                        "score": 5,
                         "name": "Lugano",
                         "longName": "Lugano"
                     },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "eliminatedTeamId": 1077223,
+                    "statusId": 6,
                     "tournamentStage": "2",
                     "status": {
                         "utcTime": "2026-07-29T14:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "29.07.2026 16:30:00"
+                            "firstHalfStarted": "29.07.2026 16:30:52",
+                            "secondHalfStarted": "29.07.2026 17:33:08"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false,
-                        "aggregatedStr": "0 - 1"
+                        "awarded": false,
+                        "scoreStr": "1 - 5",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        },
+                        "aggregatedStr": "1 - 6"
                     },
                     "timeTS": 1785335400000
                 }
@@ -1484,8 +1477,8 @@
                         "name": "Deportivo Pasto",
                         "longName": "Deportivo Pasto"
                     },
-                    "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "eliminatedTeamId": 193032,
+                    "statusId": 6,
                     "tournamentStage": "1/16",
                     "status": {
                         "utcTime": "2026-07-29T00:00:00.000Z",
@@ -1495,19 +1488,16 @@
                             "secondHalfStarted": "29.07.2026 03:06:02"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
+                        "awarded": false,
                         "scoreStr": "0 - 3",
-                        "liveTime": {
-                            "short": "89\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "88:47",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         },
                         "aggregatedStr": "1 - 3"
                     },
@@ -1525,34 +1515,32 @@
                     },
                     "away": {
                         "id": 6368,
-                        "score": 0,
+                        "score": 2,
                         "name": "Atletico Nacional",
                         "longName": "Atletico Nacional"
                     },
-                    "eliminatedTeamId": null,
-                    "statusId": 2,
+                    "eliminatedTeamId": 193030,
+                    "statusId": 6,
                     "tournamentStage": "1/16",
                     "status": {
                         "utcTime": "2026-07-29T01:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "29.07.2026 03:31:13"
+                            "firstHalfStarted": "29.07.2026 03:31:13",
+                            "secondHalfStarted": "29.07.2026 04:34:31"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "0 - 0",
-                        "liveTime": {
-                            "short": "19\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "18:36",
-                            "longKey": "",
-                            "maxTime": 45,
-                            "basePeriod": 45,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "0 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         },
-                        "aggregatedStr": "0 - 2"
+                        "aggregatedStr": "0 - 4"
                     },
                     "timeTS": 1785288600000
                 }
@@ -1575,28 +1563,37 @@
                     "time": "29.07.2026 15:30",
                     "home": {
                         "id": 1399409,
-                        "score": 0,
+                        "score": 2,
                         "name": "Indian Air Force",
                         "longName": "Indian Air Force"
                     },
                     "away": {
                         "id": 2068848,
-                        "score": 0,
+                        "score": 1,
                         "name": "Defenders FC",
                         "longName": "Defenders FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "2",
                     "status": {
                         "utcTime": "2026-07-29T13:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "29.07.2026 15:30:00"
+                            "firstHalfStarted": "29.07.2026 15:30:15",
+                            "secondHalfStarted": "29.07.2026 16:35:33"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1785331800000
                 }
@@ -1698,7 +1695,7 @@
                     "time": "29.07.2026 02:15",
                     "home": {
                         "id": 10086,
-                        "score": 2,
+                        "score": 3,
                         "name": "Argentinos Juniors",
                         "longName": "Argentinos Juniors"
                     },
@@ -1709,7 +1706,7 @@
                         "longName": "Estudiantes de Rio Cuarto"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "2",
                     "status": {
                         "utcTime": "2026-07-29T00:15:00.000Z",
@@ -1718,19 +1715,16 @@
                             "secondHalfStarted": "29.07.2026 03:21:32"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "2 - 0",
-                        "liveTime": {
-                            "short": "74\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "73:17",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "3 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1785284100000
@@ -1752,7 +1746,7 @@
                         "longName": "Racing Club"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "2",
                     "status": {
                         "utcTime": "2026-07-29T00:15:00.000Z",
@@ -1761,19 +1755,16 @@
                             "secondHalfStarted": "29.07.2026 03:22:48"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
+                        "awarded": false,
                         "scoreStr": "0 - 0",
-                        "liveTime": {
-                            "short": "73\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "72:01",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1785284100000
@@ -1845,28 +1836,37 @@
                     "time": "29.07.2026 10:30",
                     "home": {
                         "id": 165255,
-                        "score": 0,
+                        "score": 2,
                         "name": "Port FC",
                         "longName": "Port FC"
                     },
                     "away": {
                         "id": 165191,
-                        "score": 0,
+                        "score": 2,
                         "name": "Persija Jakarta",
                         "longName": "Persija Jakarta"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "2",
                     "status": {
                         "utcTime": "2026-07-29T08:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "29.07.2026 10:30:00"
+                            "firstHalfStarted": "29.07.2026 10:31:43",
+                            "secondHalfStarted": "29.07.2026 11:42:10"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1785313800000
                 },
@@ -1876,7 +1876,7 @@
                     "time": "29.07.2026 14:30",
                     "home": {
                         "id": 930525,
-                        "score": 0,
+                        "score": 1,
                         "name": "Persebaya Surabaya",
                         "longName": "Persebaya Surabaya"
                     },
@@ -1887,17 +1887,26 @@
                         "longName": "PSMS"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "2",
                     "status": {
                         "utcTime": "2026-07-29T12:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "29.07.2026 14:30:00"
+                            "firstHalfStarted": "29.07.2026 14:30:11",
+                            "secondHalfStarted": "29.07.2026 15:36:05"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1785328200000
                 }
@@ -2367,22 +2376,31 @@
                     },
                     "away": {
                         "id": 5876,
-                        "score": 0,
+                        "score": 3,
                         "name": "USA U20",
                         "longName": "USA U20"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "2",
                     "status": {
                         "utcTime": "2026-07-29T02:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "29.07.2026 04:00:00"
+                            "firstHalfStarted": "29.07.2026 04:00:08",
+                            "secondHalfStarted": "29.07.2026 05:04:28"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 3",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1785290400000
                 }
@@ -2414,7 +2432,7 @@
                         "name": "Nacional",
                         "longName": "Nacional"
                     },
-                    "eliminatedTeamId": null,
+                    "eliminatedTeamId": 8304,
                     "statusId": 6,
                     "tournamentStage": "Knockout Round Play-offs",
                     "status": {
@@ -2445,18 +2463,18 @@
                     "time": "29.07.2026 02:30",
                     "home": {
                         "id": 8514,
-                        "score": 2,
+                        "score": 4,
                         "name": "Santos FC",
                         "longName": "Santos FC"
                     },
                     "away": {
                         "id": 188213,
-                        "score": 1,
+                        "score": 2,
                         "name": "Universidad Central",
                         "longName": "Universidad Central"
                     },
-                    "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "eliminatedTeamId": 188213,
+                    "statusId": 6,
                     "tournamentStage": "Knockout Round Play-offs",
                     "status": {
                         "utcTime": "2026-07-29T00:30:00.000Z",
@@ -2465,21 +2483,18 @@
                             "secondHalfStarted": "29.07.2026 03:34:36"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "2 - 1",
-                        "liveTime": {
-                            "short": "61\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "60:13",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "4 - 2",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         },
-                        "aggregatedStr": "6 - 2"
+                        "aggregatedStr": "8 - 3"
                     },
                     "timeTS": 1785285000000
                 }
@@ -2501,18 +2516,20 @@
                     "time": "29.07.2026 12:00",
                     "home": {
                         "id": 187955,
-                        "score": 0,
+                        "score": 1,
                         "name": "Busan Transport Corp",
+                        "penScore": 4,
                         "longName": "Busan Transport Corp"
                     },
                     "away": {
                         "id": 1211057,
-                        "score": 0,
+                        "score": 1,
                         "name": "Jinju Citizen",
+                        "penScore": 5,
                         "longName": "Jinju Citizen"
                     },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "eliminatedTeamId": 187955,
+                    "statusId": 13,
                     "tournamentStage": "3rd Round",
                     "status": {
                         "utcTime": "2026-07-29T10:00:00.000Z",
@@ -2520,9 +2537,17 @@
                             "firstHalfStarted": "29.07.2026 12:00:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 1",
+                        "reason": {
+                            "short": "Pen",
+                            "shortKey": "penalties_short",
+                            "long": "After penalties",
+                            "longKey": "afterpenalties"
+                        }
                     },
                     "timeTS": 1785319200000
                 },
@@ -2538,12 +2563,12 @@
                     },
                     "away": {
                         "id": 1335275,
-                        "score": 0,
+                        "score": 1,
                         "name": "Dangjin Citizen",
                         "longName": "Dangjin Citizen"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "3rd Round",
                     "status": {
                         "utcTime": "2026-07-29T10:00:00.000Z",
@@ -2551,9 +2576,17 @@
                             "firstHalfStarted": "29.07.2026 12:00:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1785319200000
                 },
@@ -2563,18 +2596,18 @@
                     "time": "29.07.2026 12:00",
                     "home": {
                         "id": 429442,
-                        "score": 0,
+                        "score": 2,
                         "name": "Chungnam Asan FC",
                         "longName": "Chungnam Asan FC"
                     },
                     "away": {
                         "id": 930090,
-                        "score": 0,
+                        "score": 1,
                         "name": "Siheung Citizen",
                         "longName": "Siheung Citizen"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "3rd Round",
                     "status": {
                         "utcTime": "2026-07-29T10:00:00.000Z",
@@ -2582,9 +2615,17 @@
                             "firstHalfStarted": "29.07.2026 12:00:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1785319200000
                 },
@@ -2594,7 +2635,7 @@
                     "time": "29.07.2026 12:00",
                     "home": {
                         "id": 1150506,
-                        "score": 0,
+                        "score": 1,
                         "name": "Ulsan Citizen",
                         "longName": "Ulsan Citizen"
                     },
@@ -2605,7 +2646,7 @@
                         "longName": "Ulsan HD FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "3rd Round",
                     "status": {
                         "utcTime": "2026-07-29T10:00:00.000Z",
@@ -2613,9 +2654,17 @@
                             "firstHalfStarted": "29.07.2026 12:00:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1785319200000
                 },
@@ -2625,7 +2674,7 @@
                     "time": "29.07.2026 12:00",
                     "home": {
                         "id": 245905,
-                        "score": 0,
+                        "score": 1,
                         "name": "Gwangju FC",
                         "longName": "Gwangju FC"
                     },
@@ -2636,7 +2685,7 @@
                         "longName": "Cheonan City"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "3rd Round",
                     "status": {
                         "utcTime": "2026-07-29T10:00:00.000Z",
@@ -2644,9 +2693,17 @@
                             "firstHalfStarted": "29.07.2026 12:00:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1785319200000
                 },
@@ -2662,12 +2719,12 @@
                     },
                     "away": {
                         "id": 833649,
-                        "score": 0,
+                        "score": 1,
                         "name": "Gimpo FC",
                         "longName": "Gimpo FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "3rd Round",
                     "status": {
                         "utcTime": "2026-07-29T10:00:00.000Z",
@@ -2675,9 +2732,17 @@
                             "firstHalfStarted": "29.07.2026 12:00:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1785319200000
                 },
@@ -2687,18 +2752,18 @@
                     "time": "29.07.2026 12:00",
                     "home": {
                         "id": 133901,
-                        "score": 0,
+                        "score": 2,
                         "name": "Gimcheon Sangmu",
                         "longName": "Gimcheon Sangmu"
                     },
                     "away": {
                         "id": 187951,
-                        "score": 0,
+                        "score": 1,
                         "name": "Suwon FC",
                         "longName": "Suwon FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "3rd Round",
                     "status": {
                         "utcTime": "2026-07-29T10:00:00.000Z",
@@ -2706,9 +2771,17 @@
                             "firstHalfStarted": "29.07.2026 12:00:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1785319200000
                 },
@@ -2718,7 +2791,7 @@
                     "time": "29.07.2026 12:00",
                     "home": {
                         "id": 6092,
-                        "score": 0,
+                        "score": 2,
                         "name": "Busan I'Park",
                         "longName": "Busan I'Park"
                     },
@@ -2729,7 +2802,7 @@
                         "longName": "FC Seoul"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "3rd Round",
                     "status": {
                         "utcTime": "2026-07-29T10:00:00.000Z",
@@ -2737,9 +2810,17 @@
                             "firstHalfStarted": "29.07.2026 12:00:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "2 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1785319200000
                 },
@@ -2749,7 +2830,7 @@
                     "time": "29.07.2026 12:00",
                     "home": {
                         "id": 429441,
-                        "score": 0,
+                        "score": 3,
                         "name": "Bucheon FC 1995",
                         "longName": "Bucheon FC 1995"
                     },
@@ -2760,7 +2841,7 @@
                         "longName": "Paju Frontier"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "3rd Round",
                     "status": {
                         "utcTime": "2026-07-29T10:00:00.000Z",
@@ -2768,9 +2849,17 @@
                             "firstHalfStarted": "29.07.2026 12:00:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1785319200000
                 },
@@ -2780,18 +2869,18 @@
                     "time": "29.07.2026 12:30",
                     "home": {
                         "id": 833651,
-                        "score": 0,
+                        "score": 1,
                         "name": "Cheongju FC",
                         "longName": "Cheongju FC"
                     },
                     "away": {
                         "id": 429440,
-                        "score": 0,
+                        "score": 3,
                         "name": "FC Anyang",
                         "longName": "FC Anyang"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "3rd Round",
                     "status": {
                         "utcTime": "2026-07-29T10:30:00.000Z",
@@ -2799,9 +2888,17 @@
                             "firstHalfStarted": "29.07.2026 12:30:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "1 - 3",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1785321000000
                 },
@@ -2811,18 +2908,20 @@
                     "time": "29.07.2026 12:30",
                     "home": {
                         "id": 133898,
-                        "score": 0,
+                        "score": 3,
                         "name": "Jeju SK",
+                        "penScore": 4,
                         "longName": "Jeju SK"
                     },
                     "away": {
                         "id": 739800,
-                        "score": 0,
+                        "score": 3,
                         "name": "Hwaseong FC",
+                        "penScore": 3,
                         "longName": "Hwaseong FC"
                     },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "eliminatedTeamId": 739800,
+                    "statusId": 13,
                     "tournamentStage": "3rd Round",
                     "status": {
                         "utcTime": "2026-07-29T10:30:00.000Z",
@@ -2830,9 +2929,17 @@
                             "firstHalfStarted": "29.07.2026 12:30:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "3 - 3",
+                        "reason": {
+                            "short": "Pen",
+                            "shortKey": "penalties_short",
+                            "long": "After penalties",
+                            "longKey": "afterpenalties"
+                        }
                     },
                     "timeTS": 1785321000000
                 },
@@ -2848,12 +2955,12 @@
                     },
                     "away": {
                         "id": 6614,
-                        "score": 0,
+                        "score": 1,
                         "name": "Seongnam FC",
                         "longName": "Seongnam FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 6,
                     "tournamentStage": "3rd Round",
                     "status": {
                         "utcTime": "2026-07-29T11:00:00.000Z",
@@ -2861,9 +2968,17 @@
                             "firstHalfStarted": "29.07.2026 13:00:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": false,
+                        "scoreStr": "0 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
+                        }
                     },
                     "timeTS": 1785322800000
                 }
@@ -3285,38 +3400,36 @@
                     "time": "29.07.2026 03:00",
                     "home": {
                         "id": 1022952,
-                        "score": 1,
+                        "score": 2,
                         "name": "Cavalry FC",
                         "longName": "Cavalry FC"
                     },
                     "away": {
                         "id": 1899648,
-                        "score": 0,
+                        "score": 1,
                         "name": "Supra du Quebec",
                         "longName": "Supra du Quebec"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 2,
+                    "statusId": 6,
                     "tournamentStage": "11",
                     "status": {
                         "utcTime": "2026-07-29T01:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "29.07.2026 03:10:38"
+                            "firstHalfStarted": "29.07.2026 03:10:38",
+                            "secondHalfStarted": "29.07.2026 04:15:36"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "1 - 0",
-                        "liveTime": {
-                            "short": "40\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "39:11",
-                            "longKey": "",
-                            "maxTime": 45,
-                            "basePeriod": 45,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "2 - 1",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1785286800000
@@ -3575,7 +3688,7 @@
                     "time": "29.07.2026 02:35",
                     "home": {
                         "id": 8287,
-                        "score": 0,
+                        "score": 1,
                         "name": "Fortaleza",
                         "longName": "Fortaleza"
                     },
@@ -3586,7 +3699,7 @@
                         "longName": "Botafogo SP"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 3,
+                    "statusId": 6,
                     "tournamentStage": "20",
                     "status": {
                         "utcTime": "2026-07-29T00:35:00.000Z",
@@ -3595,19 +3708,16 @@
                             "secondHalfStarted": "29.07.2026 03:41:52"
                         },
                         "periodLength": 45,
-                        "finished": false,
+                        "finished": true,
                         "started": true,
                         "cancelled": false,
-                        "ongoing": true,
-                        "scoreStr": "0 - 0",
-                        "liveTime": {
-                            "short": "53\u200e\u2019\u200e",
-                            "shortKey": "",
-                            "long": "52:57",
-                            "longKey": "",
-                            "maxTime": 90,
-                            "basePeriod": 90,
-                            "addedTime": 0
+                        "awarded": false,
+                        "scoreStr": "1 - 0",
+                        "reason": {
+                            "short": "FT",
+                            "shortKey": "fulltime_short",
+                            "long": "Full-Time",
+                            "longKey": "finished"
                         }
                     },
                     "timeTS": 1785285300000
