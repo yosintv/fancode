@@ -739,6 +739,90 @@
             "simpleLeague": false
         },
         {
+            "ccode": "ARG",
+            "id": 942185,
+            "primaryId": 9213,
+            "name": "Federal A Promotion Zona B",
+            "matches": [
+                {
+                    "id": 5978464,
+                    "leagueId": 942185,
+                    "time": "03.08.2026 20:00",
+                    "home": {
+                        "id": 1618060,
+                        "score": 0,
+                        "name": "Kimberley",
+                        "longName": "Kimberley"
+                    },
+                    "away": {
+                        "id": 1344071,
+                        "score": 0,
+                        "name": "Argentino Monte Maiz",
+                        "longName": "Argentino Monte Maiz"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-08-03T18:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "03.08.2026 20:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785780000000
+                }
+            ],
+            "parentLeagueId": 9213,
+            "internalRank": 7,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "ARG",
+            "id": 942186,
+            "primaryId": 9213,
+            "name": "Federal A Relegation Zona A",
+            "matches": [
+                {
+                    "id": 5978499,
+                    "leagueId": 942186,
+                    "time": "03.08.2026 20:30",
+                    "home": {
+                        "id": 1925720,
+                        "score": 0,
+                        "name": "Defensores de Vilelas",
+                        "longName": "Defensores de Vilelas"
+                    },
+                    "away": {
+                        "id": 298640,
+                        "score": 0,
+                        "name": "Sarmiento de Resistencia",
+                        "longName": "Sarmiento de Resistencia"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-08-03T18:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "03.08.2026 20:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785781800000
+                }
+            ],
+            "parentLeagueId": 9213,
+            "internalRank": 7,
+            "simpleLeague": false
+        },
+        {
             "ccode": "IRL",
             "id": 916016,
             "primaryId": 218,
@@ -2693,6 +2777,47 @@
             "simpleLeague": false
         },
         {
+            "ccode": "ISL",
+            "id": 215,
+            "primaryId": 215,
+            "name": "Besta deildin",
+            "matches": [
+                {
+                    "id": 5225697,
+                    "leagueId": 215,
+                    "time": "03.08.2026 21:15",
+                    "home": {
+                        "id": 8064,
+                        "score": 0,
+                        "name": "Valur",
+                        "longName": "Valur"
+                    },
+                    "away": {
+                        "id": 6343,
+                        "score": 0,
+                        "name": "Stjarnan",
+                        "longName": "Stjarnan"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "17",
+                    "status": {
+                        "utcTime": "2026-08-03T19:15:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "03.08.2026 21:15:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785784500000
+                }
+            ],
+            "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
             "ccode": "BRA",
             "id": 9067,
             "primaryId": 9067,
@@ -3218,7 +3343,7 @@
                         "longName": "Ogre United"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "25",
                     "status": {
                         "utcTime": "2026-08-03T15:00:00.000Z",
@@ -3226,9 +3351,15 @@
                             "firstHalfStarted": "03.08.2026 17:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1785769200000
                 }
