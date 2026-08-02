@@ -1300,6 +1300,48 @@
                         "finished": false
                     },
                     "timeTS": 1785855600000
+                },
+                {
+                    "id": 5976819,
+                    "leagueId": 942122,
+                    "time": "05.08.2026 10:00",
+                    "home": {
+                        "id": 1387005,
+                        "score": 0,
+                        "name": "CSC Dumbravita",
+                        "longName": "CSC Dumbravita"
+                    },
+                    "away": {
+                        "id": 1795466,
+                        "score": 0,
+                        "name": "CSM Olimpia Satu Mare",
+                        "longName": "CSM Olimpia Satu Mare"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 234,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-08-05T08:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "05.08.2026 10:00:00"
+                        },
+                        "periodLength": 45,
+                        "finished": false,
+                        "started": true,
+                        "cancelled": false,
+                        "ongoing": true,
+                        "scoreStr": "0 - 0",
+                        "liveTime": {
+                            "short": "-4681\u200e\u2019\u200e",
+                            "shortKey": "",
+                            "long": "-4683:0-45",
+                            "longKey": "",
+                            "maxTime": 45,
+                            "basePeriod": 45,
+                            "addedTime": 0
+                        }
+                    },
+                    "timeTS": 1785916800000
                 }
             ],
             "parentLeagueId": 9113,
@@ -1546,82 +1588,6 @@
         },
         {
             "isGroup": true,
-            "groupName": "D",
-            "ccode": "RUS",
-            "id": 938421,
-            "primaryId": 193,
-            "name": "Cup Grp. D",
-            "matches": [
-                {
-                    "id": 5851910,
-                    "leagueId": 938421,
-                    "time": "04.08.2026 17:00",
-                    "home": {
-                        "id": 1068364,
-                        "score": 0,
-                        "name": "Akron Togliatti",
-                        "longName": "Akron Togliatti"
-                    },
-                    "away": {
-                        "id": 8705,
-                        "score": 0,
-                        "name": "Rostov",
-                        "longName": "FC Rostov"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1",
-                    "status": {
-                        "utcTime": "2026-08-04T15:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "04.08.2026 17:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785855600000
-                },
-                {
-                    "id": 5851898,
-                    "leagueId": 938421,
-                    "time": "04.08.2026 19:45",
-                    "home": {
-                        "id": 8710,
-                        "score": 0,
-                        "name": "Lokomotiv",
-                        "longName": "Lokomotiv Moscow"
-                    },
-                    "away": {
-                        "id": 9760,
-                        "score": 0,
-                        "name": "CSKA",
-                        "longName": "CSKA Moscow"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1",
-                    "status": {
-                        "utcTime": "2026-08-04T17:45:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "04.08.2026 19:45:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1785865500000
-                }
-            ],
-            "parentLeagueId": 193,
-            "parentLeagueName": "Russian Cup",
-            "internalRank": 9,
-            "simpleLeague": false
-        },
-        {
-            "isGroup": true,
             "groupName": "A",
             "ccode": "RUS",
             "id": 938418,
@@ -1703,6 +1669,51 @@
                         "finished": false
                     },
                     "timeTS": 1785857400000
+                }
+            ],
+            "parentLeagueId": 193,
+            "parentLeagueName": "Russian Cup",
+            "internalRank": 9,
+            "simpleLeague": false
+        },
+        {
+            "isGroup": true,
+            "groupName": "D",
+            "ccode": "RUS",
+            "id": 938421,
+            "primaryId": 193,
+            "name": "Cup Grp. D",
+            "matches": [
+                {
+                    "id": 5851898,
+                    "leagueId": 938421,
+                    "time": "04.08.2026 19:45",
+                    "home": {
+                        "id": 8710,
+                        "score": 0,
+                        "name": "Lokomotiv",
+                        "longName": "Lokomotiv Moscow"
+                    },
+                    "away": {
+                        "id": 9760,
+                        "score": 0,
+                        "name": "CSKA",
+                        "longName": "CSKA Moscow"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-08-04T17:45:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "04.08.2026 19:45:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785865500000
                 }
             ],
             "parentLeagueId": 193,
@@ -2458,6 +2469,368 @@
                         "started": false,
                         "cancelled": false,
                         "finished": false
+                    },
+                    "timeTS": 1785888000000
+                }
+            ],
+            "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "VEN",
+            "id": 339,
+            "primaryId": 339,
+            "name": "Primera Divisi\u00f3n",
+            "matches": [
+                {
+                    "id": 1000018862,
+                    "leagueId": 339,
+                    "time": "04.08.2026 23:00",
+                    "home": {
+                        "id": 49681,
+                        "score": 0,
+                        "name": "Carabobo FC",
+                        "longName": "Carabobo FC"
+                    },
+                    "away": {
+                        "id": 49685,
+                        "score": 0,
+                        "name": "Trujillanos FC",
+                        "longName": "Trujillanos FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "Clausura - Round 2",
+                    "status": {
+                        "utcTime": "2026-08-04T21:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "04.08.2026 23:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785877200000
+                },
+                {
+                    "id": 1000018861,
+                    "leagueId": 339,
+                    "time": "05.08.2026 00:00",
+                    "home": {
+                        "id": 188213,
+                        "score": 0,
+                        "name": "Universidad Central",
+                        "longName": "Universidad Central"
+                    },
+                    "away": {
+                        "id": 49683,
+                        "score": 0,
+                        "name": "Monagas SC",
+                        "longName": "Monagas SC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "Clausura - Round 2",
+                    "status": {
+                        "utcTime": "2026-08-04T22:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "05.08.2026 00:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785880800000
+                },
+                {
+                    "id": 1000018866,
+                    "leagueId": 339,
+                    "time": "05.08.2026 00:30",
+                    "home": {
+                        "id": 1896,
+                        "score": 0,
+                        "name": "Deportivo Tachira",
+                        "longName": "Deportivo Tachira"
+                    },
+                    "away": {
+                        "id": 49682,
+                        "score": 0,
+                        "name": "Portuguesa FC",
+                        "longName": "Portuguesa FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "Clausura - Round 2",
+                    "status": {
+                        "utcTime": "2026-08-04T22:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "05.08.2026 00:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1785882600000
+                },
+                {
+                    "id": 1000018867,
+                    "leagueId": 339,
+                    "time": "05.08.2026 02:00",
+                    "home": {
+                        "id": 49685,
+                        "score": 0,
+                        "name": "Trujillanos FC",
+                        "longName": "Trujillanos FC"
+                    },
+                    "away": {
+                        "id": 1896,
+                        "score": 0,
+                        "name": "Deportivo Tachira",
+                        "longName": "Deportivo Tachira"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 5,
+                    "tournamentStage": "Clausura - Round 3",
+                    "status": {
+                        "utcTime": "2026-08-05T00:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "05.08.2026 02:00:00"
+                        },
+                        "periodLength": 45,
+                        "cancelled": true,
+                        "started": false,
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
+                    },
+                    "timeTS": 1785888000000
+                },
+                {
+                    "id": 1000018868,
+                    "leagueId": 339,
+                    "time": "05.08.2026 02:00",
+                    "home": {
+                        "id": 49683,
+                        "score": 0,
+                        "name": "Monagas SC",
+                        "longName": "Monagas SC"
+                    },
+                    "away": {
+                        "id": 49681,
+                        "score": 0,
+                        "name": "Carabobo FC",
+                        "longName": "Carabobo FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 5,
+                    "tournamentStage": "Clausura - Round 3",
+                    "status": {
+                        "utcTime": "2026-08-05T00:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "05.08.2026 02:00:00"
+                        },
+                        "periodLength": 45,
+                        "cancelled": true,
+                        "started": false,
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
+                    },
+                    "timeTS": 1785888000000
+                },
+                {
+                    "id": 1000018869,
+                    "leagueId": 339,
+                    "time": "05.08.2026 02:00",
+                    "home": {
+                        "id": 365280,
+                        "score": 0,
+                        "name": "Metropolitanos FC",
+                        "longName": "Metropolitanos FC"
+                    },
+                    "away": {
+                        "id": 188213,
+                        "score": 0,
+                        "name": "Universidad Central",
+                        "longName": "Universidad Central"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 5,
+                    "tournamentStage": "Clausura - Round 3",
+                    "status": {
+                        "utcTime": "2026-08-05T00:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "05.08.2026 02:00:00"
+                        },
+                        "periodLength": 45,
+                        "cancelled": true,
+                        "started": false,
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
+                    },
+                    "timeTS": 1785888000000
+                },
+                {
+                    "id": 1000018870,
+                    "leagueId": 339,
+                    "time": "05.08.2026 02:00",
+                    "home": {
+                        "id": 1349498,
+                        "score": 0,
+                        "name": "Anzoategui FC",
+                        "longName": "Anzoategui FC"
+                    },
+                    "away": {
+                        "id": 49682,
+                        "score": 0,
+                        "name": "Portuguesa FC",
+                        "longName": "Portuguesa FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 5,
+                    "tournamentStage": "Clausura - Round 3",
+                    "status": {
+                        "utcTime": "2026-08-05T00:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "05.08.2026 02:00:00"
+                        },
+                        "periodLength": 45,
+                        "cancelled": true,
+                        "started": false,
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
+                    },
+                    "timeTS": 1785888000000
+                },
+                {
+                    "id": 1000018871,
+                    "leagueId": 339,
+                    "time": "05.08.2026 02:00",
+                    "home": {
+                        "id": 7850,
+                        "score": 0,
+                        "name": "Caracas",
+                        "longName": "Caracas"
+                    },
+                    "away": {
+                        "id": 176496,
+                        "score": 0,
+                        "name": "Deportivo La Guaira",
+                        "longName": "Deportivo La Guaira"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 5,
+                    "tournamentStage": "Clausura - Round 3",
+                    "status": {
+                        "utcTime": "2026-08-05T00:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "05.08.2026 02:00:00"
+                        },
+                        "periodLength": 45,
+                        "cancelled": true,
+                        "started": false,
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
+                    },
+                    "timeTS": 1785888000000
+                },
+                {
+                    "id": 1000018872,
+                    "leagueId": 339,
+                    "time": "05.08.2026 02:00",
+                    "home": {
+                        "id": 49686,
+                        "score": 0,
+                        "name": "Zamora FC",
+                        "longName": "Zamora FC"
+                    },
+                    "away": {
+                        "id": 657277,
+                        "score": 0,
+                        "name": "Academia Puerto Cabello",
+                        "longName": "Academia Puerto Cabello"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 5,
+                    "tournamentStage": "Clausura - Round 3",
+                    "status": {
+                        "utcTime": "2026-08-05T00:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "05.08.2026 02:00:00"
+                        },
+                        "periodLength": 45,
+                        "cancelled": true,
+                        "started": false,
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
+                    },
+                    "timeTS": 1785888000000
+                },
+                {
+                    "id": 1000018873,
+                    "leagueId": 339,
+                    "time": "05.08.2026 02:00",
+                    "home": {
+                        "id": 1267963,
+                        "score": 0,
+                        "name": "Rayo Zuliano",
+                        "longName": "Rayo Zuliano"
+                    },
+                    "away": {
+                        "id": 93061,
+                        "score": 0,
+                        "name": "Estudiantes Merida",
+                        "longName": "Estudiantes Merida"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 5,
+                    "tournamentStage": "Clausura - Round 3",
+                    "status": {
+                        "utcTime": "2026-08-05T00:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "05.08.2026 02:00:00"
+                        },
+                        "periodLength": 45,
+                        "cancelled": true,
+                        "started": false,
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1785888000000
                 }
