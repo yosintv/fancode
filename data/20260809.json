@@ -813,7 +813,7 @@
                         "longName": "Slovan Bratislava"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "3",
                     "status": {
                         "utcTime": "2026-08-08T18:30:00.000Z",
@@ -821,9 +821,15 @@
                             "firstHalfStarted": "08.08.2026 20:30:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1786213800000
                 }
@@ -1151,7 +1157,7 @@
                 {
                     "id": 5143349,
                     "leagueId": 919789,
-                    "time": "09.08.2026 15:30",
+                    "time": "09.08.2026 14:30",
                     "home": {
                         "id": 47403,
                         "score": 0,
@@ -1168,16 +1174,16 @@
                     "statusId": 1,
                     "tournamentStage": "15",
                     "status": {
-                        "utcTime": "2026-08-09T13:30:00.000Z",
+                        "utcTime": "2026-08-09T12:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "09.08.2026 15:30:00"
+                            "firstHalfStarted": "09.08.2026 14:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1786282200000
+                    "timeTS": 1786278600000
                 }
             ],
             "parentLeagueId": 204,
@@ -1224,7 +1230,7 @@
                 {
                     "id": 5143564,
                     "leagueId": 919791,
-                    "time": "09.08.2026 16:00",
+                    "time": "09.08.2026 15:30",
                     "home": {
                         "id": 8617,
                         "score": 0,
@@ -1241,16 +1247,16 @@
                     "statusId": 1,
                     "tournamentStage": "15",
                     "status": {
-                        "utcTime": "2026-08-09T14:00:00.000Z",
+                        "utcTime": "2026-08-09T13:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "09.08.2026 16:00:00"
+                            "firstHalfStarted": "09.08.2026 15:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1786284000000
+                    "timeTS": 1786282200000
                 }
             ],
             "parentLeagueId": 204,
@@ -1659,6 +1665,78 @@
                 }
             ],
             "internalRank": 18,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "LTU",
+            "id": 228,
+            "primaryId": 228,
+            "name": "A Lyga",
+            "matches": [
+                {
+                    "id": 5900451,
+                    "leagueId": 228,
+                    "time": "08.08.2026 18:00",
+                    "home": {
+                        "id": 439132,
+                        "score": 0,
+                        "name": "FK Kauno Zalgiris",
+                        "longName": "FK Kauno Zalgiris"
+                    },
+                    "away": {
+                        "id": 736555,
+                        "score": 0,
+                        "name": "Hegelmann",
+                        "longName": "Hegelmann"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "26",
+                    "status": {
+                        "utcTime": "2026-08-08T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 18:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786204800000
+                },
+                {
+                    "id": 5900450,
+                    "leagueId": 228,
+                    "time": "09.08.2026 16:00",
+                    "home": {
+                        "id": 1099941,
+                        "score": 0,
+                        "name": "FA Siauliai",
+                        "longName": "FA Siauliai"
+                    },
+                    "away": {
+                        "id": 624858,
+                        "score": 0,
+                        "name": "Dziugas Telsiai",
+                        "longName": "Dziugas Telsiai"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "26",
+                    "status": {
+                        "utcTime": "2026-08-09T14:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "09.08.2026 16:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786284000000
+                }
+            ],
+            "internalRank": 0,
             "simpleLeague": false
         },
         {
@@ -3784,6 +3862,37 @@
             "primaryId": 169,
             "name": "Ettan Soedra",
             "matches": [
+                {
+                    "id": 5127887,
+                    "leagueId": 918053,
+                    "time": "08.08.2026 17:00",
+                    "home": {
+                        "id": 73158,
+                        "score": 0,
+                        "name": "Utsiktens BK",
+                        "longName": "Utsiktens BK"
+                    },
+                    "away": {
+                        "id": 418688,
+                        "score": 0,
+                        "name": "H\u00e4ssleholms IF",
+                        "longName": "H\u00e4ssleholms IF"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "16",
+                    "status": {
+                        "utcTime": "2026-08-08T15:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 17:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786201200000
+                },
                 {
                     "id": 5127883,
                     "leagueId": 918053,
@@ -7205,37 +7314,6 @@
                     "timeTS": 1786284000000
                 },
                 {
-                    "id": 5974665,
-                    "leagueId": 229,
-                    "time": "09.08.2026 16:00",
-                    "home": {
-                        "id": 2113,
-                        "score": 0,
-                        "name": "Swift Hesperange",
-                        "longName": "Swift Hesperange"
-                    },
-                    "away": {
-                        "id": 2111,
-                        "score": 0,
-                        "name": "FC Wiltz 71",
-                        "longName": "FC Wiltz 71"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "2",
-                    "status": {
-                        "utcTime": "2026-08-09T14:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "09.08.2026 16:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1786284000000
-                },
-                {
                     "id": 5974667,
                     "leagueId": 229,
                     "time": "09.08.2026 16:00",
@@ -7308,35 +7386,35 @@
                     "timeTS": 1786203000000
                 },
                 {
-                    "id": 5865434,
+                    "id": 5865435,
                     "leagueId": 212,
-                    "time": "08.08.2026 20:00",
+                    "time": "09.08.2026 15:30",
                     "home": {
-                        "id": 1602,
+                        "id": 7986,
                         "score": 0,
-                        "name": "Vasas Budapest",
-                        "longName": "Vasas Budapest"
+                        "name": "Paksi SE",
+                        "longName": "Paksi SE"
                     },
                     "away": {
-                        "id": 1667,
+                        "id": 7779,
                         "score": 0,
-                        "name": "Zalaegerszeg",
-                        "longName": "Zalaegerszeg"
+                        "name": "Kispest Honved",
+                        "longName": "Kispest Honved"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
                     "tournamentStage": "3",
                     "status": {
-                        "utcTime": "2026-08-08T18:00:00.000Z",
+                        "utcTime": "2026-08-09T13:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "08.08.2026 20:00:00"
+                            "firstHalfStarted": "09.08.2026 15:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1786212000000
+                    "timeTS": 1786282200000
                 }
             ],
             "internalRank": 10,
@@ -7382,7 +7460,7 @@
                 {
                     "id": 5922740,
                     "leagueId": 9117,
-                    "time": "08.08.2026 19:00",
+                    "time": "08.08.2026 17:30",
                     "home": {
                         "id": 1482697,
                         "score": 0,
@@ -7399,21 +7477,21 @@
                     "statusId": 1,
                     "tournamentStage": "3",
                     "status": {
-                        "utcTime": "2026-08-08T17:00:00.000Z",
+                        "utcTime": "2026-08-08T15:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "08.08.2026 19:00:00"
+                            "firstHalfStarted": "08.08.2026 17:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1786208400000
+                    "timeTS": 1786203000000
                 },
                 {
                     "id": 5922739,
                     "leagueId": 9117,
-                    "time": "08.08.2026 19:00",
+                    "time": "08.08.2026 17:30",
                     "home": {
                         "id": 188173,
                         "score": 0,
@@ -7430,21 +7508,21 @@
                     "statusId": 1,
                     "tournamentStage": "3",
                     "status": {
-                        "utcTime": "2026-08-08T17:00:00.000Z",
+                        "utcTime": "2026-08-08T15:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "08.08.2026 19:00:00"
+                            "firstHalfStarted": "08.08.2026 17:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1786208400000
+                    "timeTS": 1786203000000
                 },
                 {
                     "id": 5922745,
                     "leagueId": 9117,
-                    "time": "08.08.2026 19:00",
+                    "time": "08.08.2026 17:30",
                     "home": {
                         "id": 948719,
                         "score": 0,
@@ -7461,21 +7539,21 @@
                     "statusId": 1,
                     "tournamentStage": "3",
                     "status": {
-                        "utcTime": "2026-08-08T17:00:00.000Z",
+                        "utcTime": "2026-08-08T15:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "08.08.2026 19:00:00"
+                            "firstHalfStarted": "08.08.2026 17:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1786208400000
+                    "timeTS": 1786203000000
                 },
                 {
                     "id": 5922746,
                     "leagueId": 9117,
-                    "time": "08.08.2026 19:00",
+                    "time": "08.08.2026 17:30",
                     "home": {
                         "id": 8036,
                         "score": 0,
@@ -7492,16 +7570,16 @@
                     "statusId": 1,
                     "tournamentStage": "3",
                     "status": {
-                        "utcTime": "2026-08-08T17:00:00.000Z",
+                        "utcTime": "2026-08-08T15:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "08.08.2026 19:00:00"
+                            "firstHalfStarted": "08.08.2026 17:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1786208400000
+                    "timeTS": 1786203000000
                 }
             ],
             "internalRank": 0,
@@ -7515,6 +7593,37 @@
             "primaryId": 205,
             "name": "3. Divisjon Avd. 2",
             "matches": [
+                {
+                    "id": 5143984,
+                    "leagueId": 919793,
+                    "time": "08.08.2026 19:00",
+                    "home": {
+                        "id": 4361,
+                        "score": 0,
+                        "name": "NTNUI",
+                        "longName": "NTNUI"
+                    },
+                    "away": {
+                        "id": 9801,
+                        "score": 0,
+                        "name": "By\u00e5sen",
+                        "longName": "By\u00e5sen"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "15",
+                    "status": {
+                        "utcTime": "2026-08-08T17:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 19:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786208400000
+                },
                 {
                     "id": 5143987,
                     "leagueId": 919793,
@@ -7825,24 +7934,24 @@
                     "timeTS": 1786201200000
                 },
                 {
-                    "id": 5847137,
+                    "id": 5847257,
                     "leagueId": 63,
                     "time": "08.08.2026 19:30",
                     "home": {
-                        "id": 8705,
-                        "score": 0,
-                        "name": "Rostov",
-                        "longName": "FC Rostov"
-                    },
-                    "away": {
                         "id": 9760,
                         "score": 0,
                         "name": "CSKA",
                         "longName": "CSKA Moscow"
                     },
+                    "away": {
+                        "id": 8705,
+                        "score": 0,
+                        "name": "Rostov",
+                        "longName": "FC Rostov"
+                    },
                     "eliminatedTeamId": null,
                     "statusId": 1,
-                    "tournamentStage": "3",
+                    "tournamentStage": "18",
                     "status": {
                         "utcTime": "2026-08-08T17:30:00.000Z",
                         "halfs": {
@@ -8351,37 +8460,6 @@
                         "finished": false
                     },
                     "timeTS": 1786201200000
-                },
-                {
-                    "id": 5204113,
-                    "leagueId": 922739,
-                    "time": "09.08.2026 15:00",
-                    "home": {
-                        "id": 2349,
-                        "score": 0,
-                        "name": "Atyrau",
-                        "longName": "Atyrau"
-                    },
-                    "away": {
-                        "id": 8000,
-                        "score": 0,
-                        "name": "Aktobe",
-                        "longName": "Aktobe"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "10",
-                    "status": {
-                        "utcTime": "2026-08-09T13:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "09.08.2026 15:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1786280400000
                 },
                 {
                     "id": 5204203,
@@ -9206,7 +9284,7 @@
                 {
                     "id": 5804910,
                     "leagueId": 249,
-                    "time": "08.08.2026 17:00",
+                    "time": "08.08.2026 19:00",
                     "home": {
                         "id": 7867,
                         "score": 0,
@@ -9223,109 +9301,16 @@
                     "statusId": 1,
                     "tournamentStage": "2",
                     "status": {
-                        "utcTime": "2026-08-08T15:00:00.000Z",
+                        "utcTime": "2026-08-08T17:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "08.08.2026 17:00:00"
+                            "firstHalfStarted": "08.08.2026 19:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1786201200000
-                },
-                {
-                    "id": 5804911,
-                    "leagueId": 249,
-                    "time": "08.08.2026 17:00",
-                    "home": {
-                        "id": 187801,
-                        "score": 0,
-                        "name": "FK Skopje",
-                        "longName": "FK Skopje"
-                    },
-                    "away": {
-                        "id": 866489,
-                        "score": 0,
-                        "name": "FK Struga",
-                        "longName": "FK Struga"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "2",
-                    "status": {
-                        "utcTime": "2026-08-08T15:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "08.08.2026 17:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1786201200000
-                },
-                {
-                    "id": 5804913,
-                    "leagueId": 249,
-                    "time": "08.08.2026 17:00",
-                    "home": {
-                        "id": 8041,
-                        "score": 0,
-                        "name": "FK Vardar Skopje",
-                        "longName": "FK Vardar Skopje"
-                    },
-                    "away": {
-                        "id": 2234,
-                        "score": 0,
-                        "name": "KF Shkendija",
-                        "longName": "KF Shkendija"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "2",
-                    "status": {
-                        "utcTime": "2026-08-08T15:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "08.08.2026 17:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1786201200000
-                },
-                {
-                    "id": 5804912,
-                    "leagueId": 249,
-                    "time": "08.08.2026 17:00",
-                    "home": {
-                        "id": 2009441,
-                        "score": 0,
-                        "name": "Shkendija Haracine",
-                        "longName": "Shkendija Haracine"
-                    },
-                    "away": {
-                        "id": 6187,
-                        "score": 0,
-                        "name": "FK Sileks",
-                        "longName": "FK Sileks"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "2",
-                    "status": {
-                        "utcTime": "2026-08-08T15:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "08.08.2026 17:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1786201200000
+                    "timeTS": 1786208400000
                 }
             ],
             "internalRank": 11,
@@ -9714,6 +9699,110 @@
             ],
             "parentLeagueId": 512,
             "internalRank": 17,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "URU",
+            "id": 922761,
+            "primaryId": 9122,
+            "name": "Segunda Division",
+            "matches": [
+                {
+                    "id": 5994171,
+                    "leagueId": 922761,
+                    "time": "08.08.2026 18:00",
+                    "home": {
+                        "id": 7808,
+                        "score": 0,
+                        "name": "Fenix",
+                        "longName": "Fenix"
+                    },
+                    "away": {
+                        "id": 1319664,
+                        "score": 0,
+                        "name": "La Luz",
+                        "longName": "La Luz"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "13",
+                    "status": {
+                        "utcTime": "2026-08-08T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 18:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786204800000
+                },
+                {
+                    "id": 5994172,
+                    "leagueId": 922761,
+                    "time": "08.08.2026 21:00",
+                    "home": {
+                        "id": 1223580,
+                        "score": 0,
+                        "name": "Colon",
+                        "longName": "Colon"
+                    },
+                    "away": {
+                        "id": 2220,
+                        "score": 0,
+                        "name": "Cerrito",
+                        "longName": "Cerrito"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "13",
+                    "status": {
+                        "utcTime": "2026-08-08T19:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 21:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786215600000
+                },
+                {
+                    "id": 5994173,
+                    "leagueId": 922761,
+                    "time": "09.08.2026 15:00",
+                    "home": {
+                        "id": 6381,
+                        "score": 0,
+                        "name": "River Plate",
+                        "longName": "River Plate"
+                    },
+                    "away": {
+                        "id": 215609,
+                        "score": 0,
+                        "name": "Huracan FC",
+                        "longName": "Huracan FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "13",
+                    "status": {
+                        "utcTime": "2026-08-09T13:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "09.08.2026 15:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786280400000
+                }
+            ],
+            "parentLeagueId": 9122,
+            "internalRank": 0,
             "simpleLeague": false
         },
         {
@@ -12296,6 +12385,37 @@
             "name": "Primera Divisi\u00f3n",
             "matches": [
                 {
+                    "id": 1000018868,
+                    "leagueId": 339,
+                    "time": "08.08.2026 22:00",
+                    "home": {
+                        "id": 49683,
+                        "score": 0,
+                        "name": "Monagas SC",
+                        "longName": "Monagas SC"
+                    },
+                    "away": {
+                        "id": 49681,
+                        "score": 0,
+                        "name": "Carabobo FC",
+                        "longName": "Carabobo FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "Clausura - Round 3",
+                    "status": {
+                        "utcTime": "2026-08-08T20:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 22:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786219200000
+                },
+                {
                     "id": 1000018874,
                     "leagueId": 339,
                     "time": "09.08.2026 02:00",
@@ -12312,7 +12432,7 @@
                         "longName": "Caracas"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "Clausura - Round 4",
                     "status": {
                         "utcTime": "2026-08-09T00:00:00.000Z",
@@ -12320,9 +12440,15 @@
                             "firstHalfStarted": "09.08.2026 02:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1786233600000
                 },
@@ -12343,7 +12469,7 @@
                         "longName": "Monagas SC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "Clausura - Round 4",
                     "status": {
                         "utcTime": "2026-08-09T00:00:00.000Z",
@@ -12351,9 +12477,15 @@
                             "firstHalfStarted": "09.08.2026 02:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1786233600000
                 },
@@ -12374,7 +12506,7 @@
                         "longName": "Rayo Zuliano"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "Clausura - Round 4",
                     "status": {
                         "utcTime": "2026-08-09T00:00:00.000Z",
@@ -12382,9 +12514,15 @@
                             "firstHalfStarted": "09.08.2026 02:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1786233600000
                 },
@@ -12405,7 +12543,7 @@
                         "longName": "Trujillanos FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "Clausura - Round 4",
                     "status": {
                         "utcTime": "2026-08-09T00:00:00.000Z",
@@ -12413,9 +12551,15 @@
                             "firstHalfStarted": "09.08.2026 02:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1786233600000
                 },
@@ -12436,7 +12580,7 @@
                         "longName": "Anzoategui FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "Clausura - Round 4",
                     "status": {
                         "utcTime": "2026-08-09T00:00:00.000Z",
@@ -12444,9 +12588,15 @@
                             "firstHalfStarted": "09.08.2026 02:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1786233600000
                 },
@@ -12467,7 +12617,7 @@
                         "longName": "Zamora FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "Clausura - Round 4",
                     "status": {
                         "utcTime": "2026-08-09T00:00:00.000Z",
@@ -12475,9 +12625,15 @@
                             "firstHalfStarted": "09.08.2026 02:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1786233600000
                 },
@@ -12498,7 +12654,7 @@
                         "longName": "Metropolitanos FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "Clausura - Round 4",
                     "status": {
                         "utcTime": "2026-08-09T00:00:00.000Z",
@@ -12506,9 +12662,15 @@
                             "firstHalfStarted": "09.08.2026 02:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1786233600000
                 }
