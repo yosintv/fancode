@@ -19,11 +19,8 @@
     "www.cricfoot.net",
     "yonotv.online",
     "www.yonotv.online",
-    "977.hls-player.net",
-    "988.hls-player.net",
-    "cr7.hls-player.net",
+    "192.hls-player.net",
     "redirects.pages.dev",
-    "yosintv-live.pages.dev",
   ];
 
   function hostIsAllowed(hostname) {
