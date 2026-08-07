@@ -3150,8 +3150,8 @@
                     "away": {
                         "id": 8066,
                         "score": 0,
-                        "name": "Inverness CT",
-                        "longName": "Inverness CT"
+                        "name": "Inverness Caledonian Thistle",
+                        "longName": "Inverness Caledonian Thistle"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -3563,37 +3563,6 @@
                     "timeTS": 1786190400000
                 },
                 {
-                    "id": 5900333,
-                    "leagueId": 915708,
-                    "time": "08.08.2026 14:00",
-                    "home": {
-                        "id": 10233,
-                        "score": 0,
-                        "name": "Genoa",
-                        "longName": "Genoa"
-                    },
-                    "away": {
-                        "id": 9783,
-                        "score": 0,
-                        "name": "Deportivo A Coru\u00f1a",
-                        "longName": "Deportivo A Coru\u00f1a"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1",
-                    "status": {
-                        "utcTime": "2026-08-08T12:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "08.08.2026 14:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1786190400000
-                },
-                {
                     "id": 5958632,
                     "leagueId": 915708,
                     "time": "08.08.2026 14:00",
@@ -3858,7 +3827,7 @@
                         "longName": "Le Havre"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 106,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-08-08T14:00:00.000Z",
@@ -3866,9 +3835,15 @@
                             "firstHalfStarted": "08.08.2026 16:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "Can",
+                            "shortKey": "cancelled_short",
+                            "long": "Cancelled",
+                            "longKey": "cancelled"
+                        }
                     },
                     "timeTS": 1786197600000
                 },
@@ -3904,20 +3879,20 @@
                     "timeTS": 1786197600000
                 },
                 {
-                    "id": 5847100,
+                    "id": 5898846,
                     "leagueId": 915708,
                     "time": "08.08.2026 16:00",
                     "home": {
-                        "id": 10189,
+                        "id": 8588,
                         "score": 0,
-                        "name": "Schalke 04",
-                        "longName": "Schalke 04"
+                        "name": "Lens",
+                        "longName": "Lens"
                     },
                     "away": {
-                        "id": 8524,
+                        "id": 8472,
                         "score": 0,
-                        "name": "Atalanta",
-                        "longName": "Atalanta"
+                        "name": "Sunderland",
+                        "longName": "Sunderland"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -5238,6 +5213,90 @@
             ],
             "parentLeagueId": 169,
             "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "ARG",
+            "id": 942184,
+            "primaryId": 9213,
+            "name": "Federal A Promotion Zona A",
+            "matches": [
+                {
+                    "id": 5978433,
+                    "leagueId": 942184,
+                    "time": "08.08.2026 01:45",
+                    "home": {
+                        "id": 213593,
+                        "score": 0,
+                        "name": "Sportivo Belgrano",
+                        "longName": "Sportivo Belgrano"
+                    },
+                    "away": {
+                        "id": 213595,
+                        "score": 0,
+                        "name": "9 de Julio Rafaela",
+                        "longName": "9 de Julio Rafaela"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "2",
+                    "status": {
+                        "utcTime": "2026-08-07T23:45:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 01:45:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786146300000
+                }
+            ],
+            "parentLeagueId": 9213,
+            "internalRank": 7,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "ARG",
+            "id": 942185,
+            "primaryId": 9213,
+            "name": "Federal A Promotion Zona B",
+            "matches": [
+                {
+                    "id": 5978468,
+                    "leagueId": 942185,
+                    "time": "08.08.2026 03:00",
+                    "home": {
+                        "id": 213600,
+                        "score": 0,
+                        "name": "Juventud Antoniana",
+                        "longName": "Juventud Antoniana"
+                    },
+                    "away": {
+                        "id": 354496,
+                        "score": 0,
+                        "name": "CA Alvarado",
+                        "longName": "CA Alvarado"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "2",
+                    "status": {
+                        "utcTime": "2026-08-08T01:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 03:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786150800000
+                }
+            ],
+            "parentLeagueId": 9213,
+            "internalRank": 7,
             "simpleLeague": false
         },
         {
@@ -7002,7 +7061,7 @@
                 {
                     "id": 5155870,
                     "leagueId": 920066,
-                    "time": "08.08.2026 12:30",
+                    "time": "08.08.2026 13:00",
                     "home": {
                         "id": 739803,
                         "score": 0,
@@ -7019,21 +7078,21 @@
                     "statusId": 1,
                     "tournamentStage": "21",
                     "status": {
-                        "utcTime": "2026-08-08T10:30:00.000Z",
+                        "utcTime": "2026-08-08T11:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "08.08.2026 12:30:00"
+                            "firstHalfStarted": "08.08.2026 13:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1786185000000
+                    "timeTS": 1786186800000
                 },
                 {
                     "id": 5155871,
                     "leagueId": 920066,
-                    "time": "08.08.2026 12:30",
+                    "time": "08.08.2026 13:00",
                     "home": {
                         "id": 6614,
                         "score": 0,
@@ -7050,16 +7109,16 @@
                     "statusId": 1,
                     "tournamentStage": "21",
                     "status": {
-                        "utcTime": "2026-08-08T10:30:00.000Z",
+                        "utcTime": "2026-08-08T11:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "08.08.2026 12:30:00"
+                            "firstHalfStarted": "08.08.2026 13:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1786185000000
+                    "timeTS": 1786186800000
                 }
             ],
             "parentLeagueId": 9116,
@@ -11716,7 +11775,7 @@
                         "longName": "Dinamo Minsk"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "17",
                     "status": {
                         "utcTime": "2026-08-08T11:00:00.000Z",
@@ -11724,9 +11783,15 @@
                             "firstHalfStarted": "08.08.2026 13:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1786186800000
                 },
@@ -11965,8 +12030,8 @@
                     "home": {
                         "id": 7852,
                         "score": 0,
-                        "name": "TNS",
-                        "longName": "TNS"
+                        "name": "The New Saints",
+                        "longName": "The New Saints"
                     },
                     "away": {
                         "id": 2194,
@@ -15127,6 +15192,358 @@
             "simpleLeague": false
         },
         {
+            "ccode": "INT",
+            "id": 937782,
+            "primaryId": 10612,
+            "name": "Women's Champions League Qualification 2nd Round",
+            "matches": [
+                {
+                    "id": 5996581,
+                    "leagueId": 937782,
+                    "time": "08.08.2026 10:00",
+                    "home": {
+                        "id": 595523,
+                        "score": 0,
+                        "name": "Ferencvarosi TC (W)",
+                        "longName": "Ferencvarosi TC (W)"
+                    },
+                    "away": {
+                        "id": 945633,
+                        "score": 0,
+                        "name": "Mitrovica (W)",
+                        "longName": "Mitrovica (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "bronze",
+                    "status": {
+                        "utcTime": "2026-08-08T08:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 10:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786176000000
+                },
+                {
+                    "id": 5996579,
+                    "leagueId": 937782,
+                    "time": "08.08.2026 11:00",
+                    "home": {
+                        "id": 401626,
+                        "score": 0,
+                        "name": "ZNK Mura (W)",
+                        "longName": "ZNK Mura (W)"
+                    },
+                    "away": {
+                        "id": 2038334,
+                        "score": 0,
+                        "name": "Hajduk Split (W)",
+                        "longName": "Hajduk Split (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "bronze",
+                    "status": {
+                        "utcTime": "2026-08-08T09:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 11:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786179600000
+                },
+                {
+                    "id": 5996590,
+                    "leagueId": 937782,
+                    "time": "08.08.2026 12:00",
+                    "home": {
+                        "id": 401628,
+                        "score": 0,
+                        "name": "FK Gintra Universitetas (W)",
+                        "longName": "FK Gintra Universitetas (W)"
+                    },
+                    "away": {
+                        "id": 2038310,
+                        "score": 0,
+                        "name": "Riga FC (W)",
+                        "longName": "Riga FC (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "bronze",
+                    "status": {
+                        "utcTime": "2026-08-08T10:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 12:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786183200000
+                },
+                {
+                    "id": 5996585,
+                    "leagueId": 937782,
+                    "time": "08.08.2026 13:00",
+                    "home": {
+                        "id": 1777846,
+                        "score": 0,
+                        "name": "FC Kharkiv (W)",
+                        "longName": "FC Kharkiv (W)"
+                    },
+                    "away": {
+                        "id": 2038349,
+                        "score": 0,
+                        "name": "TSC Backa Topola (W)",
+                        "longName": "TSC Backa Topola (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "bronze",
+                    "status": {
+                        "utcTime": "2026-08-08T11:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 13:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786186800000
+                },
+                {
+                    "id": 5996583,
+                    "leagueId": 937782,
+                    "time": "08.08.2026 13:00",
+                    "home": {
+                        "id": 359327,
+                        "score": 0,
+                        "name": "SFK 2000 Sarajevo (W)",
+                        "longName": "SFK 2000 Sarajevo (W)"
+                    },
+                    "away": {
+                        "id": 1198676,
+                        "score": 0,
+                        "name": "Racing FC Union Luxembourg (W)",
+                        "longName": "Racing FC Union Luxembourg (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "bronze",
+                    "status": {
+                        "utcTime": "2026-08-08T11:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 13:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786186800000
+                },
+                {
+                    "id": 5996575,
+                    "leagueId": 937782,
+                    "time": "08.08.2026 13:00",
+                    "home": {
+                        "id": 4507,
+                        "score": 0,
+                        "name": "V\u00e5lerenga (W)",
+                        "longName": "V\u00e5lerenga (W)"
+                    },
+                    "away": {
+                        "id": 2038363,
+                        "score": 0,
+                        "name": "Omonia Nicosia (W)",
+                        "longName": "Omonia Nicosia (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "bronze",
+                    "status": {
+                        "utcTime": "2026-08-08T11:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 13:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786186800000
+                },
+                {
+                    "id": 5996577,
+                    "leagueId": 937782,
+                    "time": "08.08.2026 14:30",
+                    "home": {
+                        "id": 859566,
+                        "score": 0,
+                        "name": "BSC Young Boys (W)",
+                        "longName": "BSC Young Boys (W)"
+                    },
+                    "away": {
+                        "id": 2038365,
+                        "score": 0,
+                        "name": "SeaSters Odesa (W)",
+                        "longName": "SeaSters Odesa (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "bronze",
+                    "status": {
+                        "utcTime": "2026-08-08T12:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 14:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786192200000
+                },
+                {
+                    "id": 5996591,
+                    "leagueId": 937782,
+                    "time": "08.08.2026 15:30",
+                    "home": {
+                        "id": 1170164,
+                        "score": 0,
+                        "name": "HB K\u00f8ge (W)",
+                        "longName": "HB K\u00f8ge (W)"
+                    },
+                    "away": {
+                        "id": 1716177,
+                        "score": 0,
+                        "name": "Hearts (W)",
+                        "longName": "Hearts (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "final",
+                    "status": {
+                        "utcTime": "2026-08-08T13:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 15:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786195800000
+                },
+                {
+                    "id": 5996573,
+                    "leagueId": 937782,
+                    "time": "08.08.2026 15:30",
+                    "home": {
+                        "id": 1508200,
+                        "score": 0,
+                        "name": "Torreense (W)",
+                        "longName": "Torreense (W)"
+                    },
+                    "away": {
+                        "id": 2038361,
+                        "score": 0,
+                        "name": "Apolonia (W)",
+                        "longName": "Apolonia (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "bronze",
+                    "status": {
+                        "utcTime": "2026-08-08T13:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 15:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786195800000
+                },
+                {
+                    "id": 5996588,
+                    "leagueId": 937782,
+                    "time": "08.08.2026 16:00",
+                    "home": {
+                        "id": 552492,
+                        "score": 0,
+                        "name": "KF Vllaznia (W)",
+                        "longName": "KF Vllaznia (W)"
+                    },
+                    "away": {
+                        "id": 401636,
+                        "score": 0,
+                        "name": "Apollon Limassol LFC (W)",
+                        "longName": "Apollon Limassol LFC (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "bronze",
+                    "status": {
+                        "utcTime": "2026-08-08T14:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 16:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786197600000
+                },
+                {
+                    "id": 5996582,
+                    "leagueId": 937782,
+                    "time": "08.08.2026 16:30",
+                    "home": {
+                        "id": 4182,
+                        "score": 0,
+                        "name": "Brann (W)",
+                        "longName": "Brann (W)"
+                    },
+                    "away": {
+                        "id": 401641,
+                        "score": 0,
+                        "name": "PAOK Thessaloniki FC (W)",
+                        "longName": "PAOK Thessaloniki FC (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "final",
+                    "status": {
+                        "utcTime": "2026-08-08T14:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 16:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786199400000
+                }
+            ],
+            "parentLeagueId": 10612,
+            "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
             "ccode": "IRL",
             "id": 10210,
             "primaryId": 10210,
@@ -15269,6 +15686,78 @@
             ],
             "parentLeagueId": 8969,
             "internalRank": 7,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "INT",
+            "id": 9656,
+            "primaryId": 9656,
+            "name": "CONCACAF Championship U20",
+            "matches": [
+                {
+                    "id": 1000018955,
+                    "leagueId": 9656,
+                    "time": "07.08.2026 23:00",
+                    "home": {
+                        "id": 67326,
+                        "score": 0,
+                        "name": "Costa Rica U20",
+                        "longName": "Costa Rica U20"
+                    },
+                    "away": {
+                        "id": 5876,
+                        "score": 0,
+                        "name": "USA U20",
+                        "longName": "USA U20"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "Semi-finals",
+                    "status": {
+                        "utcTime": "2026-08-07T21:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.08.2026 23:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786136400000
+                },
+                {
+                    "id": 1000018956,
+                    "leagueId": 9656,
+                    "time": "08.08.2026 04:00",
+                    "home": {
+                        "id": 5869,
+                        "score": 0,
+                        "name": "Canada U20",
+                        "longName": "Canada U20"
+                    },
+                    "away": {
+                        "id": 5880,
+                        "score": 0,
+                        "name": "Mexico U20",
+                        "longName": "Mexico U20"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "Semi-finals",
+                    "status": {
+                        "utcTime": "2026-08-08T02:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.08.2026 04:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786154400000
+                }
+            ],
+            "internalRank": 0,
             "simpleLeague": false
         },
         {

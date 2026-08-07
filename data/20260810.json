@@ -675,7 +675,7 @@
                         "longName": "DAC 1904 Dunajska Streda"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "3",
                     "status": {
                         "utcTime": "2026-08-09T17:00:00.000Z",
@@ -683,9 +683,15 @@
                             "firstHalfStarted": "09.08.2026 19:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1786294800000
                 }
@@ -1245,7 +1251,7 @@
                         "longName": "Wieczysta Krak\u00f3w"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "3",
                     "status": {
                         "utcTime": "2026-08-09T15:30:00.000Z",
@@ -1253,9 +1259,15 @@
                             "firstHalfStarted": "09.08.2026 17:30:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1786289400000
                 },
@@ -3547,6 +3559,37 @@
             "name": "Premier League",
             "matches": [
                 {
+                    "id": 5927563,
+                    "leagueId": 940873,
+                    "time": "09.08.2026 18:30",
+                    "home": {
+                        "id": 10116,
+                        "score": 0,
+                        "name": "Borac Banja Luka",
+                        "longName": "Borac Banja Luka"
+                    },
+                    "away": {
+                        "id": 10122,
+                        "score": 0,
+                        "name": "FK Velez Mostar",
+                        "longName": "FK Velez Mostar"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-08-09T16:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "09.08.2026 18:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786293000000
+                },
+                {
                     "id": 5927567,
                     "leagueId": 940873,
                     "time": "09.08.2026 21:00",
@@ -3963,6 +4006,37 @@
             "primaryId": 8965,
             "name": "Primera Nacional",
             "matches": [
+                {
+                    "id": 5113031,
+                    "leagueId": 916553,
+                    "time": "09.08.2026 19:00",
+                    "home": {
+                        "id": 213525,
+                        "score": 0,
+                        "name": "Atlanta",
+                        "longName": "Atlanta"
+                    },
+                    "away": {
+                        "id": 213531,
+                        "score": 0,
+                        "name": "Temperley",
+                        "longName": "Temperley"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "24",
+                    "status": {
+                        "utcTime": "2026-08-09T17:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "09.08.2026 19:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786294800000
+                },
                 {
                     "id": 5113406,
                     "leagueId": 916553,
@@ -5319,37 +5393,6 @@
             "primaryId": 10282,
             "name": "MLS Next Pro",
             "matches": [
-                {
-                    "id": 1000007701,
-                    "leagueId": 10282,
-                    "time": "09.08.2026 18:00",
-                    "home": {
-                        "id": 722264,
-                        "score": 0,
-                        "name": "Philadelphia Union II",
-                        "longName": "Philadelphia Union II"
-                    },
-                    "away": {
-                        "id": 1348109,
-                        "score": 0,
-                        "name": "FC Cincinnati 2",
-                        "longName": "FC Cincinnati 2"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "24",
-                    "status": {
-                        "utcTime": "2026-08-09T16:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "09.08.2026 18:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1786291200000
-                },
                 {
                     "id": 1000008070,
                     "leagueId": 10282,
@@ -6731,6 +6774,37 @@
                         "finished": false
                     },
                     "timeTS": 1786294800000
+                },
+                {
+                    "id": 1000018957,
+                    "leagueId": 1000000882,
+                    "time": "09.08.2026 22:00",
+                    "home": {
+                        "id": 1302798,
+                        "score": 0,
+                        "name": "Malawi",
+                        "longName": "Malawi"
+                    },
+                    "away": {
+                        "id": 74875,
+                        "score": 0,
+                        "name": "Ghana",
+                        "longName": "Ghana"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "Quarter-finals",
+                    "status": {
+                        "utcTime": "2026-08-09T20:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "09.08.2026 22:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1786305600000
                 }
             ],
             "parentLeagueId": 10371,
