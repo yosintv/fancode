@@ -732,6 +732,48 @@
             "simpleLeague": false
         },
         {
+            "ccode": "IND",
+            "id": 943496,
+            "primaryId": 10309,
+            "name": "Durand Cup",
+            "matches": [
+                {
+                    "id": 6040432,
+                    "leagueId": 943496,
+                    "time": "19.08.2026 15:30",
+                    "home": {
+                        "id": 1086744,
+                        "score": 0,
+                        "name": "SC Delhi",
+                        "longName": "SC Delhi"
+                    },
+                    "away": {
+                        "id": 165184,
+                        "score": 0,
+                        "name": "East Bengal FC",
+                        "longName": "East Bengal FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/2",
+                    "status": {
+                        "utcTime": "2026-08-19T13:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "19.08.2026 15:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1787146200000
+                }
+            ],
+            "parentLeagueId": 10309,
+            "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
             "ccode": "KSA",
             "id": 9942,
             "primaryId": 9942,
@@ -740,7 +782,7 @@
                 {
                     "id": 5853727,
                     "leagueId": 9942,
-                    "time": "18.08.2026 18:05",
+                    "time": "18.08.2026 18:15",
                     "home": {
                         "id": 582759,
                         "score": 0,
@@ -757,16 +799,16 @@
                     "statusId": 1,
                     "tournamentStage": "1/16",
                     "status": {
-                        "utcTime": "2026-08-18T16:05:00.000Z",
+                        "utcTime": "2026-08-18T16:15:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "18.08.2026 18:05:00"
+                            "firstHalfStarted": "18.08.2026 18:15:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1787069100000
+                    "timeTS": 1787069700000
                 },
                 {
                     "id": 5853719,
@@ -3503,7 +3545,7 @@
                         "longName": "Mj\u00e4llby"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "2",
                     "status": {
                         "utcTime": "2026-08-18T17:00:00.000Z",
@@ -3511,9 +3553,15 @@
                             "firstHalfStarted": "18.08.2026 19:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1787072400000
                 }
@@ -4535,7 +4583,7 @@
                 {
                     "id": 1000018838,
                     "leagueId": 523,
-                    "time": "18.08.2026 18:15",
+                    "time": "18.08.2026 17:45",
                     "home": {
                         "id": 101619,
                         "score": 0,
@@ -4552,21 +4600,21 @@
                     "statusId": 1,
                     "tournamentStage": "2",
                     "status": {
-                        "utcTime": "2026-08-18T16:15:00.000Z",
+                        "utcTime": "2026-08-18T15:45:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "18.08.2026 18:15:00"
+                            "firstHalfStarted": "18.08.2026 17:45:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1787069700000
+                    "timeTS": 1787067900000
                 },
                 {
                     "id": 1000018839,
                     "leagueId": 523,
-                    "time": "18.08.2026 18:15",
+                    "time": "18.08.2026 17:45",
                     "home": {
                         "id": 392200,
                         "score": 0,
@@ -4583,21 +4631,21 @@
                     "statusId": 1,
                     "tournamentStage": "2",
                     "status": {
-                        "utcTime": "2026-08-18T16:15:00.000Z",
+                        "utcTime": "2026-08-18T15:45:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "18.08.2026 18:15:00"
+                            "firstHalfStarted": "18.08.2026 17:45:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1787069700000
+                    "timeTS": 1787067900000
                 },
                 {
                     "id": 1000018840,
                     "leagueId": 523,
-                    "time": "18.08.2026 18:30",
+                    "time": "18.08.2026 18:00",
                     "home": {
                         "id": 664861,
                         "score": 0,
@@ -4614,21 +4662,21 @@
                     "statusId": 1,
                     "tournamentStage": "2",
                     "status": {
-                        "utcTime": "2026-08-18T16:30:00.000Z",
+                        "utcTime": "2026-08-18T16:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "18.08.2026 18:30:00"
+                            "firstHalfStarted": "18.08.2026 18:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1787070600000
+                    "timeTS": 1787068800000
                 },
                 {
                     "id": 1000018841,
                     "leagueId": 523,
-                    "time": "18.08.2026 19:00",
+                    "time": "18.08.2026 18:30",
                     "home": {
                         "id": 101611,
                         "score": 0,
@@ -4645,16 +4693,16 @@
                     "statusId": 1,
                     "tournamentStage": "2",
                     "status": {
-                        "utcTime": "2026-08-18T17:00:00.000Z",
+                        "utcTime": "2026-08-18T16:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "18.08.2026 19:00:00"
+                            "firstHalfStarted": "18.08.2026 18:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1787072400000
+                    "timeTS": 1787070600000
                 }
             ],
             "internalRank": 0,
