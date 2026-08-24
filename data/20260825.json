@@ -1325,6 +1325,47 @@
             "simpleLeague": false
         },
         {
+            "ccode": "USA",
+            "id": 8972,
+            "primaryId": 8972,
+            "name": "USL Championship",
+            "matches": [
+                {
+                    "id": 5109899,
+                    "leagueId": 8972,
+                    "time": "25.08.2026 01:00",
+                    "home": {
+                        "id": 162183,
+                        "score": 0,
+                        "name": "Charleston Battery",
+                        "longName": "Charleston Battery"
+                    },
+                    "away": {
+                        "id": 721896,
+                        "score": 0,
+                        "name": "Miami FC",
+                        "longName": "Miami FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-08-24T23:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "25.08.2026 01:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1787612400000
+                }
+            ],
+            "internalRank": 9,
+            "simpleLeague": false
+        },
+        {
             "ccode": "GER",
             "id": 936417,
             "primaryId": 209,
@@ -3294,7 +3335,7 @@
                         "longName": "CD Jaguares"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "Clausura - Round 5",
                     "status": {
                         "utcTime": "2026-08-25T00:00:00.000Z",
@@ -3302,9 +3343,15 @@
                             "firstHalfStarted": "25.08.2026 02:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1787616000000
                 }
