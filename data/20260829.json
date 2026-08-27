@@ -5380,7 +5380,7 @@
                         "longName": "Ebbsfleet United"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "5",
                     "status": {
                         "utcTime": "2026-08-29T14:00:00.000Z",
@@ -5388,9 +5388,15 @@
                             "firstHalfStarted": "29.08.2026 16:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1788012000000
                 },
@@ -9776,6 +9782,37 @@
             "name": "Southern Premier Division Central",
             "matches": [
                 {
+                    "id": 5953389,
+                    "leagueId": 941117,
+                    "time": "28.08.2026 20:45",
+                    "home": {
+                        "id": 674289,
+                        "score": 0,
+                        "name": "Peterborough Sports",
+                        "longName": "Peterborough Sports"
+                    },
+                    "away": {
+                        "id": 960130,
+                        "score": 0,
+                        "name": "Anstey Nomads",
+                        "longName": "Anstey Nomads"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "5",
+                    "status": {
+                        "utcTime": "2026-08-28T18:45:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "28.08.2026 20:45:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1787942700000
+                },
+                {
                     "id": 5953381,
                     "leagueId": 941117,
                     "time": "29.08.2026 16:00",
@@ -10007,37 +10044,6 @@
                         "score": 0,
                         "name": "Redditch United",
                         "longName": "Redditch United"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "5",
-                    "status": {
-                        "utcTime": "2026-08-29T14:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "29.08.2026 16:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1788012000000
-                },
-                {
-                    "id": 5953389,
-                    "leagueId": 941117,
-                    "time": "29.08.2026 16:00",
-                    "home": {
-                        "id": 674289,
-                        "score": 0,
-                        "name": "Peterborough Sports",
-                        "longName": "Peterborough Sports"
-                    },
-                    "away": {
-                        "id": 960130,
-                        "score": 0,
-                        "name": "Anstey Nomads",
-                        "longName": "Anstey Nomads"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
