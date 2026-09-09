@@ -1394,7 +1394,7 @@
                         "longName": "Aris Thessaloniki"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 106,
                     "tournamentStage": "2",
                     "status": {
                         "utcTime": "2026-09-10T14:45:00.000Z",
@@ -1402,9 +1402,15 @@
                             "firstHalfStarted": "10.09.2026 16:45:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "Can",
+                            "shortKey": "cancelled_short",
+                            "long": "Cancelled",
+                            "longKey": "cancelled"
+                        }
                     },
                     "timeTS": 1789051500000
                 }
@@ -1914,47 +1920,6 @@
             "simpleLeague": false
         },
         {
-            "ccode": "NOR",
-            "id": 333,
-            "primaryId": 333,
-            "name": "NM Kvinner",
-            "matches": [
-                {
-                    "id": 6133356,
-                    "leagueId": 333,
-                    "time": "09.09.2026 18:00",
-                    "home": {
-                        "id": 1622835,
-                        "score": 0,
-                        "name": "Steinkjer (W)",
-                        "longName": "Steinkjer (W)"
-                    },
-                    "away": {
-                        "id": 1734958,
-                        "score": 0,
-                        "name": "Rana FK (W)",
-                        "longName": "Rana FK (W)"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1",
-                    "status": {
-                        "utcTime": "2026-09-09T16:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "09.09.2026 18:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1788969600000
-                }
-            ],
-            "internalRank": 0,
-            "simpleLeague": false
-        },
-        {
             "ccode": "EGY",
             "id": 943009,
             "primaryId": 519,
@@ -2036,7 +2001,7 @@
                 {
                     "id": 5927572,
                     "leagueId": 940873,
-                    "time": "09.09.2026 17:00",
+                    "time": "09.09.2026 18:00",
                     "home": {
                         "id": 10108,
                         "score": 0,
@@ -2053,16 +2018,16 @@
                     "statusId": 1,
                     "tournamentStage": "2",
                     "status": {
-                        "utcTime": "2026-09-09T15:00:00.000Z",
+                        "utcTime": "2026-09-09T16:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "09.09.2026 17:00:00"
+                            "firstHalfStarted": "09.09.2026 18:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1788966000000
+                    "timeTS": 1788969600000
                 }
             ],
             "parentLeagueId": 267,
@@ -3381,37 +3346,6 @@
             "name": "MLS Next Pro",
             "matches": [
                 {
-                    "id": 1000007602,
-                    "leagueId": 10282,
-                    "time": "10.09.2026 02:00",
-                    "home": {
-                        "id": 1348115,
-                        "score": 0,
-                        "name": "San Jose Earthquakes II",
-                        "longName": "San Jose Earthquakes II"
-                    },
-                    "away": {
-                        "id": 521005,
-                        "score": 0,
-                        "name": "Ventura County FC",
-                        "longName": "Ventura County FC"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "17",
-                    "status": {
-                        "utcTime": "2026-09-10T00:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "10.09.2026 02:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1788998400000
-                },
-                {
                     "id": 1000007765,
                     "leagueId": 10282,
                     "time": "10.09.2026 02:00",
@@ -3472,6 +3406,37 @@
                         "finished": false
                     },
                     "timeTS": 1789001100000
+                },
+                {
+                    "id": 1000007602,
+                    "leagueId": 10282,
+                    "time": "10.09.2026 04:30",
+                    "home": {
+                        "id": 1348115,
+                        "score": 0,
+                        "name": "San Jose Earthquakes II",
+                        "longName": "San Jose Earthquakes II"
+                    },
+                    "away": {
+                        "id": 521005,
+                        "score": 0,
+                        "name": "Ventura County FC",
+                        "longName": "Ventura County FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "17",
+                    "status": {
+                        "utcTime": "2026-09-10T02:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "10.09.2026 04:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1789007400000
                 }
             ],
             "internalRank": 0,
@@ -3663,47 +3628,6 @@
             "simpleLeague": false
         },
         {
-            "ccode": "COL",
-            "id": 9125,
-            "primaryId": 9125,
-            "name": "Primera B",
-            "matches": [
-                {
-                    "id": 1000013680,
-                    "leagueId": 9125,
-                    "time": "09.09.2026 22:30",
-                    "home": {
-                        "id": 4400,
-                        "score": 0,
-                        "name": "Independiente Valle del Cauca",
-                        "longName": "Independiente Valle del Cauca"
-                    },
-                    "away": {
-                        "id": 4407,
-                        "score": 0,
-                        "name": "Deportes Quind\u00edo",
-                        "longName": "Deportes Quind\u00edo"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "Clausura - Round 4",
-                    "status": {
-                        "utcTime": "2026-09-09T20:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "09.09.2026 22:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1788985800000
-                }
-            ],
-            "internalRank": 0,
-            "simpleLeague": false
-        },
-        {
             "ccode": "CHI",
             "id": 9126,
             "primaryId": 9126,
@@ -3801,6 +3725,47 @@
                         "finished": false
                     },
                     "timeTS": 1788996600000
+                }
+            ],
+            "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "COL",
+            "id": 9125,
+            "primaryId": 9125,
+            "name": "Primera B",
+            "matches": [
+                {
+                    "id": 1000013680,
+                    "leagueId": 9125,
+                    "time": "09.09.2026 22:30",
+                    "home": {
+                        "id": 4400,
+                        "score": 0,
+                        "name": "Independiente Valle del Cauca",
+                        "longName": "Independiente Valle del Cauca"
+                    },
+                    "away": {
+                        "id": 4407,
+                        "score": 0,
+                        "name": "Deportes Quind\u00edo",
+                        "longName": "Deportes Quind\u00edo"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "Clausura - Round 4",
+                    "status": {
+                        "utcTime": "2026-09-09T20:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "09.09.2026 22:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1788985800000
                 }
             ],
             "internalRank": 0,
