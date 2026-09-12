@@ -2147,7 +2147,7 @@
                         "longName": "Dulwich Hamlet"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "8",
                     "status": {
                         "utcTime": "2026-09-15T18:45:00.000Z",
@@ -2155,9 +2155,15 @@
                             "firstHalfStarted": "15.09.2026 20:45:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1789497900000
                 },
@@ -3620,37 +3626,6 @@
                     "timeTS": 1789486200000
                 },
                 {
-                    "id": 5911536,
-                    "leagueId": 940451,
-                    "time": "15.09.2026 17:30",
-                    "home": {
-                        "id": 8486,
-                        "score": 0,
-                        "name": "Unterhaching",
-                        "longName": "Unterhaching"
-                    },
-                    "away": {
-                        "id": 145484,
-                        "score": 0,
-                        "name": "TSV Buchbach",
-                        "longName": "TSV Buchbach"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "9",
-                    "status": {
-                        "utcTime": "2026-09-15T15:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "15.09.2026 17:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1789486200000
-                },
-                {
                     "id": 5911529,
                     "leagueId": 940451,
                     "time": "15.09.2026 18:30",
@@ -4783,20 +4758,20 @@
             "name": "Women's World Cup U20",
             "matches": [
                 {
-                    "id": 5852087,
+                    "id": 5852086,
                     "leagueId": 938405,
                     "time": "16.09.2026 15:00",
                     "home": {
-                        "id": 179626,
+                        "id": 2057964,
                         "score": 0,
-                        "name": "1B (W)",
-                        "longName": "1B (W)"
+                        "name": "Argentina U20 (W)",
+                        "longName": "Argentina U20 (W)"
                     },
                     "away": {
-                        "id": 452840,
+                        "id": 179629,
                         "score": 0,
-                        "name": "3ACD (W)",
-                        "longName": "3ACD (W)"
+                        "name": "2C (W)",
+                        "longName": "2C (W)"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -4814,20 +4789,20 @@
                     "timeTS": 1789563600000
                 },
                 {
-                    "id": 5852086,
+                    "id": 5852087,
                     "leagueId": 938405,
                     "time": "16.09.2026 15:00",
                     "home": {
-                        "id": 179624,
+                        "id": 1459880,
                         "score": 0,
-                        "name": "2A (W)",
-                        "longName": "2A (W)"
+                        "name": "Brazil U20 (W)",
+                        "longName": "Brazil U20 (W)"
                     },
                     "away": {
-                        "id": 179629,
+                        "id": 452840,
                         "score": 0,
-                        "name": "2C (W)",
-                        "longName": "2C (W)"
+                        "name": "3ACD (W)",
+                        "longName": "3ACD (W)"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -5011,52 +4986,6 @@
                 }
             ],
             "internalRank": 100,
-            "simpleLeague": false
-        },
-        {
-            "isGroup": true,
-            "groupName": "1st Preliminary Round",
-            "ccode": "INT",
-            "id": 1000001751,
-            "primaryId": 9468,
-            "name": "CAF Confed Cup 1st Preliminary Round",
-            "matches": [
-                {
-                    "id": 1000021248,
-                    "leagueId": 1000001751,
-                    "time": "16.09.2026 02:00",
-                    "home": {
-                        "id": 1421037,
-                        "score": 0,
-                        "name": "AS Cotonou",
-                        "longName": "AS Cotonou"
-                    },
-                    "away": {
-                        "id": 2161017,
-                        "score": 0,
-                        "name": "The Panthers",
-                        "longName": "The Panthers"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1st Preliminary Round",
-                    "status": {
-                        "utcTime": "2026-09-16T00:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "16.09.2026 02:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false,
-                        "aggregatedStr": "0 - 0"
-                    },
-                    "timeTS": 1789516800000
-                }
-            ],
-            "parentLeagueId": 9468,
-            "parentLeagueName": "CAF Confed Cup",
-            "internalRank": 0,
             "simpleLeague": false
         },
         {
@@ -5507,37 +5436,6 @@
                     "timeTS": 1789497900000
                 },
                 {
-                    "id": 1000016981,
-                    "leagueId": 1000001474,
-                    "time": "15.09.2026 20:45",
-                    "home": {
-                        "id": 1088196,
-                        "score": 0,
-                        "name": "Broxburn Athletic",
-                        "longName": "Broxburn Athletic"
-                    },
-                    "away": {
-                        "id": 1215940,
-                        "score": 0,
-                        "name": "Tranent",
-                        "longName": "Tranent"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "8",
-                    "status": {
-                        "utcTime": "2026-09-15T18:45:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "15.09.2026 20:45:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1789497900000
-                },
-                {
                     "id": 1000016983,
                     "leagueId": 1000001474,
                     "time": "15.09.2026 20:45",
@@ -5933,7 +5831,7 @@
                 {
                     "id": 1000019049,
                     "leagueId": 144,
-                    "time": "15.09.2026 23:15",
+                    "time": "15.09.2026 23:30",
                     "home": {
                         "id": 1297346,
                         "score": 0,
@@ -5950,16 +5848,16 @@
                     "statusId": 1,
                     "tournamentStage": "20",
                     "status": {
-                        "utcTime": "2026-09-15T21:15:00.000Z",
+                        "utcTime": "2026-09-15T21:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "15.09.2026 23:15:00"
+                            "firstHalfStarted": "15.09.2026 23:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1789506900000
+                    "timeTS": 1789507800000
                 }
             ],
             "internalRank": 0,
@@ -6271,48 +6169,6 @@
                     "timeTS": 1789560000000
                 }
             ],
-            "internalRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "INT",
-            "id": 1000001452,
-            "primaryId": 9741,
-            "name": "UEFA Youth League 1st Round",
-            "matches": [
-                {
-                    "id": 1000021402,
-                    "leagueId": 1000001452,
-                    "time": "16.09.2026 02:00",
-                    "home": {
-                        "id": 563156,
-                        "score": 0,
-                        "name": "HJK U19",
-                        "longName": "HJK U19"
-                    },
-                    "away": {
-                        "id": 2183119,
-                        "score": 0,
-                        "name": "Ballkani U19",
-                        "longName": "Ballkani U19"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1st Round",
-                    "status": {
-                        "utcTime": "2026-09-16T00:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "16.09.2026 02:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1789516800000
-                }
-            ],
-            "parentLeagueId": 9741,
             "internalRank": 0,
             "simpleLeague": false
         },
