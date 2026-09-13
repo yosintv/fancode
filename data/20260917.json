@@ -3321,7 +3321,7 @@
                         "longName": "Alianza FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "3",
                     "status": {
                         "utcTime": "2026-09-17T01:00:00.000Z",
@@ -3329,9 +3329,15 @@
                             "firstHalfStarted": "17.09.2026 03:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1789606800000
                 },
@@ -4411,37 +4417,6 @@
             "name": "Women's World Cup U20",
             "matches": [
                 {
-                    "id": 5852088,
-                    "leagueId": 938405,
-                    "time": "16.09.2026 18:30",
-                    "home": {
-                        "id": 239731,
-                        "score": 0,
-                        "name": "1D (W)",
-                        "longName": "1D (W)"
-                    },
-                    "away": {
-                        "id": 452839,
-                        "score": 0,
-                        "name": "3BEF (W)",
-                        "longName": "3BEF (W)"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1/8",
-                    "status": {
-                        "utcTime": "2026-09-16T16:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "16.09.2026 18:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1789576200000
-                },
-                {
                     "id": 5852089,
                     "leagueId": 938405,
                     "time": "16.09.2026 18:30",
@@ -4473,20 +4448,51 @@
                     "timeTS": 1789576200000
                 },
                 {
-                    "id": 5852090,
+                    "id": 5852088,
+                    "leagueId": 938405,
+                    "time": "16.09.2026 18:30",
+                    "home": {
+                        "id": 2058028,
+                        "score": 0,
+                        "name": "Italy U20 (W)",
+                        "longName": "Italy U20 (W)"
+                    },
+                    "away": {
+                        "id": 452839,
+                        "score": 0,
+                        "name": "3BEF (W)",
+                        "longName": "3BEF (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/8",
+                    "status": {
+                        "utcTime": "2026-09-16T16:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "16.09.2026 18:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1789576200000
+                },
+                {
+                    "id": 5852091,
                     "leagueId": 938405,
                     "time": "17.09.2026 15:00",
                     "home": {
-                        "id": 179628,
+                        "id": 2058009,
                         "score": 0,
-                        "name": "1C (W)",
-                        "longName": "1C (W)"
+                        "name": "England U20 (W)",
+                        "longName": "England U20 (W)"
                     },
                     "away": {
-                        "id": 452841,
+                        "id": 1976,
                         "score": 0,
-                        "name": "3ABF (W)",
-                        "longName": "3ABF (W)"
+                        "name": "2F (W)",
+                        "longName": "2F (W)"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -4504,20 +4510,20 @@
                     "timeTS": 1789650000000
                 },
                 {
-                    "id": 5852091,
+                    "id": 5852090,
                     "leagueId": 938405,
                     "time": "17.09.2026 15:00",
                     "home": {
-                        "id": 2058009,
+                        "id": 1459883,
                         "score": 0,
-                        "name": "England U20 (W)",
-                        "longName": "England U20 (W)"
+                        "name": "France U20 (W)",
+                        "longName": "France U20 (W)"
                     },
                     "away": {
-                        "id": 1976,
+                        "id": 1459890,
                         "score": 0,
-                        "name": "2F (W)",
-                        "longName": "2F (W)"
+                        "name": "Canada U20 (W)",
+                        "longName": "Canada U20 (W)"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -5547,6 +5553,47 @@
             "simpleLeague": false
         },
         {
+            "ccode": "NED",
+            "id": 10668,
+            "primaryId": 10668,
+            "name": "KNVB Beker Women",
+            "matches": [
+                {
+                    "id": 1000021915,
+                    "leagueId": 10668,
+                    "time": "16.09.2026 20:00",
+                    "home": {
+                        "id": 1807063,
+                        "score": 0,
+                        "name": "AZSV",
+                        "longName": "AZSV"
+                    },
+                    "away": {
+                        "id": 1807084,
+                        "score": 0,
+                        "name": "SV Saestum II",
+                        "longName": "SV Saestum II"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "2nd Qualifying Round",
+                    "status": {
+                        "utcTime": "2026-09-16T18:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "16.09.2026 20:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1789581600000
+                }
+            ],
+            "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
             "ccode": "SCO",
             "id": 1000001474,
             "primaryId": 9545,
@@ -5948,7 +5995,7 @@
                 {
                     "id": 1000019051,
                     "leagueId": 144,
-                    "time": "17.09.2026 00:30",
+                    "time": "17.09.2026 00:00",
                     "home": {
                         "id": 164353,
                         "score": 0,
@@ -5965,16 +6012,16 @@
                     "statusId": 1,
                     "tournamentStage": "20",
                     "status": {
-                        "utcTime": "2026-09-16T22:30:00.000Z",
+                        "utcTime": "2026-09-16T22:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "17.09.2026 00:30:00"
+                            "firstHalfStarted": "17.09.2026 00:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1789597800000
+                    "timeTS": 1789596000000
                 },
                 {
                     "id": 1000019052,
@@ -6183,6 +6230,37 @@
             "primaryId": 9741,
             "name": "UEFA Youth League 1st Round",
             "matches": [
+                {
+                    "id": 1000021402,
+                    "leagueId": 1000001452,
+                    "time": "16.09.2026 18:00",
+                    "home": {
+                        "id": 563156,
+                        "score": 0,
+                        "name": "HJK U19",
+                        "longName": "HJK U19"
+                    },
+                    "away": {
+                        "id": 2183119,
+                        "score": 0,
+                        "name": "Ballkani U19",
+                        "longName": "Ballkani U19"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1st Round",
+                    "status": {
+                        "utcTime": "2026-09-16T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "16.09.2026 18:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1789574400000
+                },
                 {
                     "id": 1000021408,
                     "leagueId": 1000001452,
