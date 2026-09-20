@@ -170,8 +170,8 @@
                     "home": {
                         "id": 1602400,
                         "score": 0,
-                        "name": "Shenavarsazi Qeshm",
-                        "longName": "Shenavarsazi Qeshm"
+                        "name": "Qeshm Island",
+                        "longName": "Qeshm Island"
                     },
                     "away": {
                         "id": 582273,
@@ -2443,7 +2443,7 @@
                         "longName": "Independiente del Valle"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "Championship Round - Round 1",
                     "status": {
                         "utcTime": "2026-09-22T00:30:00.000Z",
@@ -2451,9 +2451,15 @@
                             "firstHalfStarted": "22.09.2026 02:30:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1790037000000
                 }
