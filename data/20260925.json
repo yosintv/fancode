@@ -814,7 +814,7 @@
                 {
                     "id": 6300692,
                     "leagueId": 944026,
-                    "time": "25.09.2026 07:00",
+                    "time": "25.09.2026 08:00",
                     "home": {
                         "id": 613636,
                         "score": 0,
@@ -831,21 +831,21 @@
                     "statusId": 1,
                     "tournamentStage": "1/4",
                     "status": {
-                        "utcTime": "2026-09-25T05:00:00.000Z",
+                        "utcTime": "2026-09-25T06:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "25.09.2026 07:00:00"
+                            "firstHalfStarted": "25.09.2026 08:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1790312400000
+                    "timeTS": 1790316000000
                 },
                 {
                     "id": 6300693,
                     "leagueId": 944026,
-                    "time": "25.09.2026 12:30",
+                    "time": "25.09.2026 13:30",
                     "home": {
                         "id": 300702,
                         "score": 0,
@@ -862,16 +862,16 @@
                     "statusId": 1,
                     "tournamentStage": "1/4",
                     "status": {
-                        "utcTime": "2026-09-25T10:30:00.000Z",
+                        "utcTime": "2026-09-25T11:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "25.09.2026 12:30:00"
+                            "firstHalfStarted": "25.09.2026 13:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1790332200000
+                    "timeTS": 1790335800000
                 }
             ],
             "parentLeagueId": 9833,
@@ -973,7 +973,7 @@
                         "longName": "Raja Casablanca"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-09-24T15:00:00.000Z",
@@ -981,9 +981,15 @@
                             "firstHalfStarted": "24.09.2026 17:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1790262000000
                 },
@@ -1070,6 +1076,38 @@
             "primaryId": 489,
             "name": "Club Friendlies",
             "matches": [
+                {
+                    "id": 6306838,
+                    "leagueId": 915708,
+                    "time": "24.09.2026 18:30",
+                    "home": {
+                        "id": 9757,
+                        "score": 0,
+                        "name": "Sportfreunde Siegen",
+                        "longName": "Sportfreunde Siegen"
+                    },
+                    "away": {
+                        "id": 9788,
+                        "score": 0,
+                        "name": "Borussia M\u00f6nchengladbach",
+                        "shortName": "M'gladbach",
+                        "longName": "Borussia M\u00f6nchengladbach"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-09-24T16:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "24.09.2026 18:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1790267400000
+                },
                 {
                     "id": 6299426,
                     "leagueId": 915708,
@@ -1968,6 +2006,48 @@
                 }
             ],
             "internalRank": 8,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "NGA",
+            "id": 943368,
+            "primaryId": 533,
+            "name": "NPFL",
+            "matches": [
+                {
+                    "id": 6103098,
+                    "leagueId": 943368,
+                    "time": "24.09.2026 17:00",
+                    "home": {
+                        "id": 184466,
+                        "score": 0,
+                        "name": "Rivers United FC",
+                        "longName": "Rivers United FC"
+                    },
+                    "away": {
+                        "id": 1791630,
+                        "score": 0,
+                        "name": "Kun Khalifat",
+                        "longName": "Kun Khalifat"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "5",
+                    "status": {
+                        "utcTime": "2026-09-24T15:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "24.09.2026 17:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1790262000000
+                }
+            ],
+            "parentLeagueId": 533,
+            "internalRank": 0,
             "simpleLeague": false
         },
         {
