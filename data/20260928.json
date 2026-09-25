@@ -286,7 +286,7 @@
                 {
                     "id": 6140729,
                     "leagueId": 914609,
-                    "time": "27.09.2026 17:30",
+                    "time": "27.09.2026 18:30",
                     "home": {
                         "id": 8495,
                         "score": 0,
@@ -303,16 +303,16 @@
                     "statusId": 1,
                     "tournamentStage": "1",
                     "status": {
-                        "utcTime": "2026-09-27T15:30:00.000Z",
+                        "utcTime": "2026-09-27T16:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "27.09.2026 17:30:00"
+                            "firstHalfStarted": "27.09.2026 18:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1790523000000
+                    "timeTS": 1790526600000
                 },
                 {
                     "id": 6280210,
@@ -377,37 +377,6 @@
                     "timeTS": 1790541000000
                 },
                 {
-                    "id": 6280212,
-                    "leagueId": 914609,
-                    "time": "28.09.2026 01:35",
-                    "home": {
-                        "id": 5822,
-                        "score": 0,
-                        "name": "China",
-                        "longName": "China"
-                    },
-                    "away": {
-                        "id": 5820,
-                        "score": 0,
-                        "name": "New Zealand",
-                        "longName": "New Zealand"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1",
-                    "status": {
-                        "utcTime": "2026-09-27T23:35:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "28.09.2026 01:35:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1790552100000
-                },
-                {
                     "id": 6280213,
                     "leagueId": 914609,
                     "time": "28.09.2026 11:30",
@@ -424,7 +393,7 @@
                         "longName": "Palestine"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 106,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-09-28T09:30:00.000Z",
@@ -432,42 +401,48 @@
                             "firstHalfStarted": "28.09.2026 11:30:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "Can",
+                            "shortKey": "cancelled_short",
+                            "long": "Cancelled",
+                            "longKey": "cancelled"
+                        }
                     },
                     "timeTS": 1790587800000
                 },
                 {
-                    "id": 6299699,
+                    "id": 6315013,
                     "leagueId": 914609,
-                    "time": "28.09.2026 12:00",
+                    "time": "28.09.2026 12:25",
                     "home": {
-                        "id": 5893,
+                        "id": 6715,
                         "score": 0,
-                        "name": "Kyrgyzstan",
-                        "longName": "Kyrgyzstan"
+                        "name": "Japan",
+                        "longName": "Japan"
                     },
                     "away": {
-                        "id": 5899,
+                        "id": 5800,
                         "score": 0,
-                        "name": "Maldives",
-                        "longName": "Maldives"
+                        "name": "Venezuela",
+                        "longName": "Venezuela"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
                     "tournamentStage": "1",
                     "status": {
-                        "utcTime": "2026-09-28T10:00:00.000Z",
+                        "utcTime": "2026-09-28T10:25:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "28.09.2026 12:00:00"
+                            "firstHalfStarted": "28.09.2026 12:25:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1790589600000
+                    "timeTS": 1790591100000
                 },
                 {
                     "id": 6210557,
@@ -499,6 +474,37 @@
                         "finished": false
                     },
                     "timeTS": 1790593200000
+                },
+                {
+                    "id": 6309723,
+                    "leagueId": 914609,
+                    "time": "28.09.2026 14:00",
+                    "home": {
+                        "id": 5898,
+                        "score": 0,
+                        "name": "Tajikistan",
+                        "longName": "Tajikistan"
+                    },
+                    "away": {
+                        "id": 6333,
+                        "score": 0,
+                        "name": "Palestine",
+                        "longName": "Palestine"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-09-28T12:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "28.09.2026 14:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1790596800000
                 }
             ],
             "parentLeagueId": 114,
@@ -590,82 +596,6 @@
             ],
             "parentLeagueId": 204,
             "internalRank": 8,
-            "simpleLeague": false
-        },
-        {
-            "isGroup": true,
-            "groupName": "A",
-            "ccode": "INT",
-            "id": 943302,
-            "primaryId": 13287,
-            "name": "ASEAN Cup Premier Division Grp. A",
-            "matches": [
-                {
-                    "id": 6232980,
-                    "leagueId": 943302,
-                    "time": "28.09.2026 11:00",
-                    "home": {
-                        "id": 5825,
-                        "score": 0,
-                        "name": "Singapore",
-                        "longName": "Singapore"
-                    },
-                    "away": {
-                        "id": 95797,
-                        "score": 0,
-                        "name": "Bangladesh",
-                        "longName": "Bangladesh"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "2",
-                    "status": {
-                        "utcTime": "2026-09-28T09:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "28.09.2026 11:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1790586000000
-                },
-                {
-                    "id": 6232981,
-                    "leagueId": 943302,
-                    "time": "28.09.2026 14:30",
-                    "home": {
-                        "id": 5823,
-                        "score": 0,
-                        "name": "Malaysia",
-                        "longName": "Malaysia"
-                    },
-                    "away": {
-                        "id": 6324,
-                        "score": 0,
-                        "name": "Indonesia",
-                        "longName": "Indonesia"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "2",
-                    "status": {
-                        "utcTime": "2026-09-28T12:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "28.09.2026 14:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1790598600000
-                }
-            ],
-            "parentLeagueId": 13287,
-            "parentLeagueName": "ASEAN Cup",
-            "internalRank": 0,
             "simpleLeague": false
         },
         {
@@ -1186,7 +1116,7 @@
                         "started": false,
                         "cancelled": false,
                         "finished": false,
-                        "aggregatedStr": "0 - 0"
+                        "aggregatedStr": "1 - 0"
                     },
                     "timeTS": 1790541000000
                 },
@@ -1218,12 +1148,88 @@
                         "started": false,
                         "cancelled": false,
                         "finished": false,
-                        "aggregatedStr": "0 - 0"
+                        "aggregatedStr": "1 - 2"
                     },
                     "timeTS": 1790550000000
                 }
             ],
             "parentLeagueId": 9091,
+            "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "isGroup": true,
+            "groupName": "A",
+            "ccode": "INT",
+            "id": 943302,
+            "primaryId": 13287,
+            "name": "FIFA ASEAN Cup Premier Division Grp. A",
+            "matches": [
+                {
+                    "id": 6232980,
+                    "leagueId": 943302,
+                    "time": "28.09.2026 11:00",
+                    "home": {
+                        "id": 5825,
+                        "score": 0,
+                        "name": "Singapore",
+                        "longName": "Singapore"
+                    },
+                    "away": {
+                        "id": 95797,
+                        "score": 0,
+                        "name": "Bangladesh",
+                        "longName": "Bangladesh"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "2",
+                    "status": {
+                        "utcTime": "2026-09-28T09:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "28.09.2026 11:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1790586000000
+                },
+                {
+                    "id": 6232981,
+                    "leagueId": 943302,
+                    "time": "28.09.2026 14:30",
+                    "home": {
+                        "id": 5823,
+                        "score": 0,
+                        "name": "Malaysia",
+                        "longName": "Malaysia"
+                    },
+                    "away": {
+                        "id": 6324,
+                        "score": 0,
+                        "name": "Indonesia",
+                        "longName": "Indonesia"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "2",
+                    "status": {
+                        "utcTime": "2026-09-28T12:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "28.09.2026 14:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1790598600000
+                }
+            ],
+            "parentLeagueId": 13287,
+            "parentLeagueName": "FIFA ASEAN Cup",
             "internalRank": 0,
             "simpleLeague": false
         },
@@ -2110,7 +2116,7 @@
                 {
                     "id": 5975038,
                     "leagueId": 522,
-                    "time": "27.09.2026 17:30",
+                    "time": "27.09.2026 17:00",
                     "home": {
                         "id": 102027,
                         "score": 0,
@@ -2127,21 +2133,21 @@
                     "statusId": 1,
                     "tournamentStage": "4",
                     "status": {
-                        "utcTime": "2026-09-27T15:30:00.000Z",
+                        "utcTime": "2026-09-27T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "27.09.2026 17:30:00"
+                            "firstHalfStarted": "27.09.2026 17:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1790523000000
+                    "timeTS": 1790521200000
                 },
                 {
                     "id": 5975031,
                     "leagueId": 522,
-                    "time": "27.09.2026 17:30",
+                    "time": "27.09.2026 17:00",
                     "home": {
                         "id": 102018,
                         "score": 0,
@@ -2158,21 +2164,21 @@
                     "statusId": 1,
                     "tournamentStage": "4",
                     "status": {
-                        "utcTime": "2026-09-27T15:30:00.000Z",
+                        "utcTime": "2026-09-27T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "27.09.2026 17:30:00"
+                            "firstHalfStarted": "27.09.2026 17:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1790523000000
+                    "timeTS": 1790521200000
                 },
                 {
                     "id": 5975032,
                     "leagueId": 522,
-                    "time": "27.09.2026 17:30",
+                    "time": "27.09.2026 17:00",
                     "home": {
                         "id": 102017,
                         "score": 0,
@@ -2189,21 +2195,21 @@
                     "statusId": 1,
                     "tournamentStage": "4",
                     "status": {
-                        "utcTime": "2026-09-27T15:30:00.000Z",
+                        "utcTime": "2026-09-27T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "27.09.2026 17:30:00"
+                            "firstHalfStarted": "27.09.2026 17:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1790523000000
+                    "timeTS": 1790521200000
                 },
                 {
                     "id": 5975033,
                     "leagueId": 522,
-                    "time": "27.09.2026 17:30",
+                    "time": "27.09.2026 17:00",
                     "home": {
                         "id": 289802,
                         "score": 0,
@@ -2220,21 +2226,21 @@
                     "statusId": 1,
                     "tournamentStage": "4",
                     "status": {
-                        "utcTime": "2026-09-27T15:30:00.000Z",
+                        "utcTime": "2026-09-27T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "27.09.2026 17:30:00"
+                            "firstHalfStarted": "27.09.2026 17:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1790523000000
+                    "timeTS": 1790521200000
                 },
                 {
                     "id": 5975034,
                     "leagueId": 522,
-                    "time": "27.09.2026 17:30",
+                    "time": "27.09.2026 17:00",
                     "home": {
                         "id": 159949,
                         "score": 0,
@@ -2251,21 +2257,21 @@
                     "statusId": 1,
                     "tournamentStage": "4",
                     "status": {
-                        "utcTime": "2026-09-27T15:30:00.000Z",
+                        "utcTime": "2026-09-27T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "27.09.2026 17:30:00"
+                            "firstHalfStarted": "27.09.2026 17:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1790523000000
+                    "timeTS": 1790521200000
                 },
                 {
                     "id": 5975035,
                     "leagueId": 522,
-                    "time": "27.09.2026 17:30",
+                    "time": "27.09.2026 17:00",
                     "home": {
                         "id": 1300594,
                         "score": 0,
@@ -2282,52 +2288,21 @@
                     "statusId": 1,
                     "tournamentStage": "4",
                     "status": {
-                        "utcTime": "2026-09-27T15:30:00.000Z",
+                        "utcTime": "2026-09-27T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "27.09.2026 17:30:00"
+                            "firstHalfStarted": "27.09.2026 17:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1790523000000
-                },
-                {
-                    "id": 5975036,
-                    "leagueId": 522,
-                    "time": "27.09.2026 17:30",
-                    "home": {
-                        "id": 1194060,
-                        "score": 0,
-                        "name": "Karela United",
-                        "longName": "Karela United"
-                    },
-                    "away": {
-                        "id": 102016,
-                        "score": 0,
-                        "name": "Hearts of Oak",
-                        "longName": "Hearts of Oak"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "4",
-                    "status": {
-                        "utcTime": "2026-09-27T15:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "27.09.2026 17:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1790523000000
+                    "timeTS": 1790521200000
                 },
                 {
                     "id": 5975037,
                     "leagueId": 522,
-                    "time": "27.09.2026 17:30",
+                    "time": "27.09.2026 17:00",
                     "home": {
                         "id": 106975,
                         "score": 0,
@@ -2344,21 +2319,21 @@
                     "statusId": 1,
                     "tournamentStage": "4",
                     "status": {
-                        "utcTime": "2026-09-27T15:30:00.000Z",
+                        "utcTime": "2026-09-27T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "27.09.2026 17:30:00"
+                            "firstHalfStarted": "27.09.2026 17:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1790523000000
+                    "timeTS": 1790521200000
                 },
                 {
                     "id": 5975039,
                     "leagueId": 522,
-                    "time": "27.09.2026 17:30",
+                    "time": "27.09.2026 17:00",
                     "home": {
                         "id": 1665706,
                         "score": 0,
@@ -2375,16 +2350,16 @@
                     "statusId": 1,
                     "tournamentStage": "4",
                     "status": {
-                        "utcTime": "2026-09-27T15:30:00.000Z",
+                        "utcTime": "2026-09-27T15:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "27.09.2026 17:30:00"
+                            "firstHalfStarted": "27.09.2026 17:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1790523000000
+                    "timeTS": 1790521200000
                 }
             ],
             "internalRank": 0,
@@ -2470,6 +2445,37 @@
             "name": "Primera Division - Apertura",
             "matches": [
                 {
+                    "id": 5962431,
+                    "leagueId": 941466,
+                    "time": "27.09.2026 23:00",
+                    "home": {
+                        "id": 49740,
+                        "score": 0,
+                        "name": "Alianza FC",
+                        "longName": "Alianza FC"
+                    },
+                    "away": {
+                        "id": 2096787,
+                        "score": 0,
+                        "name": "Inca Aruba",
+                        "longName": "Inca Aruba"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "12",
+                    "status": {
+                        "utcTime": "2026-09-27T21:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "27.09.2026 23:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1790542800000
+                },
+                {
                     "id": 5962434,
                     "leagueId": 941466,
                     "time": "27.09.2026 23:00",
@@ -2530,37 +2536,6 @@
                         "finished": false
                     },
                     "timeTS": 1790550000000
-                },
-                {
-                    "id": 5962436,
-                    "leagueId": 941466,
-                    "time": "28.09.2026 03:00",
-                    "home": {
-                        "id": 49744,
-                        "score": 0,
-                        "name": "Firpo",
-                        "longName": "Firpo"
-                    },
-                    "away": {
-                        "id": 49739,
-                        "score": 0,
-                        "name": "CD \u00c1guila",
-                        "longName": "CD \u00c1guila"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "12",
-                    "status": {
-                        "utcTime": "2026-09-28T01:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "28.09.2026 03:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1790557200000
                 }
             ],
             "parentLeagueId": 335,
@@ -3714,6 +3689,37 @@
                         }
                     },
                     "timeTS": 1790521200000
+                },
+                {
+                    "id": 5884533,
+                    "leagueId": 938792,
+                    "time": "27.09.2026 18:00",
+                    "home": {
+                        "id": 96923,
+                        "score": 0,
+                        "name": "Utebo",
+                        "longName": "Utebo"
+                    },
+                    "away": {
+                        "id": 96927,
+                        "score": 0,
+                        "name": "Reus",
+                        "longName": "Reus"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "4",
+                    "status": {
+                        "utcTime": "2026-09-27T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "27.09.2026 18:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1790524800000
                 }
             ],
             "parentLeagueId": 9138,
@@ -3744,37 +3750,6 @@
                         "score": 0,
                         "name": "Real Valladolid B",
                         "longName": "Real Valladolid B"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "4",
-                    "status": {
-                        "utcTime": "2026-09-27T15:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "27.09.2026 17:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1790521200000
-                },
-                {
-                    "id": 5885552,
-                    "leagueId": 938796,
-                    "time": "27.09.2026 17:00",
-                    "home": {
-                        "id": 8388,
-                        "score": 0,
-                        "name": "Numancia",
-                        "longName": "Numancia"
-                    },
-                    "away": {
-                        "id": 161782,
-                        "score": 0,
-                        "name": "CD Guadalajara",
-                        "longName": "CD Guadalajara"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -3852,6 +3827,37 @@
                         "finished": false
                     },
                     "timeTS": 1790521200000
+                },
+                {
+                    "id": 5885552,
+                    "leagueId": 938796,
+                    "time": "27.09.2026 17:30",
+                    "home": {
+                        "id": 8388,
+                        "score": 0,
+                        "name": "Numancia",
+                        "longName": "Numancia"
+                    },
+                    "away": {
+                        "id": 161782,
+                        "score": 0,
+                        "name": "CD Guadalajara",
+                        "longName": "CD Guadalajara"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "4",
+                    "status": {
+                        "utcTime": "2026-09-27T15:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "27.09.2026 17:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1790523000000
                 },
                 {
                     "id": 5885553,
