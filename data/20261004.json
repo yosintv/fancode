@@ -439,7 +439,7 @@
                         "longName": "Mali"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 106,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-10-03T19:00:00.000Z",
@@ -447,9 +447,15 @@
                             "firstHalfStarted": "03.10.2026 21:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "Can",
+                            "shortKey": "cancelled_short",
+                            "long": "Cancelled",
+                            "longKey": "cancelled"
+                        }
                     },
                     "timeTS": 1791054000000
                 },
@@ -514,6 +520,37 @@
                         "finished": false
                     },
                     "timeTS": 1791079200000
+                },
+                {
+                    "id": 6367352,
+                    "leagueId": 914609,
+                    "time": "04.10.2026 14:00",
+                    "home": {
+                        "id": 5893,
+                        "score": 0,
+                        "name": "Kyrgyzstan",
+                        "longName": "Kyrgyzstan"
+                    },
+                    "away": {
+                        "id": 5897,
+                        "score": 0,
+                        "name": "Lebanon",
+                        "longName": "Lebanon"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-10-04T12:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "04.10.2026 14:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1791115200000
                 },
                 {
                     "id": 6299698,
@@ -1202,6 +1239,102 @@
                         "finished": false
                     },
                     "timeTS": 1791043200000
+                },
+                {
+                    "id": 6367375,
+                    "leagueId": 915708,
+                    "time": "03.10.2026 18:00",
+                    "home": {
+                        "id": 4674,
+                        "score": 0,
+                        "name": "Turan Tovuz",
+                        "longName": "Turan Tovuz"
+                    },
+                    "away": {
+                        "id": 8695,
+                        "score": 0,
+                        "name": "Fenerbah\u00e7e",
+                        "longName": "Fenerbah\u00e7e"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-10-03T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "03.10.2026 18:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1791043200000
+                },
+                {
+                    "id": 6367377,
+                    "leagueId": 915708,
+                    "time": "04.10.2026 13:00",
+                    "home": {
+                        "id": 9763,
+                        "score": 0,
+                        "name": "Dinamo Moscow",
+                        "shortName": "Dinamo",
+                        "longName": "Dinamo Moscow"
+                    },
+                    "away": {
+                        "id": 1066681,
+                        "score": 0,
+                        "name": "Rodina",
+                        "longName": "Rodina"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-10-04T11:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "04.10.2026 13:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1791111600000
+                },
+                {
+                    "id": 6367378,
+                    "leagueId": 915708,
+                    "time": "04.10.2026 14:00",
+                    "home": {
+                        "id": 9760,
+                        "score": 0,
+                        "name": "CSKA Moscow",
+                        "shortName": "CSKA",
+                        "longName": "CSKA Moscow"
+                    },
+                    "away": {
+                        "id": 1677,
+                        "score": 0,
+                        "name": "Arsenal Tula",
+                        "shortName": "Arsenal",
+                        "longName": "Arsenal Tula"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-10-04T12:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "04.10.2026 14:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1791115200000
                 },
                 {
                     "id": 6055121,
@@ -3026,39 +3159,6 @@
             "name": "Liga de Expansion MX Apertura",
             "matches": [
                 {
-                    "id": 5898738,
-                    "leagueId": 939530,
-                    "time": "03.10.2026 20:00",
-                    "home": {
-                        "id": 177535,
-                        "score": 0,
-                        "name": "Leones Negros",
-                        "shortName": "UDG",
-                        "longName": "Leones Negros"
-                    },
-                    "away": {
-                        "id": 2034,
-                        "score": 0,
-                        "name": "Dorados",
-                        "shortName": "Dorados",
-                        "longName": "Dorados"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "11",
-                    "status": {
-                        "utcTime": "2026-10-03T18:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "03.10.2026 20:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1791050400000
-                },
-                {
                     "id": 5898739,
                     "leagueId": 939530,
                     "time": "04.10.2026 03:00",
@@ -3988,7 +4088,7 @@
                 {
                     "id": 5144216,
                     "leagueId": 919794,
-                    "time": "03.10.2026 19:15",
+                    "time": "03.10.2026 18:00",
                     "home": {
                         "id": 4384,
                         "score": 0,
@@ -4005,16 +4105,16 @@
                     "statusId": 1,
                     "tournamentStage": "22",
                     "status": {
-                        "utcTime": "2026-10-03T17:15:00.000Z",
+                        "utcTime": "2026-10-03T16:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.10.2026 19:15:00"
+                            "firstHalfStarted": "03.10.2026 18:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1791047700000
+                    "timeTS": 1791043200000
                 }
             ],
             "parentLeagueId": 205,
@@ -8247,7 +8347,7 @@
                 {
                     "id": 1000017427,
                     "leagueId": 1000001212,
-                    "time": "03.10.2026 21:30",
+                    "time": "03.10.2026 22:00",
                     "home": {
                         "id": 1893,
                         "score": 0,
@@ -8264,21 +8364,21 @@
                     "statusId": 1,
                     "tournamentStage": "Clausura - Round 13",
                     "status": {
-                        "utcTime": "2026-10-03T19:30:00.000Z",
+                        "utcTime": "2026-10-03T20:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "03.10.2026 21:30:00"
+                            "firstHalfStarted": "03.10.2026 22:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1791055800000
+                    "timeTS": 1791057600000
                 },
                 {
                     "id": 1000017426,
                     "leagueId": 1000001212,
-                    "time": "04.10.2026 00:00",
+                    "time": "04.10.2026 00:15",
                     "home": {
                         "id": 1427854,
                         "score": 0,
@@ -8295,16 +8395,16 @@
                     "statusId": 1,
                     "tournamentStage": "Clausura - Round 13",
                     "status": {
-                        "utcTime": "2026-10-03T22:00:00.000Z",
+                        "utcTime": "2026-10-03T22:15:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "04.10.2026 00:00:00"
+                            "firstHalfStarted": "04.10.2026 00:15:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1791064800000
+                    "timeTS": 1791065700000
                 }
             ],
             "parentLeagueId": 199,
