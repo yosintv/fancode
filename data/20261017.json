@@ -20685,7 +20685,7 @@
                         "longName": "O'Higgins"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "Final",
                     "status": {
                         "utcTime": "2026-10-16T23:30:00.000Z",
@@ -20693,9 +20693,15 @@
                             "firstHalfStarted": "17.10.2026 01:30:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1792193400000
                 }
@@ -20888,6 +20894,37 @@
             "name": "FNL",
             "matches": [
                 {
+                    "id": 1000015733,
+                    "leagueId": 1000001573,
+                    "time": "16.10.2026 17:00",
+                    "home": {
+                        "id": 175807,
+                        "score": 0,
+                        "name": "FC Vla\u0161im",
+                        "longName": "FC Vla\u0161im"
+                    },
+                    "away": {
+                        "id": 2404,
+                        "score": 0,
+                        "name": "Han\u00e1ck\u00e1 Slavia Kromeriz",
+                        "longName": "Han\u00e1ck\u00e1 Slavia Kromeriz"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "11",
+                    "status": {
+                        "utcTime": "2026-10-16T15:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "16.10.2026 17:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1792162800000
+                },
+                {
                     "id": 1000015732,
                     "leagueId": 1000001573,
                     "time": "16.10.2026 17:30",
@@ -20933,37 +20970,6 @@
                         "score": 0,
                         "name": "T\u0159inec",
                         "longName": "T\u0159inec"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "11",
-                    "status": {
-                        "utcTime": "2026-10-16T16:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "16.10.2026 18:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1792166400000
-                },
-                {
-                    "id": 1000015733,
-                    "leagueId": 1000001573,
-                    "time": "16.10.2026 18:00",
-                    "home": {
-                        "id": 175807,
-                        "score": 0,
-                        "name": "FC Vla\u0161im",
-                        "longName": "FC Vla\u0161im"
-                    },
-                    "away": {
-                        "id": 2404,
-                        "score": 0,
-                        "name": "Han\u00e1ck\u00e1 Slavia Kromeriz",
-                        "longName": "Han\u00e1ck\u00e1 Slavia Kromeriz"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -21829,6 +21835,37 @@
                         "finished": false
                     },
                     "timeTS": 1792182600000
+                },
+                {
+                    "id": 1000017259,
+                    "leagueId": 1000001681,
+                    "time": "17.10.2026 03:00",
+                    "home": {
+                        "id": 6398,
+                        "score": 0,
+                        "name": "Alianza Lima",
+                        "longName": "Alianza Lima"
+                    },
+                    "away": {
+                        "id": 920789,
+                        "score": 0,
+                        "name": "Atl\u00e9tico Grau",
+                        "longName": "Atl\u00e9tico Grau"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "Clausura - Round 12",
+                    "status": {
+                        "utcTime": "2026-10-17T01:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "17.10.2026 03:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1792198800000
                 }
             ],
             "parentLeagueId": 131,
@@ -23014,7 +23051,7 @@
                 {
                     "id": 1000013748,
                     "leagueId": 1000001589,
-                    "time": "17.10.2026 00:15",
+                    "time": "17.10.2026 00:00",
                     "home": {
                         "id": 193023,
                         "score": 0,
@@ -23031,16 +23068,16 @@
                     "statusId": 1,
                     "tournamentStage": "Clausura - Round 13",
                     "status": {
-                        "utcTime": "2026-10-16T22:15:00.000Z",
+                        "utcTime": "2026-10-16T22:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "17.10.2026 00:15:00"
+                            "firstHalfStarted": "17.10.2026 00:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1792188900000
+                    "timeTS": 1792188000000
                 }
             ],
             "parentLeagueId": 9125,
