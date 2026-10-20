@@ -1197,7 +1197,7 @@
                         "longName": "Cray Wanderers"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "14",
                     "status": {
                         "utcTime": "2026-10-20T18:45:00.000Z",
@@ -1205,9 +1205,15 @@
                             "firstHalfStarted": "20.10.2026 20:45:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1792521900000
                 },
@@ -1321,7 +1327,7 @@
                         "longName": "Leatherhead"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "14",
                     "status": {
                         "utcTime": "2026-10-20T18:45:00.000Z",
@@ -1329,9 +1335,15 @@
                             "firstHalfStarted": "20.10.2026 20:45:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1792521900000
                 },
@@ -3876,7 +3888,7 @@
                         "longName": "FC United of Manchester"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "10",
                     "status": {
                         "utcTime": "2026-10-20T18:45:00.000Z",
@@ -3884,9 +3896,15 @@
                             "firstHalfStarted": "20.10.2026 20:45:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1792521900000
                 },
@@ -3938,7 +3956,7 @@
                         "longName": "Bury"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "10",
                     "status": {
                         "utcTime": "2026-10-20T18:45:00.000Z",
@@ -3946,9 +3964,15 @@
                             "firstHalfStarted": "20.10.2026 20:45:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1792521900000
                 }
@@ -3964,37 +3988,6 @@
             "name": "Premier League",
             "matches": [
                 {
-                    "id": 5996746,
-                    "leagueId": 943009,
-                    "time": "20.10.2026 17:00",
-                    "home": {
-                        "id": 205190,
-                        "score": 0,
-                        "name": "Wadi Degla FC",
-                        "longName": "Wadi Degla FC"
-                    },
-                    "away": {
-                        "id": 687954,
-                        "score": 0,
-                        "name": "National Bank",
-                        "longName": "National Bank"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "7",
-                    "status": {
-                        "utcTime": "2026-10-20T15:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "20.10.2026 17:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1792508400000
-                },
-                {
                     "id": 5996747,
                     "leagueId": 943009,
                     "time": "20.10.2026 19:00",
@@ -4009,6 +4002,37 @@
                         "score": 0,
                         "name": "Pyramids FC",
                         "longName": "Pyramids FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "7",
+                    "status": {
+                        "utcTime": "2026-10-20T17:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "20.10.2026 19:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1792515600000
+                },
+                {
+                    "id": 5996746,
+                    "leagueId": 943009,
+                    "time": "20.10.2026 19:00",
+                    "home": {
+                        "id": 205190,
+                        "score": 0,
+                        "name": "Wadi Degla FC",
+                        "longName": "Wadi Degla FC"
+                    },
+                    "away": {
+                        "id": 687954,
+                        "score": 0,
+                        "name": "National Bank",
+                        "longName": "National Bank"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -4167,7 +4191,7 @@
                         "longName": "Bromsgrove Sporting"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "14",
                     "status": {
                         "utcTime": "2026-10-20T18:45:00.000Z",
@@ -4175,9 +4199,15 @@
                             "firstHalfStarted": "20.10.2026 20:45:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1792521900000
                 },
@@ -4415,7 +4445,7 @@
                         "longName": "Anstey Nomads"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "14",
                     "status": {
                         "utcTime": "2026-10-20T18:45:00.000Z",
@@ -4423,9 +4453,15 @@
                             "firstHalfStarted": "20.10.2026 20:45:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1792521900000
                 }
@@ -4901,7 +4937,7 @@
                         "longName": "USM Alger"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 106,
                     "tournamentStage": "2nd Preliminary Round",
                     "status": {
                         "utcTime": "2026-10-20T19:00:00.000Z",
@@ -4909,9 +4945,15 @@
                             "firstHalfStarted": "20.10.2026 21:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "Can",
+                            "shortKey": "cancelled_short",
+                            "long": "Cancelled",
+                            "longKey": "cancelled"
+                        }
                     },
                     "timeTS": 1792522800000
                 }
@@ -6392,6 +6434,37 @@
                     "timeTS": 1792587600000
                 },
                 {
+                    "id": 1000021133,
+                    "leagueId": 1000001457,
+                    "time": "21.10.2026 15:00",
+                    "home": {
+                        "id": 608943,
+                        "score": 0,
+                        "name": "Real Betis U19",
+                        "longName": "Real Betis U19"
+                    },
+                    "away": {
+                        "id": 889586,
+                        "score": 0,
+                        "name": "Feyenoord U19",
+                        "longName": "Feyenoord U19"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "3",
+                    "status": {
+                        "utcTime": "2026-10-21T13:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "21.10.2026 15:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1792587600000
+                },
+                {
                     "id": 1000021134,
                     "leagueId": 1000001457,
                     "time": "21.10.2026 15:00",
@@ -6500,37 +6573,6 @@
                         "score": 0,
                         "name": "RB Leipzig U19",
                         "longName": "RB Leipzig U19"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "3",
-                    "status": {
-                        "utcTime": "2026-10-21T14:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "21.10.2026 16:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1792591200000
-                },
-                {
-                    "id": 1000021133,
-                    "leagueId": 1000001457,
-                    "time": "21.10.2026 16:00",
-                    "home": {
-                        "id": 608943,
-                        "score": 0,
-                        "name": "Real Betis U19",
-                        "longName": "Real Betis U19"
-                    },
-                    "away": {
-                        "id": 889586,
-                        "score": 0,
-                        "name": "Feyenoord U19",
-                        "longName": "Feyenoord U19"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
