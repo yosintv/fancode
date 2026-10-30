@@ -7259,7 +7259,7 @@
                         "longName": "CD \u00c1rabe Unido"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "15",
                     "status": {
                         "utcTime": "2026-10-31T01:00:00.000Z",
@@ -7267,9 +7267,15 @@
                             "firstHalfStarted": "31.10.2026 02:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1793408400000
                 },
@@ -7290,7 +7296,7 @@
                         "longName": "Sporting San Miguelito"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "15",
                     "status": {
                         "utcTime": "2026-10-31T01:00:00.000Z",
@@ -7298,9 +7304,15 @@
                             "firstHalfStarted": "31.10.2026 02:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1793408400000
                 },
@@ -7321,7 +7333,7 @@
                         "longName": "Tauro FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "15",
                     "status": {
                         "utcTime": "2026-10-31T01:00:00.000Z",
@@ -7329,11 +7341,48 @@
                             "firstHalfStarted": "31.10.2026 02:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
+                        "started": false,
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
+                    },
+                    "timeTS": 1793408400000
+                },
+                {
+                    "id": 5954364,
+                    "leagueId": 941168,
+                    "time": "31.10.2026 02:30",
+                    "home": {
+                        "id": 165468,
+                        "score": 0,
+                        "name": "CD \u00c1rabe Unido",
+                        "longName": "CD \u00c1rabe Unido"
+                    },
+                    "away": {
+                        "id": 165469,
+                        "score": 0,
+                        "name": "Tauro FC",
+                        "longName": "Tauro FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "14",
+                    "status": {
+                        "utcTime": "2026-10-31T01:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "31.10.2026 02:30:00"
+                        },
+                        "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1793408400000
+                    "timeTS": 1793410200000
                 }
             ],
             "parentLeagueId": 9039,
@@ -7692,6 +7741,141 @@
                 }
             ],
             "internalRank": 9,
+            "simpleLeague": false
+        },
+        {
+            "isGroup": true,
+            "groupName": "5",
+            "ccode": "NOR",
+            "id": 919796,
+            "primaryId": 205,
+            "name": "3. Divisjon Avd. 5",
+            "matches": [
+                {
+                    "id": 5144608,
+                    "leagueId": 919796,
+                    "time": "31.10.2026 12:00",
+                    "home": {
+                        "id": 4296,
+                        "score": 0,
+                        "name": "Bossekop",
+                        "longName": "Bossekop"
+                    },
+                    "away": {
+                        "id": 8353,
+                        "score": 0,
+                        "name": "Alta",
+                        "longName": "Alta"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "26",
+                    "status": {
+                        "utcTime": "2026-10-31T11:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "31.10.2026 12:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1793444400000
+                }
+            ],
+            "parentLeagueId": 205,
+            "parentLeagueName": "Norsk Tipping-ligaen",
+            "internalRank": 6,
+            "simpleLeague": false
+        },
+        {
+            "isGroup": true,
+            "groupName": "1",
+            "ccode": "NOR",
+            "id": 919792,
+            "primaryId": 205,
+            "name": "3. Divisjon Avd. 1",
+            "matches": [
+                {
+                    "id": 5143881,
+                    "leagueId": 919792,
+                    "time": "31.10.2026 13:00",
+                    "home": {
+                        "id": 8137,
+                        "score": 0,
+                        "name": "B\u00e6rum",
+                        "longName": "B\u00e6rum"
+                    },
+                    "away": {
+                        "id": 4621,
+                        "score": 0,
+                        "name": "Frigg",
+                        "longName": "Frigg"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "26",
+                    "status": {
+                        "utcTime": "2026-10-31T12:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "31.10.2026 13:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1793448000000
+                }
+            ],
+            "parentLeagueId": 205,
+            "parentLeagueName": "Norsk Tipping-ligaen",
+            "internalRank": 6,
+            "simpleLeague": false
+        },
+        {
+            "isGroup": true,
+            "groupName": "3",
+            "ccode": "NOR",
+            "id": 919794,
+            "primaryId": 205,
+            "name": "3. Divisjon Avd. 3",
+            "matches": [
+                {
+                    "id": 5144249,
+                    "leagueId": 919794,
+                    "time": "31.10.2026 14:00",
+                    "home": {
+                        "id": 7864,
+                        "score": 0,
+                        "name": "Stord",
+                        "longName": "Stord"
+                    },
+                    "away": {
+                        "id": 4384,
+                        "score": 0,
+                        "name": "Sogndal 2",
+                        "longName": "Sogndal 2"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "26",
+                    "status": {
+                        "utcTime": "2026-10-31T13:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "31.10.2026 14:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1793451600000
+                }
+            ],
+            "parentLeagueId": 205,
+            "parentLeagueName": "Norsk Tipping-ligaen",
+            "internalRank": 6,
             "simpleLeague": false
         },
         {
@@ -9183,38 +9367,6 @@
                     "timeTS": 1793444400000
                 },
                 {
-                    "id": 6022304,
-                    "leagueId": 10068,
-                    "time": "31.10.2026 12:00",
-                    "home": {
-                        "id": 1113569,
-                        "score": 0,
-                        "name": "Reading U18",
-                        "longName": "Reading U18"
-                    },
-                    "away": {
-                        "id": 1113570,
-                        "score": 0,
-                        "name": "Norwich City U18",
-                        "shortName": "Norwich U18",
-                        "longName": "Norwich City U18"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "9",
-                    "status": {
-                        "utcTime": "2026-10-31T11:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "31.10.2026 12:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1793444400000
-                },
-                {
                     "id": 6022305,
                     "leagueId": 10068,
                     "time": "31.10.2026 12:00",
@@ -9280,6 +9432,39 @@
                     "timeTS": 1793444400000
                 },
                 {
+                    "id": 6022307,
+                    "leagueId": 10068,
+                    "time": "31.10.2026 12:30",
+                    "home": {
+                        "id": 1183383,
+                        "score": 0,
+                        "name": "Leeds United U18",
+                        "shortName": "Leeds U18",
+                        "longName": "Leeds United U18"
+                    },
+                    "away": {
+                        "id": 1113549,
+                        "score": 0,
+                        "name": "Derby County U18",
+                        "shortName": "Derby U18",
+                        "longName": "Derby County U18"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "9",
+                    "status": {
+                        "utcTime": "2026-10-31T11:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "31.10.2026 12:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1793446200000
+                },
+                {
                     "id": 6022308,
                     "leagueId": 10068,
                     "time": "31.10.2026 13:00",
@@ -9295,39 +9480,6 @@
                         "name": "Tottenham Hotspur U18",
                         "shortName": "Tottenham U18",
                         "longName": "Tottenham Hotspur U18"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "9",
-                    "status": {
-                        "utcTime": "2026-10-31T12:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "31.10.2026 13:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1793448000000
-                },
-                {
-                    "id": 6022307,
-                    "leagueId": 10068,
-                    "time": "31.10.2026 13:00",
-                    "home": {
-                        "id": 1183383,
-                        "score": 0,
-                        "name": "Leeds United U18",
-                        "shortName": "Leeds U18",
-                        "longName": "Leeds United U18"
-                    },
-                    "away": {
-                        "id": 1113549,
-                        "score": 0,
-                        "name": "Derby County U18",
-                        "shortName": "Derby U18",
-                        "longName": "Derby County U18"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -9391,6 +9543,38 @@
                         "score": 0,
                         "name": "Everton U18",
                         "longName": "Everton U18"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "9",
+                    "status": {
+                        "utcTime": "2026-10-31T12:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "31.10.2026 13:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1793449800000
+                },
+                {
+                    "id": 6022304,
+                    "leagueId": 10068,
+                    "time": "31.10.2026 13:30",
+                    "home": {
+                        "id": 1113569,
+                        "score": 0,
+                        "name": "Reading U18",
+                        "longName": "Reading U18"
+                    },
+                    "away": {
+                        "id": 1113570,
+                        "score": 0,
+                        "name": "Norwich City U18",
+                        "shortName": "Norwich U18",
+                        "longName": "Norwich City U18"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -9588,6 +9772,48 @@
             ],
             "parentLeagueId": 129,
             "internalRank": 11,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "ARG",
+            "id": 916561,
+            "primaryId": 9213,
+            "name": "Primera B Metropolitana",
+            "matches": [
+                {
+                    "id": 5114129,
+                    "leagueId": 916561,
+                    "time": "30.10.2026 19:00",
+                    "home": {
+                        "id": 213537,
+                        "score": 0,
+                        "name": "Flandria",
+                        "longName": "Flandria"
+                    },
+                    "away": {
+                        "id": 213527,
+                        "score": 0,
+                        "name": "Deportivo Armenio",
+                        "longName": "Deportivo Armenio"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "42",
+                    "status": {
+                        "utcTime": "2026-10-30T18:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "30.10.2026 19:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1793383200000
+                }
+            ],
+            "parentLeagueId": 9213,
+            "internalRank": 7,
             "simpleLeague": false
         },
         {
@@ -10005,37 +10231,6 @@
                     "timeTS": 1793451600000
                 },
                 {
-                    "id": 5911606,
-                    "leagueId": 940451,
-                    "time": "31.10.2026 14:00",
-                    "home": {
-                        "id": 557350,
-                        "score": 0,
-                        "name": "TSV Landsberg",
-                        "longName": "TSV Landsberg"
-                    },
-                    "away": {
-                        "id": 8264,
-                        "score": 0,
-                        "name": "Bayern M\u00fcnchen II",
-                        "longName": "Bayern M\u00fcnchen II"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "17",
-                    "status": {
-                        "utcTime": "2026-10-31T13:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "31.10.2026 14:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1793451600000
-                },
-                {
                     "id": 5911609,
                     "leagueId": 940451,
                     "time": "31.10.2026 14:00",
@@ -10065,6 +10260,37 @@
                         "finished": false
                     },
                     "timeTS": 1793451600000
+                },
+                {
+                    "id": 5911606,
+                    "leagueId": 940451,
+                    "time": "31.10.2026 14:30",
+                    "home": {
+                        "id": 557350,
+                        "score": 0,
+                        "name": "TSV Landsberg",
+                        "longName": "TSV Landsberg"
+                    },
+                    "away": {
+                        "id": 8264,
+                        "score": 0,
+                        "name": "Bayern M\u00fcnchen II",
+                        "longName": "Bayern M\u00fcnchen II"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "17",
+                    "status": {
+                        "utcTime": "2026-10-31T13:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "31.10.2026 14:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1793453400000
                 }
             ],
             "parentLeagueId": 512,
@@ -11475,6 +11701,48 @@
             "simpleLeague": false
         },
         {
+            "ccode": "ENG",
+            "id": 941117,
+            "primaryId": 8947,
+            "name": "Southern Premier Division Central",
+            "matches": [
+                {
+                    "id": 5953509,
+                    "leagueId": 941117,
+                    "time": "31.10.2026 15:00",
+                    "home": {
+                        "id": 282333,
+                        "score": 0,
+                        "name": "Stamford AFC",
+                        "longName": "Stamford AFC"
+                    },
+                    "away": {
+                        "id": 2260,
+                        "score": 0,
+                        "name": "Halesowen Town FC",
+                        "longName": "Halesowen Town FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "16",
+                    "status": {
+                        "utcTime": "2026-10-31T14:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "31.10.2026 15:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1793455200000
+                }
+            ],
+            "parentLeagueId": 8947,
+            "internalRank": 24,
+            "simpleLeague": false
+        },
+        {
             "ccode": "IRQ",
             "id": 943389,
             "primaryId": 524,
@@ -12418,6 +12686,48 @@
             "simpleLeague": false
         },
         {
+            "ccode": "NOR",
+            "id": 955706,
+            "primaryId": 9382,
+            "name": "Toppserien Qualification",
+            "matches": [
+                {
+                    "id": 6533835,
+                    "leagueId": 955706,
+                    "time": "31.10.2026 15:00",
+                    "home": {
+                        "id": 4499,
+                        "score": 0,
+                        "name": "Arna-Bj\u00f8rnar (W)",
+                        "longName": "Arna-Bj\u00f8rnar (W)"
+                    },
+                    "away": {
+                        "id": 1267364,
+                        "score": 0,
+                        "name": "Viking (W)",
+                        "longName": "Viking (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/2",
+                    "status": {
+                        "utcTime": "2026-10-31T14:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "31.10.2026 15:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1793455200000
+                }
+            ],
+            "parentLeagueId": 9382,
+            "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
             "ccode": "USA",
             "id": 8972,
             "primaryId": 8972,
@@ -13314,90 +13624,6 @@
             ],
             "parentLeagueId": 48,
             "internalRank": 29,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "INT",
-            "id": 1000001172,
-            "primaryId": 11021,
-            "name": "Copa Libertadores Femenina",
-            "matches": [
-                {
-                    "id": 1000022174,
-                    "leagueId": 1000001172,
-                    "time": "31.10.2026 01:00",
-                    "home": {
-                        "id": 1817227,
-                        "score": 0,
-                        "name": "Santa Fe",
-                        "longName": "Santa Fe"
-                    },
-                    "away": {
-                        "id": 2,
-                        "score": 0,
-                        "name": "Cruzeiro/Olimpia",
-                        "longName": "Cruzeiro/Olimpia"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "bronze",
-                    "status": {
-                        "utcTime": "2026-10-31T00:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "31.10.2026 01:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1793404800000
-                }
-            ],
-            "parentLeagueId": 11021,
-            "internalRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "INT",
-            "id": 1000001173,
-            "primaryId": 11021,
-            "name": "Copa Libertadores Femenina",
-            "matches": [
-                {
-                    "id": 1000022175,
-                    "leagueId": 1000001173,
-                    "time": "31.10.2026 01:00",
-                    "home": {
-                        "id": 1812467,
-                        "score": 0,
-                        "name": "Corinthians",
-                        "longName": "Corinthians"
-                    },
-                    "away": {
-                        "id": 2,
-                        "score": 0,
-                        "name": "Cruzeiro/Olimpia",
-                        "longName": "Cruzeiro/Olimpia"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "final",
-                    "status": {
-                        "utcTime": "2026-10-31T00:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "31.10.2026 01:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1793404800000
-                }
-            ],
-            "parentLeagueId": 11021,
-            "internalRank": 0,
             "simpleLeague": false
         },
         {
@@ -14945,79 +15171,6 @@
             "simpleLeague": false
         },
         {
-            "ccode": "BOL",
-            "id": 1000001249,
-            "primaryId": 144,
-            "name": "Primera Divisi\u00f3n",
-            "matches": [
-                {
-                    "id": 1000022363,
-                    "leagueId": 1000001249,
-                    "time": "30.10.2026 23:00",
-                    "home": {
-                        "id": 1846,
-                        "score": 0,
-                        "name": "Real Potos\u00ed",
-                        "longName": "Real Potos\u00ed"
-                    },
-                    "away": {
-                        "id": 958325,
-                        "score": 0,
-                        "name": "Independiente Petrolero",
-                        "longName": "Independiente Petrolero"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "24",
-                    "status": {
-                        "utcTime": "2026-10-30T22:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "30.10.2026 23:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1793397600000
-                },
-                {
-                    "id": 1000022364,
-                    "leagueId": 1000001249,
-                    "time": "31.10.2026 01:00",
-                    "home": {
-                        "id": 1844,
-                        "score": 0,
-                        "name": "Oriente Petrolero",
-                        "longName": "Oriente Petrolero"
-                    },
-                    "away": {
-                        "id": 49720,
-                        "score": 0,
-                        "name": "Aurora",
-                        "longName": "Aurora"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "24",
-                    "status": {
-                        "utcTime": "2026-10-31T00:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "31.10.2026 01:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1793404800000
-                }
-            ],
-            "parentLeagueId": 144,
-            "internalRank": 10,
-            "simpleLeague": false
-        },
-        {
             "ccode": "CHI",
             "id": 1000001661,
             "primaryId": 273,
@@ -15088,6 +15241,79 @@
             ],
             "parentLeagueId": 273,
             "internalRank": 11,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "BOL",
+            "id": 1000001249,
+            "primaryId": 144,
+            "name": "Primera Divisi\u00f3n",
+            "matches": [
+                {
+                    "id": 1000022363,
+                    "leagueId": 1000001249,
+                    "time": "30.10.2026 23:00",
+                    "home": {
+                        "id": 1846,
+                        "score": 0,
+                        "name": "Real Potos\u00ed",
+                        "longName": "Real Potos\u00ed"
+                    },
+                    "away": {
+                        "id": 958325,
+                        "score": 0,
+                        "name": "Independiente Petrolero",
+                        "longName": "Independiente Petrolero"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "24",
+                    "status": {
+                        "utcTime": "2026-10-30T22:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "30.10.2026 23:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1793397600000
+                },
+                {
+                    "id": 1000022364,
+                    "leagueId": 1000001249,
+                    "time": "31.10.2026 01:00",
+                    "home": {
+                        "id": 1844,
+                        "score": 0,
+                        "name": "Oriente Petrolero",
+                        "longName": "Oriente Petrolero"
+                    },
+                    "away": {
+                        "id": 49720,
+                        "score": 0,
+                        "name": "Aurora",
+                        "longName": "Aurora"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "24",
+                    "status": {
+                        "utcTime": "2026-10-31T00:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "31.10.2026 01:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1793404800000
+                }
+            ],
+            "parentLeagueId": 144,
+            "internalRank": 10,
             "simpleLeague": false
         },
         {
