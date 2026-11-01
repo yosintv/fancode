@@ -10,7 +10,7 @@
  */
 
 (function () {
-  const REDIRECT_URL = " https://www.yosintv.me/ ";
+  const REDIRECT_URL = " https://www.yosintv.in/ ";
   const REDIRECT_DELAY_MS = 22000; // 40 seconds
 
   const ALLOWED_HOSTS = [
