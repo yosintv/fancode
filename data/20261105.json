@@ -894,7 +894,7 @@
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
-                    "tournamentStage": "1",
+                    "tournamentStage": "1/16",
                     "status": {
                         "utcTime": "2026-11-04T15:00:00.000Z",
                         "halfs": {
@@ -925,7 +925,7 @@
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
-                    "tournamentStage": "1",
+                    "tournamentStage": "1/16",
                     "status": {
                         "utcTime": "2026-11-05T12:30:00.000Z",
                         "halfs": {
@@ -990,20 +990,20 @@
             "name": "Cup",
             "matches": [
                 {
-                    "id": 6356390,
+                    "id": 6356389,
                     "leagueId": 946196,
                     "time": "04.11.2026 23:00",
                     "home": {
-                        "id": 4062,
-                        "score": 0,
-                        "name": "Coquimbo Unido",
-                        "longName": "Coquimbo Unido"
-                    },
-                    "away": {
                         "id": 192435,
                         "score": 0,
                         "name": "Uni\u00f3n La Calera",
                         "longName": "Uni\u00f3n La Calera"
+                    },
+                    "away": {
+                        "id": 4062,
+                        "score": 0,
+                        "name": "Coquimbo Unido",
+                        "longName": "Coquimbo Unido"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -1016,8 +1016,7 @@
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
-                        "finished": false,
-                        "aggregatedStr": "0 - 0"
+                        "finished": false
                     },
                     "timeTS": 1793829600000
                 }
@@ -2206,14 +2205,14 @@
                     "home": {
                         "id": 1840123,
                         "score": 0,
-                        "name": "Masar",
-                        "longName": "Masar"
+                        "name": "Masar (W)",
+                        "longName": "Masar (W)"
                     },
                     "away": {
                         "id": 2421627,
                         "score": 0,
-                        "name": "FUS Rabat",
-                        "longName": "FUS Rabat"
+                        "name": "FUS Rabat (W)",
+                        "longName": "FUS Rabat (W)"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -2237,14 +2236,14 @@
                     "home": {
                         "id": 1840126,
                         "score": 0,
-                        "name": "FAR Rabat",
-                        "longName": "FAR Rabat"
+                        "name": "FAR Rabat (W)",
+                        "longName": "FAR Rabat (W)"
                     },
                     "away": {
                         "id": 1840115,
                         "score": 0,
-                        "name": "USFAS Bamako",
-                        "longName": "USFAS Bamako"
+                        "name": "USFAS Bamako (W)",
+                        "longName": "USFAS Bamako (W)"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -2790,6 +2789,80 @@
             ],
             "parentLeagueId": 131,
             "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "MEX",
+            "id": 1000001843,
+            "primaryId": 8976,
+            "name": "Liga de Expansi\u00f3n MX - Apertura - Quarter-finals",
+            "matches": [
+                {
+                    "id": 1000022935,
+                    "leagueId": 1000001843,
+                    "time": "05.11.2026 00:00",
+                    "home": {
+                        "id": 162400,
+                        "score": 0,
+                        "name": "Venados FC",
+                        "shortName": "Venados",
+                        "longName": "Venados FC"
+                    },
+                    "away": {
+                        "id": 6575,
+                        "score": 0,
+                        "name": "Atl\u00e9tico Morelia",
+                        "longName": "Atl\u00e9tico Morelia"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "Apertura - Quarter-finals",
+                    "status": {
+                        "utcTime": "2026-11-04T23:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "05.11.2026 00:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1793833200000
+                },
+                {
+                    "id": 1000022933,
+                    "leagueId": 1000001843,
+                    "time": "05.11.2026 02:05",
+                    "home": {
+                        "id": 584866,
+                        "score": 0,
+                        "name": "Tlaxcala FC",
+                        "longName": "Tlaxcala FC"
+                    },
+                    "away": {
+                        "id": 1374638,
+                        "score": 0,
+                        "name": "Atl\u00e9tico La Paz",
+                        "longName": "Atl\u00e9tico La Paz"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "Apertura - Quarter-finals",
+                    "status": {
+                        "utcTime": "2026-11-05T01:05:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "05.11.2026 02:05:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1793840700000
+                }
+            ],
+            "parentLeagueId": 8976,
+            "internalRank": 9,
             "simpleLeague": false
         },
         {
@@ -3546,14 +3619,14 @@
                     "home": {
                         "id": 789902,
                         "score": 0,
-                        "name": "Hibernian LFC",
-                        "longName": "Hibernian LFC"
+                        "name": "Hibernian LFC (W)",
+                        "longName": "Hibernian LFC (W)"
                     },
                     "away": {
                         "id": 1269308,
                         "score": 0,
-                        "name": "Celtic",
-                        "longName": "Celtic"
+                        "name": "Celtic (W)",
+                        "longName": "Celtic (W)"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -3577,14 +3650,14 @@
                     "home": {
                         "id": 1716180,
                         "score": 0,
-                        "name": "Aberdeen",
-                        "longName": "Aberdeen"
+                        "name": "Aberdeen (W)",
+                        "longName": "Aberdeen (W)"
                     },
                     "away": {
                         "id": 1716184,
                         "score": 0,
-                        "name": "Spartans FC",
-                        "longName": "Spartans FC"
+                        "name": "Spartans FC (W)",
+                        "longName": "Spartans FC (W)"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,

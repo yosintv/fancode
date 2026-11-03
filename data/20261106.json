@@ -1361,7 +1361,7 @@
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
-                    "tournamentStage": "1",
+                    "tournamentStage": "1/16",
                     "status": {
                         "utcTime": "2026-11-05T15:00:00.000Z",
                         "halfs": {
@@ -1392,7 +1392,7 @@
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
-                    "tournamentStage": "1",
+                    "tournamentStage": "1/16",
                     "status": {
                         "utcTime": "2026-11-06T12:30:00.000Z",
                         "halfs": {
@@ -1447,6 +1447,49 @@
                     "timeTS": 1793901600000
                 }
             ],
+            "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "CHI",
+            "id": 946196,
+            "primaryId": 9091,
+            "name": "Cup",
+            "matches": [
+                {
+                    "id": 6356392,
+                    "leagueId": 946196,
+                    "time": "05.11.2026 23:00",
+                    "home": {
+                        "id": 6310,
+                        "score": 0,
+                        "name": "Universidad de Chile",
+                        "longName": "Universidad de Chile"
+                    },
+                    "away": {
+                        "id": 6201,
+                        "score": 0,
+                        "name": "Antofagasta",
+                        "longName": "Antofagasta"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/4",
+                    "status": {
+                        "utcTime": "2026-11-05T22:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "05.11.2026 23:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false,
+                        "aggregatedStr": "0 - 2"
+                    },
+                    "timeTS": 1793916000000
+                }
+            ],
+            "parentLeagueId": 9091,
             "internalRank": 0,
             "simpleLeague": false
         },
@@ -2709,14 +2752,14 @@
                     "home": {
                         "id": 675725,
                         "score": 0,
-                        "name": "Adelaide United",
-                        "longName": "Adelaide United"
+                        "name": "Adelaide United (W)",
+                        "longName": "Adelaide United (W)"
                     },
                     "away": {
                         "id": 1300347,
                         "score": 0,
-                        "name": "Wellington Phoenix",
-                        "longName": "Wellington Phoenix"
+                        "name": "Wellington Phoenix (W)",
+                        "longName": "Wellington Phoenix (W)"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -2997,6 +3040,80 @@
             ],
             "parentLeagueId": 10708,
             "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "MEX",
+            "id": 1000001843,
+            "primaryId": 8976,
+            "name": "Liga de Expansi\u00f3n MX - Apertura - Quarter-finals",
+            "matches": [
+                {
+                    "id": 1000022936,
+                    "leagueId": 1000001843,
+                    "time": "06.11.2026 02:00",
+                    "home": {
+                        "id": 1175679,
+                        "score": 0,
+                        "name": "Canc\u00fan FC",
+                        "longName": "Canc\u00fan FC"
+                    },
+                    "away": {
+                        "id": 2070059,
+                        "score": 0,
+                        "name": "Piratas",
+                        "longName": "Piratas"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "Apertura - Quarter-finals",
+                    "status": {
+                        "utcTime": "2026-11-06T01:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "06.11.2026 02:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1793926800000
+                },
+                {
+                    "id": 1000022934,
+                    "leagueId": 1000001843,
+                    "time": "06.11.2026 04:05",
+                    "home": {
+                        "id": 162415,
+                        "score": 0,
+                        "name": "Alacranes de Durango",
+                        "longName": "Alacranes de Durango"
+                    },
+                    "away": {
+                        "id": 177535,
+                        "score": 0,
+                        "name": "Leones Negros",
+                        "shortName": "UDG",
+                        "longName": "Leones Negros"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "Apertura - Quarter-finals",
+                    "status": {
+                        "utcTime": "2026-11-06T03:05:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "06.11.2026 04:05:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1793934300000
+                }
+            ],
+            "parentLeagueId": 8976,
+            "internalRank": 9,
             "simpleLeague": false
         },
         {

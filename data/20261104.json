@@ -1596,37 +1596,6 @@
                     "timeTS": 1793735100000
                 },
                 {
-                    "id": 5948105,
-                    "leagueId": 941109,
-                    "time": "03.11.2026 20:45",
-                    "home": {
-                        "id": 282508,
-                        "score": 0,
-                        "name": "Dulwich Hamlet",
-                        "longName": "Dulwich Hamlet"
-                    },
-                    "away": {
-                        "id": 177064,
-                        "score": 0,
-                        "name": "Cray Wanderers",
-                        "longName": "Cray Wanderers"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "11",
-                    "status": {
-                        "utcTime": "2026-11-03T19:45:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "03.11.2026 20:45:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1793735100000
-                },
-                {
                     "id": 5948094,
                     "leagueId": 941109,
                     "time": "03.11.2026 20:45",
@@ -2638,7 +2607,7 @@
                     "timeTS": 1793735100000
                 },
                 {
-                    "id": 5949278,
+                    "id": 6549009,
                     "leagueId": 941116,
                     "time": "03.11.2026 20:45",
                     "home": {
@@ -2649,29 +2618,22 @@
                     },
                     "away": {
                         "id": 282395,
-                        "score": 3,
+                        "score": 0,
                         "name": "Bamber Bridge",
                         "longName": "Bamber Bridge"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 17,
+                    "statusId": 1,
                     "tournamentStage": "12",
                     "status": {
                         "utcTime": "2026-11-03T19:45:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.10.2026 20:47:49"
+                            "firstHalfStarted": "03.11.2026 20:45:00"
                         },
                         "periodLength": 45,
-                        "cancelled": true,
-                        "started": true,
-                        "finished": true,
-                        "reason": {
-                            "short": "Ab",
-                            "shortKey": "aborted_short",
-                            "long": "Abandoned",
-                            "longKey": "aborted"
-                        },
-                        "scoreStr": "0 - 3"
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
                     },
                     "timeTS": 1793735100000
                 },
@@ -2748,39 +2710,6 @@
                         "finished": false
                     },
                     "timeTS": 1793732400000
-                },
-                {
-                    "id": 6022323,
-                    "leagueId": 10068,
-                    "time": "04.11.2026 15:00",
-                    "home": {
-                        "id": 1791531,
-                        "score": 0,
-                        "name": "Ipswich Town U18",
-                        "shortName": "Ipswich U18",
-                        "longName": "Ipswich Town U18"
-                    },
-                    "away": {
-                        "id": 1113562,
-                        "score": 0,
-                        "name": "Tottenham Hotspur U18",
-                        "shortName": "Tottenham U18",
-                        "longName": "Tottenham Hotspur U18"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "10",
-                    "status": {
-                        "utcTime": "2026-11-04T14:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "04.11.2026 15:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1793800800000
                 }
             ],
             "internalRank": 11,
@@ -2913,7 +2842,7 @@
                         "longName": "Bromsgrove Sporting"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "10",
                     "status": {
                         "utcTime": "2026-11-03T19:45:00.000Z",
@@ -2921,9 +2850,15 @@
                             "firstHalfStarted": "03.11.2026 20:45:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1793735100000
                 },
@@ -2944,7 +2879,7 @@
                         "longName": "Bishop's Stortford"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "10",
                     "status": {
                         "utcTime": "2026-11-03T19:45:00.000Z",
@@ -2952,9 +2887,15 @@
                             "firstHalfStarted": "03.11.2026 20:45:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1793735100000
                 }
@@ -3322,14 +3263,14 @@
                     "home": {
                         "id": 2421624,
                         "score": 0,
-                        "name": "Lekie",
-                        "longName": "Lekie"
+                        "name": "Lekie (W)",
+                        "longName": "Lekie (W)"
                     },
                     "away": {
                         "id": 2421625,
                         "score": 0,
-                        "name": "Mamelodi Sundowns",
-                        "longName": "Mamelodi Sundowns"
+                        "name": "Mamelodi Sundowns (W)",
+                        "longName": "Mamelodi Sundowns (W)"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -4296,143 +4237,6 @@
             "simpleLeague": false
         },
         {
-            "ccode": "MEX",
-            "id": 1000001843,
-            "primaryId": 8976,
-            "name": "Liga de Expansi\u00f3n MX - Apertura - Quarter-finals",
-            "matches": [
-                {
-                    "id": 1000022933,
-                    "leagueId": 1000001843,
-                    "time": "04.11.2026 01:00",
-                    "home": {
-                        "id": 584866,
-                        "score": 0,
-                        "name": "Tlaxcala FC",
-                        "longName": "Tlaxcala FC"
-                    },
-                    "away": {
-                        "id": 1374638,
-                        "score": 0,
-                        "name": "Atl\u00e9tico La Paz",
-                        "longName": "Atl\u00e9tico La Paz"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "Apertura - Quarter-finals",
-                    "status": {
-                        "utcTime": "2026-11-04T00:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "04.11.2026 01:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1793750400000
-                },
-                {
-                    "id": 1000022934,
-                    "leagueId": 1000001843,
-                    "time": "04.11.2026 01:00",
-                    "home": {
-                        "id": 162415,
-                        "score": 0,
-                        "name": "Alacranes de Durango",
-                        "longName": "Alacranes de Durango"
-                    },
-                    "away": {
-                        "id": 177535,
-                        "score": 0,
-                        "name": "Leones Negros",
-                        "shortName": "UDG",
-                        "longName": "Leones Negros"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "Apertura - Quarter-finals",
-                    "status": {
-                        "utcTime": "2026-11-04T00:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "04.11.2026 01:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1793750400000
-                },
-                {
-                    "id": 1000022935,
-                    "leagueId": 1000001843,
-                    "time": "04.11.2026 01:00",
-                    "home": {
-                        "id": 162400,
-                        "score": 0,
-                        "name": "Venados FC",
-                        "shortName": "Venados",
-                        "longName": "Venados FC"
-                    },
-                    "away": {
-                        "id": 6575,
-                        "score": 0,
-                        "name": "Atl\u00e9tico Morelia",
-                        "longName": "Atl\u00e9tico Morelia"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "Apertura - Quarter-finals",
-                    "status": {
-                        "utcTime": "2026-11-04T00:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "04.11.2026 01:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1793750400000
-                },
-                {
-                    "id": 1000022936,
-                    "leagueId": 1000001843,
-                    "time": "04.11.2026 01:00",
-                    "home": {
-                        "id": 1175679,
-                        "score": 0,
-                        "name": "Canc\u00fan FC",
-                        "longName": "Canc\u00fan FC"
-                    },
-                    "away": {
-                        "id": 2070059,
-                        "score": 0,
-                        "name": "Piratas",
-                        "longName": "Piratas"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "Apertura - Quarter-finals",
-                    "status": {
-                        "utcTime": "2026-11-04T00:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "04.11.2026 01:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1793750400000
-                }
-            ],
-            "parentLeagueId": 8976,
-            "internalRank": 9,
-            "simpleLeague": false
-        },
-        {
             "ccode": "COL",
             "id": 1000001696,
             "primaryId": 274,
@@ -4514,7 +4318,7 @@
                 {
                     "id": 1000022850,
                     "leagueId": 1000001591,
-                    "time": "04.11.2026 00:00",
+                    "time": "04.11.2026 02:30",
                     "home": {
                         "id": 7731,
                         "score": 0,
@@ -4531,16 +4335,16 @@
                     "statusId": 1,
                     "tournamentStage": "Clausura - Quadrangular - Round 2",
                     "status": {
-                        "utcTime": "2026-11-03T23:00:00.000Z",
+                        "utcTime": "2026-11-04T01:30:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "04.11.2026 00:00:00"
+                            "firstHalfStarted": "04.11.2026 02:30:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1793746800000
+                    "timeTS": 1793755800000
                 }
             ],
             "parentLeagueId": 9125,
