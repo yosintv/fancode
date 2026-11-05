@@ -1109,7 +1109,7 @@
                         "name": "Deportivo de A Coru\u00f1a (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "1/16",
                     "status": {
                         "utcTime": "2026-11-05T19:00:00.000Z",
@@ -1117,9 +1117,15 @@
                             "firstHalfStarted": "05.11.2026 20:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1793905200000
                 },
@@ -1138,7 +1144,7 @@
                         "name": "Levante Badalona (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "1/16",
                     "status": {
                         "utcTime": "2026-11-05T19:00:00.000Z",
@@ -1146,9 +1152,15 @@
                             "firstHalfStarted": "05.11.2026 20:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1793905200000
                 },
@@ -1167,7 +1179,7 @@
                         "name": "Valencia (W)"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "1/16",
                     "status": {
                         "utcTime": "2026-11-05T19:30:00.000Z",
@@ -1175,9 +1187,15 @@
                             "firstHalfStarted": "05.11.2026 20:30:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1793907000000
                 }
@@ -1207,7 +1225,7 @@
                         "name": "Levante"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-11-05T18:00:00.000Z",
@@ -1215,9 +1233,15 @@
                             "firstHalfStarted": "05.11.2026 19:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1793901600000
                 },
@@ -1236,7 +1260,7 @@
                         "name": "Mallorca"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "1",
                     "status": {
                         "utcTime": "2026-11-05T20:00:00.000Z",
@@ -1244,9 +1268,15 @@
                             "firstHalfStarted": "05.11.2026 21:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1793908800000
                 }
@@ -1449,6 +1479,35 @@
             "primaryId": 10342,
             "name": "Cup",
             "matches": [
+                {
+                    "id": 6526894,
+                    "leagueId": 10342,
+                    "time": "05.11.2026 20:00",
+                    "home": {
+                        "id": 1545868,
+                        "score": 0,
+                        "name": "CA Lito"
+                    },
+                    "away": {
+                        "id": 7863,
+                        "score": 0,
+                        "name": "Montevideo Wanderers"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/8",
+                    "status": {
+                        "utcTime": "2026-11-05T19:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "05.11.2026 20:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1793905200000
+                },
                 {
                     "id": 6526897,
                     "leagueId": 10342,
@@ -3314,79 +3373,9 @@
             "name": "Saudi Pro League",
             "matches": [
                 {
-                    "id": 1000021469,
-                    "leagueId": 1000001787,
-                    "time": "05.11.2026 16:10",
-                    "home": {
-                        "id": 150414,
-                        "score": 0,
-                        "name": "Abha"
-                    },
-                    "away": {
-                        "id": 101916,
-                        "score": 0,
-                        "name": "Al Shabab"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 5,
-                    "tournamentStage": "13",
-                    "status": {
-                        "utcTime": "2026-11-05T15:10:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "05.11.2026 16:10:00"
-                        },
-                        "periodLength": 45,
-                        "cancelled": true,
-                        "started": false,
-                        "finished": false,
-                        "reason": {
-                            "short": "PP",
-                            "shortKey": "postponed_short",
-                            "long": "Postponed",
-                            "longKey": "postponed"
-                        }
-                    },
-                    "timeTS": 1793891400000
-                },
-                {
-                    "id": 1000021476,
-                    "leagueId": 1000001787,
-                    "time": "05.11.2026 18:30",
-                    "home": {
-                        "id": 101919,
-                        "score": 0,
-                        "name": "Al Qadsiah"
-                    },
-                    "away": {
-                        "id": 582749,
-                        "score": 0,
-                        "name": "Al-Fayha"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 5,
-                    "tournamentStage": "13",
-                    "status": {
-                        "utcTime": "2026-11-05T17:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "05.11.2026 18:30:00"
-                        },
-                        "periodLength": 45,
-                        "cancelled": true,
-                        "started": false,
-                        "finished": false,
-                        "reason": {
-                            "short": "PP",
-                            "shortKey": "postponed_short",
-                            "long": "Postponed",
-                            "longKey": "postponed"
-                        }
-                    },
-                    "timeTS": 1793899800000
-                },
-                {
                     "id": 1000021471,
                     "leagueId": 1000001787,
-                    "time": "06.11.2026 15:30",
+                    "time": "06.11.2026 01:00",
                     "home": {
                         "id": 177356,
                         "score": 0,
@@ -3401,9 +3390,9 @@
                     "statusId": 5,
                     "tournamentStage": "13",
                     "status": {
-                        "utcTime": "2026-11-06T14:30:00.000Z",
+                        "utcTime": "2026-11-06T00:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.11.2026 15:30:00"
+                            "firstHalfStarted": "06.11.2026 01:00:00"
                         },
                         "periodLength": 45,
                         "cancelled": true,
@@ -3416,12 +3405,12 @@
                             "longKey": "postponed"
                         }
                     },
-                    "timeTS": 1793975400000
+                    "timeTS": 1793923200000
                 },
                 {
                     "id": 1000021472,
                     "leagueId": 1000001787,
-                    "time": "06.11.2026 15:55",
+                    "time": "06.11.2026 01:00",
                     "home": {
                         "id": 101911,
                         "score": 0,
@@ -3436,9 +3425,9 @@
                     "statusId": 5,
                     "tournamentStage": "13",
                     "status": {
-                        "utcTime": "2026-11-06T14:55:00.000Z",
+                        "utcTime": "2026-11-06T00:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.11.2026 15:55:00"
+                            "firstHalfStarted": "06.11.2026 01:00:00"
                         },
                         "periodLength": 45,
                         "cancelled": true,
@@ -3451,7 +3440,42 @@
                             "longKey": "postponed"
                         }
                     },
-                    "timeTS": 1793976900000
+                    "timeTS": 1793923200000
+                },
+                {
+                    "id": 1000021473,
+                    "leagueId": 1000001787,
+                    "time": "06.11.2026 01:00",
+                    "home": {
+                        "id": 8577,
+                        "score": 0,
+                        "name": "Al Ittihad"
+                    },
+                    "away": {
+                        "id": 1699505,
+                        "score": 0,
+                        "name": "Neom SC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 5,
+                    "tournamentStage": "13",
+                    "status": {
+                        "utcTime": "2026-11-06T00:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "06.11.2026 01:00:00"
+                        },
+                        "periodLength": 45,
+                        "cancelled": true,
+                        "started": false,
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
+                    },
+                    "timeTS": 1793923200000
                 }
             ],
             "parentLeagueId": 536,
@@ -3648,5 +3672,6 @@
             "simpleLeague": false
         }
     ],
-    "date": "20261106"
+    "date": "20261106",
+    "systemMessage": null
 }

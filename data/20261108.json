@@ -1489,7 +1489,7 @@
                 {
                     "id": 5802983,
                     "leagueId": 53,
-                    "time": "07.11.2026 17:15",
+                    "time": "07.11.2026 19:00",
                     "home": {
                         "id": 8583,
                         "score": 0,
@@ -1504,21 +1504,21 @@
                     "statusId": 1,
                     "tournamentStage": "10",
                     "status": {
-                        "utcTime": "2026-11-07T16:15:00.000Z",
+                        "utcTime": "2026-11-07T18:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.11.2026 17:15:00"
+                            "firstHalfStarted": "07.11.2026 19:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1794068100000
+                    "timeTS": 1794074400000
                 },
                 {
                     "id": 5802987,
                     "leagueId": 53,
-                    "time": "07.11.2026 20:45",
+                    "time": "07.11.2026 21:05",
                     "home": {
                         "id": 9847,
                         "score": 0,
@@ -1534,16 +1534,16 @@
                     "statusId": 1,
                     "tournamentStage": "10",
                     "status": {
-                        "utcTime": "2026-11-07T19:45:00.000Z",
+                        "utcTime": "2026-11-07T20:05:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.11.2026 20:45:00"
+                            "firstHalfStarted": "07.11.2026 21:05:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1794080700000
+                    "timeTS": 1794081900000
                 },
                 {
                     "id": 5802988,
@@ -2206,6 +2206,45 @@
             "internalRank": 9,
             "simpleLeague": false,
             "localRank": 28
+        },
+        {
+            "ccode": "MNE",
+            "id": 232,
+            "primaryId": 232,
+            "name": "1. CFL",
+            "matches": [
+                {
+                    "id": 5796389,
+                    "leagueId": 232,
+                    "time": "08.11.2026 14:00",
+                    "home": {
+                        "id": 2245,
+                        "score": 0,
+                        "name": "Sutjeska"
+                    },
+                    "away": {
+                        "id": 8101,
+                        "score": 0,
+                        "name": "Petrovac"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "15",
+                    "status": {
+                        "utcTime": "2026-11-08T13:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.11.2026 14:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794142800000
+                }
+            ],
+            "internalRank": 10,
+            "simpleLeague": false
         },
         {
             "ccode": "NOR",
@@ -4974,65 +5013,6 @@
             "name": "First League",
             "matches": [
                 {
-                    "id": 5897658,
-                    "leagueId": 938422,
-                    "time": "07.11.2026 17:00",
-                    "home": {
-                        "id": 8712,
-                        "score": 0,
-                        "name": "Shinnik Yaroslavl"
-                    },
-                    "away": {
-                        "id": 198150,
-                        "score": 0,
-                        "name": "FC Ufa",
-                        "shortName": "Ufa"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "17",
-                    "status": {
-                        "utcTime": "2026-11-07T16:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.11.2026 17:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794067200000
-                },
-                {
-                    "id": 5897661,
-                    "leagueId": 938422,
-                    "time": "07.11.2026 17:00",
-                    "home": {
-                        "id": 8704,
-                        "score": 0,
-                        "name": "Torpedo Moscow"
-                    },
-                    "away": {
-                        "id": 198153,
-                        "score": 0,
-                        "name": "Neftekhimik"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "17",
-                    "status": {
-                        "utcTime": "2026-11-07T16:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.11.2026 17:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794067200000
-                },
-                {
                     "id": 5897664,
                     "leagueId": 938422,
                     "time": "08.11.2026 07:45",
@@ -6496,7 +6476,7 @@
                         "name": "Tenerife"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "13",
                     "status": {
                         "utcTime": "2026-11-07T20:00:00.000Z",
@@ -6504,9 +6484,15 @@
                             "firstHalfStarted": "07.11.2026 21:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1794081600000
                 },
@@ -6525,7 +6511,7 @@
                         "name": "Mallorca"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "13",
                     "status": {
                         "utcTime": "2026-11-08T13:00:00.000Z",
@@ -6533,9 +6519,15 @@
                             "firstHalfStarted": "08.11.2026 14:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1794142800000
                 }
@@ -12272,6 +12264,64 @@
             "name": "Segunda Federacion - Group 4",
             "matches": [
                 {
+                    "id": 5885326,
+                    "leagueId": 938794,
+                    "time": "07.11.2026 18:00",
+                    "home": {
+                        "id": 8479,
+                        "score": 0,
+                        "name": "Recreativo Huelva"
+                    },
+                    "away": {
+                        "id": 2066192,
+                        "score": 0,
+                        "name": "Mijas-Las Lagunas"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "10",
+                    "status": {
+                        "utcTime": "2026-11-07T17:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.11.2026 18:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794070800000
+                },
+                {
+                    "id": 5885314,
+                    "leagueId": 938794,
+                    "time": "07.11.2026 19:00",
+                    "home": {
+                        "id": 627898,
+                        "score": 0,
+                        "name": "Ciudad Lucena"
+                    },
+                    "away": {
+                        "id": 7873,
+                        "score": 0,
+                        "name": "CD Badajoz"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "10",
+                    "status": {
+                        "utcTime": "2026-11-07T18:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.11.2026 19:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794074400000
+                },
+                {
                     "id": 5885319,
                     "leagueId": 938794,
                     "time": "08.11.2026 11:30",
@@ -14318,6 +14368,162 @@
                 }
             ],
             "internalRank": 10,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "GRE",
+            "id": 945430,
+            "primaryId": 8815,
+            "name": "Super League 2",
+            "matches": [
+                {
+                    "id": 6140256,
+                    "leagueId": 945430,
+                    "time": "08.11.2026 11:30",
+                    "home": {
+                        "id": 1303117,
+                        "score": 0,
+                        "name": "Olympiacos B"
+                    },
+                    "away": {
+                        "id": 1797422,
+                        "score": 0,
+                        "name": "Hellas Syros"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "10",
+                    "status": {
+                        "utcTime": "2026-11-08T10:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.11.2026 11:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794133800000
+                },
+                {
+                    "id": 6140252,
+                    "leagueId": 945430,
+                    "time": "08.11.2026 13:45",
+                    "home": {
+                        "id": 7975,
+                        "score": 0,
+                        "name": "Athens Kallithea FC"
+                    },
+                    "away": {
+                        "id": 8170,
+                        "score": 0,
+                        "name": "Panionios"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "10",
+                    "status": {
+                        "utcTime": "2026-11-08T12:45:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.11.2026 13:45:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794141900000
+                },
+                {
+                    "id": 6140255,
+                    "leagueId": 945430,
+                    "time": "08.11.2026 14:00",
+                    "home": {
+                        "id": 149647,
+                        "score": 0,
+                        "name": "Anagennisi Karditsas"
+                    },
+                    "away": {
+                        "id": 1787833,
+                        "score": 0,
+                        "name": "GS Marko"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "10",
+                    "status": {
+                        "utcTime": "2026-11-08T13:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.11.2026 14:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794142800000
+                },
+                {
+                    "id": 6140253,
+                    "leagueId": 945430,
+                    "time": "08.11.2026 14:00",
+                    "home": {
+                        "id": 488150,
+                        "score": 0,
+                        "name": "Nestos Chrisoupolis"
+                    },
+                    "away": {
+                        "id": 1679128,
+                        "score": 0,
+                        "name": "Asteras Tripolis B"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "10",
+                    "status": {
+                        "utcTime": "2026-11-08T13:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.11.2026 14:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794142800000
+                },
+                {
+                    "id": 6140258,
+                    "leagueId": 945430,
+                    "time": "08.11.2026 14:00",
+                    "home": {
+                        "id": 2076365,
+                        "score": 0,
+                        "name": "Pyrgos AFC"
+                    },
+                    "away": {
+                        "id": 1303118,
+                        "score": 0,
+                        "name": "PAOK Thessaloniki B"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "10",
+                    "status": {
+                        "utcTime": "2026-11-08T13:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.11.2026 14:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794142800000
+                }
+            ],
+            "parentLeagueId": 8815,
+            "internalRank": 9,
             "simpleLeague": false
         },
         {
@@ -16568,7 +16774,7 @@
                         "started": false,
                         "cancelled": false,
                         "finished": false,
-                        "aggregatedStr": "0 - 0"
+                        "aggregatedStr": "1 - 1"
                     },
                     "timeTS": 1794099600000
                 },
@@ -16647,7 +16853,7 @@
                 {
                     "id": 1000014638,
                     "leagueId": 1000001644,
-                    "time": "08.11.2026 00:00",
+                    "time": "08.11.2026 02:00",
                     "home": {
                         "id": 8561,
                         "score": 0,
@@ -16664,16 +16870,16 @@
                     "statusId": 1,
                     "tournamentStage": "16",
                     "status": {
-                        "utcTime": "2026-11-07T23:00:00.000Z",
+                        "utcTime": "2026-11-08T01:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "08.11.2026 00:00:00"
+                            "firstHalfStarted": "08.11.2026 02:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1794092400000
+                    "timeTS": 1794099600000
                 },
                 {
                     "id": 1000014639,
@@ -18575,52 +18781,6 @@
             "simpleLeague": false
         },
         {
-            "ccode": "KSA",
-            "id": 1000001787,
-            "primaryId": 536,
-            "name": "Saudi Pro League",
-            "matches": [
-                {
-                    "id": 1000021468,
-                    "leagueId": 1000001787,
-                    "time": "07.11.2026 18:30",
-                    "home": {
-                        "id": 2530,
-                        "score": 0,
-                        "name": "Al Ahli"
-                    },
-                    "away": {
-                        "id": 205686,
-                        "score": 0,
-                        "name": "Al-Taawoun"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 5,
-                    "tournamentStage": "13",
-                    "status": {
-                        "utcTime": "2026-11-07T17:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.11.2026 18:30:00"
-                        },
-                        "periodLength": 45,
-                        "cancelled": true,
-                        "started": false,
-                        "finished": false,
-                        "reason": {
-                            "short": "PP",
-                            "shortKey": "postponed_short",
-                            "long": "Postponed",
-                            "longKey": "postponed"
-                        }
-                    },
-                    "timeTS": 1794072600000
-                }
-            ],
-            "parentLeagueId": 536,
-            "internalRank": 9,
-            "simpleLeague": false
-        },
-        {
             "ccode": "ECU",
             "id": 1000001251,
             "primaryId": 246,
@@ -18683,46 +18843,6 @@
                         "finished": false
                     },
                     "timeTS": 1794087000000
-                }
-            ],
-            "parentLeagueId": 246,
-            "internalRank": 10,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "ECU",
-            "id": 1000001253,
-            "primaryId": 246,
-            "name": "Serie A - Relegation Round",
-            "matches": [
-                {
-                    "id": 1000022077,
-                    "leagueId": 1000001253,
-                    "time": "07.11.2026 17:30",
-                    "home": {
-                        "id": 4144,
-                        "score": 0,
-                        "name": "Deportivo Cuenca"
-                    },
-                    "away": {
-                        "id": 1014174,
-                        "score": 0,
-                        "name": "Orense"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "Relegation Round - Round 6",
-                    "status": {
-                        "utcTime": "2026-11-07T16:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.11.2026 17:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794069000000
                 }
             ],
             "parentLeagueId": 246,
@@ -19757,5 +19877,6 @@
             "simpleLeague": false
         }
     ],
-    "date": "20261108"
+    "date": "20261108",
+    "systemMessage": null
 }
