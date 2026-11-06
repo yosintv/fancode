@@ -2206,35 +2206,6 @@
             "name": "Liga 3 Zona B",
             "matches": [
                 {
-                    "id": 5991326,
-                    "leagueId": 942851,
-                    "time": "08.11.2026 16:00",
-                    "home": {
-                        "id": 1296841,
-                        "score": 0,
-                        "name": "CF Os Belenenses"
-                    },
-                    "away": {
-                        "id": 888452,
-                        "score": 0,
-                        "name": "Lusitano de \u00c9vora"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "9",
-                    "status": {
-                        "utcTime": "2026-11-08T15:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "08.11.2026 16:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794150000000
-                },
-                {
                     "id": 5991328,
                     "leagueId": 942851,
                     "time": "08.11.2026 16:00",
@@ -2799,7 +2770,7 @@
                         "name": "Herrera FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "16",
                     "status": {
                         "utcTime": "2026-11-08T21:00:00.000Z",
@@ -2807,9 +2778,15 @@
                             "firstHalfStarted": "08.11.2026 22:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1794171600000
                 },
@@ -2828,7 +2805,7 @@
                         "name": "Veraguas United"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "16",
                     "status": {
                         "utcTime": "2026-11-08T21:00:00.000Z",
@@ -2836,9 +2813,15 @@
                             "firstHalfStarted": "08.11.2026 22:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1794171600000
                 },
@@ -2857,7 +2840,7 @@
                         "name": "Independiente de La Chorrera"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "16",
                     "status": {
                         "utcTime": "2026-11-08T21:00:00.000Z",
@@ -2865,9 +2848,15 @@
                             "firstHalfStarted": "08.11.2026 22:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1794171600000
                 }
@@ -3021,64 +3010,6 @@
                         "id": 102060,
                         "score": 0,
                         "name": "Kwara United"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "12",
-                    "status": {
-                        "utcTime": "2026-11-08T15:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "08.11.2026 16:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794150000000
-                },
-                {
-                    "id": 6103164,
-                    "leagueId": 943368,
-                    "time": "08.11.2026 16:00",
-                    "home": {
-                        "id": 1661097,
-                        "score": 0,
-                        "name": "Ikorodu City"
-                    },
-                    "away": {
-                        "id": 2133882,
-                        "score": 0,
-                        "name": "Inter Lagos"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "12",
-                    "status": {
-                        "utcTime": "2026-11-08T15:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "08.11.2026 16:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794150000000
-                },
-                {
-                    "id": 6103165,
-                    "leagueId": 943368,
-                    "time": "08.11.2026 16:00",
-                    "home": {
-                        "id": 1791630,
-                        "score": 0,
-                        "name": "Kun Khalifat"
-                    },
-                    "away": {
-                        "id": 102059,
-                        "score": 0,
-                        "name": "Kano Pillars"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -3364,6 +3295,46 @@
             ],
             "parentLeagueId": 441,
             "internalRank": 11,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "BIH",
+            "id": 940873,
+            "primaryId": 267,
+            "name": "Premier League",
+            "matches": [
+                {
+                    "id": 6141012,
+                    "leagueId": 940873,
+                    "time": "08.11.2026 17:30",
+                    "home": {
+                        "id": 10107,
+                        "score": 0,
+                        "name": "Zrinjski Mostar"
+                    },
+                    "away": {
+                        "id": 10105,
+                        "score": 0,
+                        "name": "FK Sarajevo"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "13",
+                    "status": {
+                        "utcTime": "2026-11-08T16:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.11.2026 17:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794155400000
+                }
+            ],
+            "parentLeagueId": 267,
+            "internalRank": 10,
             "simpleLeague": false
         },
         {
@@ -5724,35 +5695,6 @@
             "name": "USL Super League",
             "matches": [
                 {
-                    "id": 5887403,
-                    "leagueId": 938854,
-                    "time": "08.11.2026 21:00",
-                    "home": {
-                        "id": 1669152,
-                        "score": 0,
-                        "name": "DC Power FC (W)"
-                    },
-                    "away": {
-                        "id": 1669154,
-                        "score": 0,
-                        "name": "Lexington SC (W)"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1",
-                    "status": {
-                        "utcTime": "2026-11-08T20:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "08.11.2026 21:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794168000000
-                },
-                {
                     "id": 5887404,
                     "leagueId": 938854,
                     "time": "08.11.2026 23:00",
@@ -6161,7 +6103,36 @@
                     "away": {
                         "id": 102100,
                         "score": 0,
-                        "name": "AmaZulu"
+                        "name": "AmaZulu FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/4",
+                    "status": {
+                        "utcTime": "2026-11-08T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.11.2026 17:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794153600000
+                },
+                {
+                    "id": 1000022914,
+                    "leagueId": 1000001216,
+                    "time": "08.11.2026 17:00",
+                    "home": {
+                        "id": 6279,
+                        "score": 0,
+                        "name": "Kaizer Chiefs"
+                    },
+                    "away": {
+                        "id": 102099,
+                        "score": 0,
+                        "name": "Siwelele"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,

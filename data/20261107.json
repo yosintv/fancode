@@ -1254,6 +1254,35 @@
                     "timeTS": 1793988000000
                 },
                 {
+                    "id": 5864745,
+                    "leagueId": 938638,
+                    "time": "07.11.2026 13:00",
+                    "home": {
+                        "id": 9969,
+                        "score": 0,
+                        "name": "Middelfart"
+                    },
+                    "away": {
+                        "id": 8112,
+                        "score": 0,
+                        "name": "N\u00e6stved"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "15",
+                    "status": {
+                        "utcTime": "2026-11-07T12:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.11.2026 13:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794052800000
+                },
+                {
                     "id": 5864744,
                     "leagueId": 938638,
                     "time": "07.11.2026 14:00",
@@ -1266,35 +1295,6 @@
                         "id": 6678,
                         "score": 0,
                         "name": "VSK Aarhus"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "15",
-                    "status": {
-                        "utcTime": "2026-11-07T13:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.11.2026 14:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794056400000
-                },
-                {
-                    "id": 5864745,
-                    "leagueId": 938638,
-                    "time": "07.11.2026 14:00",
-                    "home": {
-                        "id": 9969,
-                        "score": 0,
-                        "name": "Middelfart"
-                    },
-                    "away": {
-                        "id": 8112,
-                        "score": 0,
-                        "name": "N\u00e6stved"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -2404,7 +2404,7 @@
                 {
                     "id": 6487513,
                     "leagueId": 530,
-                    "time": "06.11.2026 19:00",
+                    "time": "06.11.2026 18:00",
                     "home": {
                         "id": 102037,
                         "score": 0,
@@ -2419,16 +2419,16 @@
                     "statusId": 1,
                     "tournamentStage": "7",
                     "status": {
-                        "utcTime": "2026-11-06T18:00:00.000Z",
+                        "utcTime": "2026-11-06T17:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "06.11.2026 19:00:00"
+                            "firstHalfStarted": "06.11.2026 18:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1793988000000
+                    "timeTS": 1793984400000
                 },
                 {
                     "id": 6487514,
@@ -4789,8 +4789,7 @@
                     "away": {
                         "id": 6304,
                         "score": 0,
-                        "name": "Kawasaki Frontale",
-                        "shortName": "Kawasaki"
+                        "name": "Kawasaki Frontale"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -5556,7 +5555,7 @@
                         "name": "Eibar"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "13",
                     "status": {
                         "utcTime": "2026-11-06T19:30:00.000Z",
@@ -5564,9 +5563,15 @@
                             "firstHalfStarted": "06.11.2026 20:30:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1793993400000
                 },
@@ -5615,7 +5620,7 @@
                 {
                     "id": 5991327,
                     "leagueId": 942851,
-                    "time": "06.11.2026 21:00",
+                    "time": "06.11.2026 20:00",
                     "home": {
                         "id": 1074312,
                         "score": 0,
@@ -5625,6 +5630,35 @@
                         "id": 47535,
                         "score": 0,
                         "name": "Mafra"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "9",
+                    "status": {
+                        "utcTime": "2026-11-06T19:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "06.11.2026 20:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1793991600000
+                },
+                {
+                    "id": 5991326,
+                    "leagueId": 942851,
+                    "time": "06.11.2026 21:00",
+                    "home": {
+                        "id": 1296841,
+                        "score": 0,
+                        "name": "CF Os Belenenses"
+                    },
+                    "away": {
+                        "id": 888452,
+                        "score": 0,
+                        "name": "Lusitano de \u00c9vora"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -6066,7 +6100,7 @@
                 {
                     "id": 5861319,
                     "leagueId": 938628,
-                    "time": "07.11.2026 02:00",
+                    "time": "07.11.2026 03:00",
                     "home": {
                         "id": 188303,
                         "score": 0,
@@ -6081,16 +6115,16 @@
                     "statusId": 1,
                     "tournamentStage": "19",
                     "status": {
-                        "utcTime": "2026-11-07T01:00:00.000Z",
+                        "utcTime": "2026-11-07T02:00:00.000Z",
                         "halfs": {
-                            "firstHalfStarted": "07.11.2026 02:00:00"
+                            "firstHalfStarted": "07.11.2026 03:00:00"
                         },
                         "periodLength": 45,
                         "started": false,
                         "cancelled": false,
                         "finished": false
                     },
-                    "timeTS": 1794013200000
+                    "timeTS": 1794016800000
                 }
             ],
             "parentLeagueId": 336,
@@ -6792,35 +6826,6 @@
                     "timeTS": 1794058200000
                 },
                 {
-                    "id": 6050548,
-                    "leagueId": 943985,
-                    "time": "07.11.2026 14:30",
-                    "home": {
-                        "id": 405958,
-                        "score": 0,
-                        "name": "Etoile M\u00e9tlaoui"
-                    },
-                    "away": {
-                        "id": 102112,
-                        "score": 0,
-                        "name": "Zarzis"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "7",
-                    "status": {
-                        "utcTime": "2026-11-07T13:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.11.2026 14:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794058200000
-                },
-                {
                     "id": 6050549,
                     "leagueId": 943985,
                     "time": "07.11.2026 14:30",
@@ -6851,6 +6856,104 @@
                 }
             ],
             "parentLeagueId": 544,
+            "internalRank": 10,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "PAN",
+            "id": 941168,
+            "primaryId": 9039,
+            "name": "LPF Apertura",
+            "matches": [
+                {
+                    "id": 5954370,
+                    "leagueId": 941168,
+                    "time": "07.11.2026 02:30",
+                    "home": {
+                        "id": 165473,
+                        "score": 0,
+                        "name": "Alianza FC"
+                    },
+                    "away": {
+                        "id": 165468,
+                        "score": 0,
+                        "name": "CD \u00c1rabe Unido"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "15",
+                    "status": {
+                        "utcTime": "2026-11-07T01:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.11.2026 02:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794015000000
+                },
+                {
+                    "id": 5954371,
+                    "leagueId": 941168,
+                    "time": "07.11.2026 02:30",
+                    "home": {
+                        "id": 165476,
+                        "score": 0,
+                        "name": "CD Plaza Amador"
+                    },
+                    "away": {
+                        "id": 165472,
+                        "score": 0,
+                        "name": "Sporting San Miguelito"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "15",
+                    "status": {
+                        "utcTime": "2026-11-07T01:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.11.2026 02:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794015000000
+                },
+                {
+                    "id": 5954372,
+                    "leagueId": 941168,
+                    "time": "07.11.2026 02:30",
+                    "home": {
+                        "id": 1514007,
+                        "score": 0,
+                        "name": "UMECIT FC"
+                    },
+                    "away": {
+                        "id": 165469,
+                        "score": 0,
+                        "name": "Tauro FC"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "15",
+                    "status": {
+                        "utcTime": "2026-11-07T01:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.11.2026 02:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794015000000
+                }
+            ],
+            "parentLeagueId": 9039,
             "internalRank": 10,
             "simpleLeague": false
         },
@@ -7187,6 +7290,46 @@
             "simpleLeague": false
         },
         {
+            "ccode": "NGA",
+            "id": 943368,
+            "primaryId": 533,
+            "name": "NPFL",
+            "matches": [
+                {
+                    "id": 6103165,
+                    "leagueId": 943368,
+                    "time": "06.11.2026 16:00",
+                    "home": {
+                        "id": 1791630,
+                        "score": 0,
+                        "name": "Kun Khalifat"
+                    },
+                    "away": {
+                        "id": 102059,
+                        "score": 0,
+                        "name": "Kano Pillars"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "12",
+                    "status": {
+                        "utcTime": "2026-11-06T15:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "06.11.2026 16:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1793977200000
+                }
+            ],
+            "parentLeagueId": 533,
+            "internalRank": 10,
+            "simpleLeague": false
+        },
+        {
             "ccode": "USA",
             "id": 955997,
             "primaryId": 9134,
@@ -7334,6 +7477,35 @@
             "name": "Premier League",
             "matches": [
                 {
+                    "id": 5909202,
+                    "leagueId": 940431,
+                    "time": "07.11.2026 12:00",
+                    "home": {
+                        "id": 1395678,
+                        "score": 0,
+                        "name": "Epitsentr Kamianets-Podilskyi"
+                    },
+                    "away": {
+                        "id": 558259,
+                        "score": 0,
+                        "name": "Kryvbas"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "12",
+                    "status": {
+                        "utcTime": "2026-11-07T11:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.11.2026 12:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794049200000
+                },
+                {
                     "id": 5909203,
                     "leagueId": 940431,
                     "time": "07.11.2026 12:00",
@@ -7390,35 +7562,6 @@
                         "finished": false
                     },
                     "timeTS": 1794049200000
-                },
-                {
-                    "id": 5909202,
-                    "leagueId": 940431,
-                    "time": "07.11.2026 14:30",
-                    "home": {
-                        "id": 1395678,
-                        "score": 0,
-                        "name": "Epitsentr Kamianets-Podilskyi"
-                    },
-                    "away": {
-                        "id": 558259,
-                        "score": 0,
-                        "name": "Kryvbas"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "12",
-                    "status": {
-                        "utcTime": "2026-11-07T13:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "07.11.2026 14:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794058200000
                 }
             ],
             "parentLeagueId": 441,
@@ -7926,35 +8069,6 @@
                         "finished": false
                     },
                     "timeTS": 1793977200000
-                },
-                {
-                    "id": 5973000,
-                    "leagueId": 118,
-                    "time": "06.11.2026 17:00",
-                    "home": {
-                        "id": 1388663,
-                        "score": 0,
-                        "name": "Gandzasar"
-                    },
-                    "away": {
-                        "id": 6569,
-                        "score": 0,
-                        "name": "Syunik"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "13",
-                    "status": {
-                        "utcTime": "2026-11-06T16:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "06.11.2026 17:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1793980800000
                 },
                 {
                     "id": 5973002,
@@ -11433,6 +11547,35 @@
             "primaryId": 10699,
             "name": "USL Super League",
             "matches": [
+                {
+                    "id": 5887403,
+                    "leagueId": 938854,
+                    "time": "07.11.2026 01:00",
+                    "home": {
+                        "id": 1669152,
+                        "score": 0,
+                        "name": "DC Power FC (W)"
+                    },
+                    "away": {
+                        "id": 1669154,
+                        "score": 0,
+                        "name": "Lexington SC (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-11-07T00:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "07.11.2026 01:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794009600000
+                },
                 {
                     "id": 5887401,
                     "leagueId": 938854,
