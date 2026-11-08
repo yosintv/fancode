@@ -2577,6 +2577,41 @@
                         "name": "Mar\u00edtimo"
                     },
                     "eliminatedTeamId": null,
+                    "statusId": 5,
+                    "tournamentStage": "11",
+                    "status": {
+                        "utcTime": "2026-11-08T15:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.11.2026 16:30:00"
+                        },
+                        "periodLength": 45,
+                        "cancelled": true,
+                        "started": false,
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
+                    },
+                    "timeTS": 1794151800000
+                },
+                {
+                    "id": 5887676,
+                    "leagueId": 61,
+                    "time": "08.11.2026 16:30",
+                    "home": {
+                        "id": 10214,
+                        "score": 0,
+                        "name": "Nacional"
+                    },
+                    "away": {
+                        "id": 1786,
+                        "score": 0,
+                        "name": "Acad\u00e9mico Viseu"
+                    },
+                    "eliminatedTeamId": null,
                     "statusId": 1,
                     "tournamentStage": "11",
                     "status": {
@@ -4901,7 +4936,7 @@
                         "name": "Conquense"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "10",
                     "status": {
                         "utcTime": "2026-11-08T16:00:00.000Z",
@@ -4909,9 +4944,15 @@
                             "firstHalfStarted": "08.11.2026 17:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1794153600000
                 },
@@ -6784,6 +6825,104 @@
             "simpleLeague": false
         },
         {
+            "ccode": "BOL",
+            "id": 1000001249,
+            "primaryId": 144,
+            "name": "Primera Divisi\u00f3n",
+            "matches": [
+                {
+                    "id": 1000022375,
+                    "leagueId": 1000001249,
+                    "time": "08.11.2026 20:00",
+                    "home": {
+                        "id": 164353,
+                        "score": 0,
+                        "name": "Nacional Potos\u00ed"
+                    },
+                    "away": {
+                        "id": 1846,
+                        "score": 0,
+                        "name": "Real Potos\u00ed"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "25",
+                    "status": {
+                        "utcTime": "2026-11-08T19:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.11.2026 20:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794164400000
+                },
+                {
+                    "id": 1000022376,
+                    "leagueId": 1000001249,
+                    "time": "08.11.2026 22:15",
+                    "home": {
+                        "id": 5983,
+                        "score": 0,
+                        "name": "Bol\u00edvar"
+                    },
+                    "away": {
+                        "id": 2527,
+                        "score": 0,
+                        "name": "The Strongest"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "25",
+                    "status": {
+                        "utcTime": "2026-11-08T21:15:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "08.11.2026 22:15:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794172500000
+                },
+                {
+                    "id": 1000022377,
+                    "leagueId": 1000001249,
+                    "time": "09.11.2026 00:30",
+                    "home": {
+                        "id": 49678,
+                        "score": 0,
+                        "name": "Blooming"
+                    },
+                    "away": {
+                        "id": 1844,
+                        "score": 0,
+                        "name": "Oriente Petrolero"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "25",
+                    "status": {
+                        "utcTime": "2026-11-08T23:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "09.11.2026 00:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794180600000
+                }
+            ],
+            "parentLeagueId": 144,
+            "internalRank": 10,
+            "simpleLeague": false
+        },
+        {
             "ccode": "CHI",
             "id": 1000001661,
             "primaryId": 273,
@@ -6966,104 +7105,6 @@
             ],
             "parentLeagueId": 273,
             "internalRank": 11,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "BOL",
-            "id": 1000001249,
-            "primaryId": 144,
-            "name": "Primera Divisi\u00f3n",
-            "matches": [
-                {
-                    "id": 1000022375,
-                    "leagueId": 1000001249,
-                    "time": "08.11.2026 20:00",
-                    "home": {
-                        "id": 164353,
-                        "score": 0,
-                        "name": "Nacional Potos\u00ed"
-                    },
-                    "away": {
-                        "id": 1846,
-                        "score": 0,
-                        "name": "Real Potos\u00ed"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "25",
-                    "status": {
-                        "utcTime": "2026-11-08T19:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "08.11.2026 20:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794164400000
-                },
-                {
-                    "id": 1000022376,
-                    "leagueId": 1000001249,
-                    "time": "08.11.2026 22:15",
-                    "home": {
-                        "id": 5983,
-                        "score": 0,
-                        "name": "Bol\u00edvar"
-                    },
-                    "away": {
-                        "id": 2527,
-                        "score": 0,
-                        "name": "The Strongest"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "25",
-                    "status": {
-                        "utcTime": "2026-11-08T21:15:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "08.11.2026 22:15:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794172500000
-                },
-                {
-                    "id": 1000022377,
-                    "leagueId": 1000001249,
-                    "time": "09.11.2026 00:30",
-                    "home": {
-                        "id": 49678,
-                        "score": 0,
-                        "name": "Blooming"
-                    },
-                    "away": {
-                        "id": 1844,
-                        "score": 0,
-                        "name": "Oriente Petrolero"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "25",
-                    "status": {
-                        "utcTime": "2026-11-08T23:30:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "09.11.2026 00:30:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794180600000
-                }
-            ],
-            "parentLeagueId": 144,
-            "internalRank": 10,
             "simpleLeague": false
         },
         {
