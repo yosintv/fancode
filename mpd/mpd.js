@@ -1,4 +1,8 @@
 fancode,
+https://hlsplayers.pages.dev/mpd?url=https://ott-edge-mtdc04.nettv.com.np/npl/live_match3/index.mpd,
+b4d7fc89103597185058cc4c81a1800d:17062472ba2a3f1db709d3bb7761c936
+  
+fancodee,
 https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/b3b3fkmrbl/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd,
 82dfca238e8c4b430a3269db71965db9:a00b28caf4ac628e77a553d440c0ddca
 
