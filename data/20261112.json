@@ -442,6 +442,46 @@
             "simpleLeague": false
         },
         {
+            "ccode": "FRA",
+            "id": 938005,
+            "primaryId": 9677,
+            "name": "Premiere Ligue",
+            "matches": [
+                {
+                    "id": 5901183,
+                    "leagueId": 938005,
+                    "time": "11.11.2026 17:00",
+                    "home": {
+                        "id": 862902,
+                        "score": 0,
+                        "name": "Fleury Merogis U.S (W)"
+                    },
+                    "away": {
+                        "id": 1863810,
+                        "score": 0,
+                        "name": "Toulouse (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "6",
+                    "status": {
+                        "utcTime": "2026-11-11T16:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "11.11.2026 17:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794412800000
+                }
+            ],
+            "parentLeagueId": 9677,
+            "internalRank": 7,
+            "simpleLeague": false
+        },
+        {
             "ccode": "SLV",
             "id": 941466,
             "primaryId": 335,
@@ -770,7 +810,7 @@
                         "name": "Plymouth Parkway"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "18",
                     "status": {
                         "utcTime": "2026-11-11T19:45:00.000Z",
@@ -778,9 +818,15 @@
                             "firstHalfStarted": "11.11.2026 20:45:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1794426300000
                 }
@@ -1150,6 +1196,46 @@
             ],
             "parentLeagueId": 11011,
             "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "MEX",
+            "id": 1000001844,
+            "primaryId": 8976,
+            "name": "Liga de Expansi\u00f3n MX - Apertura - Semi-finals",
+            "matches": [
+                {
+                    "id": 1000022941,
+                    "leagueId": 1000001844,
+                    "time": "12.11.2026 03:00",
+                    "home": {
+                        "id": 2070059,
+                        "score": 0,
+                        "name": "Piratas"
+                    },
+                    "away": {
+                        "id": 1374638,
+                        "score": 0,
+                        "name": "Atl\u00e9tico La Paz"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "Apertura - Semi-finals",
+                    "status": {
+                        "utcTime": "2026-11-12T02:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "12.11.2026 03:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794448800000
+                }
+            ],
+            "parentLeagueId": 8976,
+            "internalRank": 9,
             "simpleLeague": false
         },
         {

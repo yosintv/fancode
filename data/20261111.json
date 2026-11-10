@@ -1970,46 +1970,6 @@
             "simpleLeague": false
         },
         {
-            "ccode": "NGA",
-            "id": 943368,
-            "primaryId": 533,
-            "name": "NPFL",
-            "matches": [
-                {
-                    "id": 6103160,
-                    "leagueId": 943368,
-                    "time": "10.11.2026 16:00",
-                    "home": {
-                        "id": 1533792,
-                        "score": 0,
-                        "name": "Sporting Lagos"
-                    },
-                    "away": {
-                        "id": 184466,
-                        "score": 0,
-                        "name": "Rivers United FC"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "12",
-                    "status": {
-                        "utcTime": "2026-11-10T15:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "10.11.2026 16:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794322800000
-                }
-            ],
-            "parentLeagueId": 533,
-            "internalRank": 10,
-            "simpleLeague": false
-        },
-        {
             "ccode": "SLV",
             "id": 941466,
             "primaryId": 335,
@@ -2497,7 +2457,7 @@
                         "name": "Poole Town FC"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "18",
                     "status": {
                         "utcTime": "2026-11-10T19:30:00.000Z",
@@ -2505,9 +2465,15 @@
                             "firstHalfStarted": "10.11.2026 20:30:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1794339000000
                 },
@@ -2611,64 +2577,6 @@
                         "id": 1508925,
                         "score": 0,
                         "name": "Malvern Town"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "18",
-                    "status": {
-                        "utcTime": "2026-11-10T19:45:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "10.11.2026 20:45:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794339900000
-                },
-                {
-                    "id": 5953991,
-                    "leagueId": 941118,
-                    "time": "10.11.2026 20:45",
-                    "home": {
-                        "id": 292925,
-                        "score": 0,
-                        "name": "Hanworth Villa"
-                    },
-                    "away": {
-                        "id": 879829,
-                        "score": 0,
-                        "name": "Berkhamsted"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "18",
-                    "status": {
-                        "utcTime": "2026-11-10T19:45:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "10.11.2026 20:45:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794339900000
-                },
-                {
-                    "id": 5953992,
-                    "leagueId": 941118,
-                    "time": "10.11.2026 20:45",
-                    "home": {
-                        "id": 1767,
-                        "score": 0,
-                        "name": "Havant and Waterlooville"
-                    },
-                    "away": {
-                        "id": 626250,
-                        "score": 0,
-                        "name": "Bracknell Town"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -2942,75 +2850,6 @@
             ],
             "parentLeagueId": 11011,
             "internalRank": 0,
-            "simpleLeague": false
-        },
-        {
-            "ccode": "MEX",
-            "id": 1000001844,
-            "primaryId": 8976,
-            "name": "Liga de Expansi\u00f3n MX - Apertura - Semi-finals",
-            "matches": [
-                {
-                    "id": 1000022941,
-                    "leagueId": 1000001844,
-                    "time": "11.11.2026 01:00",
-                    "home": {
-                        "id": 1,
-                        "score": 0,
-                        "name": "4th ranked"
-                    },
-                    "away": {
-                        "id": 2,
-                        "score": 0,
-                        "name": "1st ranked"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "Apertura - Semi-finals",
-                    "status": {
-                        "utcTime": "2026-11-11T00:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "11.11.2026 01:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794355200000
-                },
-                {
-                    "id": 1000022942,
-                    "leagueId": 1000001844,
-                    "time": "11.11.2026 01:00",
-                    "home": {
-                        "id": 1,
-                        "score": 0,
-                        "name": "3rd ranked"
-                    },
-                    "away": {
-                        "id": 2,
-                        "score": 0,
-                        "name": "2nd ranked"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "Apertura - Semi-finals",
-                    "status": {
-                        "utcTime": "2026-11-11T00:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "11.11.2026 01:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794355200000
-                }
-            ],
-            "parentLeagueId": 8976,
-            "internalRank": 9,
             "simpleLeague": false
         },
         {
