@@ -1,5 +1,5 @@
 fancode,
-https://hlsplayers.pages.dev/mpd?url=https://ott-edge-mtdc04.nettv.com.np/npl/live_match3/index.mpd,
+https://ott-edge-mtdc04.nettv.com.np/npl/live_match3/index.mpd,
 b4d7fc89103597185058cc4c81a1800d:17062472ba2a3f1db709d3bb7761c936
   
 fancodee,
