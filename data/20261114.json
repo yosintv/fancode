@@ -1904,46 +1904,6 @@
             "simpleLeague": false
         },
         {
-            "ccode": "ESP",
-            "id": 138,
-            "primaryId": 138,
-            "name": "Copa del Rey",
-            "matches": [
-                {
-                    "id": 6386080,
-                    "leagueId": 138,
-                    "time": "13.11.2026 21:00",
-                    "home": {
-                        "id": 490334,
-                        "score": 0,
-                        "name": "Salamanca CF UDS"
-                    },
-                    "away": {
-                        "id": 9910,
-                        "score": 0,
-                        "name": "Celta Vigo"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "1",
-                    "status": {
-                        "utcTime": "2026-11-13T20:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "13.11.2026 21:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false
-                    },
-                    "timeTS": 1794600000000
-                }
-            ],
-            "internalRank": 5,
-            "simpleLeague": false,
-            "localRank": 46
-        },
-        {
             "ccode": "SWE",
             "id": 10308,
             "primaryId": 10308,
@@ -5395,6 +5355,47 @@
             "simpleLeague": false
         },
         {
+            "ccode": "ESP",
+            "id": 1000005300,
+            "primaryId": 138,
+            "name": "Copa del Rey - 1st Round",
+            "matches": [
+                {
+                    "id": 6386080,
+                    "leagueId": 1000005300,
+                    "time": "13.11.2026 21:00",
+                    "home": {
+                        "id": 490334,
+                        "score": 0,
+                        "name": "Salamanca CF UDS"
+                    },
+                    "away": {
+                        "id": 9910,
+                        "score": 0,
+                        "name": "Celta Vigo"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1st Round",
+                    "status": {
+                        "utcTime": "2026-11-13T20:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "13.11.2026 21:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794600000000
+                }
+            ],
+            "parentLeagueId": 138,
+            "internalRank": 5,
+            "simpleLeague": false,
+            "localRank": 46
+        },
+        {
             "ccode": "CRO",
             "id": 1000001483,
             "primaryId": 275,
@@ -5724,78 +5725,6 @@
             "simpleLeague": false
         },
         {
-            "ccode": "MEX",
-            "id": 1000001844,
-            "primaryId": 8976,
-            "name": "Liga de Expansi\u00f3n MX - Apertura - Semi-finals",
-            "matches": [
-                {
-                    "id": 1000022943,
-                    "leagueId": 1000001844,
-                    "time": "14.11.2026 01:00",
-                    "home": {
-                        "id": 1374638,
-                        "score": 0,
-                        "name": "Atl\u00e9tico La Paz"
-                    },
-                    "away": {
-                        "id": 2070059,
-                        "score": 0,
-                        "name": "Piratas"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "Apertura - Semi-finals",
-                    "status": {
-                        "utcTime": "2026-11-14T00:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "14.11.2026 01:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false,
-                        "aggregatedStr": "0 - 0"
-                    },
-                    "timeTS": 1794614400000
-                },
-                {
-                    "id": 1000022944,
-                    "leagueId": 1000001844,
-                    "time": "14.11.2026 01:00",
-                    "home": {
-                        "id": 177535,
-                        "score": 0,
-                        "name": "Leones Negros",
-                        "shortName": "UDG"
-                    },
-                    "away": {
-                        "id": 6575,
-                        "score": 0,
-                        "name": "Atl\u00e9tico Morelia"
-                    },
-                    "eliminatedTeamId": null,
-                    "statusId": 1,
-                    "tournamentStage": "Apertura - Semi-finals",
-                    "status": {
-                        "utcTime": "2026-11-14T00:00:00.000Z",
-                        "halfs": {
-                            "firstHalfStarted": "14.11.2026 01:00:00"
-                        },
-                        "periodLength": 45,
-                        "started": false,
-                        "cancelled": false,
-                        "finished": false,
-                        "aggregatedStr": "0 - 0"
-                    },
-                    "timeTS": 1794614400000
-                }
-            ],
-            "parentLeagueId": 8976,
-            "internalRank": 9,
-            "simpleLeague": false
-        },
-        {
             "ccode": "SCO",
             "id": 1000001703,
             "primaryId": 9545,
@@ -5833,6 +5762,46 @@
             ],
             "parentLeagueId": 9545,
             "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "COL",
+            "id": 1000001696,
+            "primaryId": 274,
+            "name": "Primera A",
+            "matches": [
+                {
+                    "id": 1000014228,
+                    "leagueId": 1000001696,
+                    "time": "14.11.2026 02:30",
+                    "home": {
+                        "id": 47240,
+                        "score": 0,
+                        "name": "Internacional de Bogot\u00e1"
+                    },
+                    "away": {
+                        "id": 7818,
+                        "score": 0,
+                        "name": "Santa Fe"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "Clausura - Round 19",
+                    "status": {
+                        "utcTime": "2026-11-14T01:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "14.11.2026 02:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794619800000
+                }
+            ],
+            "parentLeagueId": 274,
+            "internalRank": 10,
             "simpleLeague": false
         },
         {
@@ -5940,18 +5909,18 @@
                     "timeTS": 1794632400000
                 },
                 {
-                    "id": 1000015940,
+                    "id": 1000015942,
                     "leagueId": 1000001499,
                     "time": "14.11.2026 07:00",
                     "home": {
-                        "id": 597942,
+                        "id": 588613,
                         "score": 0,
-                        "name": "Urawa Ladies (W)"
+                        "name": "NTV Tokyo Verdy Beleza (W)"
                     },
                     "away": {
-                        "id": 614365,
+                        "id": 588446,
                         "score": 0,
-                        "name": "AS Elfen Saitama (W)"
+                        "name": "Albirex Niigata Ladies (W)"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
@@ -5969,18 +5938,18 @@
                     "timeTS": 1794636000000
                 },
                 {
-                    "id": 1000015942,
+                    "id": 1000015940,
                     "leagueId": 1000001499,
                     "time": "14.11.2026 07:00",
                     "home": {
-                        "id": 588613,
+                        "id": 597942,
                         "score": 0,
-                        "name": "NTV Tokyo Verdy Beleza (W)"
+                        "name": "Urawa Ladies (W)"
                     },
                     "away": {
-                        "id": 588446,
+                        "id": 614365,
                         "score": 0,
-                        "name": "Albirex Niigata Ladies (W)"
+                        "name": "AS Elfen Saitama (W)"
                     },
                     "eliminatedTeamId": null,
                     "statusId": 1,
