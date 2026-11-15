@@ -2389,6 +2389,75 @@
             "simpleLeague": false
         },
         {
+            "ccode": "URU",
+            "id": 959358,
+            "primaryId": 9122,
+            "name": "Segunda Division Promotion Playoff",
+            "matches": [
+                {
+                    "id": 6645198,
+                    "leagueId": 959358,
+                    "time": "15.11.2026 20:30",
+                    "home": {
+                        "id": 7808,
+                        "score": 0,
+                        "name": "F\u00e9nix"
+                    },
+                    "away": {
+                        "id": 181912,
+                        "score": 0,
+                        "name": "Atenas"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/2",
+                    "status": {
+                        "utcTime": "2026-11-15T19:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "15.11.2026 20:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794771000000
+                },
+                {
+                    "id": 6645199,
+                    "leagueId": 959358,
+                    "time": "15.11.2026 23:30",
+                    "home": {
+                        "id": 688270,
+                        "score": 0,
+                        "name": "Oriental"
+                    },
+                    "away": {
+                        "id": 1223580,
+                        "score": 0,
+                        "name": "Colon"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/2",
+                    "status": {
+                        "utcTime": "2026-11-15T22:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "15.11.2026 23:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794781800000
+                }
+            ],
+            "parentLeagueId": 9122,
+            "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
             "isGroup": true,
             "groupName": "2",
             "ccode": "ESP",
@@ -3466,6 +3535,35 @@
                         "finished": false
                     },
                     "timeTS": 1794780000000
+                },
+                {
+                    "id": 5887407,
+                    "leagueId": 938854,
+                    "time": "15.11.2026 23:00",
+                    "home": {
+                        "id": 1669156,
+                        "score": 0,
+                        "name": "Tampa Bay Sun FC (W)"
+                    },
+                    "away": {
+                        "id": 1669151,
+                        "score": 0,
+                        "name": "Dallas Trinity FC (W)"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1",
+                    "status": {
+                        "utcTime": "2026-11-15T22:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "15.11.2026 23:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1794780000000
                 }
             ],
             "parentLeagueId": 10699,
@@ -4024,7 +4122,7 @@
                         "name": "Real Cundinamarca"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 190,
                     "tournamentStage": "Clausura - Quadrangular - Round 5",
                     "status": {
                         "utcTime": "2026-11-15T23:05:00.000Z",
@@ -4032,9 +4130,17 @@
                             "firstHalfStarted": "16.11.2026 00:05:00"
                         },
                         "periodLength": 45,
-                        "started": false,
+                        "finished": true,
+                        "started": true,
                         "cancelled": false,
-                        "finished": false
+                        "awarded": true,
+                        "scoreStr": "0 - 0",
+                        "reason": {
+                            "short": "AW",
+                            "shortKey": "",
+                            "long": "Awarded win",
+                            "longKey": "awarded_win"
+                        }
                     },
                     "timeTS": 1794783900000
                 },
