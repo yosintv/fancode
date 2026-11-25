@@ -277,6 +277,46 @@
             "localRank": 6
         },
         {
+            "ccode": "AUS",
+            "id": 961065,
+            "primaryId": 8938,
+            "name": "Australian Championship",
+            "matches": [
+                {
+                    "id": 6735151,
+                    "leagueId": 961065,
+                    "time": "26.11.2026 09:30",
+                    "home": {
+                        "id": 162314,
+                        "score": 0,
+                        "name": "South Melbourne"
+                    },
+                    "away": {
+                        "id": 162311,
+                        "score": 0,
+                        "name": "Oakleigh Cannons"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/4",
+                    "status": {
+                        "utcTime": "2026-11-26T08:30:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "26.11.2026 09:30:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1795681800000
+                }
+            ],
+            "parentLeagueId": 8938,
+            "internalRank": 0,
+            "simpleLeague": false
+        },
+        {
             "ccode": "ESP",
             "id": 948423,
             "primaryId": 10651,
@@ -732,7 +772,7 @@
                         "name": "Enugu Rangers"
                     },
                     "eliminatedTeamId": null,
-                    "statusId": 1,
+                    "statusId": 5,
                     "tournamentStage": "10",
                     "status": {
                         "utcTime": "2026-11-25T15:00:00.000Z",
@@ -740,14 +780,89 @@
                             "firstHalfStarted": "25.11.2026 16:00:00"
                         },
                         "periodLength": 45,
+                        "cancelled": true,
                         "started": false,
-                        "cancelled": false,
-                        "finished": false
+                        "finished": false,
+                        "reason": {
+                            "short": "PP",
+                            "shortKey": "postponed_short",
+                            "long": "Postponed",
+                            "longKey": "postponed"
+                        }
                     },
                     "timeTS": 1795618800000
                 }
             ],
             "parentLeagueId": 533,
+            "internalRank": 10,
+            "simpleLeague": false
+        },
+        {
+            "ccode": "SLV",
+            "id": 961466,
+            "primaryId": 335,
+            "name": "Primera Division - Apertura",
+            "matches": [
+                {
+                    "id": 6775372,
+                    "leagueId": 961466,
+                    "time": "25.11.2026 22:00",
+                    "home": {
+                        "id": 1280075,
+                        "score": 0,
+                        "name": "CD Platense Municipal"
+                    },
+                    "away": {
+                        "id": 49742,
+                        "score": 0,
+                        "name": "CD FAS"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/4",
+                    "status": {
+                        "utcTime": "2026-11-25T21:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "25.11.2026 22:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1795640400000
+                },
+                {
+                    "id": 6775371,
+                    "leagueId": 961466,
+                    "time": "25.11.2026 22:00",
+                    "home": {
+                        "id": 1783449,
+                        "score": 0,
+                        "name": "Inter Santa Tecla"
+                    },
+                    "away": {
+                        "id": 49739,
+                        "score": 0,
+                        "name": "CD \u00c1guila"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "1/4",
+                    "status": {
+                        "utcTime": "2026-11-25T21:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "25.11.2026 22:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1795640400000
+                }
+            ],
+            "parentLeagueId": 335,
             "internalRank": 10,
             "simpleLeague": false
         },
@@ -1785,6 +1900,50 @@
             ],
             "parentLeagueId": 48,
             "internalRank": 29,
+            "simpleLeague": false
+        },
+        {
+            "isGroup": true,
+            "groupName": "Northern Group G",
+            "ccode": "ENG",
+            "id": 142,
+            "primaryId": 142,
+            "name": "EFL Trophy - Northern Group G",
+            "matches": [
+                {
+                    "id": 6015575,
+                    "leagueId": 142,
+                    "time": "25.11.2026 20:00",
+                    "home": {
+                        "id": 45723,
+                        "score": 0,
+                        "name": "Fleetwood Town",
+                        "shortName": "Fleetwood"
+                    },
+                    "away": {
+                        "id": 1177187,
+                        "score": 0,
+                        "name": "Leeds United U21"
+                    },
+                    "eliminatedTeamId": null,
+                    "statusId": 1,
+                    "tournamentStage": "3",
+                    "status": {
+                        "utcTime": "2026-11-25T19:00:00.000Z",
+                        "halfs": {
+                            "firstHalfStarted": "25.11.2026 20:00:00"
+                        },
+                        "periodLength": 45,
+                        "started": false,
+                        "cancelled": false,
+                        "finished": false
+                    },
+                    "timeTS": 1795633200000
+                }
+            ],
+            "parentLeagueId": 142,
+            "parentLeagueName": "EFL Trophy",
+            "internalRank": 18,
             "simpleLeague": false
         },
         {
